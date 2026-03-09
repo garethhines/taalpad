@@ -1,0 +1,62 @@
+{
+  "categories": [
+    {
+      "id": "greetings",
+      "name": "Greetings",
+      "nameNl": "Begroetingen",
+      "words": [
+        { "dutch": "hallo", "english": "hello", "phonetic": "HAL-oh" },
+        { "dutch": "goedemorgen", "english": "good morning", "phonetic": "KHoo-deh-MOR-khen" },
+        { "dutch": "goedemiddag", "english": "good afternoon", "phonetic": "KHoo-deh-MID-dakh" },
+        { "dutch": "goedenavond", "english": "good evening", "phonetic": "KHoo-deh-NAH-fohnt" },
+        { "dutch": "goedenacht", "english": "good night", "phonetic": "KHoo-deh-NAKHT" },
+        { "dutch": "tot ziens", "english": "goodbye", "phonetic": "tot ZEENS" },
+        { "dutch": "tot morgen", "english": "see you tomorrow", "phonetic": "tot MOR-khen" },
+        { "dutch": "hoe gaat het?", "english": "how are you?", "phonetic": "hoo KHAHT het" },
+        { "dutch": "goed, dank je", "english": "fine, thank you", "phonetic": "khoot, dank yuh" },
+        { "dutch": "dank je wel", "english": "thank you", "phonetic": "dank yuh vel" },
+        { "dutch": "alsjeblieft", "english": "please / here you go", "phonetic": "als-yuh-BLEEFT" },
+        { "dutch": "graag gedaan", "english": "you're welcome", "phonetic": "khrahkh kheh-DAHN" },
+        { "dutch": "sorry", "english": "sorry", "phonetic": "SOR-ee" },
+        { "dutch": "pardon", "english": "excuse me", "phonetic": "par-DOHN" }
+      ]
+    },
+    {
+      "id": "numbers",
+      "name": "Numbers",
+      "nameNl": "Getallen",
+      "words": [
+        { "dutch": "nul", "english": "zero", "phonetic": "nul" },
+        { "dutch": "één", "english": "one", "phonetic": "ayn" },
+        { "dutch": "twee", "english": "two", "phonetic": "tvay" },
+        { "dutch": "drie", "english": "three", "phonetic": "dree" },
+        { "dutch": "vier", "english": "four", "phonetic": "veer" },
+        { "dutch": "vijf", "english": "five", "phonetic": "vayf" },
+        { "dutch": "zes", "english": "six", "phonetic": "zes" },
+        { "dutch": "zeven", "english": "seven", "phonetic": "ZAY-ven" },
+        { "dutch": "acht", "english": "eight", "phonetic": "akht" },
+        { "dutch": "negen", "english": "nine", "phonetic": "NAY-khen" },
+        { "dutch": "tien", "english": "ten", "phonetic": "teen" }
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Drink",
+      "nameNl": "Eten & Drinken",
+      "words": [
+        { "dutch": "brood", "english": "bread", "phonetic": "broht" },
+        { "dutch": "kaas", "english": "cheese", "phonetic": "kahs" },
+        { "dutch": "vlees", "english": "meat", "phonetic": "vlays" },
+        { "dutch": "vis", "english": "fish", "phonetic": "vis" },
+        { "dutch": "groente", "english": "vegetables", "phonetic": "KHROON-teh" },
+        { "dutch": "fruit", "english": "fruit", "phonetic": "froyt" },
+        { "dutch": "koffie", "english": "coffee", "phonetic": "KOF-ee" },
+        { "dutch": "thee", "english": "tea", "phonetic": "tay" },
+        { "dutch": "water", "english": "water", "phonetic": "VAH-ter" },
+        { "dutch": "bier", "english": "beer", "phonetic": "beer" },
+        { "dutch": "wijn", "english": "wine", "phonetic": "vayn" },
+        { "dutch": "melk", "english": "milk", "phonetic": "melk" }
+      ]
+    }
+  ]
+}
