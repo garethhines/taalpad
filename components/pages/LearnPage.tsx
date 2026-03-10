@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { Lock, CheckCircle2, ChevronRight, BookOpen } from 'lucide-react'
+import { Lock, CheckCircle2, ChevronRight, BookOpen, ClipboardCheck } from 'lucide-react'
 import { useProfile } from '@/hooks/useProfile'
 import { useLearningProgress } from '@/hooks/useLearningProgress'
 import { buildLearningPath } from '@/lib/curriculum/index'
@@ -11,10 +11,11 @@ import ProgressBar from '@/components/ui/ProgressBar'
 import type { LevelWithStatus, UnitWithStatus, LessonWithStatus } from '@/lib/types'
 
 export default function LearnPage() {
-  const { user } = useProfile()
+  const { user, profile } = useProfile()
   const { progress } = useLearningProgress(user?.id)
   const levels = buildLearningPath(progress)
   const currentRef = useRef<HTMLDivElement>(null)
+  const placementLevel = profile?.placement_level ?? null
 
   // Smooth-scroll to the user's current position on load
   useEffect(() => {
@@ -46,6 +47,7 @@ export default function LearnPage() {
                   <UnitCard
                     key={unit.id}
                     unit={unit}
+                    placementLevel={placementLevel}
                     currentRef={
                       unit.lessons.some((l) => l.isCurrentLesson) ? currentRef : undefined
                     }
@@ -89,12 +91,21 @@ function LevelBanner({ level, isFirst }: { level: LevelWithStatus; isFirst: bool
 function UnitCard({
   unit,
   currentRef,
+  placementLevel,
 }: {
   unit: UnitWithStatus
   currentRef?: React.RefObject<HTMLDivElement>
+  placementLevel?: string | null
 }) {
   const isCurrentUnit = unit.lessons.some((l) => l.isCurrentLesson)
   const nextLesson = unit.lessons.find((l) => l.isCurrentLesson || (!l.isCompleted && !l.isLocked))
+
+  // A unit is "tested out" if it's completed AND falls below the placement level
+  const levelOrder = ['A0', 'A1', 'A2', 'B1', 'B2']
+  const isTestedOut =
+    unit.isCompleted &&
+    !!placementLevel &&
+    levelOrder.indexOf(unit.level) < levelOrder.indexOf(placementLevel)
 
   return (
     <div
@@ -119,7 +130,9 @@ function UnitCard({
               !unit.isCompleted && !unit.isLocked ? { backgroundColor: unit.color } : undefined
             }
           >
-            {unit.isCompleted ? (
+            {isTestedOut ? (
+              <ClipboardCheck size={18} className="text-violet-600" />
+            ) : unit.isCompleted ? (
               <CheckCircle2 size={20} className="text-emerald-600" />
             ) : unit.isLocked ? (
               <Lock size={16} className="text-slate-400" />
@@ -129,7 +142,14 @@ function UnitCard({
           </div>
 
           <div className="flex-1 min-w-0">
-            <p className="font-bold text-slate-800 text-sm leading-snug">{unit.title}</p>
+            <div className="flex items-center gap-2">
+              <p className="font-bold text-slate-800 text-sm leading-snug">{unit.title}</p>
+              {isTestedOut && (
+                <span className="text-[10px] font-semibold bg-violet-100 text-violet-700 px-1.5 py-0.5 rounded-full shrink-0">
+                  Tested out
+                </span>
+              )}
+            </div>
             <p className="text-xs text-slate-500 mt-0.5 line-clamp-1">{unit.description}</p>
             <div className="flex items-center gap-2 mt-2">
               <ProgressBar

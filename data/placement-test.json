@@ -1,0 +1,278 @@
+[
+  {
+    "id": "pt-a1-1",
+    "level": "A1",
+    "type": "multiple_choice",
+    "question": "What does 'goedemorgen' mean?",
+    "options": ["good evening", "good morning", "good afternoon", "good night"],
+    "correctAnswer": "good morning"
+  },
+  {
+    "id": "pt-a1-2",
+    "level": "A1",
+    "type": "multiple_choice",
+    "question": "Which sentence is grammatically correct?",
+    "options": ["Ik zijn student.", "Ik am student.", "Ik is student.", "Ik ben student."],
+    "correctAnswer": "Ik ben student."
+  },
+  {
+    "id": "pt-a1-3",
+    "level": "A1",
+    "type": "fill_blank",
+    "sentence": "Ik ___ naar de supermarkt.",
+    "choices": ["ga", "gaat", "gaan", "ben"],
+    "correctAnswer": "ga",
+    "translation": "I ___ to the supermarket."
+  },
+  {
+    "id": "pt-a1-4",
+    "level": "A1",
+    "type": "translation",
+    "direction": "nl_to_en",
+    "prompt": "Dank je wel",
+    "correctAnswer": "thank you",
+    "acceptedAnswers": ["thank you", "thanks", "thank you very much", "many thanks"]
+  },
+  {
+    "id": "pt-a1-5",
+    "level": "A1",
+    "type": "multiple_choice",
+    "question": "What does 'links' mean?",
+    "options": ["right", "straight ahead", "left", "back"],
+    "correctAnswer": "left"
+  },
+  {
+    "id": "pt-a1-6",
+    "level": "A1",
+    "type": "fill_blank",
+    "sentence": "Zij ___ twee kinderen.",
+    "choices": ["heb", "heeft", "hebben", "hads"],
+    "correctAnswer": "heeft",
+    "translation": "She ___ two children."
+  },
+  {
+    "id": "pt-a1-7",
+    "level": "A1",
+    "type": "translation",
+    "direction": "en_to_nl",
+    "prompt": "I want a coffee, please.",
+    "correctAnswer": "Ik wil een koffie, alsjeblieft.",
+    "acceptedAnswers": ["Ik wil een koffie alsjeblieft", "Ik wil graag een koffie", "Ik wil graag een koffie, alsjeblieft.", "een koffie alsjeblieft"]
+  },
+  {
+    "id": "pt-a1-8",
+    "level": "A1",
+    "type": "multiple_choice",
+    "question": "Which word means 'expensive'?",
+    "options": ["goedkoop", "lekker", "duur", "snel"],
+    "correctAnswer": "duur"
+  },
+  {
+    "id": "pt-a2-1",
+    "level": "A2",
+    "type": "multiple_choice",
+    "question": "Complete the sentence: 'Ik heb gisteren veel ___.'",
+    "options": ["eet", "gegaan", "gegeten", "gaan"],
+    "correctAnswer": "gegeten"
+  },
+  {
+    "id": "pt-a2-2",
+    "level": "A2",
+    "type": "fill_blank",
+    "sentence": "Op maandag ___ ik altijd vroeg op.",
+    "choices": ["sta", "staat", "staan", "stond"],
+    "correctAnswer": "sta",
+    "translation": "On Monday I always get up early."
+  },
+  {
+    "id": "pt-a2-3",
+    "level": "A2",
+    "type": "multiple_choice",
+    "question": "What does 'het weer' mean?",
+    "options": ["the way", "the water", "the wind", "the weather"],
+    "correctAnswer": "the weather"
+  },
+  {
+    "id": "pt-a2-4",
+    "level": "A2",
+    "type": "translation",
+    "direction": "nl_to_en",
+    "prompt": "Ik heb de trein gemist.",
+    "correctAnswer": "I missed the train.",
+    "acceptedAnswers": ["I missed the train", "I have missed the train", "I've missed the train"]
+  },
+  {
+    "id": "pt-a2-5",
+    "level": "A2",
+    "type": "multiple_choice",
+    "question": "'Bijna' means:",
+    "options": ["maybe", "finally", "already", "almost"],
+    "correctAnswer": "almost"
+  },
+  {
+    "id": "pt-a2-6",
+    "level": "A2",
+    "type": "fill_blank",
+    "sentence": "Mag ik de ___, alsjeblieft?",
+    "choices": ["rekening", "prijs", "bon", "betaling"],
+    "correctAnswer": "rekening",
+    "translation": "Can I have the ___, please?"
+  },
+  {
+    "id": "pt-a2-7",
+    "level": "A2",
+    "type": "multiple_choice",
+    "question": "Choose the correct sentence: 'We gaan naar het strand ___ het maar niet regent.'",
+    "options": [
+      "We gaan naar het strand want het maar niet regent.",
+      "We gaan naar het strand als het maar niet regent.",
+      "We gaan naar het strand dat het maar niet regent.",
+      "We gaan naar het strand maar het niet regent."
+    ],
+    "correctAnswer": "We gaan naar het strand als het maar niet regent."
+  },
+  {
+    "id": "pt-a2-8",
+    "level": "A2",
+    "type": "translation",
+    "direction": "en_to_nl",
+    "prompt": "Do you have this in a smaller size?",
+    "correctAnswer": "Heeft u dit in een kleinere maat?",
+    "acceptedAnswers": ["Heeft u dit in een kleinere maat", "Hebt u dit in een kleinere maat?", "Heeft u dit in maat kleiner?", "Heeft u dit kleiner?"]
+  },
+  {
+    "id": "pt-b1-1",
+    "level": "B1",
+    "type": "fill_blank",
+    "sentence": "Als ik meer tijd ___, zou ik meer lezen.",
+    "choices": ["heb", "had", "hebben", "zou"],
+    "correctAnswer": "had",
+    "translation": "If I had more time, I would read more."
+  },
+  {
+    "id": "pt-b1-2",
+    "level": "B1",
+    "type": "translation",
+    "direction": "nl_to_en",
+    "prompt": "Hoewel het regent, ga ik toch fietsen.",
+    "correctAnswer": "Although it's raining, I'll still cycle.",
+    "acceptedAnswers": ["Although it is raining, I will still cycle", "Even though it's raining, I'm still cycling", "Although it rains, I still go cycling", "Despite the rain, I'm still going cycling"]
+  },
+  {
+    "id": "pt-b1-3",
+    "level": "B1",
+    "type": "multiple_choice",
+    "question": "Which sentence uses the passive voice correctly?",
+    "options": [
+      "De directeur ondertekende de brief.",
+      "De directeur heeft de brief ondertekend.",
+      "De brief werd door de directeur ondertekend.",
+      "De directeur ondertekent de brief."
+    ],
+    "correctAnswer": "De brief werd door de directeur ondertekend."
+  },
+  {
+    "id": "pt-b1-4",
+    "level": "B1",
+    "type": "multiple_choice",
+    "question": "What does 'desalniettemin' mean?",
+    "options": ["unfortunately", "automatically", "nevertheless", "deliberately"],
+    "correctAnswer": "nevertheless"
+  },
+  {
+    "id": "pt-b1-5",
+    "level": "B1",
+    "type": "fill_blank",
+    "sentence": "Ze is de persoon ___ mij heeft geholpen.",
+    "choices": ["dat", "welke", "die", "wat"],
+    "correctAnswer": "die",
+    "translation": "She is the person who helped me."
+  },
+  {
+    "id": "pt-b1-6",
+    "level": "B1",
+    "type": "translation",
+    "direction": "en_to_nl",
+    "prompt": "I should have called you earlier.",
+    "correctAnswer": "Ik had je eerder moeten bellen.",
+    "acceptedAnswers": ["Ik had je eerder moeten bellen", "Ik had eerder moeten bellen", "Ik had u eerder moeten bellen", "Ik had eerder moeten bellen."]
+  },
+  {
+    "id": "pt-b1-7",
+    "level": "B1",
+    "type": "multiple_choice",
+    "question": "'Ik ben het er niet mee eens' means:",
+    "options": ["I don't understand it", "I can't help it", "I don't know it", "I disagree"],
+    "correctAnswer": "I disagree"
+  },
+  {
+    "id": "pt-b1-8",
+    "level": "B1",
+    "type": "fill_blank",
+    "sentence": "Hoe ___ het dat je dat wist?",
+    "choices": ["is", "weet", "komt", "kan"],
+    "correctAnswer": "komt",
+    "translation": "How come you knew that?"
+  },
+  {
+    "id": "pt-b2-1",
+    "level": "B2",
+    "type": "multiple_choice",
+    "question": "'Nu komt de aap uit de mouw' — what does this idiom mean?",
+    "options": [
+      "A monkey escaped from a circus.",
+      "Someone is hiding something in their sleeve.",
+      "Now the true intention is finally revealed.",
+      "The situation has become unexpectedly worse."
+    ],
+    "correctAnswer": "Now the true intention is finally revealed."
+  },
+  {
+    "id": "pt-b2-2",
+    "level": "B2",
+    "type": "translation",
+    "direction": "nl_to_en",
+    "prompt": "Dat valt me reuze mee.",
+    "correctAnswer": "That exceeds my expectations.",
+    "acceptedAnswers": ["That exceeds my expectations", "I'm pleasantly surprised by that", "That's better than expected", "That pleasantly surprised me", "That's a pleasant surprise"]
+  },
+  {
+    "id": "pt-b2-3",
+    "level": "B2",
+    "type": "multiple_choice",
+    "question": "In a formal Dutch business letter, how do you address someone you don't know?",
+    "options": ["Beste vriend,", "Hoi,", "Lieve collega,", "Geachte heer/mevrouw,"],
+    "correctAnswer": "Geachte heer/mevrouw,"
+  },
+  {
+    "id": "pt-b2-4",
+    "level": "B2",
+    "type": "fill_blank",
+    "sentence": "Het feit ___ hij aanwezig was, veranderde alles.",
+    "choices": ["die", "wat", "welk", "dat"],
+    "correctAnswer": "dat",
+    "translation": "The fact ___ he was present changed everything."
+  },
+  {
+    "id": "pt-b2-5",
+    "level": "B2",
+    "type": "multiple_choice",
+    "question": "'Iets voor niets bestaat niet' best translates to:",
+    "options": [
+      "Nothing is worth anything.",
+      "Something is always better than nothing.",
+      "There's no such thing as a free lunch.",
+      "Nothing matters in the end."
+    ],
+    "correctAnswer": "There's no such thing as a free lunch."
+  },
+  {
+    "id": "pt-b2-6",
+    "level": "B2",
+    "type": "translation",
+    "direction": "en_to_nl",
+    "prompt": "All things considered, it went better than expected.",
+    "correctAnswer": "Al met al ging het beter dan verwacht.",
+    "acceptedAnswers": ["Al met al ging het beter dan verwacht", "Alles bij elkaar genomen ging het beter dan verwacht", "Al met al is het beter gegaan dan verwacht"]
+  }
+]

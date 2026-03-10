@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react'
 import { useRouter } from 'next/navigation'
+import Link from 'next/link'
 import {
   LogOut, Flame, Zap, Award, BookOpen, Layers, Clock,
   Shield, Edit3, Check, X, Volume2, Mic, ChevronRight,
@@ -168,21 +169,28 @@ export default function ProfilePage() {
               </Card>
             </section>
 
-            {/* Placement test promo */}
+            {/* Placement test */}
             <section>
               <SectionLabel>Assessment</SectionLabel>
-              <div className="bg-gradient-to-r from-violet-50 to-blue-50 rounded-2xl border border-violet-100 p-4 flex items-center gap-4">
+              <Link
+                href="/placement"
+                className="flex items-center gap-4 bg-gradient-to-r from-violet-50 to-blue-50 rounded-2xl border border-violet-100 p-4 hover:border-violet-300 transition-colors group"
+              >
                 <div className="w-10 h-10 bg-violet-100 rounded-xl flex items-center justify-center shrink-0">
                   <Award size={18} className="text-violet-600" />
                 </div>
                 <div className="flex-1">
-                  <p className="font-bold text-slate-800 text-sm">Placement Test</p>
-                  <p className="text-xs text-slate-500">Find your true CEFR level</p>
+                  <p className="font-bold text-slate-800 text-sm group-hover:text-violet-700 transition-colors">
+                    {profile?.placement_level ? 'Retake Placement Test' : 'Take Placement Test'}
+                  </p>
+                  <p className="text-xs text-slate-500">
+                    {profile?.placement_level
+                      ? `You placed at ${profile.placement_level} — retake to reassess`
+                      : 'Skip levels you already know — 30 questions'}
+                  </p>
                 </div>
-                <span className="text-xs text-violet-500 bg-violet-100 px-2 py-1 rounded-full font-medium shrink-0">
-                  Coming soon
-                </span>
-              </div>
+                <ChevronRight size={16} className="text-violet-300 group-hover:text-violet-500 shrink-0" />
+              </Link>
             </section>
           </div>
 

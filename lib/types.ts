@@ -207,6 +207,8 @@ export interface UserProfile {
   longest_streak: number
   last_activity_date: string | null
   created_at: string
+  /** Set when the user completes the placement test. NULL = started from A0. */
+  placement_level: string | null
 }
 
 export interface LearningProgress {

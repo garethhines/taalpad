@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Flame, Zap, Layers, BookOpen, CheckCircle2, ArrowRight, Target } from 'lucide-react'
+import { Flame, Zap, Layers, BookOpen, CheckCircle2, ArrowRight, Target, Award } from 'lucide-react'
 import { useProfile } from '@/hooks/useProfile'
 import { useLearningProgress } from '@/hooks/useLearningProgress'
 import { useWordsDue } from '@/hooks/useWordsDue'
@@ -111,6 +111,26 @@ export default function DashboardPage() {
 
           {/* ── LEFT COLUMN (primary): Continue Learning + Weekly Chart + Level Progress ── */}
           <div className="lg:col-span-2 space-y-5">
+
+            {/* Placement test prompt — only for brand-new users with no progress */}
+            {progress.length === 0 && !profile?.placement_level && (
+              <Link href="/placement">
+                <div className="bg-gradient-to-r from-violet-600 to-blue-700 rounded-2xl p-5 text-white shadow-lg hover:opacity-95 transition-opacity cursor-pointer">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center shrink-0">
+                      <Award size={22} className="text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <p className="font-bold text-base">Already know some Dutch?</p>
+                      <p className="text-violet-200 text-sm mt-0.5">
+                        Take a 5-min placement test to skip levels you already know.
+                      </p>
+                    </div>
+                    <ArrowRight size={18} className="text-violet-300 shrink-0" />
+                  </div>
+                </div>
+              </Link>
+            )}
 
             {/* Continue Learning — most prominent card */}
             <div>

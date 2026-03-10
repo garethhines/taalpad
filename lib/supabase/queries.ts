@@ -4,9 +4,10 @@
  * the browser client and the server client.
  */
 import type { SupabaseClient } from '@supabase/supabase-js'
-import type { UserProfile, LearningProgress, VocabularyProgress, StreakHistory } from '@/lib/types'
+import type { UserProfile, LearningProgress, VocabularyProgress, StreakHistory, LevelEnum } from '@/lib/types'
 import { computeNewStreak, getLevelFromXP } from '@/lib/streak'
 import { applyRating, type FlashcardRating } from '@/lib/sm2'
+import { ALL_LEVELS } from '@/lib/curriculum/index'
 
 // ----------------------------------------------------------------
 // Profile
@@ -269,4 +270,60 @@ export async function getStreakHistory(
 
   if (error) return []
   return data as StreakHistory[]
+}
+
+// ----------------------------------------------------------------
+// Placement Test
+// ----------------------------------------------------------------
+
+/**
+ * Records the outcome of a placement test:
+ *  1. Bulk-marks all lessons in levels BELOW placementLevel as 'completed'
+ *     so the curriculum engine unlocks the right starting point.
+ *  2. Updates users_profile.current_level and placement_level.
+ */
+export async function completePlacementTest(
+  supabase: SupabaseClient,
+  userId: string,
+  placementLevel: string,
+): Promise<void> {
+  const levelOrder = ['A0', 'A1', 'A2', 'B1', 'B2']
+  const placedIdx = levelOrder.indexOf(placementLevel)
+
+  // Gather all (unitId, lessonId) pairs for levels STRICTLY below placementLevel
+  const rows: { user_id: string; unit_id: string; lesson_id: string; status: 'completed'; completed_at: string }[] = []
+  const completedAt = new Date().toISOString()
+
+  for (let i = 0; i < placedIdx; i++) {
+    const levelId = levelOrder[i]
+    const level = ALL_LEVELS.find((l) => l.id === levelId)
+    if (!level) continue
+    for (const unit of level.units) {
+      for (const lesson of unit.lessons) {
+        rows.push({
+          user_id: userId,
+          unit_id: unit.id,
+          lesson_id: lesson.id,
+          status: 'completed',
+          completed_at: completedAt,
+        })
+      }
+    }
+  }
+
+  // Bulk upsert in one round-trip (Supabase handles large arrays fine)
+  if (rows.length > 0) {
+    await supabase
+      .from('learning_progress')
+      .upsert(rows, { onConflict: 'user_id,lesson_id', ignoreDuplicates: false })
+  }
+
+  // Update profile: current_level + placement_level
+  await supabase
+    .from('users_profile')
+    .update({
+      current_level: (placementLevel === 'A0' ? 'A0' : placementLevel) as LevelEnum,
+      placement_level: placementLevel,
+    })
+    .eq('id', userId)
 }
