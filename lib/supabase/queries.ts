@@ -226,13 +226,21 @@ export async function recordLessonCompletion(
     last_activity_date: todayStr,
   })
 
-  // 4. Upsert streak_history (increment xp/lessons if row already exists today)
+  // 4. Accumulate today's xp + lesson count in streak_history.
+  //    Fetch the existing row first so we can increment rather than overwrite.
+  const { data: existing } = await supabase
+    .from('streak_history')
+    .select('xp_earned, lessons_completed')
+    .eq('user_id', userId)
+    .eq('date', todayStr)
+    .maybeSingle()
+
   await supabase.from('streak_history').upsert(
     {
       user_id: userId,
       date: todayStr,
-      xp_earned: xpReward,
-      lessons_completed: 1,
+      xp_earned: (existing?.xp_earned ?? 0) + xpReward,
+      lessons_completed: (existing?.lessons_completed ?? 0) + 1,
     },
     { onConflict: 'user_id,date', ignoreDuplicates: false },
   )

@@ -36,6 +36,13 @@ export function getNextLevel(level: LevelEnum): LevelEnum | null {
   return idx < LEVEL_ORDER.length - 1 ? LEVEL_ORDER[idx + 1] : null
 }
 
+/** Returns the next CEFR level as a string, or null if max level */
+export function getCEFRNextLevel(level: string): string | null {
+  const order = ['A0', 'A1', 'A2', 'B1', 'B2']
+  const idx = order.indexOf(level)
+  return idx >= 0 && idx < order.length - 1 ? order[idx + 1] : null
+}
+
 /**
  * Returns the effective current streak to display.
  *
