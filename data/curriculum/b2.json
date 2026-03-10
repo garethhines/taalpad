@@ -1,1 +1,72 @@
-{"id":"B2","title":"Stub","description":"","color":"#94a3b8","units":[]}
+{
+  "id": "B2",
+  "title": "Upper Intermediate",
+  "description": "Near-native fluency — master nuance, register, idioms, and sophisticated Dutch expression",
+  "color": "#ec4899",
+  "units": [
+    { "id": "b2-u1", "title": "Business Dutch", "titleNl": "Zakelijk Nederlands", "description": "Formal writing, presentations, and professional communication at a high level", "theme": "business", "color": "#ec4899", "order": 25, "level": "B2", "lessons": [
+      { "id": "b2-u1-l1", "title": "Formal Register", "titleNl": "Formeel Register", "description": "The difference between formal and informal Dutch — when and how to switch", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u1-l2", "title": "Business Correspondence", "titleNl": "Zakelijke Correspondentie", "description": "Writing professional Dutch letters, emails, and reports", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u1-l3", "title": "Presentations", "titleNl": "Presentaties", "description": "Structuring and delivering a presentation in Dutch", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u1-l4", "title": "Negotiations", "titleNl": "Onderhandelen", "description": "Negotiating, compromising, and reaching agreement in Dutch", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u1-l5", "title": "Networking", "titleNl": "Netwerken", "description": "Professional small talk, LinkedIn Dutch, and networking events", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u1-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 1 content", "xpReward": 100, "estimatedMinutes": 12, "exercises": [] }
+    ]},
+    { "id": "b2-u2", "title": "Media & Literature", "titleNl": "Media en Literatuur", "description": "Read Dutch newspapers, literature excerpts, and engage with authentic media", "theme": "media", "color": "#3b82f6", "order": 26, "level": "B2", "lessons": [
+      { "id": "b2-u2-l1", "title": "Dutch Newspapers", "titleNl": "Nederlandse Kranten", "description": "Reading de Volkskrant, NRC, and AD — understanding journalistic Dutch", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u2-l2", "title": "Dutch Literature", "titleNl": "Nederlandse Literatuur", "description": "Excerpts from classic and modern Dutch authors", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u2-l3", "title": "Dutch Television", "titleNl": "Nederlandse Televisie", "description": "Understanding Dutch TV — news, soaps, and comedy shows", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u2-l4", "title": "Podcasts & Radio", "titleNl": "Podcasts en Radio", "description": "Following spoken Dutch at natural speed", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u2-l5", "title": "Social Media Dutch", "titleNl": "Social Media Nederlands", "description": "Informal writing, abbreviations, and Dutch internet language", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u2-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 2 content", "xpReward": 100, "estimatedMinutes": 12, "exercises": [] }
+    ]},
+    { "id": "b2-u3", "title": "Idioms & Expressions", "titleNl": "Idioom en Uitdrukkingen", "description": "Sound like a native — master Dutch idioms, proverbs, and figurative language", "theme": "idioms", "color": "#f97316", "order": 27, "level": "B2", "lessons": [
+      { "id": "b2-u3-l1", "title": "Common Idioms", "titleNl": "Veelgebruikte Uitdrukkingen", "description": "Nu komt de aap uit de mouw — the most-used Dutch idioms", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u3-l2", "title": "Dutch Proverbs", "titleNl": "Nederlandse Spreekwoorden", "description": "Wie niet waagt, wie niet wint — Dutch wisdom in proverbs", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u3-l3", "title": "Word Play & Humour", "titleNl": "Woordspeling en Humor", "description": "Dutch puns, wordplay, and dry humour", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u3-l4", "title": "Flemish vs Dutch", "titleNl": "Vlaams vs Nederlands", "description": "Key differences between Dutch spoken in Belgium and the Netherlands", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u3-l5", "title": "Regional Expressions", "titleNl": "Regionale Uitdrukkingen", "description": "Amsterdam, Rotterdam, and regional Dutch character", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u3-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 3 content", "xpReward": 100, "estimatedMinutes": 12, "exercises": [] }
+    ]},
+    { "id": "b2-u4", "title": "Advanced Grammar", "titleNl": "Gevorderde Grammatica", "description": "Master passive voice, complex tenses, and advanced sentence structures", "theme": "grammar", "color": "#8b5cf6", "order": 28, "level": "B2", "lessons": [
+      { "id": "b2-u4-l1", "title": "Passive Voice", "titleNl": "Lijdende Vorm", "description": "Er wordt gezegd dat... — the Dutch passive voice in all tenses", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u4-l2", "title": "Reported Speech", "titleNl": "Indirecte Rede", "description": "Hij zei dat... — reporting what others said in Dutch", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u4-l3", "title": "Infinitive Constructions", "titleNl": "Infinitiefconstructies", "description": "Om te + infinitive and other infinitive patterns", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u4-l4", "title": "Word Order Mastery", "titleNl": "Woordvolgorde Beheersen", "description": "Complex word order in subordinate clauses and with multiple verbs", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u4-l5", "title": "Diminutives & Suffixes", "titleNl": "Verkleinwoorden en Achtervoegsels", "description": "The Dutch -tje diminutive system and common word-building suffixes", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u4-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 4 content", "xpReward": 100, "estimatedMinutes": 12, "exercises": [] }
+    ]},
+    { "id": "b2-u5", "title": "Politics & Society", "titleNl": "Politiek en Samenleving", "description": "Engage with Dutch society — politics, social issues, and national identity", "theme": "society", "color": "#f59e0b", "order": 29, "level": "B2", "lessons": [
+      { "id": "b2-u5-l1", "title": "Dutch Political System", "titleNl": "Het Nederlandse Politieke Systeem", "description": "Tweede Kamer, coalitions, and Dutch democracy", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u5-l2", "title": "Social Themes", "titleNl": "Maatschappelijke Thema's", "description": "Integration, housing, climate — current Dutch social debates", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u5-l3", "title": "Dutch Identity", "titleNl": "Nederlandse Identiteit", "description": "What it means to be Dutch — polder model, tolerance, and pragmatism", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u5-l4", "title": "Environmental Issues", "titleNl": "Milieuvraagstukken", "description": "Climate change, water management, and the Netherlands' relationship with nature", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u5-l5", "title": "Debating in Dutch", "titleNl": "Debatteren in het Nederlands", "description": "Arguing a position, conceding points, and reaching conclusions formally", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u5-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 5 content", "xpReward": 100, "estimatedMinutes": 12, "exercises": [] }
+    ]},
+    { "id": "b2-u6", "title": "Academic Dutch", "titleNl": "Academisch Nederlands", "description": "University-level Dutch for study, research, and professional writing", "theme": "academic", "color": "#6366f1", "order": 30, "level": "B2", "lessons": [
+      { "id": "b2-u6-l1", "title": "Academic Writing", "titleNl": "Academisch Schrijven", "description": "Essays, reports, and academic papers in formal Dutch", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u6-l2", "title": "Citing & Referencing", "titleNl": "Citeren en Verwijzen", "description": "According to..., as stated in... — academic referencing in Dutch", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u6-l3", "title": "Lecture Language", "titleNl": "Collegetaal", "description": "Following university lectures and taking notes in Dutch", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u6-l4", "title": "Argumentation", "titleNl": "Argumentatie", "description": "Building and presenting logical arguments in Dutch", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u6-l5", "title": "Research Dutch", "titleNl": "Onderzoekstaal", "description": "Methodology, findings, and conclusions — research vocabulary", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u6-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 6 content", "xpReward": 100, "estimatedMinutes": 12, "exercises": [] }
+    ]},
+    { "id": "b2-u7", "title": "Near-Native Expression", "titleNl": "Bijna-Moedertaalspreker", "description": "The final stretch — subtle meanings, register switching, and sounding truly Dutch", "theme": "fluency", "color": "#14b8a6", "order": 31, "level": "B2", "lessons": [
+      { "id": "b2-u7-l1", "title": "Subtle Meanings", "titleNl": "Subtiele Betekenissen", "description": "The difference between similar words: huis/woning, mooi/knap, zeggen/vertellen", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u7-l2", "title": "Register Switching", "titleNl": "Register Wisselen", "description": "Switching between formal, informal, and street Dutch", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u7-l3", "title": "Particles & Fillers", "titleNl": "Partikels en Vulwoorden", "description": "Nou, eigenlijk, zeg, toch, maar — Dutch conversation particles", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u7-l4", "title": "Intonation & Rhythm", "titleNl": "Intonatie en Ritme", "description": "The music of Dutch — stress, rhythm, and natural-sounding speech", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u7-l5", "title": "Thinking in Dutch", "titleNl": "Denken in het Nederlands", "description": "Moving beyond translation — expressing yourself directly in Dutch", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u7-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 7 content", "xpReward": 100, "estimatedMinutes": 12, "exercises": [] }
+    ]},
+    { "id": "b2-u8", "title": "Final Challenge", "titleNl": "Einduitdaging", "description": "Prove your mastery — comprehensive review of the entire B2 level", "theme": "review", "color": "#f43f5e", "order": 32, "level": "B2", "lessons": [
+      { "id": "b2-u8-l1", "title": "Grammar Mastery", "titleNl": "Grammatica Beheersen", "description": "Comprehensive grammar review across all B2 structures", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u8-l2", "title": "Vocabulary Mastery", "titleNl": "Woordenschat Beheersen", "description": "Review of all B2 vocabulary themes", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u8-l3", "title": "Listening Mastery", "titleNl": "Luistervaardigheid Beheersen", "description": "Advanced listening exercises at natural Dutch speed", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u8-l4", "title": "Reading Mastery", "titleNl": "Leesvaardigheid Beheersen", "description": "Complex Dutch texts — comprehension and analysis", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u8-l5", "title": "Speaking Mastery", "titleNl": "Spreekvaardigheid Beheersen", "description": "Free expression — describing, arguing, and storytelling in Dutch", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] },
+      { "id": "b2-u8-l6", "title": "B2 Final Test", "titleNl": "B2 Eindtoets", "description": "The ultimate test of your Dutch knowledge — good luck!", "xpReward": 150, "estimatedMinutes": 15, "exercises": [] }
+    ]}
+  ]
+}

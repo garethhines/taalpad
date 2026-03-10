@@ -1,1 +1,72 @@
-{"id":"B1","title":"Stub","description":"","color":"#94a3b8","units":[]}
+{
+  "id": "B1",
+  "title": "Intermediate",
+  "description": "Express yourself more fluently — opinions, plans, culture, and complex sentences",
+  "color": "#f59e0b",
+  "units": [
+    { "id": "b1-u1", "title": "Making Plans", "titleNl": "Plannen Maken", "description": "Discuss future plans, make invitations, and talk about social events", "theme": "plans", "color": "#f59e0b", "order": 17, "level": "B1", "lessons": [
+      { "id": "b1-u1-l1", "title": "Future Tense", "titleNl": "Toekomende Tijd", "description": "Using zullen and gaan to talk about the future", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u1-l2", "title": "Making Invitations", "titleNl": "Uitnodigingen Doen", "description": "Inviting, accepting, and declining invitations", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u1-l3", "title": "Social Events", "titleNl": "Sociale Evenementen", "description": "Parties, birthdays, and Dutch social customs", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u1-l4", "title": "Expressing Wishes", "titleNl": "Wensen Uitdrukken", "description": "Ik wil graag, ik zou willen — expressing desires politely", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u1-l5", "title": "Arranging to Meet", "titleNl": "Afspreken", "description": "Setting times, places, and confirming appointments", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u1-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 1 content", "xpReward": 90, "estimatedMinutes": 10, "exercises": [] }
+    ]},
+    { "id": "b1-u2", "title": "At Work", "titleNl": "Op het Werk", "description": "Professional Dutch — emails, meetings, and workplace communication", "theme": "professional", "color": "#3b82f6", "order": 18, "level": "B1", "lessons": [
+      { "id": "b1-u2-l1", "title": "Professional Introductions", "titleNl": "Professionele Introducties", "description": "Formal introductions and professional small talk", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u2-l2", "title": "Writing Emails", "titleNl": "E-mails Schrijven", "description": "Formal and informal email language in Dutch", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u2-l3", "title": "In a Meeting", "titleNl": "In een Vergadering", "description": "Meeting vocabulary: agenda, actiepunt, rondvraag", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u2-l4", "title": "Giving Opinions", "titleNl": "Meningen Geven", "description": "Expressing and defending your opinion professionally", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u2-l5", "title": "Telephone Dutch", "titleNl": "Telefoneren in het Nederlands", "description": "Phone conversations, leaving messages, transferring calls", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u2-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 2 content", "xpReward": 90, "estimatedMinutes": 10, "exercises": [] }
+    ]},
+    { "id": "b1-u3", "title": "Dutch Culture & Traditions", "titleNl": "Nederlandse Cultuur en Tradities", "description": "Understand Dutch culture, celebrate Dutch holidays, and fit in like a local", "theme": "culture", "color": "#f97316", "order": 19, "level": "B1", "lessons": [
+      { "id": "b1-u3-l1", "title": "Sinterklaas", "titleNl": "Sinterklaas", "description": "The beloved Dutch tradition — December 5th celebration", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u3-l2", "title": "Koningsdag & National Holidays", "titleNl": "Koningsdag en Nationale Feestdagen", "description": "King's Day, Liberation Day, and other Dutch celebrations", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u3-l3", "title": "Dutch Directness", "titleNl": "Nederlandse Directheid", "description": "The Dutch communication style — why directness is a virtue", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u3-l4", "title": "Going Dutch", "titleNl": "Ieder Betaalt Zijn Eigen Deel", "description": "Dutch social customs around money, splitting bills", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u3-l5", "title": "Food Culture", "titleNl": "Eetcultuur", "description": "Stamppot, stroopwafels, hagelslag — iconic Dutch foods", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u3-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 3 content", "xpReward": 90, "estimatedMinutes": 10, "exercises": [] }
+    ]},
+    { "id": "b1-u4", "title": "News & Current Events", "titleNl": "Nieuws en Actualiteiten", "description": "Read Dutch headlines, discuss current events, and express opinions on the news", "theme": "media", "color": "#ec4899", "order": 20, "level": "B1", "lessons": [
+      { "id": "b1-u4-l1", "title": "Reading Headlines", "titleNl": "Koppen Lezen", "description": "Understanding Dutch newspaper and online news headlines", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u4-l2", "title": "Discussing the News", "titleNl": "Over het Nieuws Praten", "description": "Talking about current events — vocabulary and phrases", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u4-l3", "title": "Dutch Media", "titleNl": "Nederlandse Media", "description": "NOS, newspapers, and Dutch media landscape", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u4-l4", "title": "Expressing Opinions", "titleNl": "Meningen Uitdrukken", "description": "Agree, disagree, and nuance your views in Dutch", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u4-l5", "title": "Social Issues", "titleNl": "Maatschappelijke Vraagstukken", "description": "Discussing social topics relevant to life in the Netherlands", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u4-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 4 content", "xpReward": 90, "estimatedMinutes": 10, "exercises": [] }
+    ]},
+    { "id": "b1-u5", "title": "Travel & Holidays", "titleNl": "Reizen en Vakanties", "description": "Book trips, navigate airports, check into hotels, and describe your travels", "theme": "travel", "color": "#14b8a6", "order": 21, "level": "B1", "lessons": [
+      { "id": "b1-u5-l1", "title": "Planning a Trip", "titleNl": "Een Reis Plannen", "description": "Booking flights, trains, and accommodation", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u5-l2", "title": "At the Airport", "titleNl": "Op het Vliegveld", "description": "Check-in, boarding, and airport vocabulary", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u5-l3", "title": "At the Hotel", "titleNl": "In het Hotel", "description": "Checking in, room requests, and hotel phrases", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u5-l4", "title": "Describing Holidays", "titleNl": "Vakanties Beschrijven", "description": "Talking about past and future holidays", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u5-l5", "title": "Travel Problems", "titleNl": "Reisproblemen", "description": "Lost luggage, delays, and dealing with problems abroad", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u5-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 5 content", "xpReward": 90, "estimatedMinutes": 10, "exercises": [] }
+    ]},
+    { "id": "b1-u6", "title": "Conditionals & Hypotheticals", "titleNl": "Conditionele Zinnen", "description": "Express conditions, hypotheticals, and wishes using als...dan and zou", "theme": "grammar", "color": "#8b5cf6", "order": 22, "level": "B1", "lessons": [
+      { "id": "b1-u6-l1", "title": "Real Conditions", "titleNl": "Reële Condities", "description": "Als het regent, neem ik een paraplu — real if-then sentences", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u6-l2", "title": "Hypotheticals with zou", "titleNl": "Hypothetische Zinnen met zou", "description": "Als ik rijk was, zou ik... — hypothetical situations", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u6-l3", "title": "Expressing Wishes", "titleNl": "Wensen Uitdrukken", "description": "Ik wou dat..., Ik had liever... — wishing things were different", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u6-l4", "title": "Relative Clauses", "titleNl": "Betrekkelijke Bijzinnen", "description": "die vs dat — which/that relative clauses in Dutch", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u6-l5", "title": "Complex Sentences", "titleNl": "Complexe Zinnen", "description": "Connecting ideas with omdat, want, hoewel, terwijl", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u6-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 6 content", "xpReward": 90, "estimatedMinutes": 10, "exercises": [] }
+    ]},
+    { "id": "b1-u7", "title": "Relationships & Emotions", "titleNl": "Relaties en Emoties", "description": "Talk about feelings, relationships, and personal experiences with nuance", "theme": "emotions", "color": "#f43f5e", "order": 23, "level": "B1", "lessons": [
+      { "id": "b1-u7-l1", "title": "Emotions & Feelings", "titleNl": "Emoties en Gevoelens", "description": "Blij, verdrietig, boos, bang — the full emotional vocabulary", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u7-l2", "title": "Relationships", "titleNl": "Relaties", "description": "Friendship, romance, and falling out — relationship language", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u7-l3", "title": "Giving Compliments", "titleNl": "Complimenten Geven", "description": "Dutch compliments — less gushing than English, more sincere", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u7-l4", "title": "Apologising & Forgiving", "titleNl": "Sorry Zeggen en Vergeven", "description": "Apologising sincerely and accepting apologies in Dutch", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u7-l5", "title": "Expressing Empathy", "titleNl": "Empathie Uitdrukken", "description": "Listening, supporting, and showing you understand", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u7-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 7 content", "xpReward": 90, "estimatedMinutes": 10, "exercises": [] }
+    ]},
+    { "id": "b1-u8", "title": "Dutch Bureaucracy & Admin", "titleNl": "Nederlandse Bureaucratie", "description": "Navigate the practical side of Dutch life — DigiD, gemeente, zorgverzekering", "theme": "admin", "color": "#6366f1", "order": 24, "level": "B1", "lessons": [
+      { "id": "b1-u8-l1", "title": "Registering in the Netherlands", "titleNl": "Inschrijven in Nederland", "description": "BSN, gemeente registration, and getting settled", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u8-l2", "title": "Healthcare System", "titleNl": "Het Zorgstelsel", "description": "Zorgverzekering, huisarts, eigen risico — understanding Dutch healthcare", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u8-l3", "title": "Banking & Finance", "titleNl": "Bankieren en Financiën", "description": "Opening a bank account, iDEAL, and Dutch financial vocabulary", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u8-l4", "title": "Formal Letters & Forms", "titleNl": "Formele Brieven en Formulieren", "description": "Writing formal Dutch letters and filling in forms correctly", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u8-l5", "title": "DigiD & Online Services", "titleNl": "DigiD en Online Diensten", "description": "Navigating Dutch government websites and digital services", "xpReward": 70, "estimatedMinutes": 8, "exercises": [] },
+      { "id": "b1-u8-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 8 content", "xpReward": 90, "estimatedMinutes": 10, "exercises": [] }
+    ]}
+  ]
+}

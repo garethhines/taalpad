@@ -1,1 +1,4842 @@
-{"id":"A1","title":"Stub","description":"","color":"#94a3b8","units":[]}
+{
+  "id": "A1",
+  "title": "Beginner",
+  "description": "Build real conversational ability — colors, family, food, time, transport, and shopping",
+  "color": "#8b5cf6",
+  "units": [
+    {
+      "id": "a1-u1",
+      "title": "Colors & Descriptions",
+      "titleNl": "Kleuren en Beschrijvingen",
+      "description": "Describe the world around you using colors and adjectives",
+      "theme": "colors",
+      "color": "#ec4899",
+      "order": 5,
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "a1-u1-l1",
+          "title": "Colors",
+          "titleNl": "Kleuren",
+          "description": "Learn all the essential Dutch colors",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u1-l1-e1",
+              "type": "multiple_choice",
+              "question": "What color is 'rood'?",
+              "dutch": "rood",
+              "options": [
+                "blue",
+                "red",
+                "green",
+                "yellow"
+              ],
+              "correctAnswer": "red"
+            },
+            {
+              "id": "a1-u1-l1-e2",
+              "type": "multiple_choice",
+              "question": "What color is 'geel'?",
+              "dutch": "geel",
+              "options": [
+                "grey",
+                "pink",
+                "yellow",
+                "orange"
+              ],
+              "correctAnswer": "yellow"
+            },
+            {
+              "id": "a1-u1-l1-e3",
+              "type": "translation_to_en",
+              "dutch": "blauw",
+              "correctAnswer": "blue"
+            },
+            {
+              "id": "a1-u1-l1-e4",
+              "type": "translation_to_en",
+              "dutch": "groen",
+              "correctAnswer": "green"
+            },
+            {
+              "id": "a1-u1-l1-e5",
+              "type": "translation_to_nl",
+              "english": "white",
+              "correctAnswer": "wit"
+            },
+            {
+              "id": "a1-u1-l1-e6",
+              "type": "translation_to_nl",
+              "english": "black",
+              "correctAnswer": "zwart"
+            },
+            {
+              "id": "a1-u1-l1-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "rood",
+                  "english": "red"
+                },
+                {
+                  "dutch": "blauw",
+                  "english": "blue"
+                },
+                {
+                  "dutch": "groen",
+                  "english": "green"
+                },
+                {
+                  "dutch": "geel",
+                  "english": "yellow"
+                }
+              ]
+            },
+            {
+              "id": "a1-u1-l1-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "wit",
+                  "english": "white"
+                },
+                {
+                  "dutch": "zwart",
+                  "english": "black"
+                },
+                {
+                  "dutch": "oranje",
+                  "english": "orange"
+                },
+                {
+                  "dutch": "paars",
+                  "english": "purple"
+                }
+              ]
+            },
+            {
+              "id": "a1-u1-l1-e9",
+              "type": "listening",
+              "dutch": "paars",
+              "question": "What color did you hear?",
+              "options": [
+                "roze",
+                "paars",
+                "bruin",
+                "grijs"
+              ],
+              "correctAnswer": "paars"
+            },
+            {
+              "id": "a1-u1-l1-e10",
+              "type": "fill_blank",
+              "sentence": "De lucht is ___.",
+              "options": [
+                "blauw",
+                "rood",
+                "groen",
+                "geel"
+              ],
+              "correctAnswer": "blauw",
+              "translation": "The sky is ___."
+            }
+          ]
+        },
+        {
+          "id": "a1-u1-l2",
+          "title": "Describing Objects",
+          "titleNl": "Objecten Beschrijven",
+          "description": "Use colors and adjectives to describe everyday objects",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u1-l2-e1",
+              "type": "multiple_choice",
+              "question": "How do you say 'the red car'?",
+              "options": [
+                "de rood auto",
+                "de rode auto",
+                "het rode auto",
+                "de rode wagen"
+              ],
+              "correctAnswer": "de rode auto"
+            },
+            {
+              "id": "a1-u1-l2-e2",
+              "type": "multiple_choice",
+              "question": "What does 'een geel huis' mean?",
+              "options": [
+                "a yellow car",
+                "a yellow house",
+                "the yellow house",
+                "a green house"
+              ],
+              "correctAnswer": "a yellow house"
+            },
+            {
+              "id": "a1-u1-l2-e3",
+              "type": "translation_to_en",
+              "dutch": "de groene fiets",
+              "correctAnswer": "the green bike",
+              "acceptedAnswers": [
+                "the green bicycle",
+                "the green bike"
+              ]
+            },
+            {
+              "id": "a1-u1-l2-e4",
+              "type": "translation_to_nl",
+              "english": "the white cat",
+              "correctAnswer": "de witte kat"
+            },
+            {
+              "id": "a1-u1-l2-e5",
+              "type": "translation_to_nl",
+              "english": "a black dog",
+              "correctAnswer": "een zwarte hond"
+            },
+            {
+              "id": "a1-u1-l2-e6",
+              "type": "fill_blank",
+              "sentence": "Ik heb een ___ auto.",
+              "options": [
+                "rode",
+                "rood",
+                "roodt",
+                "rodes"
+              ],
+              "correctAnswer": "rode",
+              "translation": "I have a red car."
+            },
+            {
+              "id": "a1-u1-l2-e7",
+              "type": "fill_blank",
+              "sentence": "Het ___ huis is groot.",
+              "options": [
+                "gele",
+                "geel",
+                "geles",
+                "geele"
+              ],
+              "correctAnswer": "gele",
+              "translation": "The yellow house is big."
+            },
+            {
+              "id": "a1-u1-l2-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "de rode auto",
+                  "english": "the red car"
+                },
+                {
+                  "dutch": "het groene huis",
+                  "english": "the green house"
+                },
+                {
+                  "dutch": "een blauwe fiets",
+                  "english": "a blue bike"
+                },
+                {
+                  "dutch": "de witte kat",
+                  "english": "the white cat"
+                }
+              ]
+            },
+            {
+              "id": "a1-u1-l2-e9",
+              "type": "sentence_order",
+              "words": [
+                "De",
+                "rode",
+                "auto",
+                "is",
+                "snel."
+              ],
+              "correctAnswer": "De rode auto is snel.",
+              "translation": "The red car is fast."
+            },
+            {
+              "id": "a1-u1-l2-e10",
+              "type": "listening",
+              "dutch": "een geel huis",
+              "question": "What did you hear?",
+              "options": [
+                "een groen huis",
+                "een geel huis",
+                "een blauw huis",
+                "een rood huis"
+              ],
+              "correctAnswer": "een geel huis"
+            }
+          ]
+        },
+        {
+          "id": "a1-u1-l3",
+          "title": "Opposites",
+          "titleNl": "Tegenstellingen",
+          "description": "Learn key adjective opposites used in everyday Dutch",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u1-l3-e1",
+              "type": "multiple_choice",
+              "question": "What is the opposite of 'groot' (big)?",
+              "dutch": "groot",
+              "options": [
+                "snel",
+                "klein",
+                "warm",
+                "licht"
+              ],
+              "correctAnswer": "klein"
+            },
+            {
+              "id": "a1-u1-l3-e2",
+              "type": "multiple_choice",
+              "question": "What does 'langzaam' mean?",
+              "dutch": "langzaam",
+              "options": [
+                "fast",
+                "warm",
+                "slow",
+                "dark"
+              ],
+              "correctAnswer": "slow"
+            },
+            {
+              "id": "a1-u1-l3-e3",
+              "type": "translation_to_en",
+              "dutch": "warm",
+              "correctAnswer": "warm",
+              "acceptedAnswers": [
+                "warm",
+                "hot"
+              ]
+            },
+            {
+              "id": "a1-u1-l3-e4",
+              "type": "translation_to_en",
+              "dutch": "goedkoop",
+              "correctAnswer": "cheap",
+              "acceptedAnswers": [
+                "cheap",
+                "inexpensive"
+              ]
+            },
+            {
+              "id": "a1-u1-l3-e5",
+              "type": "translation_to_nl",
+              "english": "difficult",
+              "correctAnswer": "moeilijk"
+            },
+            {
+              "id": "a1-u1-l3-e6",
+              "type": "translation_to_nl",
+              "english": "happy",
+              "correctAnswer": "vrolijk",
+              "acceptedAnswers": [
+                "vrolijk",
+                "blij"
+              ]
+            },
+            {
+              "id": "a1-u1-l3-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "groot",
+                  "english": "big"
+                },
+                {
+                  "dutch": "klein",
+                  "english": "small"
+                },
+                {
+                  "dutch": "snel",
+                  "english": "fast"
+                },
+                {
+                  "dutch": "langzaam",
+                  "english": "slow"
+                }
+              ]
+            },
+            {
+              "id": "a1-u1-l3-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "warm",
+                  "english": "warm"
+                },
+                {
+                  "dutch": "koud",
+                  "english": "cold"
+                },
+                {
+                  "dutch": "licht",
+                  "english": "light"
+                },
+                {
+                  "dutch": "donker",
+                  "english": "dark"
+                }
+              ]
+            },
+            {
+              "id": "a1-u1-l3-e9",
+              "type": "fill_blank",
+              "sentence": "Deze tas is erg ___, niet goedkoop.",
+              "options": [
+                "duur",
+                "groot",
+                "klein",
+                "snel"
+              ],
+              "correctAnswer": "duur",
+              "translation": "This bag is very expensive, not cheap."
+            },
+            {
+              "id": "a1-u1-l3-e10",
+              "type": "sentence_order",
+              "words": [
+                "Het",
+                "weer",
+                "is",
+                "warm",
+                "vandaag."
+              ],
+              "correctAnswer": "Het weer is warm vandaag.",
+              "translation": "The weather is warm today."
+            }
+          ]
+        },
+        {
+          "id": "a1-u1-l4",
+          "title": "Describing People",
+          "titleNl": "Mensen Beschrijven",
+          "description": "Describe people's appearance and personality",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u1-l4-e1",
+              "type": "multiple_choice",
+              "question": "What does 'lang' mean?",
+              "dutch": "lang",
+              "options": [
+                "short",
+                "young",
+                "tall",
+                "old"
+              ],
+              "correctAnswer": "tall"
+            },
+            {
+              "id": "a1-u1-l4-e2",
+              "type": "multiple_choice",
+              "question": "How do you say 'she is friendly'?",
+              "options": [
+                "zij is verlegen",
+                "zij is grappig",
+                "zij is vriendelijk",
+                "zij is serieus"
+              ],
+              "correctAnswer": "zij is vriendelijk"
+            },
+            {
+              "id": "a1-u1-l4-e3",
+              "type": "translation_to_en",
+              "dutch": "jong",
+              "correctAnswer": "young"
+            },
+            {
+              "id": "a1-u1-l4-e4",
+              "type": "translation_to_en",
+              "dutch": "aardig",
+              "correctAnswer": "kind",
+              "acceptedAnswers": [
+                "kind",
+                "nice"
+              ]
+            },
+            {
+              "id": "a1-u1-l4-e5",
+              "type": "translation_to_nl",
+              "english": "funny",
+              "correctAnswer": "grappig"
+            },
+            {
+              "id": "a1-u1-l4-e6",
+              "type": "translation_to_nl",
+              "english": "shy",
+              "correctAnswer": "verlegen"
+            },
+            {
+              "id": "a1-u1-l4-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "lang",
+                  "english": "tall"
+                },
+                {
+                  "dutch": "kort",
+                  "english": "short"
+                },
+                {
+                  "dutch": "jong",
+                  "english": "young"
+                },
+                {
+                  "dutch": "oud",
+                  "english": "old"
+                }
+              ]
+            },
+            {
+              "id": "a1-u1-l4-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "knap",
+                  "english": "handsome/pretty"
+                },
+                {
+                  "dutch": "aardig",
+                  "english": "kind"
+                },
+                {
+                  "dutch": "grappig",
+                  "english": "funny"
+                },
+                {
+                  "dutch": "serieus",
+                  "english": "serious"
+                }
+              ]
+            },
+            {
+              "id": "a1-u1-l4-e9",
+              "type": "fill_blank",
+              "sentence": "Mijn broer is heel ___.",
+              "options": [
+                "grappig",
+                "groot",
+                "blauw",
+                "duur"
+              ],
+              "correctAnswer": "grappig",
+              "translation": "My brother is very funny."
+            },
+            {
+              "id": "a1-u1-l4-e10",
+              "type": "listening",
+              "dutch": "zij is aardig en vriendelijk",
+              "question": "What did you hear about her?",
+              "options": [
+                "she is shy and serious",
+                "she is kind and friendly",
+                "she is tall and young",
+                "she is funny and old"
+              ],
+              "correctAnswer": "she is kind and friendly"
+            }
+          ]
+        },
+        {
+          "id": "a1-u1-l5",
+          "title": "Describing Your Home",
+          "titleNl": "Je Huis Beschrijven",
+          "description": "Combine colors, adjectives and nouns to describe your living space",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u1-l5-e1",
+              "type": "multiple_choice",
+              "question": "What does 'gezellig' mean?",
+              "dutch": "gezellig",
+              "options": [
+                "modern",
+                "cozy",
+                "dark",
+                "big"
+              ],
+              "correctAnswer": "cozy"
+            },
+            {
+              "id": "a1-u1-l5-e2",
+              "type": "multiple_choice",
+              "question": "How do you say 'a small bathroom'?",
+              "options": [
+                "een grote badkamer",
+                "een klein badkamer",
+                "een kleine badkamer",
+                "een kleine woonkamer"
+              ],
+              "correctAnswer": "een kleine badkamer"
+            },
+            {
+              "id": "a1-u1-l5-e3",
+              "type": "translation_to_en",
+              "dutch": "de grote keuken",
+              "correctAnswer": "the big kitchen",
+              "acceptedAnswers": [
+                "the big kitchen",
+                "the large kitchen"
+              ]
+            },
+            {
+              "id": "a1-u1-l5-e4",
+              "type": "translation_to_en",
+              "dutch": "de lichte woonkamer",
+              "correctAnswer": "the bright living room",
+              "acceptedAnswers": [
+                "the bright living room",
+                "the light living room"
+              ]
+            },
+            {
+              "id": "a1-u1-l5-e5",
+              "type": "translation_to_nl",
+              "english": "a cozy house",
+              "correctAnswer": "een gezellig huis"
+            },
+            {
+              "id": "a1-u1-l5-e6",
+              "type": "translation_to_nl",
+              "english": "a modern kitchen",
+              "correctAnswer": "een moderne keuken"
+            },
+            {
+              "id": "a1-u1-l5-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "de woonkamer",
+                  "english": "the living room"
+                },
+                {
+                  "dutch": "de slaapkamer",
+                  "english": "the bedroom"
+                },
+                {
+                  "dutch": "de badkamer",
+                  "english": "the bathroom"
+                },
+                {
+                  "dutch": "de keuken",
+                  "english": "the kitchen"
+                }
+              ]
+            },
+            {
+              "id": "a1-u1-l5-e8",
+              "type": "fill_blank",
+              "sentence": "Onze woonkamer is heel ___.",
+              "options": [
+                "gezellig",
+                "moeilijk",
+                "goedkoop",
+                "verlegen"
+              ],
+              "correctAnswer": "gezellig",
+              "translation": "Our living room is very cozy."
+            },
+            {
+              "id": "a1-u1-l5-e9",
+              "type": "sentence_order",
+              "words": [
+                "Mijn",
+                "slaapkamer",
+                "is",
+                "klein",
+                "maar",
+                "gezellig."
+              ],
+              "correctAnswer": "Mijn slaapkamer is klein maar gezellig.",
+              "translation": "My bedroom is small but cozy."
+            },
+            {
+              "id": "a1-u1-l5-e10",
+              "type": "listening",
+              "dutch": "een grote lichte keuken",
+              "question": "What did you hear?",
+              "options": [
+                "een kleine donkere keuken",
+                "een grote lichte keuken",
+                "een moderne kleine keuken",
+                "een gezellige oude keuken"
+              ],
+              "correctAnswer": "een grote lichte keuken"
+            }
+          ]
+        },
+        {
+          "id": "a1-u1-l6",
+          "title": "Unit Review",
+          "titleNl": "Herhaling Kleuren en Beschrijvingen",
+          "description": "Review colors, adjectives, opposites, and descriptions",
+          "xpReward": 80,
+          "estimatedMinutes": 10,
+          "exercises": [
+            {
+              "id": "a1-u1-l6-e1",
+              "type": "multiple_choice",
+              "question": "What color is 'paars'?",
+              "dutch": "paars",
+              "options": [
+                "pink",
+                "orange",
+                "purple",
+                "grey"
+              ],
+              "correctAnswer": "purple"
+            },
+            {
+              "id": "a1-u1-l6-e2",
+              "type": "multiple_choice",
+              "question": "Which sentence is grammatically correct?",
+              "options": [
+                "de rood fiets",
+                "de rode fiets",
+                "het rode fiets",
+                "een rood fietsen"
+              ],
+              "correctAnswer": "de rode fiets"
+            },
+            {
+              "id": "a1-u1-l6-e3",
+              "type": "translation_to_en",
+              "dutch": "vrolijk",
+              "correctAnswer": "happy",
+              "acceptedAnswers": [
+                "happy",
+                "cheerful",
+                "joyful"
+              ]
+            },
+            {
+              "id": "a1-u1-l6-e4",
+              "type": "translation_to_en",
+              "dutch": "de donkere slaapkamer",
+              "correctAnswer": "the dark bedroom"
+            },
+            {
+              "id": "a1-u1-l6-e5",
+              "type": "translation_to_nl",
+              "english": "the cheap bag",
+              "correctAnswer": "de goedkope tas"
+            },
+            {
+              "id": "a1-u1-l6-e6",
+              "type": "translation_to_nl",
+              "english": "she is tall and slim",
+              "correctAnswer": "zij is lang en slank"
+            },
+            {
+              "id": "a1-u1-l6-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "roze",
+                  "english": "pink"
+                },
+                {
+                  "dutch": "bruin",
+                  "english": "brown"
+                },
+                {
+                  "dutch": "grijs",
+                  "english": "grey"
+                },
+                {
+                  "dutch": "oranje",
+                  "english": "orange"
+                }
+              ]
+            },
+            {
+              "id": "a1-u1-l6-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "duur",
+                  "english": "expensive"
+                },
+                {
+                  "dutch": "goedkoop",
+                  "english": "cheap"
+                },
+                {
+                  "dutch": "makkelijk",
+                  "english": "easy"
+                },
+                {
+                  "dutch": "moeilijk",
+                  "english": "difficult"
+                }
+              ]
+            },
+            {
+              "id": "a1-u1-l6-e9",
+              "type": "fill_blank",
+              "sentence": "De ___ hond is aardig.",
+              "options": [
+                "zwarte",
+                "zwart",
+                "zwarts",
+                "zwarte"
+              ],
+              "correctAnswer": "zwarte",
+              "translation": "The black dog is kind."
+            },
+            {
+              "id": "a1-u1-l6-e10",
+              "type": "fill_blank",
+              "sentence": "Hij is ___, niet verdrietig.",
+              "options": [
+                "vrolijk",
+                "langzaam",
+                "klein",
+                "donker"
+              ],
+              "correctAnswer": "vrolijk",
+              "translation": "He is happy, not sad."
+            },
+            {
+              "id": "a1-u1-l6-e11",
+              "type": "sentence_order",
+              "words": [
+                "Het",
+                "huis",
+                "is",
+                "groot",
+                "en",
+                "modern."
+              ],
+              "correctAnswer": "Het huis is groot en modern.",
+              "translation": "The house is big and modern."
+            },
+            {
+              "id": "a1-u1-l6-e12",
+              "type": "listening",
+              "dutch": "de grote witte hond",
+              "question": "What did you hear?",
+              "options": [
+                "de kleine zwarte hond",
+                "de grote witte hond",
+                "de grote zwarte kat",
+                "de kleine witte kat"
+              ],
+              "correctAnswer": "de grote witte hond"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1-u2",
+      "title": "Family & People",
+      "titleNl": "Familie en Mensen",
+      "description": "Talk about your family and the people in your life",
+      "theme": "family",
+      "color": "#6366f1",
+      "order": 6,
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "a1-u2-l1",
+          "title": "Immediate Family",
+          "titleNl": "Direct Familie",
+          "description": "Learn the Dutch words for your closest family members",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u2-l1-e1",
+              "type": "multiple_choice",
+              "question": "What does 'vader' mean?",
+              "dutch": "vader",
+              "options": [
+                "mother",
+                "brother",
+                "father",
+                "sister"
+              ],
+              "correctAnswer": "father"
+            },
+            {
+              "id": "a1-u2-l1-e2",
+              "type": "multiple_choice",
+              "question": "What does 'gezin' mean?",
+              "dutch": "gezin",
+              "options": [
+                "family (extended)",
+                "nuclear family",
+                "parents",
+                "children"
+              ],
+              "correctAnswer": "nuclear family"
+            },
+            {
+              "id": "a1-u2-l1-e3",
+              "type": "translation_to_en",
+              "dutch": "moeder",
+              "correctAnswer": "mother",
+              "acceptedAnswers": [
+                "mother",
+                "mom",
+                "mum"
+              ]
+            },
+            {
+              "id": "a1-u2-l1-e4",
+              "type": "translation_to_en",
+              "dutch": "ouders",
+              "correctAnswer": "parents"
+            },
+            {
+              "id": "a1-u2-l1-e5",
+              "type": "translation_to_nl",
+              "english": "sister",
+              "correctAnswer": "zus",
+              "acceptedAnswers": [
+                "zus",
+                "zusje"
+              ]
+            },
+            {
+              "id": "a1-u2-l1-e6",
+              "type": "translation_to_nl",
+              "english": "children",
+              "correctAnswer": "kinderen"
+            },
+            {
+              "id": "a1-u2-l1-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "vader",
+                  "english": "father"
+                },
+                {
+                  "dutch": "moeder",
+                  "english": "mother"
+                },
+                {
+                  "dutch": "broer",
+                  "english": "brother"
+                },
+                {
+                  "dutch": "zus",
+                  "english": "sister"
+                }
+              ]
+            },
+            {
+              "id": "a1-u2-l1-e8",
+              "type": "fill_blank",
+              "sentence": "Mijn ___ heet Jan.",
+              "options": [
+                "vader",
+                "zus",
+                "baby",
+                "ouders"
+              ],
+              "correctAnswer": "vader",
+              "translation": "My father is called Jan."
+            },
+            {
+              "id": "a1-u2-l1-e9",
+              "type": "sentence_order",
+              "words": [
+                "Ik",
+                "heb",
+                "een",
+                "broer",
+                "en",
+                "een",
+                "zus."
+              ],
+              "correctAnswer": "Ik heb een broer en een zus.",
+              "translation": "I have a brother and a sister."
+            },
+            {
+              "id": "a1-u2-l1-e10",
+              "type": "listening",
+              "dutch": "mijn moeder en vader",
+              "question": "What did you hear?",
+              "options": [
+                "mijn broer en zus",
+                "mijn opa en oma",
+                "mijn moeder en vader",
+                "mijn kind en baby"
+              ],
+              "correctAnswer": "mijn moeder en vader"
+            }
+          ]
+        },
+        {
+          "id": "a1-u2-l2",
+          "title": "Extended Family",
+          "titleNl": "Verdere Familie",
+          "description": "Learn the Dutch words for your extended family members",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u2-l2-e1",
+              "type": "multiple_choice",
+              "question": "What does 'opa' mean?",
+              "dutch": "opa",
+              "options": [
+                "uncle",
+                "father",
+                "grandfather",
+                "nephew"
+              ],
+              "correctAnswer": "grandfather"
+            },
+            {
+              "id": "a1-u2-l2-e2",
+              "type": "multiple_choice",
+              "question": "What does 'nicht' mean?",
+              "dutch": "nicht",
+              "options": [
+                "nephew",
+                "aunt",
+                "niece or female cousin",
+                "grandmother"
+              ],
+              "correctAnswer": "niece or female cousin"
+            },
+            {
+              "id": "a1-u2-l2-e3",
+              "type": "translation_to_en",
+              "dutch": "oma",
+              "correctAnswer": "grandmother",
+              "acceptedAnswers": [
+                "grandmother",
+                "grandma",
+                "gran"
+              ]
+            },
+            {
+              "id": "a1-u2-l2-e4",
+              "type": "translation_to_en",
+              "dutch": "oom",
+              "correctAnswer": "uncle"
+            },
+            {
+              "id": "a1-u2-l2-e5",
+              "type": "translation_to_nl",
+              "english": "aunt",
+              "correctAnswer": "tante"
+            },
+            {
+              "id": "a1-u2-l2-e6",
+              "type": "translation_to_nl",
+              "english": "nephew or male cousin",
+              "correctAnswer": "neef"
+            },
+            {
+              "id": "a1-u2-l2-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "opa",
+                  "english": "grandfather"
+                },
+                {
+                  "dutch": "oma",
+                  "english": "grandmother"
+                },
+                {
+                  "dutch": "oom",
+                  "english": "uncle"
+                },
+                {
+                  "dutch": "tante",
+                  "english": "aunt"
+                }
+              ]
+            },
+            {
+              "id": "a1-u2-l2-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "neef",
+                  "english": "nephew/male cousin"
+                },
+                {
+                  "dutch": "nicht",
+                  "english": "niece/female cousin"
+                },
+                {
+                  "dutch": "schoonvader",
+                  "english": "father-in-law"
+                },
+                {
+                  "dutch": "schoonmoeder",
+                  "english": "mother-in-law"
+                }
+              ]
+            },
+            {
+              "id": "a1-u2-l2-e9",
+              "type": "fill_blank",
+              "sentence": "Mijn ___ woont in Rotterdam.",
+              "options": [
+                "opa",
+                "vader",
+                "broer",
+                "man"
+              ],
+              "correctAnswer": "opa",
+              "translation": "My grandfather lives in Rotterdam."
+            },
+            {
+              "id": "a1-u2-l2-e10",
+              "type": "listening",
+              "dutch": "mijn oma en opa",
+              "question": "Who did you hear?",
+              "options": [
+                "mijn vader en moeder",
+                "mijn oom en tante",
+                "mijn oma en opa",
+                "mijn neef en nicht"
+              ],
+              "correctAnswer": "mijn oma en opa"
+            }
+          ]
+        },
+        {
+          "id": "a1-u2-l3",
+          "title": "Relationships",
+          "titleNl": "Relaties",
+          "description": "Talk about the people in your life and your relationships",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u2-l3-e1",
+              "type": "multiple_choice",
+              "question": "What does 'vriend' mean in context 'Dit is mijn vriend Tom'?",
+              "dutch": "Dit is mijn vriend Tom.",
+              "options": [
+                "This is my female friend Tom",
+                "This is my boyfriend Tom",
+                "This is my colleague Tom",
+                "This is my neighbor Tom"
+              ],
+              "correctAnswer": "This is my boyfriend Tom"
+            },
+            {
+              "id": "a1-u2-l3-e2",
+              "type": "multiple_choice",
+              "question": "How do you say 'my female neighbor'?",
+              "options": [
+                "mijn buurman",
+                "mijn buur",
+                "mijn buurvrouw",
+                "mijn kennis"
+              ],
+              "correctAnswer": "mijn buurvrouw"
+            },
+            {
+              "id": "a1-u2-l3-e3",
+              "type": "translation_to_en",
+              "dutch": "mijn vrouw",
+              "correctAnswer": "my wife",
+              "acceptedAnswers": [
+                "my wife",
+                "my woman"
+              ]
+            },
+            {
+              "id": "a1-u2-l3-e4",
+              "type": "translation_to_en",
+              "dutch": "collega",
+              "correctAnswer": "colleague",
+              "acceptedAnswers": [
+                "colleague",
+                "coworker",
+                "work colleague"
+              ]
+            },
+            {
+              "id": "a1-u2-l3-e5",
+              "type": "translation_to_nl",
+              "english": "my husband",
+              "correctAnswer": "mijn man"
+            },
+            {
+              "id": "a1-u2-l3-e6",
+              "type": "translation_to_nl",
+              "english": "acquaintance",
+              "correctAnswer": "kennis"
+            },
+            {
+              "id": "a1-u2-l3-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "vriend",
+                  "english": "friend/boyfriend"
+                },
+                {
+                  "dutch": "vriendin",
+                  "english": "girlfriend/female friend"
+                },
+                {
+                  "dutch": "man",
+                  "english": "husband"
+                },
+                {
+                  "dutch": "vrouw",
+                  "english": "wife"
+                }
+              ]
+            },
+            {
+              "id": "a1-u2-l3-e8",
+              "type": "fill_blank",
+              "sentence": "Dit is mijn ___ Sara.",
+              "options": [
+                "vriendin",
+                "vriend",
+                "buurman",
+                "collega"
+              ],
+              "correctAnswer": "vriendin",
+              "translation": "This is my girlfriend Sara."
+            },
+            {
+              "id": "a1-u2-l3-e9",
+              "type": "sentence_order",
+              "words": [
+                "Mijn",
+                "collega",
+                "is",
+                "heel",
+                "aardig."
+              ],
+              "correctAnswer": "Mijn collega is heel aardig.",
+              "translation": "My colleague is very kind."
+            },
+            {
+              "id": "a1-u2-l3-e10",
+              "type": "listening",
+              "dutch": "mijn buurman en zijn vrouw",
+              "question": "What did you hear?",
+              "options": [
+                "mijn collega en zijn vriend",
+                "mijn buurman en zijn vrouw",
+                "mijn man en zijn buurvrouw",
+                "mijn kennis en haar man"
+              ],
+              "correctAnswer": "mijn buurman en zijn vrouw"
+            }
+          ]
+        },
+        {
+          "id": "a1-u2-l4",
+          "title": "Possessives",
+          "titleNl": "Bezittelijke Voornaamwoorden",
+          "description": "Use possessive pronouns correctly in Dutch",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u2-l4-e1",
+              "type": "multiple_choice",
+              "question": "How do you say 'her house is big'?",
+              "options": [
+                "zijn huis is groot",
+                "haar huis is groot",
+                "ons huis is groot",
+                "jouw huis is groot"
+              ],
+              "correctAnswer": "haar huis is groot"
+            },
+            {
+              "id": "a1-u2-l4-e2",
+              "type": "multiple_choice",
+              "question": "Which possessive is used before a 'het' word when meaning 'our'?",
+              "options": [
+                "onze",
+                "ons",
+                "hun",
+                "jullie"
+              ],
+              "correctAnswer": "ons"
+            },
+            {
+              "id": "a1-u2-l4-e3",
+              "type": "translation_to_en",
+              "dutch": "jouw vader",
+              "correctAnswer": "your father",
+              "acceptedAnswers": [
+                "your father",
+                "your dad"
+              ]
+            },
+            {
+              "id": "a1-u2-l4-e4",
+              "type": "translation_to_en",
+              "dutch": "zijn auto is blauw",
+              "correctAnswer": "his car is blue"
+            },
+            {
+              "id": "a1-u2-l4-e5",
+              "type": "translation_to_nl",
+              "english": "my brother",
+              "correctAnswer": "mijn broer"
+            },
+            {
+              "id": "a1-u2-l4-e6",
+              "type": "translation_to_nl",
+              "english": "our parents live in Amsterdam",
+              "correctAnswer": "onze ouders wonen in Amsterdam"
+            },
+            {
+              "id": "a1-u2-l4-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "mijn",
+                  "english": "my"
+                },
+                {
+                  "dutch": "jouw",
+                  "english": "your (informal)"
+                },
+                {
+                  "dutch": "zijn",
+                  "english": "his"
+                },
+                {
+                  "dutch": "haar",
+                  "english": "her"
+                }
+              ]
+            },
+            {
+              "id": "a1-u2-l4-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "ons",
+                  "english": "our (het words)"
+                },
+                {
+                  "dutch": "onze",
+                  "english": "our (de words)"
+                },
+                {
+                  "dutch": "jullie",
+                  "english": "your (plural)"
+                },
+                {
+                  "dutch": "hun",
+                  "english": "their"
+                }
+              ]
+            },
+            {
+              "id": "a1-u2-l4-e9",
+              "type": "fill_blank",
+              "sentence": "___ huis is groot.",
+              "options": [
+                "Ons",
+                "Onze",
+                "Mijn",
+                "Haar"
+              ],
+              "correctAnswer": "Ons",
+              "translation": "Our house is big."
+            },
+            {
+              "id": "a1-u2-l4-e10",
+              "type": "sentence_order",
+              "words": [
+                "Hoe",
+                "heet",
+                "jouw",
+                "vader?"
+              ],
+              "correctAnswer": "Hoe heet jouw vader?",
+              "translation": "What is your father called?"
+            }
+          ]
+        },
+        {
+          "id": "a1-u2-l5",
+          "title": "Talking About Family",
+          "titleNl": "Over Familie Praten",
+          "description": "Use natural sentences to talk about your family",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u2-l5-e1",
+              "type": "multiple_choice",
+              "question": "How do you say 'I am an only child'?",
+              "options": [
+                "Ik heb geen broers",
+                "Ik ben enig kind",
+                "Ik heb een klein gezin",
+                "Ik ben een kind"
+              ],
+              "correctAnswer": "Ik ben enig kind"
+            },
+            {
+              "id": "a1-u2-l5-e2",
+              "type": "multiple_choice",
+              "question": "What does 'Zijn jullie getrouwd?' mean?",
+              "dutch": "Zijn jullie getrouwd?",
+              "options": [
+                "Are you divorced?",
+                "Are you single?",
+                "Are you married?",
+                "Do you have children?"
+              ],
+              "correctAnswer": "Are you married?"
+            },
+            {
+              "id": "a1-u2-l5-e3",
+              "type": "translation_to_en",
+              "dutch": "Ik heb twee broers.",
+              "correctAnswer": "I have two brothers."
+            },
+            {
+              "id": "a1-u2-l5-e4",
+              "type": "translation_to_en",
+              "dutch": "Ik ben gescheiden.",
+              "correctAnswer": "I am divorced."
+            },
+            {
+              "id": "a1-u2-l5-e5",
+              "type": "translation_to_nl",
+              "english": "How big is your family?",
+              "correctAnswer": "Hoe groot is jouw familie?"
+            },
+            {
+              "id": "a1-u2-l5-e6",
+              "type": "translation_to_nl",
+              "english": "My mother is a teacher.",
+              "correctAnswer": "Mijn moeder is lerares."
+            },
+            {
+              "id": "a1-u2-l5-e7",
+              "type": "fill_blank",
+              "sentence": "Ik ben ___, ik heb geen man of vrouw.",
+              "options": [
+                "single",
+                "getrouwd",
+                "gescheiden",
+                "enig kind"
+              ],
+              "correctAnswer": "single",
+              "translation": "I am single, I have no husband or wife."
+            },
+            {
+              "id": "a1-u2-l5-e8",
+              "type": "fill_blank",
+              "sentence": "Waar wonen jouw ___?",
+              "options": [
+                "ouders",
+                "gezin",
+                "familie",
+                "man"
+              ],
+              "correctAnswer": "ouders",
+              "translation": "Where do your parents live?"
+            },
+            {
+              "id": "a1-u2-l5-e9",
+              "type": "sentence_order",
+              "words": [
+                "Mijn",
+                "moeder",
+                "is",
+                "lerares",
+                "in",
+                "Amsterdam."
+              ],
+              "correctAnswer": "Mijn moeder is lerares in Amsterdam.",
+              "translation": "My mother is a teacher in Amsterdam."
+            },
+            {
+              "id": "a1-u2-l5-e10",
+              "type": "listening",
+              "dutch": "Ik heb twee broers en één zus.",
+              "question": "What did you hear?",
+              "options": [
+                "I have one brother and two sisters.",
+                "I have two brothers and one sister.",
+                "I have two sisters and one brother.",
+                "I have three brothers."
+              ],
+              "correctAnswer": "I have two brothers and one sister."
+            }
+          ]
+        },
+        {
+          "id": "a1-u2-l6",
+          "title": "Unit Review",
+          "titleNl": "Herhaling Familie",
+          "description": "Review family vocabulary, relationships, and possessives",
+          "xpReward": 80,
+          "estimatedMinutes": 10,
+          "exercises": [
+            {
+              "id": "a1-u2-l6-e1",
+              "type": "multiple_choice",
+              "question": "What does 'schoonmoeder' mean?",
+              "dutch": "schoonmoeder",
+              "options": [
+                "stepmother",
+                "mother-in-law",
+                "grandmother",
+                "aunt"
+              ],
+              "correctAnswer": "mother-in-law"
+            },
+            {
+              "id": "a1-u2-l6-e2",
+              "type": "multiple_choice",
+              "question": "Which sentence is correct?",
+              "options": [
+                "Ons huis is groot.",
+                "Onze huis is groot.",
+                "Hun huis is groot.",
+                "Both A and C"
+              ],
+              "correctAnswer": "Both A and C"
+            },
+            {
+              "id": "a1-u2-l6-e3",
+              "type": "translation_to_en",
+              "dutch": "mijn tante en oom",
+              "correctAnswer": "my aunt and uncle"
+            },
+            {
+              "id": "a1-u2-l6-e4",
+              "type": "translation_to_en",
+              "dutch": "haar vriendin is aardig",
+              "correctAnswer": "her (girl)friend is kind",
+              "acceptedAnswers": [
+                "her girlfriend is kind",
+                "her female friend is kind",
+                "her friend is kind"
+              ]
+            },
+            {
+              "id": "a1-u2-l6-e5",
+              "type": "translation_to_nl",
+              "english": "Where does your grandfather live?",
+              "correctAnswer": "Waar woont jouw opa?"
+            },
+            {
+              "id": "a1-u2-l6-e6",
+              "type": "translation_to_nl",
+              "english": "I am married and have two children.",
+              "correctAnswer": "Ik ben getrouwd en heb twee kinderen."
+            },
+            {
+              "id": "a1-u2-l6-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "gezin",
+                  "english": "nuclear family"
+                },
+                {
+                  "dutch": "familie",
+                  "english": "family (extended)"
+                },
+                {
+                  "dutch": "ouders",
+                  "english": "parents"
+                },
+                {
+                  "dutch": "kinderen",
+                  "english": "children"
+                }
+              ]
+            },
+            {
+              "id": "a1-u2-l6-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "getrouwd",
+                  "english": "married"
+                },
+                {
+                  "dutch": "single",
+                  "english": "single"
+                },
+                {
+                  "dutch": "gescheiden",
+                  "english": "divorced"
+                },
+                {
+                  "dutch": "enig kind",
+                  "english": "only child"
+                }
+              ]
+            },
+            {
+              "id": "a1-u2-l6-e9",
+              "type": "fill_blank",
+              "sentence": "Dit is ___ broer.",
+              "options": [
+                "zijn",
+                "haar",
+                "mijn",
+                "hun"
+              ],
+              "correctAnswer": "mijn",
+              "translation": "This is my brother."
+            },
+            {
+              "id": "a1-u2-l6-e10",
+              "type": "fill_blank",
+              "sentence": "Mijn ___ woont in een klein dorp.",
+              "options": [
+                "oma",
+                "vriendin",
+                "collega",
+                "buurvrouw"
+              ],
+              "correctAnswer": "oma",
+              "translation": "My grandmother lives in a small village."
+            },
+            {
+              "id": "a1-u2-l6-e11",
+              "type": "sentence_order",
+              "words": [
+                "Zijn",
+                "jullie",
+                "getrouwd",
+                "of",
+                "single?"
+              ],
+              "correctAnswer": "Zijn jullie getrouwd of single?",
+              "translation": "Are you married or single?"
+            },
+            {
+              "id": "a1-u2-l6-e12",
+              "type": "listening",
+              "dutch": "mijn neef en zijn vriendin",
+              "question": "What did you hear?",
+              "options": [
+                "mijn nicht en haar vriend",
+                "mijn neef en zijn vriendin",
+                "mijn broer en zijn collega",
+                "mijn oom en zijn vrouw"
+              ],
+              "correctAnswer": "mijn neef en zijn vriendin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1-u3",
+      "title": "Food & Drink",
+      "titleNl": "Eten en Drinken",
+      "description": "Order food and drink and talk about what you like to eat",
+      "theme": "food",
+      "color": "#f97316",
+      "order": 7,
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "a1-u3-l1",
+          "title": "Basic Food",
+          "titleNl": "Basisvoedsel",
+          "description": "Learn essential Dutch food vocabulary",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u3-l1-e1",
+              "type": "multiple_choice",
+              "question": "What does 'brood' mean?",
+              "dutch": "brood",
+              "options": [
+                "milk",
+                "butter",
+                "bread",
+                "cheese"
+              ],
+              "correctAnswer": "bread"
+            },
+            {
+              "id": "a1-u3-l1-e2",
+              "type": "multiple_choice",
+              "question": "What does 'aardappelen' mean?",
+              "dutch": "aardappelen",
+              "options": [
+                "pasta",
+                "rice",
+                "potatoes",
+                "vegetables"
+              ],
+              "correctAnswer": "potatoes"
+            },
+            {
+              "id": "a1-u3-l1-e3",
+              "type": "translation_to_en",
+              "dutch": "kaas",
+              "correctAnswer": "cheese"
+            },
+            {
+              "id": "a1-u3-l1-e4",
+              "type": "translation_to_en",
+              "dutch": "groente",
+              "correctAnswer": "vegetables",
+              "acceptedAnswers": [
+                "vegetables",
+                "vegetable"
+              ]
+            },
+            {
+              "id": "a1-u3-l1-e5",
+              "type": "translation_to_nl",
+              "english": "fish",
+              "correctAnswer": "vis"
+            },
+            {
+              "id": "a1-u3-l1-e6",
+              "type": "translation_to_nl",
+              "english": "chicken",
+              "correctAnswer": "kip"
+            },
+            {
+              "id": "a1-u3-l1-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "brood",
+                  "english": "bread"
+                },
+                {
+                  "dutch": "kaas",
+                  "english": "cheese"
+                },
+                {
+                  "dutch": "boter",
+                  "english": "butter"
+                },
+                {
+                  "dutch": "melk",
+                  "english": "milk"
+                }
+              ]
+            },
+            {
+              "id": "a1-u3-l1-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "vlees",
+                  "english": "meat"
+                },
+                {
+                  "dutch": "vis",
+                  "english": "fish"
+                },
+                {
+                  "dutch": "rijst",
+                  "english": "rice"
+                },
+                {
+                  "dutch": "soep",
+                  "english": "soup"
+                }
+              ]
+            },
+            {
+              "id": "a1-u3-l1-e9",
+              "type": "fill_blank",
+              "sentence": "Ik eet elke dag ___.",
+              "options": [
+                "brood",
+                "water",
+                "blauw",
+                "vriendelijk"
+              ],
+              "correctAnswer": "brood",
+              "translation": "I eat bread every day."
+            },
+            {
+              "id": "a1-u3-l1-e10",
+              "type": "listening",
+              "dutch": "brood met kaas en boter",
+              "question": "What did you hear?",
+              "options": [
+                "brood met vlees en melk",
+                "brood met kaas en boter",
+                "rijst met groente en kip",
+                "pasta met soep en vis"
+              ],
+              "correctAnswer": "brood met kaas en boter"
+            }
+          ]
+        },
+        {
+          "id": "a1-u3-l2",
+          "title": "Drinks",
+          "titleNl": "Dranken",
+          "description": "Learn Dutch vocabulary for all kinds of drinks",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u3-l2-e1",
+              "type": "multiple_choice",
+              "question": "What does 'sinaasappelsap' mean?",
+              "dutch": "sinaasappelsap",
+              "options": [
+                "apple juice",
+                "lemonade",
+                "orange juice",
+                "soft drink"
+              ],
+              "correctAnswer": "orange juice"
+            },
+            {
+              "id": "a1-u3-l2-e2",
+              "type": "multiple_choice",
+              "question": "How do you say 'a glass of water'?",
+              "options": [
+                "een fles water",
+                "een kopje water",
+                "een glas water",
+                "een beker water"
+              ],
+              "correctAnswer": "een glas water"
+            },
+            {
+              "id": "a1-u3-l2-e3",
+              "type": "translation_to_en",
+              "dutch": "koffie",
+              "correctAnswer": "coffee"
+            },
+            {
+              "id": "a1-u3-l2-e4",
+              "type": "translation_to_en",
+              "dutch": "frisdrank",
+              "correctAnswer": "soft drink",
+              "acceptedAnswers": [
+                "soft drink",
+                "soda",
+                "fizzy drink"
+              ]
+            },
+            {
+              "id": "a1-u3-l2-e5",
+              "type": "translation_to_nl",
+              "english": "tea",
+              "correctAnswer": "thee"
+            },
+            {
+              "id": "a1-u3-l2-e6",
+              "type": "translation_to_nl",
+              "english": "wine",
+              "correctAnswer": "wijn"
+            },
+            {
+              "id": "a1-u3-l2-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "koffie",
+                  "english": "coffee"
+                },
+                {
+                  "dutch": "thee",
+                  "english": "tea"
+                },
+                {
+                  "dutch": "bier",
+                  "english": "beer"
+                },
+                {
+                  "dutch": "wijn",
+                  "english": "wine"
+                }
+              ]
+            },
+            {
+              "id": "a1-u3-l2-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "sap",
+                  "english": "juice"
+                },
+                {
+                  "dutch": "melk",
+                  "english": "milk"
+                },
+                {
+                  "dutch": "limonade",
+                  "english": "lemonade"
+                },
+                {
+                  "dutch": "frisdrank",
+                  "english": "soft drink"
+                }
+              ]
+            },
+            {
+              "id": "a1-u3-l2-e9",
+              "type": "fill_blank",
+              "sentence": "Ik drink graag ___ 's ochtends.",
+              "options": [
+                "koffie",
+                "bier",
+                "wijn",
+                "sinaasappelsap"
+              ],
+              "correctAnswer": "koffie",
+              "translation": "I like to drink coffee in the morning."
+            },
+            {
+              "id": "a1-u3-l2-e10",
+              "type": "listening",
+              "dutch": "een fles water en een glas wijn",
+              "question": "What did you hear?",
+              "options": [
+                "een glas water en een fles bier",
+                "een kopje koffie en een glas thee",
+                "een fles water en een glas wijn",
+                "een glas sap en een fles melk"
+              ],
+              "correctAnswer": "een fles water en een glas wijn"
+            }
+          ]
+        },
+        {
+          "id": "a1-u3-l3",
+          "title": "At the Café",
+          "titleNl": "In het Café",
+          "description": "Order food and drinks at a Dutch café",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u3-l3-e1",
+              "type": "multiple_choice",
+              "question": "How do you politely ask for a coffee?",
+              "options": [
+                "Ik wil koffie.",
+                "Geef mij koffie.",
+                "Mag ik een koffie?",
+                "Koffie, alsjeblieft?"
+              ],
+              "correctAnswer": "Mag ik een koffie?"
+            },
+            {
+              "id": "a1-u3-l3-e2",
+              "type": "multiple_choice",
+              "question": "What does 'de rekening' mean?",
+              "dutch": "de rekening",
+              "options": [
+                "the menu",
+                "the waiter",
+                "the table",
+                "the bill"
+              ],
+              "correctAnswer": "the bill"
+            },
+            {
+              "id": "a1-u3-l3-e3",
+              "type": "translation_to_en",
+              "dutch": "Ik wil graag een kopje thee.",
+              "correctAnswer": "I would like a cup of tea.",
+              "acceptedAnswers": [
+                "I would like a cup of tea.",
+                "I'd like a cup of tea."
+              ]
+            },
+            {
+              "id": "a1-u3-l3-e4",
+              "type": "translation_to_en",
+              "dutch": "met melk en suiker",
+              "correctAnswer": "with milk and sugar"
+            },
+            {
+              "id": "a1-u3-l3-e5",
+              "type": "translation_to_nl",
+              "english": "Can I have the bill?",
+              "correctAnswer": "Mag ik de rekening?"
+            },
+            {
+              "id": "a1-u3-l3-e6",
+              "type": "translation_to_nl",
+              "english": "Do you have a table for two?",
+              "correctAnswer": "Heeft u een tafel voor twee?"
+            },
+            {
+              "id": "a1-u3-l3-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "alsjeblieft",
+                  "english": "please (informal)"
+                },
+                {
+                  "dutch": "alstublieft",
+                  "english": "please (formal)"
+                },
+                {
+                  "dutch": "de rekening",
+                  "english": "the bill"
+                },
+                {
+                  "dutch": "een kopje koffie",
+                  "english": "a cup of coffee"
+                }
+              ]
+            },
+            {
+              "id": "a1-u3-l3-e8",
+              "type": "fill_blank",
+              "sentence": "Ik wil graag een koffie ___ melk.",
+              "options": [
+                "met",
+                "voor",
+                "van",
+                "en"
+              ],
+              "correctAnswer": "met",
+              "translation": "I would like a coffee with milk."
+            },
+            {
+              "id": "a1-u3-l3-e9",
+              "type": "sentence_order",
+              "words": [
+                "Mag",
+                "ik",
+                "de",
+                "rekening,",
+                "alsjeblieft?"
+              ],
+              "correctAnswer": "Mag ik de rekening, alsjeblieft?",
+              "translation": "Can I have the bill, please?"
+            },
+            {
+              "id": "a1-u3-l3-e10",
+              "type": "listening",
+              "dutch": "Ik wil graag een kopje koffie met melk.",
+              "question": "What did the person order?",
+              "options": [
+                "a cup of tea with sugar",
+                "a cup of coffee with milk",
+                "a glass of juice with ice",
+                "a cup of coffee with sugar"
+              ],
+              "correctAnswer": "a cup of coffee with milk"
+            }
+          ]
+        },
+        {
+          "id": "a1-u3-l4",
+          "title": "Likes & Dislikes",
+          "titleNl": "Lekker en Niet Lekker",
+          "description": "Express what food you love and what you can't stand",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u3-l4-e1",
+              "type": "multiple_choice",
+              "question": "What is the best translation of 'Ik lust geen vis'?",
+              "dutch": "Ik lust geen vis.",
+              "options": [
+                "I don't want fish.",
+                "I don't eat fish.",
+                "I don't like to eat fish.",
+                "I hate fish."
+              ],
+              "correctAnswer": "I don't like to eat fish."
+            },
+            {
+              "id": "a1-u3-l4-e2",
+              "type": "multiple_choice",
+              "question": "What does 'lekker' mean?",
+              "dutch": "lekker",
+              "options": [
+                "gross",
+                "expensive",
+                "tasty/nice",
+                "healthy"
+              ],
+              "correctAnswer": "tasty/nice"
+            },
+            {
+              "id": "a1-u3-l4-e3",
+              "type": "translation_to_en",
+              "dutch": "Ik hou van kaas.",
+              "correctAnswer": "I love cheese.",
+              "acceptedAnswers": [
+                "I love cheese.",
+                "I like cheese."
+              ]
+            },
+            {
+              "id": "a1-u3-l4-e4",
+              "type": "translation_to_en",
+              "dutch": "Mijn lievelingseten is pasta.",
+              "correctAnswer": "My favourite food is pasta.",
+              "acceptedAnswers": [
+                "My favourite food is pasta.",
+                "My favorite food is pasta."
+              ]
+            },
+            {
+              "id": "a1-u3-l4-e5",
+              "type": "translation_to_nl",
+              "english": "I like to eat vegetables.",
+              "correctAnswer": "Ik lust groente.",
+              "acceptedAnswers": [
+                "Ik lust groente.",
+                "Ik eet graag groente."
+              ]
+            },
+            {
+              "id": "a1-u3-l4-e6",
+              "type": "translation_to_nl",
+              "english": "What do you like to eat most?",
+              "correctAnswer": "Wat eet jij het liefst?"
+            },
+            {
+              "id": "a1-u3-l4-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "lekker",
+                  "english": "tasty/nice"
+                },
+                {
+                  "dutch": "vies",
+                  "english": "gross/disgusting"
+                },
+                {
+                  "dutch": "ik lust",
+                  "english": "I like to eat"
+                },
+                {
+                  "dutch": "ik hou van",
+                  "english": "I love"
+                }
+              ]
+            },
+            {
+              "id": "a1-u3-l4-e8",
+              "type": "fill_blank",
+              "sentence": "Chocolade is heel ___!",
+              "options": [
+                "lekker",
+                "vies",
+                "moeilijk",
+                "goedkoop"
+              ],
+              "correctAnswer": "lekker",
+              "translation": "Chocolate is very tasty!"
+            },
+            {
+              "id": "a1-u3-l4-e9",
+              "type": "sentence_order",
+              "words": [
+                "Ik",
+                "lust",
+                "geen",
+                "vlees."
+              ],
+              "correctAnswer": "Ik lust geen vlees.",
+              "translation": "I don't like to eat meat."
+            },
+            {
+              "id": "a1-u3-l4-e10",
+              "type": "listening",
+              "dutch": "Ik hou van koffie maar ik lust geen thee.",
+              "question": "What did you hear?",
+              "options": [
+                "I love tea but I don't like coffee.",
+                "I love coffee but I don't like to drink tea.",
+                "I like milk but not coffee.",
+                "I love tea and coffee."
+              ],
+              "correctAnswer": "I love coffee but I don't like to drink tea."
+            }
+          ]
+        },
+        {
+          "id": "a1-u3-l5",
+          "title": "Eating Verbs & Meals",
+          "titleNl": "Eetwoorden en Maaltijden",
+          "description": "Talk about meals and use eating verbs correctly",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u3-l5-e1",
+              "type": "multiple_choice",
+              "question": "What does 'ontbijt' mean?",
+              "dutch": "ontbijt",
+              "options": [
+                "lunch",
+                "dinner",
+                "breakfast",
+                "snack"
+              ],
+              "correctAnswer": "breakfast"
+            },
+            {
+              "id": "a1-u3-l5-e2",
+              "type": "multiple_choice",
+              "question": "Which conjugation is correct for 'jij' with the verb 'drinken'?",
+              "options": [
+                "jij drink",
+                "jij drinkt",
+                "jij drinken",
+                "jij drinke"
+              ],
+              "correctAnswer": "jij drinkt"
+            },
+            {
+              "id": "a1-u3-l5-e3",
+              "type": "translation_to_en",
+              "dutch": "koken",
+              "correctAnswer": "to cook",
+              "acceptedAnswers": [
+                "to cook",
+                "cooking"
+              ]
+            },
+            {
+              "id": "a1-u3-l5-e4",
+              "type": "translation_to_en",
+              "dutch": "'s avonds",
+              "correctAnswer": "in the evening",
+              "acceptedAnswers": [
+                "in the evening",
+                "at night",
+                "evenings"
+              ]
+            },
+            {
+              "id": "a1-u3-l5-e5",
+              "type": "translation_to_nl",
+              "english": "dinner",
+              "correctAnswer": "avondeten",
+              "acceptedAnswers": [
+                "avondeten",
+                "diner"
+              ]
+            },
+            {
+              "id": "a1-u3-l5-e6",
+              "type": "translation_to_nl",
+              "english": "We eat at six o'clock.",
+              "correctAnswer": "We eten om zes uur."
+            },
+            {
+              "id": "a1-u3-l5-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "ontbijt",
+                  "english": "breakfast"
+                },
+                {
+                  "dutch": "lunch",
+                  "english": "lunch"
+                },
+                {
+                  "dutch": "avondeten",
+                  "english": "dinner"
+                },
+                {
+                  "dutch": "koken",
+                  "english": "to cook"
+                }
+              ]
+            },
+            {
+              "id": "a1-u3-l5-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "'s ochtends",
+                  "english": "in the morning"
+                },
+                {
+                  "dutch": "'s middags",
+                  "english": "at midday"
+                },
+                {
+                  "dutch": "'s avonds",
+                  "english": "in the evening"
+                },
+                {
+                  "dutch": "elke dag",
+                  "english": "every day"
+                }
+              ]
+            },
+            {
+              "id": "a1-u3-l5-e9",
+              "type": "fill_blank",
+              "sentence": "Wat eet jij ___?",
+              "options": [
+                "'s ochtends",
+                "eten",
+                "koken",
+                "drinken"
+              ],
+              "correctAnswer": "'s ochtends",
+              "translation": "What do you eat in the morning?"
+            },
+            {
+              "id": "a1-u3-l5-e10",
+              "type": "sentence_order",
+              "words": [
+                "Ik",
+                "eet",
+                "elke",
+                "dag",
+                "brood",
+                "'s",
+                "ochtends."
+              ],
+              "correctAnswer": "Ik eet elke dag brood 's ochtends.",
+              "translation": "I eat bread every morning."
+            }
+          ]
+        },
+        {
+          "id": "a1-u3-l6",
+          "title": "Unit Review",
+          "titleNl": "Herhaling Eten en Drinken",
+          "description": "Review food, drinks, café ordering, and eating verbs",
+          "xpReward": 80,
+          "estimatedMinutes": 10,
+          "exercises": [
+            {
+              "id": "a1-u3-l6-e1",
+              "type": "multiple_choice",
+              "question": "How do you ask for the bill formally?",
+              "options": [
+                "Mag ik de rekening, alsjeblieft?",
+                "Mag ik de rekening, alstublieft?",
+                "Geef mij de rekening.",
+                "De rekening, alsjeblieft?"
+              ],
+              "correctAnswer": "Mag ik de rekening, alstublieft?"
+            },
+            {
+              "id": "a1-u3-l6-e2",
+              "type": "multiple_choice",
+              "question": "What is the difference between 'ik lust' and 'ik hou van'?",
+              "options": [
+                "There is no difference.",
+                "'Ik lust' is specifically for food; 'ik hou van' is more general love/liking.",
+                "'Ik hou van' is only for people.",
+                "'Ik lust' is formal and 'ik hou van' is informal."
+              ],
+              "correctAnswer": "'Ik lust' is specifically for food; 'ik hou van' is more general love/liking."
+            },
+            {
+              "id": "a1-u3-l6-e3",
+              "type": "translation_to_en",
+              "dutch": "Ik kook elke avond.",
+              "correctAnswer": "I cook every evening.",
+              "acceptedAnswers": [
+                "I cook every evening.",
+                "I cook every night."
+              ]
+            },
+            {
+              "id": "a1-u3-l6-e4",
+              "type": "translation_to_en",
+              "dutch": "een kopje thee met suiker",
+              "correctAnswer": "a cup of tea with sugar"
+            },
+            {
+              "id": "a1-u3-l6-e5",
+              "type": "translation_to_nl",
+              "english": "I would like a bottle of water.",
+              "correctAnswer": "Ik wil graag een fles water."
+            },
+            {
+              "id": "a1-u3-l6-e6",
+              "type": "translation_to_nl",
+              "english": "My favourite food is cheese.",
+              "correctAnswer": "Mijn lievelingseten is kaas."
+            },
+            {
+              "id": "a1-u3-l6-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "ei",
+                  "english": "egg"
+                },
+                {
+                  "dutch": "eieren",
+                  "english": "eggs"
+                },
+                {
+                  "dutch": "fruit",
+                  "english": "fruit"
+                },
+                {
+                  "dutch": "salade",
+                  "english": "salad"
+                }
+              ]
+            },
+            {
+              "id": "a1-u3-l6-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "eten",
+                  "english": "to eat"
+                },
+                {
+                  "dutch": "drinken",
+                  "english": "to drink"
+                },
+                {
+                  "dutch": "koken",
+                  "english": "to cook"
+                },
+                {
+                  "dutch": "lekker",
+                  "english": "tasty"
+                }
+              ]
+            },
+            {
+              "id": "a1-u3-l6-e9",
+              "type": "fill_blank",
+              "sentence": "Heeft u een tafel voor ___?",
+              "options": [
+                "twee",
+                "eten",
+                "koffie",
+                "rekening"
+              ],
+              "correctAnswer": "twee",
+              "translation": "Do you have a table for two?"
+            },
+            {
+              "id": "a1-u3-l6-e10",
+              "type": "fill_blank",
+              "sentence": "Ik ___ elke ochtend koffie.",
+              "options": [
+                "drink",
+                "drinkt",
+                "drinken",
+                "eet"
+              ],
+              "correctAnswer": "drink",
+              "translation": "I drink coffee every morning."
+            },
+            {
+              "id": "a1-u3-l6-e11",
+              "type": "sentence_order",
+              "words": [
+                "Wat",
+                "eet",
+                "jij",
+                "het",
+                "liefst?"
+              ],
+              "correctAnswer": "Wat eet jij het liefst?",
+              "translation": "What do you like to eat most?"
+            },
+            {
+              "id": "a1-u3-l6-e12",
+              "type": "listening",
+              "dutch": "Mag ik een koffie met melk en een stuk taart?",
+              "question": "What did the person order?",
+              "options": [
+                "a tea with sugar and a sandwich",
+                "a coffee with milk and a piece of cake",
+                "a coffee with sugar and a cookie",
+                "a juice and a piece of bread"
+              ],
+              "correctAnswer": "a coffee with milk and a piece of cake"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1-u4",
+      "title": "Days, Months & Time",
+      "titleNl": "Dagen, Maanden en Tijd",
+      "description": "Talk about days of the week, months, and tell the time in Dutch",
+      "theme": "time",
+      "color": "#14b8a6",
+      "order": 8,
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "a1-u4-l1",
+          "title": "Days of the Week",
+          "titleNl": "Dagen van de Week",
+          "description": "Learn the days of the week and talk about your weekly schedule",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u4-l1-e1",
+              "type": "multiple_choice",
+              "question": "Which day is 'woensdag'?",
+              "options": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday"
+              ],
+              "correctAnswer": "Wednesday"
+            },
+            {
+              "id": "a1-u4-l1-e2",
+              "type": "multiple_choice",
+              "question": "What does 'vrijdag' mean?",
+              "options": [
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+              ],
+              "correctAnswer": "Friday"
+            },
+            {
+              "id": "a1-u4-l1-e3",
+              "type": "translation_to_en",
+              "dutch": "donderdag",
+              "correctAnswer": "Thursday"
+            },
+            {
+              "id": "a1-u4-l1-e4",
+              "type": "translation_to_en",
+              "dutch": "zaterdag",
+              "correctAnswer": "Saturday"
+            },
+            {
+              "id": "a1-u4-l1-e5",
+              "type": "translation_to_nl",
+              "english": "Sunday",
+              "correctAnswer": "zondag"
+            },
+            {
+              "id": "a1-u4-l1-e6",
+              "type": "translation_to_nl",
+              "english": "Tuesday",
+              "correctAnswer": "dinsdag"
+            },
+            {
+              "id": "a1-u4-l1-e7",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "maandag",
+                  "english": "Monday"
+                },
+                {
+                  "dutch": "woensdag",
+                  "english": "Wednesday"
+                },
+                {
+                  "dutch": "vrijdag",
+                  "english": "Friday"
+                },
+                {
+                  "dutch": "zondag",
+                  "english": "Sunday"
+                }
+              ]
+            },
+            {
+              "id": "a1-u4-l1-e8",
+              "type": "fill_blank",
+              "sentence": "Op ___ ga ik naar school.",
+              "options": [
+                "maandag",
+                "zaterdag",
+                "zondag",
+                "vrijdag"
+              ],
+              "correctAnswer": "maandag",
+              "translation": "On ___ I go to school."
+            },
+            {
+              "id": "a1-u4-l1-e9",
+              "type": "sentence_order",
+              "words": [
+                "ik",
+                "Op",
+                "werk",
+                "maandag"
+              ],
+              "correctAnswer": "Op maandag werk ik.",
+              "translation": "On Monday I work."
+            },
+            {
+              "id": "a1-u4-l1-e10",
+              "type": "listening",
+              "dutch": "Wat doe jij op vrijdag?",
+              "question": "What is being asked?",
+              "options": [
+                "What do you do on Friday?",
+                "What do you do on Monday?",
+                "When do you work on Friday?",
+                "Do you work on Friday?"
+              ],
+              "correctAnswer": "What do you do on Friday?"
+            }
+          ]
+        },
+        {
+          "id": "a1-u4-l2",
+          "title": "Months of the Year",
+          "titleNl": "Maanden van het Jaar",
+          "description": "Learn all twelve months and talk about seasons and birthdays",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u4-l2-e1",
+              "type": "multiple_choice",
+              "question": "Which month is 'augustus'?",
+              "options": [
+                "June",
+                "July",
+                "August",
+                "September"
+              ],
+              "correctAnswer": "August"
+            },
+            {
+              "id": "a1-u4-l2-e2",
+              "type": "multiple_choice",
+              "question": "What does 'Wanneer is je verjaardag?' mean?",
+              "options": [
+                "How old are you?",
+                "When is your birthday?",
+                "Where were you born?",
+                "What month is it?"
+              ],
+              "correctAnswer": "When is your birthday?"
+            },
+            {
+              "id": "a1-u4-l2-e3",
+              "type": "multiple_choice",
+              "question": "Which season is 'lente'?",
+              "options": [
+                "Summer",
+                "Autumn",
+                "Winter",
+                "Spring"
+              ],
+              "correctAnswer": "Spring"
+            },
+            {
+              "id": "a1-u4-l2-e4",
+              "type": "translation_to_en",
+              "dutch": "januari",
+              "correctAnswer": "January"
+            },
+            {
+              "id": "a1-u4-l2-e5",
+              "type": "translation_to_en",
+              "dutch": "december",
+              "correctAnswer": "December"
+            },
+            {
+              "id": "a1-u4-l2-e6",
+              "type": "translation_to_nl",
+              "english": "March",
+              "correctAnswer": "maart"
+            },
+            {
+              "id": "a1-u4-l2-e7",
+              "type": "translation_to_nl",
+              "english": "October",
+              "correctAnswer": "oktober"
+            },
+            {
+              "id": "a1-u4-l2-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "februari",
+                  "english": "February"
+                },
+                {
+                  "dutch": "april",
+                  "english": "April"
+                },
+                {
+                  "dutch": "november",
+                  "english": "November"
+                },
+                {
+                  "dutch": "zomer",
+                  "english": "summer"
+                }
+              ]
+            },
+            {
+              "id": "a1-u4-l2-e9",
+              "type": "fill_blank",
+              "sentence": "Mijn verjaardag is in ___.",
+              "options": [
+                "maart",
+                "lente",
+                "maandag",
+                "vroeg"
+              ],
+              "correctAnswer": "maart",
+              "translation": "My birthday is in March."
+            },
+            {
+              "id": "a1-u4-l2-e10",
+              "type": "sentence_order",
+              "words": [
+                "januari",
+                "het",
+                "In",
+                "koud",
+                "is"
+              ],
+              "correctAnswer": "In januari is het koud.",
+              "translation": "In January it is cold."
+            }
+          ]
+        },
+        {
+          "id": "a1-u4-l3",
+          "title": "Telling the Time",
+          "titleNl": "De Tijd Vertellen",
+          "description": "Ask and tell the time in Dutch, including half hours and quarter hours",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u4-l3-e1",
+              "type": "multiple_choice",
+              "question": "What does 'Hoe laat is het?' mean?",
+              "options": [
+                "What day is it?",
+                "What time is it?",
+                "How late are you?",
+                "When does it start?"
+              ],
+              "correctAnswer": "What time is it?"
+            },
+            {
+              "id": "a1-u4-l3-e2",
+              "type": "multiple_choice",
+              "question": "What time is 'half drie'?",
+              "options": [
+                "3:00",
+                "3:30",
+                "2:30",
+                "2:15"
+              ],
+              "correctAnswer": "2:30"
+            },
+            {
+              "id": "a1-u4-l3-e3",
+              "type": "multiple_choice",
+              "question": "What does 'kwart over vier' mean?",
+              "options": [
+                "4:45",
+                "4:30",
+                "4:15",
+                "3:45"
+              ],
+              "correctAnswer": "4:15"
+            },
+            {
+              "id": "a1-u4-l3-e4",
+              "type": "multiple_choice",
+              "question": "How do you say 4:45 in Dutch?",
+              "options": [
+                "kwart over vier",
+                "kwart voor vijf",
+                "half vijf",
+                "tien voor vijf"
+              ],
+              "correctAnswer": "kwart voor vijf"
+            },
+            {
+              "id": "a1-u4-l3-e5",
+              "type": "translation_to_en",
+              "dutch": "Het is twee uur.",
+              "correctAnswer": "It is two o'clock.",
+              "acceptedAnswers": [
+                "It is two o'clock.",
+                "It's two o'clock."
+              ]
+            },
+            {
+              "id": "a1-u4-l3-e6",
+              "type": "translation_to_en",
+              "dutch": "tien over acht",
+              "correctAnswer": "ten past eight",
+              "acceptedAnswers": [
+                "ten past eight",
+                "8:10"
+              ]
+            },
+            {
+              "id": "a1-u4-l3-e7",
+              "type": "translation_to_nl",
+              "english": "at three o'clock",
+              "correctAnswer": "om drie uur"
+            },
+            {
+              "id": "a1-u4-l3-e8",
+              "type": "fill_blank",
+              "sentence": "Het is ___ drie.",
+              "options": [
+                "half",
+                "kwart",
+                "tien",
+                "over"
+              ],
+              "correctAnswer": "half",
+              "translation": "It is half past two. (2:30)"
+            },
+            {
+              "id": "a1-u4-l3-e9",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "kwart over",
+                  "english": "quarter past"
+                },
+                {
+                  "dutch": "kwart voor",
+                  "english": "quarter to"
+                },
+                {
+                  "dutch": "vijf voor negen",
+                  "english": "five to nine"
+                },
+                {
+                  "dutch": "half twee",
+                  "english": "half past one"
+                }
+              ]
+            },
+            {
+              "id": "a1-u4-l3-e10",
+              "type": "listening",
+              "dutch": "Het is kwart voor vijf.",
+              "question": "What time is it?",
+              "options": [
+                "5:15",
+                "5:45",
+                "4:45",
+                "4:15"
+              ],
+              "correctAnswer": "4:45"
+            }
+          ]
+        },
+        {
+          "id": "a1-u4-l4",
+          "title": "Daily Time Expressions",
+          "titleNl": "Tijdsuitdrukkingen",
+          "description": "Express frequency and parts of the day in Dutch",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u4-l4-e1",
+              "type": "multiple_choice",
+              "question": "What does \"'s avonds\" mean?",
+              "options": [
+                "in the morning",
+                "in the afternoon",
+                "in the evening",
+                "at night"
+              ],
+              "correctAnswer": "in the evening"
+            },
+            {
+              "id": "a1-u4-l4-e2",
+              "type": "multiple_choice",
+              "question": "What does 'nooit' mean?",
+              "options": [
+                "always",
+                "often",
+                "sometimes",
+                "never"
+              ],
+              "correctAnswer": "never"
+            },
+            {
+              "id": "a1-u4-l4-e3",
+              "type": "multiple_choice",
+              "question": "Which word means 'on time'?",
+              "options": [
+                "vroeg",
+                "laat",
+                "op tijd",
+                "te laat"
+              ],
+              "correctAnswer": "op tijd"
+            },
+            {
+              "id": "a1-u4-l4-e4",
+              "type": "translation_to_en",
+              "dutch": "'s ochtends",
+              "correctAnswer": "in the morning"
+            },
+            {
+              "id": "a1-u4-l4-e5",
+              "type": "translation_to_en",
+              "dutch": "elke dag",
+              "correctAnswer": "every day"
+            },
+            {
+              "id": "a1-u4-l4-e6",
+              "type": "translation_to_nl",
+              "english": "sometimes",
+              "correctAnswer": "soms"
+            },
+            {
+              "id": "a1-u4-l4-e7",
+              "type": "translation_to_nl",
+              "english": "early",
+              "correctAnswer": "vroeg"
+            },
+            {
+              "id": "a1-u4-l4-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "altijd",
+                  "english": "always"
+                },
+                {
+                  "dutch": "vaak",
+                  "english": "often"
+                },
+                {
+                  "dutch": "'s nachts",
+                  "english": "at night"
+                },
+                {
+                  "dutch": "te laat",
+                  "english": "too late"
+                }
+              ]
+            },
+            {
+              "id": "a1-u4-l4-e9",
+              "type": "fill_blank",
+              "sentence": "Ik ga ___ naar de sportschool.",
+              "options": [
+                "altijd",
+                "nooit",
+                "vroeg",
+                "laat"
+              ],
+              "correctAnswer": "altijd",
+              "translation": "I always go to the gym."
+            },
+            {
+              "id": "a1-u4-l4-e10",
+              "type": "sentence_order",
+              "words": [
+                "soms",
+                "avonds",
+                "lees",
+                "'s",
+                "ik"
+              ],
+              "correctAnswer": "Ik lees soms 's avonds.",
+              "translation": "I sometimes read in the evening."
+            }
+          ]
+        },
+        {
+          "id": "a1-u4-l5",
+          "title": "Talking About Schedules",
+          "titleNl": "Over Agenda's Praten",
+          "description": "Discuss schedules, opening hours, and appointments in Dutch",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u4-l5-e1",
+              "type": "multiple_choice",
+              "question": "What does 'Hoe lang duurt het?' mean?",
+              "options": [
+                "How far is it?",
+                "How long does it take?",
+                "When does it start?",
+                "How long have you been here?"
+              ],
+              "correctAnswer": "How long does it take?"
+            },
+            {
+              "id": "a1-u4-l5-e2",
+              "type": "multiple_choice",
+              "question": "What does 'Ik heb een afspraak.' mean?",
+              "options": [
+                "I have a question.",
+                "I have a meeting.",
+                "I have an appointment.",
+                "I have a ticket."
+              ],
+              "correctAnswer": "I have an appointment."
+            },
+            {
+              "id": "a1-u4-l5-e3",
+              "type": "multiple_choice",
+              "question": "How do you say 'The shop is open from nine to five'?",
+              "options": [
+                "De winkel is open van negen tot vijf.",
+                "De winkel is open om negen uur.",
+                "De winkel gaat open tot vijf.",
+                "De winkel is van negen open vijf."
+              ],
+              "correctAnswer": "De winkel is open van negen tot vijf."
+            },
+            {
+              "id": "a1-u4-l5-e4",
+              "type": "translation_to_en",
+              "dutch": "Wanneer vertrek je?",
+              "correctAnswer": "When do you leave?",
+              "acceptedAnswers": [
+                "When do you leave?",
+                "When are you leaving?"
+              ]
+            },
+            {
+              "id": "a1-u4-l5-e5",
+              "type": "translation_to_en",
+              "dutch": "De trein vertrekt om acht uur.",
+              "correctAnswer": "The train departs at eight o'clock.",
+              "acceptedAnswers": [
+                "The train departs at eight o'clock.",
+                "The train leaves at eight o'clock.",
+                "The train leaves at eight."
+              ]
+            },
+            {
+              "id": "a1-u4-l5-e6",
+              "type": "translation_to_nl",
+              "english": "It takes an hour.",
+              "correctAnswer": "Het duurt een uur."
+            },
+            {
+              "id": "a1-u4-l5-e7",
+              "type": "translation_to_nl",
+              "english": "I work on Monday.",
+              "correctAnswer": "Ik werk op maandag."
+            },
+            {
+              "id": "a1-u4-l5-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "vertrekken",
+                  "english": "to depart"
+                },
+                {
+                  "dutch": "duren",
+                  "english": "to take (time)"
+                },
+                {
+                  "dutch": "afspraak",
+                  "english": "appointment"
+                },
+                {
+                  "dutch": "open",
+                  "english": "open"
+                }
+              ]
+            },
+            {
+              "id": "a1-u4-l5-e9",
+              "type": "fill_blank",
+              "sentence": "De winkel is open ___ negen tot vijf.",
+              "options": [
+                "van",
+                "om",
+                "op",
+                "in"
+              ],
+              "correctAnswer": "van",
+              "translation": "The shop is open from nine to five."
+            },
+            {
+              "id": "a1-u4-l5-e10",
+              "type": "listening",
+              "dutch": "Ik heb een afspraak om drie uur.",
+              "question": "What does the speaker have at three o'clock?",
+              "options": [
+                "A meeting",
+                "An appointment",
+                "A train",
+                "A question"
+              ],
+              "correctAnswer": "An appointment"
+            }
+          ]
+        },
+        {
+          "id": "a1-u4-l6",
+          "title": "Unit Review",
+          "titleNl": "Herhaling Tijd",
+          "description": "Review days, months, telling the time, and schedule vocabulary",
+          "xpReward": 80,
+          "estimatedMinutes": 10,
+          "exercises": [
+            {
+              "id": "a1-u4-l6-e1",
+              "type": "multiple_choice",
+              "question": "What time is 'half elf'?",
+              "options": [
+                "11:30",
+                "11:00",
+                "10:30",
+                "10:00"
+              ],
+              "correctAnswer": "10:30"
+            },
+            {
+              "id": "a1-u4-l6-e2",
+              "type": "multiple_choice",
+              "question": "Which day comes after 'dinsdag'?",
+              "options": [
+                "maandag",
+                "woensdag",
+                "donderdag",
+                "vrijdag"
+              ],
+              "correctAnswer": "woensdag"
+            },
+            {
+              "id": "a1-u4-l6-e3",
+              "type": "multiple_choice",
+              "question": "What does \"'s middags\" mean?",
+              "options": [
+                "in the morning",
+                "in the afternoon",
+                "in the evening",
+                "at night"
+              ],
+              "correctAnswer": "in the afternoon"
+            },
+            {
+              "id": "a1-u4-l6-e4",
+              "type": "translation_to_en",
+              "dutch": "Mijn verjaardag is in juni.",
+              "correctAnswer": "My birthday is in June."
+            },
+            {
+              "id": "a1-u4-l6-e5",
+              "type": "translation_to_en",
+              "dutch": "kwart voor tien",
+              "correctAnswer": "quarter to ten",
+              "acceptedAnswers": [
+                "quarter to ten",
+                "9:45"
+              ]
+            },
+            {
+              "id": "a1-u4-l6-e6",
+              "type": "translation_to_nl",
+              "english": "Wednesday",
+              "correctAnswer": "woensdag"
+            },
+            {
+              "id": "a1-u4-l6-e7",
+              "type": "translation_to_nl",
+              "english": "It is never cold in July.",
+              "correctAnswer": "Het is nooit koud in juli."
+            },
+            {
+              "id": "a1-u4-l6-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "herfst",
+                  "english": "autumn"
+                },
+                {
+                  "dutch": "doordeweeks",
+                  "english": "weekdays"
+                },
+                {
+                  "dutch": "op tijd",
+                  "english": "on time"
+                },
+                {
+                  "dutch": "het weekend",
+                  "english": "the weekend"
+                }
+              ]
+            },
+            {
+              "id": "a1-u4-l6-e9",
+              "type": "fill_blank",
+              "sentence": "De trein vertrekt ___ acht uur.",
+              "options": [
+                "om",
+                "op",
+                "van",
+                "in"
+              ],
+              "correctAnswer": "om",
+              "translation": "The train departs at eight o'clock."
+            },
+            {
+              "id": "a1-u4-l6-e10",
+              "type": "sentence_order",
+              "words": [
+                "vrijdag",
+                "ik",
+                "Op",
+                "thuis",
+                "ben"
+              ],
+              "correctAnswer": "Op vrijdag ben ik thuis.",
+              "translation": "On Friday I am at home."
+            },
+            {
+              "id": "a1-u4-l6-e11",
+              "type": "listening",
+              "dutch": "Het is kwart over twee.",
+              "question": "What time is it?",
+              "options": [
+                "2:45",
+                "2:15",
+                "1:45",
+                "1:15"
+              ],
+              "correctAnswer": "2:15"
+            },
+            {
+              "id": "a1-u4-l6-e12",
+              "type": "multiple_choice",
+              "question": "What does 'Hoe laat is het?' mean?",
+              "options": [
+                "How long does it take?",
+                "What time is it?",
+                "When is your appointment?",
+                "How late do you work?"
+              ],
+              "correctAnswer": "What time is it?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1-u5",
+      "title": "Getting Around",
+      "titleNl": "Onderweg",
+      "description": "Navigate Dutch cities using public transport and asking for directions",
+      "theme": "transport",
+      "color": "#a855f7",
+      "order": 9,
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "a1-u5-l1",
+          "title": "Transport Types",
+          "titleNl": "Vervoersmiddelen",
+          "description": "Learn the vocabulary for different modes of transport in the Netherlands",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u5-l1-e1",
+              "type": "multiple_choice",
+              "question": "What is 'de fiets'?",
+              "options": [
+                "the car",
+                "the bus",
+                "the bicycle",
+                "the train"
+              ],
+              "correctAnswer": "the bicycle"
+            },
+            {
+              "id": "a1-u5-l1-e2",
+              "type": "multiple_choice",
+              "question": "How do you say 'by train' in Dutch?",
+              "options": [
+                "met de bus",
+                "met de fiets",
+                "met de trein",
+                "met de tram"
+              ],
+              "correctAnswer": "met de trein"
+            },
+            {
+              "id": "a1-u5-l1-e3",
+              "type": "multiple_choice",
+              "question": "What does 'te voet' mean?",
+              "options": [
+                "by car",
+                "by bike",
+                "on foot",
+                "by tram"
+              ],
+              "correctAnswer": "on foot"
+            },
+            {
+              "id": "a1-u5-l1-e4",
+              "type": "translation_to_en",
+              "dutch": "de metro",
+              "correctAnswer": "the metro",
+              "acceptedAnswers": [
+                "the metro",
+                "the subway",
+                "the underground"
+              ]
+            },
+            {
+              "id": "a1-u5-l1-e5",
+              "type": "translation_to_en",
+              "dutch": "de taxi",
+              "correctAnswer": "the taxi",
+              "acceptedAnswers": [
+                "the taxi",
+                "the cab"
+              ]
+            },
+            {
+              "id": "a1-u5-l1-e6",
+              "type": "translation_to_nl",
+              "english": "the car",
+              "correctAnswer": "de auto"
+            },
+            {
+              "id": "a1-u5-l1-e7",
+              "type": "translation_to_nl",
+              "english": "by bike",
+              "correctAnswer": "met de fiets"
+            },
+            {
+              "id": "a1-u5-l1-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "de trein",
+                  "english": "the train"
+                },
+                {
+                  "dutch": "de tram",
+                  "english": "the tram"
+                },
+                {
+                  "dutch": "rijden",
+                  "english": "to ride / to drive"
+                },
+                {
+                  "dutch": "lopen",
+                  "english": "to walk"
+                }
+              ]
+            },
+            {
+              "id": "a1-u5-l1-e9",
+              "type": "fill_blank",
+              "sentence": "Ik ga ___ de fiets naar mijn werk.",
+              "options": [
+                "met",
+                "op",
+                "in",
+                "van"
+              ],
+              "correctAnswer": "met",
+              "translation": "I go to work by bike."
+            },
+            {
+              "id": "a1-u5-l1-e10",
+              "type": "listening",
+              "dutch": "Ik ga met de trein naar Amsterdam.",
+              "question": "How does the speaker travel to Amsterdam?",
+              "options": [
+                "by bike",
+                "by car",
+                "by train",
+                "by bus"
+              ],
+              "correctAnswer": "by train"
+            }
+          ]
+        },
+        {
+          "id": "a1-u5-l2",
+          "title": "Directions",
+          "titleNl": "De Weg",
+          "description": "Learn directional vocabulary to navigate Dutch streets",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u5-l2-e1",
+              "type": "multiple_choice",
+              "question": "What does 'rechtdoor' mean?",
+              "options": [
+                "left",
+                "right",
+                "straight ahead",
+                "behind"
+              ],
+              "correctAnswer": "straight ahead"
+            },
+            {
+              "id": "a1-u5-l2-e2",
+              "type": "multiple_choice",
+              "question": "What does 'tegenover' mean?",
+              "options": [
+                "next to",
+                "behind",
+                "opposite",
+                "in front of"
+              ],
+              "correctAnswer": "opposite"
+            },
+            {
+              "id": "a1-u5-l2-e3",
+              "type": "multiple_choice",
+              "question": "How do you say 'the intersection' in Dutch?",
+              "options": [
+                "de rotonde",
+                "het kruispunt",
+                "de hoek",
+                "de straat"
+              ],
+              "correctAnswer": "het kruispunt"
+            },
+            {
+              "id": "a1-u5-l2-e4",
+              "type": "translation_to_en",
+              "dutch": "links",
+              "correctAnswer": "left"
+            },
+            {
+              "id": "a1-u5-l2-e5",
+              "type": "translation_to_en",
+              "dutch": "op de hoek",
+              "correctAnswer": "on the corner"
+            },
+            {
+              "id": "a1-u5-l2-e6",
+              "type": "translation_to_nl",
+              "english": "right",
+              "correctAnswer": "rechts"
+            },
+            {
+              "id": "a1-u5-l2-e7",
+              "type": "translation_to_nl",
+              "english": "behind",
+              "correctAnswer": "achter"
+            },
+            {
+              "id": "a1-u5-l2-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "naast",
+                  "english": "next to"
+                },
+                {
+                  "dutch": "voor",
+                  "english": "in front of"
+                },
+                {
+                  "dutch": "de rotonde",
+                  "english": "the roundabout"
+                },
+                {
+                  "dutch": "de tweede straat",
+                  "english": "the second street"
+                }
+              ]
+            },
+            {
+              "id": "a1-u5-l2-e9",
+              "type": "fill_blank",
+              "sentence": "De bank is ___ het postkantoor.",
+              "options": [
+                "tegenover",
+                "rechtdoor",
+                "links",
+                "achter"
+              ],
+              "correctAnswer": "tegenover",
+              "translation": "The bank is opposite the post office."
+            },
+            {
+              "id": "a1-u5-l2-e10",
+              "type": "sentence_order",
+              "words": [
+                "straat",
+                "de",
+                "eerste",
+                "Neem",
+                "links"
+              ],
+              "correctAnswer": "Neem de eerste straat links.",
+              "translation": "Take the first street on the left."
+            }
+          ]
+        },
+        {
+          "id": "a1-u5-l3",
+          "title": "Asking for Directions",
+          "titleNl": "De Weg Vragen",
+          "description": "Ask and give directions in Dutch using polite phrases",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u5-l3-e1",
+              "type": "multiple_choice",
+              "question": "What does 'Pardon, waar is het station?' mean?",
+              "options": [
+                "Excuse me, how far is the station?",
+                "Excuse me, where is the station?",
+                "Excuse me, is this the station?",
+                "Excuse me, when does the station open?"
+              ],
+              "correctAnswer": "Excuse me, where is the station?"
+            },
+            {
+              "id": "a1-u5-l3-e2",
+              "type": "multiple_choice",
+              "question": "What does 'Hoe kom ik bij het museum?' mean?",
+              "options": [
+                "Is the museum far?",
+                "How do I get to the museum?",
+                "Where is the museum?",
+                "How long does the museum take?"
+              ],
+              "correctAnswer": "How do I get to the museum?"
+            },
+            {
+              "id": "a1-u5-l3-e3",
+              "type": "multiple_choice",
+              "question": "Someone says 'U moet rechtsaf.' What should you do?",
+              "options": [
+                "Go straight ahead",
+                "Turn left",
+                "Turn right",
+                "Stop"
+              ],
+              "correctAnswer": "Turn right"
+            },
+            {
+              "id": "a1-u5-l3-e4",
+              "type": "translation_to_en",
+              "dutch": "Is het ver?",
+              "correctAnswer": "Is it far?"
+            },
+            {
+              "id": "a1-u5-l3-e5",
+              "type": "translation_to_en",
+              "dutch": "Het is 5 minuten lopen.",
+              "correctAnswer": "It's a 5 minute walk.",
+              "acceptedAnswers": [
+                "It's a 5 minute walk.",
+                "It is a 5 minute walk.",
+                "It is 5 minutes walking."
+              ]
+            },
+            {
+              "id": "a1-u5-l3-e6",
+              "type": "translation_to_nl",
+              "english": "Can you repeat that?",
+              "correctAnswer": "Kunt u dat herhalen?"
+            },
+            {
+              "id": "a1-u5-l3-e7",
+              "type": "translation_to_nl",
+              "english": "Go straight ahead.",
+              "correctAnswer": "Gaat u rechtdoor."
+            },
+            {
+              "id": "a1-u5-l3-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "Pardon",
+                  "english": "Excuse me"
+                },
+                {
+                  "dutch": "herhalen",
+                  "english": "to repeat"
+                },
+                {
+                  "dutch": "ver",
+                  "english": "far"
+                },
+                {
+                  "dutch": "lopen",
+                  "english": "to walk"
+                }
+              ]
+            },
+            {
+              "id": "a1-u5-l3-e9",
+              "type": "fill_blank",
+              "sentence": "Pardon, ___ is de supermarkt?",
+              "options": [
+                "waar",
+                "hoe",
+                "wanneer",
+                "wat"
+              ],
+              "correctAnswer": "waar",
+              "translation": "Excuse me, where is the supermarket?"
+            },
+            {
+              "id": "a1-u5-l3-e10",
+              "type": "listening",
+              "dutch": "Gaat u rechtdoor en dan rechtsaf.",
+              "question": "What are the directions given?",
+              "options": [
+                "Turn left, then go straight.",
+                "Go straight ahead and then turn right.",
+                "Turn right and then left.",
+                "Go straight ahead and then turn left."
+              ],
+              "correctAnswer": "Go straight ahead and then turn right."
+            }
+          ]
+        },
+        {
+          "id": "a1-u5-l4",
+          "title": "Public Transport",
+          "titleNl": "Openbaar Vervoer",
+          "description": "Navigate the Dutch public transport system with confidence",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u5-l4-e1",
+              "type": "multiple_choice",
+              "question": "What is 'de OV-chipkaart'?",
+              "options": [
+                "A train timetable",
+                "A public transport chip card",
+                "A travel insurance card",
+                "A station loyalty card"
+              ],
+              "correctAnswer": "A public transport chip card"
+            },
+            {
+              "id": "a1-u5-l4-e2",
+              "type": "multiple_choice",
+              "question": "What does 'uitstappen' mean?",
+              "options": [
+                "to board",
+                "to transfer",
+                "to exit (the vehicle)",
+                "to check in"
+              ],
+              "correctAnswer": "to exit (the vehicle)"
+            },
+            {
+              "id": "a1-u5-l4-e3",
+              "type": "multiple_choice",
+              "question": "What is 'de halte'?",
+              "options": [
+                "the train station",
+                "the bus or tram stop",
+                "the platform",
+                "the delay"
+              ],
+              "correctAnswer": "the bus or tram stop"
+            },
+            {
+              "id": "a1-u5-l4-e4",
+              "type": "translation_to_en",
+              "dutch": "instappen",
+              "correctAnswer": "to board",
+              "acceptedAnswers": [
+                "to board",
+                "to get on"
+              ]
+            },
+            {
+              "id": "a1-u5-l4-e5",
+              "type": "translation_to_en",
+              "dutch": "de vertraging",
+              "correctAnswer": "the delay"
+            },
+            {
+              "id": "a1-u5-l4-e6",
+              "type": "translation_to_nl",
+              "english": "the platform / track",
+              "correctAnswer": "het perron",
+              "acceptedAnswers": [
+                "het perron",
+                "het spoor"
+              ]
+            },
+            {
+              "id": "a1-u5-l4-e7",
+              "type": "translation_to_nl",
+              "english": "to transfer (transport)",
+              "correctAnswer": "overstappen"
+            },
+            {
+              "id": "a1-u5-l4-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "het station",
+                  "english": "the train station"
+                },
+                {
+                  "dutch": "inchecken",
+                  "english": "to check in"
+                },
+                {
+                  "dutch": "uitchecken",
+                  "english": "to check out"
+                },
+                {
+                  "dutch": "overstappen",
+                  "english": "to transfer"
+                }
+              ]
+            },
+            {
+              "id": "a1-u5-l4-e9",
+              "type": "fill_blank",
+              "sentence": "Vergeet niet te ___ als je de bus uitstapt.",
+              "options": [
+                "uitchecken",
+                "inchecken",
+                "instappen",
+                "overstappen"
+              ],
+              "correctAnswer": "uitchecken",
+              "translation": "Don't forget to check out when you exit the bus."
+            },
+            {
+              "id": "a1-u5-l4-e10",
+              "type": "listening",
+              "dutch": "Er is een vertraging van tien minuten.",
+              "question": "What is happening?",
+              "options": [
+                "The train is ten minutes early.",
+                "There is a ten minute delay.",
+                "The platform has changed.",
+                "The train is cancelled."
+              ],
+              "correctAnswer": "There is a ten minute delay."
+            }
+          ]
+        },
+        {
+          "id": "a1-u5-l5",
+          "title": "Buying Tickets",
+          "titleNl": "Kaartjes Kopen",
+          "description": "Buy train tickets and get travel information in Dutch",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u5-l5-e1",
+              "type": "multiple_choice",
+              "question": "What does 'Enkele reis of retour?' mean?",
+              "options": [
+                "First or second class?",
+                "Single or return?",
+                "Today or tomorrow?",
+                "Morning or evening?"
+              ],
+              "correctAnswer": "Single or return?"
+            },
+            {
+              "id": "a1-u5-l5-e2",
+              "type": "multiple_choice",
+              "question": "What does 'Op spoor drie.' mean?",
+              "options": [
+                "At gate three.",
+                "At stop three.",
+                "On platform three.",
+                "In carriage three."
+              ],
+              "correctAnswer": "On platform three."
+            },
+            {
+              "id": "a1-u5-l5-e3",
+              "type": "multiple_choice",
+              "question": "How do you ask 'When does the next train leave?'",
+              "options": [
+                "Wanneer komt de volgende trein?",
+                "Hoe laat vertrekt de volgende trein?",
+                "Hoe lang duurt de volgende trein?",
+                "Waar gaat de volgende trein naartoe?"
+              ],
+              "correctAnswer": "Hoe laat vertrekt de volgende trein?"
+            },
+            {
+              "id": "a1-u5-l5-e4",
+              "type": "translation_to_en",
+              "dutch": "Hoeveel kost het?",
+              "correctAnswer": "How much does it cost?",
+              "acceptedAnswers": [
+                "How much does it cost?",
+                "How much is it?"
+              ]
+            },
+            {
+              "id": "a1-u5-l5-e5",
+              "type": "translation_to_en",
+              "dutch": "Eerste of tweede klas?",
+              "correctAnswer": "First or second class?"
+            },
+            {
+              "id": "a1-u5-l5-e6",
+              "type": "translation_to_nl",
+              "english": "A ticket to Amsterdam, please.",
+              "correctAnswer": "Een kaartje naar Amsterdam, alsjeblieft.",
+              "acceptedAnswers": [
+                "Een kaartje naar Amsterdam, alsjeblieft.",
+                "Een kaartje naar Amsterdam, alstublieft."
+              ]
+            },
+            {
+              "id": "a1-u5-l5-e7",
+              "type": "translation_to_nl",
+              "english": "the price",
+              "correctAnswer": "de prijs"
+            },
+            {
+              "id": "a1-u5-l5-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "enkele reis",
+                  "english": "single (one-way)"
+                },
+                {
+                  "dutch": "retour",
+                  "english": "return (round trip)"
+                },
+                {
+                  "dutch": "het spoor",
+                  "english": "the track / platform"
+                },
+                {
+                  "dutch": "vertrekken",
+                  "english": "to depart / leave"
+                }
+              ]
+            },
+            {
+              "id": "a1-u5-l5-e9",
+              "type": "fill_blank",
+              "sentence": "Ik wil een kaartje ___ Utrecht.",
+              "options": [
+                "naar",
+                "van",
+                "in",
+                "op"
+              ],
+              "correctAnswer": "naar",
+              "translation": "I want a ticket to Utrecht."
+            },
+            {
+              "id": "a1-u5-l5-e10",
+              "type": "listening",
+              "dutch": "Enkele reis of retour?",
+              "question": "What is the ticket agent asking?",
+              "options": [
+                "First or second class?",
+                "Today or tomorrow?",
+                "Single or return?",
+                "Morning or afternoon?"
+              ],
+              "correctAnswer": "Single or return?"
+            }
+          ]
+        },
+        {
+          "id": "a1-u5-l6",
+          "title": "Unit Review",
+          "titleNl": "Herhaling Onderweg",
+          "description": "Review transport types, directions, and public transport vocabulary",
+          "xpReward": 80,
+          "estimatedMinutes": 10,
+          "exercises": [
+            {
+              "id": "a1-u5-l6-e1",
+              "type": "multiple_choice",
+              "question": "What is the most popular form of transport in the Netherlands?",
+              "options": [
+                "de auto",
+                "de bus",
+                "de fiets",
+                "de tram"
+              ],
+              "correctAnswer": "de fiets"
+            },
+            {
+              "id": "a1-u5-l6-e2",
+              "type": "multiple_choice",
+              "question": "What does 'overstappen' mean?",
+              "options": [
+                "to board",
+                "to transfer",
+                "to check in",
+                "to exit"
+              ],
+              "correctAnswer": "to transfer"
+            },
+            {
+              "id": "a1-u5-l6-e3",
+              "type": "multiple_choice",
+              "question": "How do you say 'Excuse me, where is the station?' in Dutch?",
+              "options": [
+                "Hoe kom ik bij het station?",
+                "Pardon, waar is het station?",
+                "Is het station ver?",
+                "Kunt u het station herhalen?"
+              ],
+              "correctAnswer": "Pardon, waar is het station?"
+            },
+            {
+              "id": "a1-u5-l6-e4",
+              "type": "translation_to_en",
+              "dutch": "de halte",
+              "correctAnswer": "the bus / tram stop",
+              "acceptedAnswers": [
+                "the bus / tram stop",
+                "the stop",
+                "the bus stop",
+                "the tram stop"
+              ]
+            },
+            {
+              "id": "a1-u5-l6-e5",
+              "type": "translation_to_en",
+              "dutch": "rechtdoor",
+              "correctAnswer": "straight ahead"
+            },
+            {
+              "id": "a1-u5-l6-e6",
+              "type": "translation_to_nl",
+              "english": "on the corner",
+              "correctAnswer": "op de hoek"
+            },
+            {
+              "id": "a1-u5-l6-e7",
+              "type": "translation_to_nl",
+              "english": "A single ticket to Rotterdam, please.",
+              "correctAnswer": "Een enkele reis naar Rotterdam, alsjeblieft.",
+              "acceptedAnswers": [
+                "Een enkele reis naar Rotterdam, alsjeblieft.",
+                "Een enkele reis naar Rotterdam, alstublieft.",
+                "Een kaartje naar Rotterdam, alsjeblieft."
+              ]
+            },
+            {
+              "id": "a1-u5-l6-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "tegenover",
+                  "english": "opposite"
+                },
+                {
+                  "dutch": "het kruispunt",
+                  "english": "the intersection"
+                },
+                {
+                  "dutch": "de vertraging",
+                  "english": "the delay"
+                },
+                {
+                  "dutch": "instappen",
+                  "english": "to board"
+                }
+              ]
+            },
+            {
+              "id": "a1-u5-l6-e9",
+              "type": "fill_blank",
+              "sentence": "U moet ___ bij het kruispunt.",
+              "options": [
+                "linksaf",
+                "rechtdoor",
+                "tegenover",
+                "naast"
+              ],
+              "correctAnswer": "linksaf",
+              "translation": "You need to turn left at the intersection."
+            },
+            {
+              "id": "a1-u5-l6-e10",
+              "type": "sentence_order",
+              "words": [
+                "trein",
+                "de",
+                "Hoe",
+                "vertrekt",
+                "laat"
+              ],
+              "correctAnswer": "Hoe laat vertrekt de trein?",
+              "translation": "What time does the train depart?"
+            },
+            {
+              "id": "a1-u5-l6-e11",
+              "type": "listening",
+              "dutch": "De trein vertrekt op spoor vijf.",
+              "question": "Where does the train depart from?",
+              "options": [
+                "Platform 3",
+                "Platform 4",
+                "Platform 5",
+                "Platform 6"
+              ],
+              "correctAnswer": "Platform 5"
+            },
+            {
+              "id": "a1-u5-l6-e12",
+              "type": "fill_blank",
+              "sentence": "Ik ga met de bus. Ik moet ___ inchecken.",
+              "options": [
+                "ook",
+                "nooit",
+                "soms",
+                "altijd"
+              ],
+              "correctAnswer": "ook",
+              "translation": "I'm taking the bus. I also need to check in."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1-u6",
+      "title": "Shopping & Money",
+      "titleNl": "Winkelen en Geld",
+      "description": "Shop confidently in Dutch — supermarkets, clothing stores, and more",
+      "theme": "shopping",
+      "color": "#84cc16",
+      "order": 10,
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "a1-u6-l1",
+          "title": "Numbers & Prices",
+          "titleNl": "Getallen en Prijzen",
+          "description": "Learn larger numbers and how to talk about prices in Dutch",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u6-l1-e1",
+              "type": "multiple_choice",
+              "question": "What does 'tachtig' mean?",
+              "options": [
+                "70",
+                "80",
+                "90",
+                "60"
+              ],
+              "correctAnswer": "80"
+            },
+            {
+              "id": "a1-u6-l1-e2",
+              "type": "multiple_choice",
+              "question": "How do you say '21' in Dutch?",
+              "options": [
+                "tweeëntwintig",
+                "eenentwintig",
+                "twintigeen",
+                "éénentwintig"
+              ],
+              "correctAnswer": "eenentwintig"
+            },
+            {
+              "id": "a1-u6-l1-e3",
+              "type": "multiple_choice",
+              "question": "What does 'Hoeveel kost dit?' mean?",
+              "options": [
+                "Can I pay now?",
+                "How much does this cost?",
+                "Is this on sale?",
+                "Do you have change?"
+              ],
+              "correctAnswer": "How much does this cost?"
+            },
+            {
+              "id": "a1-u6-l1-e4",
+              "type": "translation_to_en",
+              "dutch": "honderd",
+              "correctAnswer": "one hundred",
+              "acceptedAnswers": [
+                "one hundred",
+                "hundred",
+                "100"
+              ]
+            },
+            {
+              "id": "a1-u6-l1-e5",
+              "type": "translation_to_en",
+              "dutch": "Dat kost vijf euro.",
+              "correctAnswer": "That costs five euros.",
+              "acceptedAnswers": [
+                "That costs five euros.",
+                "That is five euros.",
+                "It costs five euros."
+              ]
+            },
+            {
+              "id": "a1-u6-l1-e6",
+              "type": "translation_to_nl",
+              "english": "fifty",
+              "correctAnswer": "vijftig"
+            },
+            {
+              "id": "a1-u6-l1-e7",
+              "type": "translation_to_nl",
+              "english": "two hundred",
+              "correctAnswer": "tweehonderd"
+            },
+            {
+              "id": "a1-u6-l1-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "dertig",
+                  "english": "thirty"
+                },
+                {
+                  "dutch": "zestig",
+                  "english": "sixty"
+                },
+                {
+                  "dutch": "negentig",
+                  "english": "ninety"
+                },
+                {
+                  "dutch": "honderdvijftig",
+                  "english": "one hundred and fifty"
+                }
+              ]
+            },
+            {
+              "id": "a1-u6-l1-e9",
+              "type": "fill_blank",
+              "sentence": "Dat kost ___ euro.",
+              "options": [
+                "veertig",
+                "maandag",
+                "laat",
+                "open"
+              ],
+              "correctAnswer": "veertig",
+              "translation": "That costs forty euros."
+            },
+            {
+              "id": "a1-u6-l1-e10",
+              "type": "listening",
+              "dutch": "Dat kost tweeëntwintig euro.",
+              "question": "How much does it cost?",
+              "options": [
+                "12 euros",
+                "20 euros",
+                "22 euros",
+                "32 euros"
+              ],
+              "correctAnswer": "22 euros"
+            }
+          ]
+        },
+        {
+          "id": "a1-u6-l2",
+          "title": "At the Supermarket",
+          "titleNl": "In de Supermarkt",
+          "description": "Learn vocabulary for shopping at a Dutch supermarket",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u6-l2-e1",
+              "type": "multiple_choice",
+              "question": "What does 'boodschappen doen' mean?",
+              "options": [
+                "to pay at the checkout",
+                "to do the shopping / buy groceries",
+                "to use self-checkout",
+                "to ask for a receipt"
+              ],
+              "correctAnswer": "to do the shopping / buy groceries"
+            },
+            {
+              "id": "a1-u6-l2-e2",
+              "type": "multiple_choice",
+              "question": "What does 'in de aanbieding' mean?",
+              "options": [
+                "out of stock",
+                "on sale",
+                "organic",
+                "a new arrival"
+              ],
+              "correctAnswer": "on sale"
+            },
+            {
+              "id": "a1-u6-l2-e3",
+              "type": "multiple_choice",
+              "question": "What is 'pinnen'?",
+              "options": [
+                "to pay with cash",
+                "to pay by debit card",
+                "to use a voucher",
+                "to use self-checkout"
+              ],
+              "correctAnswer": "to pay by debit card"
+            },
+            {
+              "id": "a1-u6-l2-e4",
+              "type": "translation_to_en",
+              "dutch": "de kassa",
+              "correctAnswer": "the checkout",
+              "acceptedAnswers": [
+                "the checkout",
+                "the till",
+                "the cash register"
+              ]
+            },
+            {
+              "id": "a1-u6-l2-e5",
+              "type": "translation_to_en",
+              "dutch": "de bon",
+              "correctAnswer": "the receipt"
+            },
+            {
+              "id": "a1-u6-l2-e6",
+              "type": "translation_to_nl",
+              "english": "organic",
+              "correctAnswer": "biologisch"
+            },
+            {
+              "id": "a1-u6-l2-e7",
+              "type": "translation_to_nl",
+              "english": "self-checkout",
+              "correctAnswer": "de zelfbediening"
+            },
+            {
+              "id": "a1-u6-l2-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "boodschappen",
+                  "english": "groceries"
+                },
+                {
+                  "dutch": "contant betalen",
+                  "english": "to pay cash"
+                },
+                {
+                  "dutch": "de supermarkt",
+                  "english": "the supermarket"
+                },
+                {
+                  "dutch": "in de aanbieding",
+                  "english": "on sale"
+                }
+              ]
+            },
+            {
+              "id": "a1-u6-l2-e9",
+              "type": "fill_blank",
+              "sentence": "Heeft u een ___ nodig?",
+              "options": [
+                "tas",
+                "kassa",
+                "bon",
+                "pinnen"
+              ],
+              "correctAnswer": "tas",
+              "translation": "Do you need a bag?"
+            },
+            {
+              "id": "a1-u6-l2-e10",
+              "type": "listening",
+              "dutch": "Ik doe mijn boodschappen in de supermarkt.",
+              "question": "Where does the speaker do their shopping?",
+              "options": [
+                "at the market",
+                "at the supermarket",
+                "at the bakery",
+                "online"
+              ],
+              "correctAnswer": "at the supermarket"
+            }
+          ]
+        },
+        {
+          "id": "a1-u6-l3",
+          "title": "Clothing",
+          "titleNl": "Kleding",
+          "description": "Learn clothing vocabulary and how to shop for clothes in Dutch",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u6-l3-e1",
+              "type": "multiple_choice",
+              "question": "What is 'een jas'?",
+              "options": [
+                "a dress",
+                "a skirt",
+                "a coat / jacket",
+                "a sweater"
+              ],
+              "correctAnswer": "a coat / jacket"
+            },
+            {
+              "id": "a1-u6-l3-e2",
+              "type": "multiple_choice",
+              "question": "What does 'Mag ik dit passen?' mean?",
+              "options": [
+                "Can I buy this?",
+                "Can I try this on?",
+                "Does this fit?",
+                "Can I return this?"
+              ],
+              "correctAnswer": "Can I try this on?"
+            },
+            {
+              "id": "a1-u6-l3-e3",
+              "type": "multiple_choice",
+              "question": "What is 'een jurk'?",
+              "options": [
+                "a skirt",
+                "a dress",
+                "trousers",
+                "a shirt"
+              ],
+              "correctAnswer": "a dress"
+            },
+            {
+              "id": "a1-u6-l3-e4",
+              "type": "translation_to_en",
+              "dutch": "een trui",
+              "correctAnswer": "a sweater",
+              "acceptedAnswers": [
+                "a sweater",
+                "a jumper",
+                "a pullover"
+              ]
+            },
+            {
+              "id": "a1-u6-l3-e5",
+              "type": "translation_to_en",
+              "dutch": "schoenen",
+              "correctAnswer": "shoes"
+            },
+            {
+              "id": "a1-u6-l3-e6",
+              "type": "translation_to_nl",
+              "english": "socks",
+              "correctAnswer": "sokken"
+            },
+            {
+              "id": "a1-u6-l3-e7",
+              "type": "translation_to_nl",
+              "english": "size (clothing)",
+              "correctAnswer": "maat"
+            },
+            {
+              "id": "a1-u6-l3-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "een broek",
+                  "english": "trousers"
+                },
+                {
+                  "dutch": "een rok",
+                  "english": "a skirt"
+                },
+                {
+                  "dutch": "ondergoed",
+                  "english": "underwear"
+                },
+                {
+                  "dutch": "passen",
+                  "english": "to try on"
+                }
+              ]
+            },
+            {
+              "id": "a1-u6-l3-e9",
+              "type": "fill_blank",
+              "sentence": "Wat is uw ___?",
+              "options": [
+                "maat",
+                "kassa",
+                "bon",
+                "tas"
+              ],
+              "correctAnswer": "maat",
+              "translation": "What is your size?"
+            },
+            {
+              "id": "a1-u6-l3-e10",
+              "type": "sentence_order",
+              "words": [
+                "dit",
+                "ik",
+                "Mag",
+                "passen"
+              ],
+              "correctAnswer": "Mag ik dit passen?",
+              "translation": "Can I try this on?"
+            }
+          ]
+        },
+        {
+          "id": "a1-u6-l4",
+          "title": "Shopping Phrases",
+          "titleNl": "Winkelzinnen",
+          "description": "Learn essential phrases for interacting with shop assistants in Dutch",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u6-l4-e1",
+              "type": "multiple_choice",
+              "question": "What does 'Ik zoek een trui.' mean?",
+              "options": [
+                "I want to buy a sweater.",
+                "I'm looking for a sweater.",
+                "I found a sweater.",
+                "I'm trying on a sweater."
+              ],
+              "correctAnswer": "I'm looking for a sweater."
+            },
+            {
+              "id": "a1-u6-l4-e2",
+              "type": "multiple_choice",
+              "question": "What does 'te groot' mean?",
+              "options": [
+                "too small",
+                "too big",
+                "too expensive",
+                "just right"
+              ],
+              "correctAnswer": "too big"
+            },
+            {
+              "id": "a1-u6-l4-e3",
+              "type": "multiple_choice",
+              "question": "How do you say 'I'll take it.'?",
+              "options": [
+                "Ik zoek het.",
+                "Ik neem het.",
+                "Ik pas het.",
+                "Ik koop het niet."
+              ],
+              "correctAnswer": "Ik neem het."
+            },
+            {
+              "id": "a1-u6-l4-e4",
+              "type": "translation_to_en",
+              "dutch": "Kunt u me helpen?",
+              "correctAnswer": "Can you help me?"
+            },
+            {
+              "id": "a1-u6-l4-e5",
+              "type": "translation_to_en",
+              "dutch": "Waar is de paskamer?",
+              "correctAnswer": "Where is the fitting room?"
+            },
+            {
+              "id": "a1-u6-l4-e6",
+              "type": "translation_to_nl",
+              "english": "too expensive",
+              "correctAnswer": "te duur"
+            },
+            {
+              "id": "a1-u6-l4-e7",
+              "type": "translation_to_nl",
+              "english": "I'll leave it. / I won't take it.",
+              "correctAnswer": "Ik neem het niet.",
+              "acceptedAnswers": [
+                "Ik neem het niet.",
+                "Ik doe het niet."
+              ]
+            },
+            {
+              "id": "a1-u6-l4-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "Ik zoek",
+                  "english": "I'm looking for"
+                },
+                {
+                  "dutch": "te klein",
+                  "english": "too small"
+                },
+                {
+                  "dutch": "de paskamer",
+                  "english": "the fitting room"
+                },
+                {
+                  "dutch": "helpen",
+                  "english": "to help"
+                }
+              ]
+            },
+            {
+              "id": "a1-u6-l4-e9",
+              "type": "fill_blank",
+              "sentence": "Heeft u dit in maat ___?",
+              "options": [
+                "M",
+                "groot",
+                "duur",
+                "klein"
+              ],
+              "correctAnswer": "M",
+              "translation": "Do you have this in size M?"
+            },
+            {
+              "id": "a1-u6-l4-e10",
+              "type": "listening",
+              "dutch": "Ik zoek een jas, maar deze is te duur.",
+              "question": "What is the problem?",
+              "options": [
+                "The jacket is too small.",
+                "They cannot find a jacket.",
+                "The jacket is too expensive.",
+                "The jacket is the wrong colour."
+              ],
+              "correctAnswer": "The jacket is too expensive."
+            }
+          ]
+        },
+        {
+          "id": "a1-u6-l5",
+          "title": "Paying",
+          "titleNl": "Betalen",
+          "description": "Learn how to handle payments and returns in Dutch shops",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            {
+              "id": "a1-u6-l5-e1",
+              "type": "multiple_choice",
+              "question": "What does 'wisselgeld' mean?",
+              "options": [
+                "a credit card",
+                "a receipt",
+                "change (money back)",
+                "a voucher"
+              ],
+              "correctAnswer": "change (money back)"
+            },
+            {
+              "id": "a1-u6-l5-e2",
+              "type": "multiple_choice",
+              "question": "What does 'Ik wil dit terugbrengen.' mean?",
+              "options": [
+                "I want to exchange this.",
+                "I want to return this.",
+                "I want a receipt for this.",
+                "I want to pay for this."
+              ],
+              "correctAnswer": "I want to return this."
+            },
+            {
+              "id": "a1-u6-l5-e3",
+              "type": "multiple_choice",
+              "question": "How do you ask 'Do you have anything smaller?' (asking for change)?",
+              "options": [
+                "Heeft u het kleiner?",
+                "Heeft u wisselgeld?",
+                "Kunt u wisselen?",
+                "Heeft u contant?"
+              ],
+              "correctAnswer": "Heeft u het kleiner?"
+            },
+            {
+              "id": "a1-u6-l5-e4",
+              "type": "translation_to_en",
+              "dutch": "met pin",
+              "correctAnswer": "by debit card",
+              "acceptedAnswers": [
+                "by debit card",
+                "by card",
+                "with pin"
+              ]
+            },
+            {
+              "id": "a1-u6-l5-e5",
+              "type": "translation_to_en",
+              "dutch": "Mag ik een bon?",
+              "correctAnswer": "Can I have a receipt?",
+              "acceptedAnswers": [
+                "Can I have a receipt?",
+                "May I have a receipt?"
+              ]
+            },
+            {
+              "id": "a1-u6-l5-e6",
+              "type": "translation_to_nl",
+              "english": "cash",
+              "correctAnswer": "contant"
+            },
+            {
+              "id": "a1-u6-l5-e7",
+              "type": "translation_to_nl",
+              "english": "Can you wrap it?",
+              "correctAnswer": "Kunt u het inpakken?"
+            },
+            {
+              "id": "a1-u6-l5-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "een creditcard",
+                  "english": "a credit card"
+                },
+                {
+                  "dutch": "terugbrengen",
+                  "english": "to return (an item)"
+                },
+                {
+                  "dutch": "inpakken",
+                  "english": "to wrap"
+                },
+                {
+                  "dutch": "contant",
+                  "english": "cash"
+                }
+              ]
+            },
+            {
+              "id": "a1-u6-l5-e9",
+              "type": "fill_blank",
+              "sentence": "Betaalt u ___ of met pin?",
+              "options": [
+                "contant",
+                "bon",
+                "wisselgeld",
+                "creditcard"
+              ],
+              "correctAnswer": "contant",
+              "translation": "Are you paying cash or by debit card?"
+            },
+            {
+              "id": "a1-u6-l5-e10",
+              "type": "listening",
+              "dutch": "Ik wil dit terugbrengen. Mag ik de bon zien?",
+              "question": "What does the shop assistant want to see?",
+              "options": [
+                "A passport",
+                "A loyalty card",
+                "The receipt",
+                "A credit card"
+              ],
+              "correctAnswer": "The receipt"
+            }
+          ]
+        },
+        {
+          "id": "a1-u6-l6",
+          "title": "Unit Review",
+          "titleNl": "Herhaling Winkelen",
+          "description": "Review numbers, supermarket, clothing, shopping phrases, and paying vocabulary",
+          "xpReward": 80,
+          "estimatedMinutes": 10,
+          "exercises": [
+            {
+              "id": "a1-u6-l6-e1",
+              "type": "multiple_choice",
+              "question": "What does 'zeventig' mean?",
+              "options": [
+                "60",
+                "70",
+                "80",
+                "90"
+              ],
+              "correctAnswer": "70"
+            },
+            {
+              "id": "a1-u6-l6-e2",
+              "type": "multiple_choice",
+              "question": "What is 'de paskamer'?",
+              "options": [
+                "the checkout",
+                "the fitting room",
+                "the changing room sign",
+                "the sale section"
+              ],
+              "correctAnswer": "the fitting room"
+            },
+            {
+              "id": "a1-u6-l6-e3",
+              "type": "multiple_choice",
+              "question": "What does 'biologisch' mean?",
+              "options": [
+                "on sale",
+                "self-service",
+                "organic",
+                "frozen"
+              ],
+              "correctAnswer": "organic"
+            },
+            {
+              "id": "a1-u6-l6-e4",
+              "type": "translation_to_en",
+              "dutch": "Hoeveel kost dit?",
+              "correctAnswer": "How much does this cost?",
+              "acceptedAnswers": [
+                "How much does this cost?",
+                "How much is this?"
+              ]
+            },
+            {
+              "id": "a1-u6-l6-e5",
+              "type": "translation_to_en",
+              "dutch": "een broek",
+              "correctAnswer": "trousers",
+              "acceptedAnswers": [
+                "trousers",
+                "pants",
+                "a pair of trousers"
+              ]
+            },
+            {
+              "id": "a1-u6-l6-e6",
+              "type": "translation_to_nl",
+              "english": "I'm looking for shoes.",
+              "correctAnswer": "Ik zoek schoenen."
+            },
+            {
+              "id": "a1-u6-l6-e7",
+              "type": "translation_to_nl",
+              "english": "change (money back)",
+              "correctAnswer": "wisselgeld"
+            },
+            {
+              "id": "a1-u6-l6-e8",
+              "type": "word_match",
+              "pairs": [
+                {
+                  "dutch": "boodschappen",
+                  "english": "groceries"
+                },
+                {
+                  "dutch": "te duur",
+                  "english": "too expensive"
+                },
+                {
+                  "dutch": "de bon",
+                  "english": "the receipt"
+                },
+                {
+                  "dutch": "passen",
+                  "english": "to try on"
+                }
+              ]
+            },
+            {
+              "id": "a1-u6-l6-e9",
+              "type": "fill_blank",
+              "sentence": "Ik neem het ___. Het is te klein.",
+              "options": [
+                "niet",
+                "altijd",
+                "soms",
+                "ook"
+              ],
+              "correctAnswer": "niet",
+              "translation": "I won't take it. It's too small."
+            },
+            {
+              "id": "a1-u6-l6-e10",
+              "type": "sentence_order",
+              "words": [
+                "een",
+                "Heeft",
+                "u",
+                "M",
+                "maat",
+                "in",
+                "dit"
+              ],
+              "correctAnswer": "Heeft u dit in maat M?",
+              "translation": "Do you have this in size M?"
+            },
+            {
+              "id": "a1-u6-l6-e11",
+              "type": "listening",
+              "dutch": "Dat kost negentig euro.",
+              "question": "How much does it cost?",
+              "options": [
+                "19 euros",
+                "29 euros",
+                "80 euros",
+                "90 euros"
+              ],
+              "correctAnswer": "90 euros"
+            },
+            {
+              "id": "a1-u6-l6-e12",
+              "type": "fill_blank",
+              "sentence": "Betaalt u ___ of met pin?",
+              "options": [
+                "contant",
+                "maat",
+                "bon",
+                "passen"
+              ],
+              "correctAnswer": "contant",
+              "translation": "Are you paying cash or by debit card?"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

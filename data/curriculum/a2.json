@@ -1,1 +1,56 @@
-{"id":"A2","title":"Stub","description":"","color":"#94a3b8","units":[]}
+{
+  "id": "A2",
+  "title": "Elementary",
+  "description": "Build on your basics — talk about daily life, health, work, weather, and your past",
+  "color": "#10b981",
+  "units": [
+    { "id": "a2-u1", "title": "Daily Routines", "titleNl": "Dagelijkse Routines", "description": "Describe your daily schedule from morning to night", "theme": "routines", "color": "#10b981", "order": 11, "level": "A2", "lessons": [
+      { "id": "a2-u1-l1", "title": "Morning Routine", "titleNl": "Ochtendroutine", "description": "Waking up, getting ready, and breakfast vocabulary", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u1-l2", "title": "At Work or School", "titleNl": "Op het Werk of School", "description": "Talking about your working day", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u1-l3", "title": "Evening & Hobbies", "titleNl": "Avond en Hobby's", "description": "Free time, hobbies, and relaxing", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u1-l4", "title": "The Weekend", "titleNl": "Het Weekend", "description": "Weekend plans and activities", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u1-l5", "title": "Frequency Adverbs", "titleNl": "Frequentiebijwoorden", "description": "Always, sometimes, never — how often do you do things?", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u1-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 1 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] }
+    ]},
+    { "id": "a2-u2", "title": "Health & Body", "titleNl": "Gezondheid en Lichaam", "description": "Body parts, common ailments, and visiting the doctor", "theme": "health", "color": "#f43f5e", "order": 12, "level": "A2", "lessons": [
+      { "id": "a2-u2-l1", "title": "Parts of the Body", "titleNl": "Lichaamsdelen", "description": "Head, shoulders, knees and toes — in Dutch", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u2-l2", "title": "Feeling Ill", "titleNl": "Ziek Zijn", "description": "Describing symptoms: headache, fever, stomach ache", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u2-l3", "title": "At the Doctor", "titleNl": "Bij de Dokter", "description": "Making an appointment and explaining symptoms", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u2-l4", "title": "At the Pharmacy", "titleNl": "Bij de Apotheek", "description": "Buying medicine and understanding instructions", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u2-l5", "title": "Healthy Living", "titleNl": "Gezond Leven", "description": "Sport, diet, sleep — healthy lifestyle vocabulary", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u2-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 2 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] }
+    ]},
+    { "id": "a2-u3", "title": "Housing & Neighbourhood", "titleNl": "Wonen en de Buurt", "description": "Talk about where you live, your home, and your neighbourhood in the Netherlands", "theme": "housing", "color": "#f59e0b", "order": 13, "level": "A2", "lessons": [
+      { "id": "a2-u3-l1", "title": "Types of Housing", "titleNl": "Soorten Woningen", "description": "Apartments, houses, and student rooms in the Netherlands", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u3-l2", "title": "Rooms & Furniture", "titleNl": "Kamers en Meubilair", "description": "Describe the rooms and furniture in your home", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u3-l3", "title": "Your Neighbourhood", "titleNl": "Jouw Buurt", "description": "Shops, parks, and schools near your home", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u3-l4", "title": "Renting in the Netherlands", "titleNl": "Huren in Nederland", "description": "Renting vocabulary and talking to your landlord", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u3-l5", "title": "Dutch Cities & Geography", "titleNl": "Nederlandse Steden en Geografie", "description": "Major cities, the Randstad, and Dutch provinces", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u3-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 3 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] }
+    ]},
+    { "id": "a2-u4", "title": "Work & Study", "titleNl": "Werk en Studie", "description": "Talk about your job, education, and professional life in Dutch", "theme": "work", "color": "#6366f1", "order": 14, "level": "A2", "lessons": [
+      { "id": "a2-u4-l1", "title": "Jobs & Professions", "titleNl": "Beroepen", "description": "Common job titles and what they involve", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u4-l2", "title": "Education System", "titleNl": "Het Onderwijssysteem", "description": "Dutch school types, university, and studying", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u4-l3", "title": "At the Office", "titleNl": "Op Kantoor", "description": "Office vocabulary, meetings, and working with colleagues", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u4-l4", "title": "Work–Life Balance", "titleNl": "Werk-Privébalans", "description": "Working hours, holidays, and part-time culture in the Netherlands", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u4-l5", "title": "Applying for a Job", "titleNl": "Solliciteren", "description": "CV vocabulary, cover letters, and interview phrases", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u4-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 4 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] }
+    ]},
+    { "id": "a2-u5", "title": "Weather & Seasons", "titleNl": "Weer en Seizoenen", "description": "Describe the weather, the four seasons, and the famously wet Dutch climate", "theme": "weather", "color": "#0ea5e9", "order": 15, "level": "A2", "lessons": [
+      { "id": "a2-u5-l1", "title": "Weather Vocabulary", "titleNl": "Weervocabulaire", "description": "Sun, rain, wind, clouds — essential Dutch weather words", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u5-l2", "title": "The Four Seasons", "titleNl": "De Vier Seizoenen", "description": "Lente, zomer, herfst, winter — and seasonal activities", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u5-l3", "title": "Weather Forecasts", "titleNl": "Weersvoorspellingen", "description": "Reading and listening to Dutch weather forecasts", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u5-l4", "title": "Dutch Climate", "titleNl": "Het Nederlandse Klimaat", "description": "Why it always rains and how the Dutch cope with it", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u5-l5", "title": "Dressing for the Weather", "titleNl": "Kleden voor het Weer", "description": "Clothing vocabulary in seasonal context", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u5-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 5 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] }
+    ]},
+    { "id": "a2-u6", "title": "Past Tense", "titleNl": "Verleden Tijd", "description": "Talk about what happened yesterday, last week, and in the past", "theme": "grammar", "color": "#8b5cf6", "order": 16, "level": "A2", "lessons": [
+      { "id": "a2-u6-l1", "title": "Regular Past Tense", "titleNl": "Regelmatige Verleden Tijd", "description": "Forming past tense verbs with -te and -de endings", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u6-l2", "title": "Perfect Tense with hebben", "titleNl": "Voltooid Tegenwoordige Tijd met hebben", "description": "Ik heb gewerkt — past participles with hebben", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u6-l3", "title": "Perfect Tense with zijn", "titleNl": "Voltooid Tegenwoordige Tijd met zijn", "description": "Ik ben gegaan — past participles with zijn for motion verbs", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u6-l4", "title": "Common Irregular Verbs", "titleNl": "Veelgebruikte Onregelmatige Werkwoorden", "description": "gaan→gegaan, komen→gekomen, zien→gezien and more", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u6-l5", "title": "Telling Stories in the Past", "titleNl": "Verhalen in de Verleden Tijd", "description": "Narrating past events using all past tense forms", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
+      { "id": "a2-u6-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 6 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] }
+    ]}
+  ]
+}
