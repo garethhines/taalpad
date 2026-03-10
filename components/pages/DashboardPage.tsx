@@ -5,21 +5,21 @@ import Link from 'next/link'
 import { useProfile } from '@/hooks/useProfile'
 import { useLearningProgress } from '@/hooks/useLearningProgress'
 import { mockAchievements } from '@/lib/mock-data'
-import { mergeUnitsWithProgress } from '@/lib/curriculum'
+import { buildLearningPath } from '@/lib/curriculum/index'
 import { getEffectiveStreak, getLevelProgress, getXPToNextLevel } from '@/lib/streak'
 import { getCEFRTitle, getStreakMessage, formatXP } from '@/lib/utils'
 import ProgressBar from '@/components/ui/ProgressBar'
 import Card from '@/components/ui/Card'
 import XPBadge from '@/components/ui/XPBadge'
-import Badge from '@/components/ui/Badge'
 
 export default function DashboardPage() {
   const { profile, user } = useProfile()
   const { progress } = useLearningProgress(user?.id)
 
-  // Merge static curriculum with DB progress
-  const units = mergeUnitsWithProgress(progress)
-  const nextLesson = units.flatMap((u) => u.lessons).find((l) => !l.isCompleted && !l.isLocked)
+  // Build learning path with DB progress
+  const levels = buildLearningPath(progress)
+  const allUnits = levels.flatMap((l) => l.units)
+  const nextLesson = levels.flatMap((l) => l.units).flatMap((u) => u.lessons).find((l) => l.isCurrentLesson)
   const earnedAchievements = mockAchievements.filter((a) => a.isEarned)
 
   // Derived values — fall back gracefully while profile loads
@@ -93,17 +93,17 @@ export default function DashboardPage() {
         {nextLesson && (
           <div>
             <h2 className="text-base font-bold text-slate-800 mb-3">Continue Learning</h2>
-            <Link href="/learn">
+            <Link href={`/learn/${nextLesson.id}`}>
               <Card hoverable className="p-4">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-primary-50 rounded-2xl flex items-center justify-center shrink-0">
                     <BookOpenIcon />
                   </div>
                   <div className="flex-1 min-w-0">
+                    <p className="text-xs text-slate-400 mb-0.5">{nextLesson.unitTitle}</p>
                     <p className="font-semibold text-slate-800 truncate">{nextLesson.title}</p>
                     <p className="text-sm text-slate-500 truncate">{nextLesson.description}</p>
                     <div className="flex items-center gap-2 mt-2">
-                      <Badge variant="info">{nextLesson.type}</Badge>
                       <XPBadge xp={nextLesson.xpReward} size="sm" />
                       <span className="text-xs text-slate-400">{nextLesson.estimatedMinutes} min</span>
                     </div>
@@ -150,7 +150,7 @@ export default function DashboardPage() {
             </Link>
           </div>
           <div className="space-y-3">
-            {units.slice(0, 2).map((unit) => (
+            {allUnits.filter((u) => !u.isLocked).slice(0, 2).map((unit) => (
               <Card key={unit.id} className="p-4">
                 <div className="flex items-center gap-3">
                   <div

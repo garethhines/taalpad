@@ -1,34 +1,156 @@
 // ----------------------------------------------------------------
-// Curriculum types (static, defined in /lib/mock-data.ts)
+// Curriculum exercise types
 // ----------------------------------------------------------------
 
-export interface Lesson {
+export type ExerciseType =
+  | 'multiple_choice'
+  | 'translation_to_en'
+  | 'translation_to_nl'
+  | 'fill_blank'
+  | 'word_match'
+  | 'sentence_order'
+  | 'listening'
+
+export interface MultipleChoiceExercise {
   id: string
-  title: string
-  titleNl: string
-  description: string
-  unit: number
-  order: number
-  type: 'vocabulary' | 'grammar' | 'conversation' | 'listening'
-  difficulty: 'beginner' | 'intermediate' | 'advanced'
-  estimatedMinutes: number
-  xpReward: number
-  isCompleted: boolean
-  isLocked: boolean
-  completedAt?: string
+  type: 'multiple_choice'
+  question: string
+  dutch?: string // optional Dutch text to display above question
+  options: [string, string, string, string]
+  correctAnswer: string
+  hint?: string
 }
 
-export interface Unit {
+export interface TranslationToEnExercise {
+  id: string
+  type: 'translation_to_en'
+  dutch: string
+  correctAnswer: string
+  acceptedAnswers?: string[]
+  hint?: string
+}
+
+export interface TranslationToNlExercise {
+  id: string
+  type: 'translation_to_nl'
+  english: string
+  correctAnswer: string
+  acceptedAnswers?: string[]
+  hint?: string
+}
+
+export interface FillBlankExercise {
+  id: string
+  type: 'fill_blank'
+  sentence: string      // contains ___ for the blank
+  options: string[]     // button options (3-4 items)
+  correctAnswer: string
+  translation?: string  // English meaning of the full sentence
+  hint?: string
+}
+
+export interface WordMatchExercise {
+  id: string
+  type: 'word_match'
+  pairs: { dutch: string; english: string }[] // exactly 4 pairs
+  hint?: string
+}
+
+export interface SentenceOrderExercise {
+  id: string
+  type: 'sentence_order'
+  words: string[]        // shuffled word tokens
+  correctAnswer: string  // correct full sentence (words joined)
+  translation?: string
+  hint?: string
+}
+
+export interface ListeningExercise {
+  id: string
+  type: 'listening'
+  dutch: string           // text to be spoken via TTS
+  question: string
+  options: [string, string, string, string]
+  correctAnswer: string
+  hint?: string
+}
+
+export type Exercise =
+  | MultipleChoiceExercise
+  | TranslationToEnExercise
+  | TranslationToNlExercise
+  | FillBlankExercise
+  | WordMatchExercise
+  | SentenceOrderExercise
+  | ListeningExercise
+
+// ----------------------------------------------------------------
+// Curriculum structure types
+// ----------------------------------------------------------------
+
+export interface CurriculumLesson {
   id: string
   title: string
   titleNl: string
   description: string
-  order: number
-  color: string
-  lessons: Lesson[]
-  isCompleted: boolean
-  progress: number // 0-100
+  xpReward: number
+  estimatedMinutes: number
+  exercises: Exercise[]
 }
+
+export interface CurriculumUnit {
+  id: string
+  title: string
+  titleNl: string
+  description: string
+  theme: string
+  order: number
+  level: string
+  color: string
+  lessons: CurriculumLesson[]
+}
+
+export interface CurriculumLevel {
+  id: LevelEnum
+  title: string
+  description: string
+  color: string
+  units: CurriculumUnit[]
+}
+
+// Runtime lesson — curriculum data merged with user progress
+export interface LessonWithStatus extends CurriculumLesson {
+  unitId: string
+  unitTitle: string
+  unitColor: string
+  isCompleted: boolean
+  isLocked: boolean
+  isCurrentLesson: boolean
+  score?: number | null
+  completedAt?: string | null
+}
+
+export interface UnitWithStatus extends CurriculumUnit {
+  progress: number        // 0-100
+  isCompleted: boolean
+  isLocked: boolean
+  completedLessons: number
+  lessons: LessonWithStatus[]
+}
+
+export interface LevelWithStatus {
+  id: LevelEnum
+  title: string
+  description: string
+  color: string
+  units: UnitWithStatus[]
+  isCompleted: boolean
+  isCurrent: boolean
+}
+
+// ----------------------------------------------------------------
+// Legacy UI types (kept for FlashCard, Achievement, DailyGoal)
+// ----------------------------------------------------------------
 
 export interface FlashCard {
   id: string
@@ -40,7 +162,7 @@ export interface FlashCard {
   category: string
   difficulty: 'easy' | 'medium' | 'hard'
   nextReview?: string
-  interval?: number // days
+  interval?: number
   easeFactor?: number
 }
 
@@ -51,7 +173,7 @@ export interface FlashcardDeck {
   cardCount: number
   category: string
   color: string
-  progress: number // 0-100
+  progress: number
 }
 
 export interface DailyGoal {

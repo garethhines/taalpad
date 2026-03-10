@@ -44,6 +44,10 @@ const config: Config = {
         'fade-in': 'fadeIn 0.3s ease-in-out',
         'slide-up': 'slideUp 0.3s ease-out',
         'pulse-soft': 'pulseSoft 2s ease-in-out infinite',
+        'soundBar1': 'soundBar1 0.8s ease-in-out infinite',
+        'soundBar2': 'soundBar2 0.8s ease-in-out infinite',
+        'soundBar3': 'soundBar3 0.8s ease-in-out infinite',
+        'shake': 'shake 0.4s ease-in-out',
       },
       keyframes: {
         fadeIn: {
@@ -57,6 +61,23 @@ const config: Config = {
         pulseSoft: {
           '0%, 100%': { opacity: '1' },
           '50%': { opacity: '0.7' },
+        },
+        soundBar1: {
+          '0%, 100%': { transform: 'scaleY(0.5)' },
+          '50%': { transform: 'scaleY(1)' },
+        },
+        soundBar2: {
+          '0%, 100%': { transform: 'scaleY(0.7)' },
+          '50%': { transform: 'scaleY(1)' },
+        },
+        soundBar3: {
+          '0%, 100%': { transform: 'scaleY(1)' },
+          '50%': { transform: 'scaleY(0.6)' },
+        },
+        shake: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '25%': { transform: 'translateX(-4px)' },
+          '75%': { transform: 'translateX(4px)' },
         },
       },
     },

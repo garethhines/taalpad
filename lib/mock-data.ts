@@ -1,6 +1,8 @@
-import type { Unit, FlashCard, FlashcardDeck, Achievement } from './types'
+import type { FlashCard, FlashcardDeck, Achievement } from './types'
 
-export const mockUnits: Unit[] = [
+// mockUnits is kept for reference only; the live curriculum comes from
+// data/curriculum/*.json loaded via lib/curriculum/index.ts
+const mockUnits = [
   {
     id: 'unit-1',
     title: 'Greetings & Basics',

@@ -1,0 +1,2093 @@
+{
+  "id": "A0",
+  "title": "Complete Beginner",
+  "description": "Start from zero and learn the absolute basics of Dutch",
+  "color": "#3b82f6",
+  "units": [
+    {
+      "id": "a0-u1",
+      "title": "Greetings & Introductions",
+      "titleNl": "Begroetingen en Voorstellingen",
+      "description": "Learn how to greet people, say goodbye, and introduce yourself in Dutch",
+      "theme": "greetings",
+      "color": "#3b82f6",
+      "order": 1,
+      "lessons": [
+        {
+          "id": "a0-u1-l1",
+          "title": "First Hellos",
+          "titleNl": "Eerste Begroetingen",
+          "description": "Learn the essential Dutch greetings for different times of day",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u1-l1-e1",
+              "type": "multiple_choice",
+              "question": "What does 'hallo' mean?",
+              "options": ["goodbye", "hello", "thank you", "please"],
+              "correctAnswer": "hello"
+            },
+            {
+              "id": "a0-u1-l1-e2",
+              "type": "multiple_choice",
+              "question": "Which greeting do you use in the morning?",
+              "options": ["goedenavond", "goedemiddag", "goedemorgen", "goedenacht"],
+              "correctAnswer": "goedemorgen"
+            },
+            {
+              "id": "a0-u1-l1-e3",
+              "type": "multiple_choice",
+              "question": "What does 'goedenavond' mean?",
+              "options": ["good morning", "good night", "good afternoon", "good evening"],
+              "correctAnswer": "good evening"
+            },
+            {
+              "id": "a0-u1-l1-e4",
+              "type": "translation_to_en",
+              "dutch": "goedemorgen",
+              "correctAnswer": "good morning"
+            },
+            {
+              "id": "a0-u1-l1-e5",
+              "type": "translation_to_en",
+              "dutch": "goedemiddag",
+              "correctAnswer": "good afternoon",
+              "acceptedAnswers": ["good afternoon", "good midday"]
+            },
+            {
+              "id": "a0-u1-l1-e6",
+              "type": "translation_to_nl",
+              "english": "hello",
+              "correctAnswer": "hallo",
+              "acceptedAnswers": ["hallo", "hoi"]
+            },
+            {
+              "id": "a0-u1-l1-e7",
+              "type": "translation_to_nl",
+              "english": "good evening",
+              "correctAnswer": "goedenavond"
+            },
+            {
+              "id": "a0-u1-l1-e8",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "hallo", "english": "hello" },
+                { "dutch": "goedemorgen", "english": "good morning" },
+                { "dutch": "goedenavond", "english": "good evening" },
+                { "dutch": "goedenacht", "english": "good night" }
+              ]
+            },
+            {
+              "id": "a0-u1-l1-e9",
+              "type": "listening",
+              "dutch": "goedemorgen",
+              "question": "What did you hear?",
+              "options": ["goedemorgen", "goedemiddag", "goedenavond", "goedenacht"],
+              "correctAnswer": "goedemorgen"
+            },
+            {
+              "id": "a0-u1-l1-e10",
+              "type": "fill_blank",
+              "sentence": "___, hoe gaat het?",
+              "options": ["Hallo", "Tot ziens", "Dank je wel", "Goedenacht"],
+              "correctAnswer": "Hallo",
+              "translation": "___, how are you?"
+            }
+          ]
+        },
+        {
+          "id": "a0-u1-l2",
+          "title": "Saying Goodbye",
+          "titleNl": "Tot Ziens Zeggen",
+          "description": "Master the Dutch farewells for every situation",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u1-l2-e1",
+              "type": "multiple_choice",
+              "question": "What does 'tot ziens' mean?",
+              "options": ["hello", "see you", "thank you", "good morning"],
+              "correctAnswer": "see you"
+            },
+            {
+              "id": "a0-u1-l2-e2",
+              "type": "multiple_choice",
+              "question": "Which farewell means 'see you tomorrow'?",
+              "options": ["tot later", "tot snel", "tot morgen", "doei"],
+              "correctAnswer": "tot morgen"
+            },
+            {
+              "id": "a0-u1-l2-e3",
+              "type": "translation_to_en",
+              "dutch": "doei",
+              "correctAnswer": "bye",
+              "acceptedAnswers": ["bye", "bye bye"]
+            },
+            {
+              "id": "a0-u1-l2-e4",
+              "type": "translation_to_en",
+              "dutch": "tot later",
+              "correctAnswer": "see you later"
+            },
+            {
+              "id": "a0-u1-l2-e5",
+              "type": "translation_to_nl",
+              "english": "goodbye",
+              "correctAnswer": "tot ziens"
+            },
+            {
+              "id": "a0-u1-l2-e6",
+              "type": "translation_to_nl",
+              "english": "see you soon",
+              "correctAnswer": "tot snel"
+            },
+            {
+              "id": "a0-u1-l2-e7",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "tot ziens", "english": "goodbye" },
+                { "dutch": "doei", "english": "bye" },
+                { "dutch": "tot morgen", "english": "see you tomorrow" },
+                { "dutch": "tot later", "english": "see you later" }
+              ]
+            },
+            {
+              "id": "a0-u1-l2-e8",
+              "type": "listening",
+              "dutch": "tot ziens",
+              "question": "What did you hear?",
+              "options": ["tot ziens", "tot morgen", "tot later", "doei"],
+              "correctAnswer": "tot ziens"
+            },
+            {
+              "id": "a0-u1-l2-e9",
+              "type": "fill_blank",
+              "sentence": "Ik ga nu. ___!",
+              "options": ["Doei", "Hallo", "Goedemorgen", "Dank je"],
+              "correctAnswer": "Doei",
+              "translation": "I'm going now. ___!"
+            },
+            {
+              "id": "a0-u1-l2-e10",
+              "type": "sentence_order",
+              "words": ["Tot", "morgen,", "tot", "ziens!"],
+              "correctAnswer": "Tot morgen, tot ziens!",
+              "translation": "See you tomorrow, goodbye!"
+            }
+          ]
+        },
+        {
+          "id": "a0-u1-l3",
+          "title": "How Are You?",
+          "titleNl": "Hoe Gaat Het?",
+          "description": "Ask and answer how someone is doing in Dutch",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u1-l3-e1",
+              "type": "multiple_choice",
+              "question": "What does 'hoe gaat het?' mean?",
+              "options": ["What is your name?", "How are you?", "Where are you from?", "How old are you?"],
+              "correctAnswer": "How are you?"
+            },
+            {
+              "id": "a0-u1-l3-e2",
+              "type": "multiple_choice",
+              "question": "Which word means 'excellent'?",
+              "options": ["goed", "prima", "slecht", "uitstekend"],
+              "correctAnswer": "uitstekend"
+            },
+            {
+              "id": "a0-u1-l3-e3",
+              "type": "translation_to_en",
+              "dutch": "goed",
+              "correctAnswer": "good",
+              "acceptedAnswers": ["good", "well", "fine"]
+            },
+            {
+              "id": "a0-u1-l3-e4",
+              "type": "translation_to_en",
+              "dutch": "niet zo goed",
+              "correctAnswer": "not so good",
+              "acceptedAnswers": ["not so good", "not very well"]
+            },
+            {
+              "id": "a0-u1-l3-e5",
+              "type": "translation_to_nl",
+              "english": "How are you?",
+              "correctAnswer": "Hoe gaat het?",
+              "acceptedAnswers": ["Hoe gaat het?", "Hoe gaat het met jou?"]
+            },
+            {
+              "id": "a0-u1-l3-e6",
+              "type": "translation_to_nl",
+              "english": "fine / great",
+              "correctAnswer": "prima"
+            },
+            {
+              "id": "a0-u1-l3-e7",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "goed", "english": "good" },
+                { "dutch": "prima", "english": "fine" },
+                { "dutch": "uitstekend", "english": "excellent" },
+                { "dutch": "slecht", "english": "bad" }
+              ]
+            },
+            {
+              "id": "a0-u1-l3-e8",
+              "type": "listening",
+              "dutch": "hoe gaat het?",
+              "question": "What did you hear?",
+              "options": ["Hoe oud ben je?", "Hoe gaat het?", "Hoe heet je?", "Waar woon je?"],
+              "correctAnswer": "Hoe gaat het?"
+            },
+            {
+              "id": "a0-u1-l3-e9",
+              "type": "fill_blank",
+              "sentence": "— Hoe gaat het? — ___, dank je wel.",
+              "options": ["Goed", "Slecht", "Tot ziens", "Doei"],
+              "correctAnswer": "Goed",
+              "translation": "— How are you? — ___, thank you."
+            },
+            {
+              "id": "a0-u1-l3-e10",
+              "type": "sentence_order",
+              "words": ["Hoe", "gaat", "het", "met", "jou?"],
+              "correctAnswer": "Hoe gaat het met jou?",
+              "translation": "How are you? (formal/emphatic)"
+            }
+          ]
+        },
+        {
+          "id": "a0-u1-l4",
+          "title": "My Name Is...",
+          "titleNl": "Ik Heet...",
+          "description": "Introduce yourself and learn how to ask others their names",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u1-l4-e1",
+              "type": "multiple_choice",
+              "question": "How do you say 'My name is Emma'?",
+              "options": ["Ik heb Emma", "Ik ga Emma", "Ik heet Emma", "Ik doe Emma"],
+              "correctAnswer": "Ik heet Emma"
+            },
+            {
+              "id": "a0-u1-l4-e2",
+              "type": "multiple_choice",
+              "question": "What does 'aangenaam' mean?",
+              "options": ["thank you", "goodbye", "pleased to meet you", "how are you?"],
+              "correctAnswer": "pleased to meet you"
+            },
+            {
+              "id": "a0-u1-l4-e3",
+              "type": "translation_to_en",
+              "dutch": "Ik heet Jan",
+              "correctAnswer": "My name is Jan",
+              "acceptedAnswers": ["My name is Jan", "I am called Jan"]
+            },
+            {
+              "id": "a0-u1-l4-e4",
+              "type": "translation_to_nl",
+              "english": "My name is Sophie",
+              "correctAnswer": "Ik heet Sophie",
+              "acceptedAnswers": ["Ik heet Sophie", "Mijn naam is Sophie"]
+            },
+            {
+              "id": "a0-u1-l4-e5",
+              "type": "fill_blank",
+              "sentence": "___ heet Thomas.",
+              "options": ["Ik", "Jij", "Hij", "Wij"],
+              "correctAnswer": "Ik",
+              "translation": "___ name is Thomas. (I)"
+            },
+            {
+              "id": "a0-u1-l4-e6",
+              "type": "fill_blank",
+              "sentence": "Mijn ___ is Emma.",
+              "options": ["naam", "huis", "dag", "broer"],
+              "correctAnswer": "naam",
+              "translation": "My ___ is Emma."
+            },
+            {
+              "id": "a0-u1-l4-e7",
+              "type": "sentence_order",
+              "words": ["Ik", "heet", "Emma."],
+              "correctAnswer": "Ik heet Emma.",
+              "translation": "My name is Emma."
+            },
+            {
+              "id": "a0-u1-l4-e8",
+              "type": "sentence_order",
+              "words": ["Mijn", "naam", "is", "Jan."],
+              "correctAnswer": "Mijn naam is Jan.",
+              "translation": "My name is Jan."
+            },
+            {
+              "id": "a0-u1-l4-e9",
+              "type": "listening",
+              "dutch": "Ik heet Emma",
+              "question": "What did you hear?",
+              "options": ["Ik heet Emma", "Ik ben Emma", "Mijn naam is Emma", "Ik ga Emma"],
+              "correctAnswer": "Ik heet Emma"
+            },
+            {
+              "id": "a0-u1-l4-e10",
+              "type": "translation_to_nl",
+              "english": "Nice to meet you",
+              "correctAnswer": "Aangenaam",
+              "acceptedAnswers": ["Aangenaam", "Leuk je te ontmoeten"]
+            }
+          ]
+        },
+        {
+          "id": "a0-u1-l5",
+          "title": "Where Are You From?",
+          "titleNl": "Waar Kom Je Vandaan?",
+          "description": "Talk about where you come from and your nationality",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u1-l5-e1",
+              "type": "multiple_choice",
+              "question": "How do you say 'I come from...' in Dutch?",
+              "options": ["Ik ben uit...", "Ik kom uit...", "Ik ga naar...", "Ik woon in..."],
+              "correctAnswer": "Ik kom uit..."
+            },
+            {
+              "id": "a0-u1-l5-e2",
+              "type": "multiple_choice",
+              "question": "What does 'Ik kom uit Nederland' mean?",
+              "options": ["I live in the Netherlands", "I am going to the Netherlands", "I come from the Netherlands", "I like the Netherlands"],
+              "correctAnswer": "I come from the Netherlands"
+            },
+            {
+              "id": "a0-u1-l5-e3",
+              "type": "translation_to_en",
+              "dutch": "Ik kom uit Engeland",
+              "correctAnswer": "I come from England"
+            },
+            {
+              "id": "a0-u1-l5-e4",
+              "type": "translation_to_nl",
+              "english": "I come from Australia",
+              "correctAnswer": "Ik kom uit Australië"
+            },
+            {
+              "id": "a0-u1-l5-e5",
+              "type": "fill_blank",
+              "sentence": "Ik ___ uit Nederland.",
+              "options": ["kom", "ben", "heb", "ga"],
+              "correctAnswer": "kom",
+              "translation": "I ___ from the Netherlands."
+            },
+            {
+              "id": "a0-u1-l5-e6",
+              "type": "fill_blank",
+              "sentence": "Waar kom jij ___?",
+              "options": ["vandaan", "heen", "uit", "naar"],
+              "correctAnswer": "vandaan",
+              "translation": "Where do you come ___ ?"
+            },
+            {
+              "id": "a0-u1-l5-e7",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "Nederland", "english": "Netherlands" },
+                { "dutch": "Engeland", "english": "England" },
+                { "dutch": "Australië", "english": "Australia" },
+                { "dutch": "Duitsland", "english": "Germany" }
+              ]
+            },
+            {
+              "id": "a0-u1-l5-e8",
+              "type": "listening",
+              "dutch": "Ik kom uit Nederland",
+              "question": "What did you hear?",
+              "options": ["Ik kom uit Nederland", "Ik kom uit Engeland", "Ik woon in Nederland", "Ik ga naar Nederland"],
+              "correctAnswer": "Ik kom uit Nederland"
+            },
+            {
+              "id": "a0-u1-l5-e9",
+              "type": "sentence_order",
+              "words": ["Ik", "kom", "uit", "Australië."],
+              "correctAnswer": "Ik kom uit Australië.",
+              "translation": "I come from Australia."
+            },
+            {
+              "id": "a0-u1-l5-e10",
+              "type": "translation_to_nl",
+              "english": "Where do you come from?",
+              "correctAnswer": "Waar kom je vandaan?",
+              "acceptedAnswers": ["Waar kom je vandaan?", "Waar kom jij vandaan?"]
+            }
+          ]
+        },
+        {
+          "id": "a0-u1-l6",
+          "title": "Unit 1 Review",
+          "titleNl": "Herhaling Les 1",
+          "description": "Review everything from Unit 1 — greetings, farewells, and introductions",
+          "xpReward": 75,
+          "estimatedMinutes": 8,
+          "exercises": [
+            {
+              "id": "a0-u1-l6-e1",
+              "type": "multiple_choice",
+              "question": "How do you say 'good morning' in Dutch?",
+              "options": ["goedenavond", "goedenacht", "goedemorgen", "goedemiddag"],
+              "correctAnswer": "goedemorgen"
+            },
+            {
+              "id": "a0-u1-l6-e2",
+              "type": "translation_to_en",
+              "dutch": "tot snel",
+              "correctAnswer": "see you soon"
+            },
+            {
+              "id": "a0-u1-l6-e3",
+              "type": "translation_to_nl",
+              "english": "good night",
+              "correctAnswer": "goedenacht"
+            },
+            {
+              "id": "a0-u1-l6-e4",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "hoi", "english": "hi" },
+                { "dutch": "dag", "english": "hi / bye" },
+                { "dutch": "tot snel", "english": "see you soon" },
+                { "dutch": "aangenaam", "english": "pleased to meet you" }
+              ]
+            },
+            {
+              "id": "a0-u1-l6-e5",
+              "type": "fill_blank",
+              "sentence": "Mijn ___ is Sophie.",
+              "options": ["naam", "dag", "broer", "huis"],
+              "correctAnswer": "naam",
+              "translation": "My ___ is Sophie."
+            },
+            {
+              "id": "a0-u1-l6-e6",
+              "type": "sentence_order",
+              "words": ["Ik", "kom", "uit", "Engeland."],
+              "correctAnswer": "Ik kom uit Engeland.",
+              "translation": "I come from England."
+            },
+            {
+              "id": "a0-u1-l6-e7",
+              "type": "listening",
+              "dutch": "goedemiddag",
+              "question": "What did you hear?",
+              "options": ["goedemorgen", "goedemiddag", "goedenavond", "goedenacht"],
+              "correctAnswer": "goedemiddag"
+            },
+            {
+              "id": "a0-u1-l6-e8",
+              "type": "multiple_choice",
+              "question": "What does 'uitstekend' mean?",
+              "options": ["good", "bad", "excellent", "fine"],
+              "correctAnswer": "excellent"
+            },
+            {
+              "id": "a0-u1-l6-e9",
+              "type": "translation_to_en",
+              "dutch": "Hoe heet jij?",
+              "correctAnswer": "What is your name?",
+              "acceptedAnswers": ["What is your name?", "What are you called?"]
+            },
+            {
+              "id": "a0-u1-l6-e10",
+              "type": "fill_blank",
+              "sentence": "Ik kom ___ Nederland.",
+              "options": ["uit", "van", "naar", "in"],
+              "correctAnswer": "uit",
+              "translation": "I come ___ the Netherlands."
+            },
+            {
+              "id": "a0-u1-l6-e11",
+              "type": "translation_to_nl",
+              "english": "I come from Germany",
+              "correctAnswer": "Ik kom uit Duitsland"
+            },
+            {
+              "id": "a0-u1-l6-e12",
+              "type": "sentence_order",
+              "words": ["Hoe", "heet", "jij?"],
+              "correctAnswer": "Hoe heet jij?",
+              "translation": "What is your name?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a0-u2",
+      "title": "Numbers 1–20",
+      "titleNl": "Getallen 1 tot 20",
+      "description": "Master Dutch numbers from one to twenty — essential for shopping, addresses, and everyday life",
+      "theme": "numbers",
+      "color": "#8b5cf6",
+      "order": 2,
+      "lessons": [
+        {
+          "id": "a0-u2-l1",
+          "title": "One to Five",
+          "titleNl": "Één tot Vijf",
+          "description": "Learn the Dutch numbers one through five",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u2-l1-e1",
+              "type": "multiple_choice",
+              "question": "What is 'twee' in English?",
+              "options": ["one", "three", "two", "four"],
+              "correctAnswer": "two"
+            },
+            {
+              "id": "a0-u2-l1-e2",
+              "type": "multiple_choice",
+              "question": "How do you say 'four' in Dutch?",
+              "options": ["drie", "vijf", "één", "vier"],
+              "correctAnswer": "vier"
+            },
+            {
+              "id": "a0-u2-l1-e3",
+              "type": "multiple_choice",
+              "question": "What number is 'drie'?",
+              "options": ["1", "2", "3", "4"],
+              "correctAnswer": "3"
+            },
+            {
+              "id": "a0-u2-l1-e4",
+              "type": "translation_to_en",
+              "dutch": "vijf",
+              "correctAnswer": "five"
+            },
+            {
+              "id": "a0-u2-l1-e5",
+              "type": "translation_to_en",
+              "dutch": "één",
+              "correctAnswer": "one"
+            },
+            {
+              "id": "a0-u2-l1-e6",
+              "type": "translation_to_nl",
+              "english": "three",
+              "correctAnswer": "drie"
+            },
+            {
+              "id": "a0-u2-l1-e7",
+              "type": "translation_to_nl",
+              "english": "five",
+              "correctAnswer": "vijf"
+            },
+            {
+              "id": "a0-u2-l1-e8",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "één", "english": "one" },
+                { "dutch": "twee", "english": "two" },
+                { "dutch": "drie", "english": "three" },
+                { "dutch": "vier", "english": "four" }
+              ]
+            },
+            {
+              "id": "a0-u2-l1-e9",
+              "type": "listening",
+              "dutch": "drie",
+              "question": "What number did you hear?",
+              "options": ["één", "twee", "drie", "vier"],
+              "correctAnswer": "drie"
+            },
+            {
+              "id": "a0-u2-l1-e10",
+              "type": "fill_blank",
+              "sentence": "Ik heb ___ katten.",
+              "options": ["twee", "zes", "tien", "negen"],
+              "correctAnswer": "twee",
+              "translation": "I have ___ cats."
+            }
+          ]
+        },
+        {
+          "id": "a0-u2-l2",
+          "title": "Six to Ten",
+          "titleNl": "Zes tot Tien",
+          "description": "Learn the Dutch numbers six through ten",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u2-l2-e1",
+              "type": "multiple_choice",
+              "question": "What is 'acht' in English?",
+              "options": ["six", "seven", "eight", "nine"],
+              "correctAnswer": "eight"
+            },
+            {
+              "id": "a0-u2-l2-e2",
+              "type": "multiple_choice",
+              "question": "How do you say 'ten' in Dutch?",
+              "options": ["zes", "zeven", "negen", "tien"],
+              "correctAnswer": "tien"
+            },
+            {
+              "id": "a0-u2-l2-e3",
+              "type": "multiple_choice",
+              "question": "What number is 'zeven'?",
+              "options": ["6", "7", "8", "9"],
+              "correctAnswer": "7"
+            },
+            {
+              "id": "a0-u2-l2-e4",
+              "type": "translation_to_en",
+              "dutch": "negen",
+              "correctAnswer": "nine"
+            },
+            {
+              "id": "a0-u2-l2-e5",
+              "type": "translation_to_en",
+              "dutch": "zes",
+              "correctAnswer": "six"
+            },
+            {
+              "id": "a0-u2-l2-e6",
+              "type": "translation_to_nl",
+              "english": "eight",
+              "correctAnswer": "acht"
+            },
+            {
+              "id": "a0-u2-l2-e7",
+              "type": "translation_to_nl",
+              "english": "seven",
+              "correctAnswer": "zeven"
+            },
+            {
+              "id": "a0-u2-l2-e8",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "zes", "english": "six" },
+                { "dutch": "zeven", "english": "seven" },
+                { "dutch": "acht", "english": "eight" },
+                { "dutch": "negen", "english": "nine" }
+              ]
+            },
+            {
+              "id": "a0-u2-l2-e9",
+              "type": "listening",
+              "dutch": "tien",
+              "question": "What number did you hear?",
+              "options": ["zes", "acht", "negen", "tien"],
+              "correctAnswer": "tien"
+            },
+            {
+              "id": "a0-u2-l2-e10",
+              "type": "fill_blank",
+              "sentence": "Er zijn ___ stoelen.",
+              "options": ["acht", "één", "twintig", "honderd"],
+              "correctAnswer": "acht",
+              "translation": "There are ___ chairs."
+            }
+          ]
+        },
+        {
+          "id": "a0-u2-l3",
+          "title": "Eleven to Fifteen",
+          "titleNl": "Elf tot Vijftien",
+          "description": "Learn the Dutch numbers eleven through fifteen",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u2-l3-e1",
+              "type": "multiple_choice",
+              "question": "What is 'twaalf' in English?",
+              "options": ["eleven", "twelve", "thirteen", "fourteen"],
+              "correctAnswer": "twelve"
+            },
+            {
+              "id": "a0-u2-l3-e2",
+              "type": "multiple_choice",
+              "question": "How do you say 'fifteen' in Dutch?",
+              "options": ["elf", "dertien", "veertien", "vijftien"],
+              "correctAnswer": "vijftien"
+            },
+            {
+              "id": "a0-u2-l3-e3",
+              "type": "multiple_choice",
+              "question": "What number is 'dertien'?",
+              "options": ["11", "12", "13", "14"],
+              "correctAnswer": "13"
+            },
+            {
+              "id": "a0-u2-l3-e4",
+              "type": "translation_to_en",
+              "dutch": "elf",
+              "correctAnswer": "eleven"
+            },
+            {
+              "id": "a0-u2-l3-e5",
+              "type": "translation_to_en",
+              "dutch": "veertien",
+              "correctAnswer": "fourteen"
+            },
+            {
+              "id": "a0-u2-l3-e6",
+              "type": "translation_to_nl",
+              "english": "thirteen",
+              "correctAnswer": "dertien"
+            },
+            {
+              "id": "a0-u2-l3-e7",
+              "type": "translation_to_nl",
+              "english": "twelve",
+              "correctAnswer": "twaalf"
+            },
+            {
+              "id": "a0-u2-l3-e8",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "elf", "english": "eleven" },
+                { "dutch": "twaalf", "english": "twelve" },
+                { "dutch": "dertien", "english": "thirteen" },
+                { "dutch": "veertien", "english": "fourteen" }
+              ]
+            },
+            {
+              "id": "a0-u2-l3-e9",
+              "type": "listening",
+              "dutch": "vijftien",
+              "question": "What number did you hear?",
+              "options": ["dertien", "veertien", "vijftien", "zestien"],
+              "correctAnswer": "vijftien"
+            },
+            {
+              "id": "a0-u2-l3-e10",
+              "type": "fill_blank",
+              "sentence": "Ik ben ___ jaar oud.",
+              "options": ["dertien", "honderd", "nul", "veel"],
+              "correctAnswer": "dertien",
+              "translation": "I am ___ years old."
+            }
+          ]
+        },
+        {
+          "id": "a0-u2-l4",
+          "title": "Sixteen to Twenty",
+          "titleNl": "Zestien tot Twintig",
+          "description": "Learn the Dutch numbers sixteen through twenty",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u2-l4-e1",
+              "type": "multiple_choice",
+              "question": "What is 'achttien' in English?",
+              "options": ["sixteen", "seventeen", "eighteen", "nineteen"],
+              "correctAnswer": "eighteen"
+            },
+            {
+              "id": "a0-u2-l4-e2",
+              "type": "multiple_choice",
+              "question": "How do you say 'twenty' in Dutch?",
+              "options": ["zestien", "zeventien", "negentien", "twintig"],
+              "correctAnswer": "twintig"
+            },
+            {
+              "id": "a0-u2-l4-e3",
+              "type": "multiple_choice",
+              "question": "What number is 'zeventien'?",
+              "options": ["16", "17", "18", "19"],
+              "correctAnswer": "17"
+            },
+            {
+              "id": "a0-u2-l4-e4",
+              "type": "translation_to_en",
+              "dutch": "zestien",
+              "correctAnswer": "sixteen"
+            },
+            {
+              "id": "a0-u2-l4-e5",
+              "type": "translation_to_en",
+              "dutch": "negentien",
+              "correctAnswer": "nineteen"
+            },
+            {
+              "id": "a0-u2-l4-e6",
+              "type": "translation_to_nl",
+              "english": "eighteen",
+              "correctAnswer": "achttien"
+            },
+            {
+              "id": "a0-u2-l4-e7",
+              "type": "translation_to_nl",
+              "english": "twenty",
+              "correctAnswer": "twintig"
+            },
+            {
+              "id": "a0-u2-l4-e8",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "zestien", "english": "sixteen" },
+                { "dutch": "zeventien", "english": "seventeen" },
+                { "dutch": "achttien", "english": "eighteen" },
+                { "dutch": "negentien", "english": "nineteen" }
+              ]
+            },
+            {
+              "id": "a0-u2-l4-e9",
+              "type": "listening",
+              "dutch": "twintig",
+              "question": "What number did you hear?",
+              "options": ["zestien", "achttien", "negentien", "twintig"],
+              "correctAnswer": "twintig"
+            },
+            {
+              "id": "a0-u2-l4-e10",
+              "type": "fill_blank",
+              "sentence": "Er zijn ___ leerlingen in de klas.",
+              "options": ["twintig", "één", "honderd", "nul"],
+              "correctAnswer": "twintig",
+              "translation": "There are ___ students in the class."
+            }
+          ]
+        },
+        {
+          "id": "a0-u2-l5",
+          "title": "Counting in Context",
+          "titleNl": "Tellen in Context",
+          "description": "Use numbers in real sentences about quantities",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u2-l5-e1",
+              "type": "multiple_choice",
+              "question": "What does 'hoeveel?' mean?",
+              "options": ["how much?", "how many?", "how much / how many?", "how old?"],
+              "correctAnswer": "how much / how many?"
+            },
+            {
+              "id": "a0-u2-l5-e2",
+              "type": "multiple_choice",
+              "question": "How do you say 'I have three dogs'?",
+              "options": ["Ik ben drie honden", "Ik ga drie honden", "Ik heb drie honden", "Er zijn drie honden"],
+              "correctAnswer": "Ik heb drie honden"
+            },
+            {
+              "id": "a0-u2-l5-e3",
+              "type": "translation_to_en",
+              "dutch": "Ik heb twee katten",
+              "correctAnswer": "I have two cats"
+            },
+            {
+              "id": "a0-u2-l5-e4",
+              "type": "translation_to_en",
+              "dutch": "Er zijn vier stoelen",
+              "correctAnswer": "There are four chairs"
+            },
+            {
+              "id": "a0-u2-l5-e5",
+              "type": "translation_to_nl",
+              "english": "I have five books",
+              "correctAnswer": "Ik heb vijf boeken"
+            },
+            {
+              "id": "a0-u2-l5-e6",
+              "type": "fill_blank",
+              "sentence": "Ik heb ___ broers.",
+              "options": ["drie", "blauw", "groot", "snel"],
+              "correctAnswer": "drie",
+              "translation": "I have ___ brothers."
+            },
+            {
+              "id": "a0-u2-l5-e7",
+              "type": "fill_blank",
+              "sentence": "___ kost dat?",
+              "options": ["Hoeveel", "Wie", "Waar", "Wanneer"],
+              "correctAnswer": "Hoeveel",
+              "translation": "How much does that cost?"
+            },
+            {
+              "id": "a0-u2-l5-e8",
+              "type": "sentence_order",
+              "words": ["Er", "zijn", "tien", "appels."],
+              "correctAnswer": "Er zijn tien appels.",
+              "translation": "There are ten apples."
+            },
+            {
+              "id": "a0-u2-l5-e9",
+              "type": "listening",
+              "dutch": "Ik heb twee katten",
+              "question": "What did you hear?",
+              "options": ["Ik heb twee katten", "Ik heb drie katten", "Er zijn twee katten", "Ik heb twee honden"],
+              "correctAnswer": "Ik heb twee katten"
+            },
+            {
+              "id": "a0-u2-l5-e10",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "hoeveel?", "english": "how many / how much?" },
+                { "dutch": "er zijn", "english": "there are" },
+                { "dutch": "ik heb", "english": "I have" },
+                { "dutch": "dat kost", "english": "that costs" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a0-u2-l6",
+          "title": "Unit 2 Review",
+          "titleNl": "Herhaling Les 2",
+          "description": "Review all Dutch numbers from 1 to 20 and using them in context",
+          "xpReward": 75,
+          "estimatedMinutes": 8,
+          "exercises": [
+            {
+              "id": "a0-u2-l6-e1",
+              "type": "multiple_choice",
+              "question": "What is 'veertien' in English?",
+              "options": ["twelve", "thirteen", "fourteen", "fifteen"],
+              "correctAnswer": "fourteen"
+            },
+            {
+              "id": "a0-u2-l6-e2",
+              "type": "translation_to_en",
+              "dutch": "zeven",
+              "correctAnswer": "seven"
+            },
+            {
+              "id": "a0-u2-l6-e3",
+              "type": "translation_to_nl",
+              "english": "sixteen",
+              "correctAnswer": "zestien"
+            },
+            {
+              "id": "a0-u2-l6-e4",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "elf", "english": "eleven" },
+                { "dutch": "twaalf", "english": "twelve" },
+                { "dutch": "achttien", "english": "eighteen" },
+                { "dutch": "twintig", "english": "twenty" }
+              ]
+            },
+            {
+              "id": "a0-u2-l6-e5",
+              "type": "fill_blank",
+              "sentence": "Er zijn ___ maanden in een jaar.",
+              "options": ["twaalf", "tien", "twintig", "vijf"],
+              "correctAnswer": "twaalf",
+              "translation": "There are ___ months in a year."
+            },
+            {
+              "id": "a0-u2-l6-e6",
+              "type": "sentence_order",
+              "words": ["Ik", "heb", "vijftien", "euro."],
+              "correctAnswer": "Ik heb vijftien euro.",
+              "translation": "I have fifteen euros."
+            },
+            {
+              "id": "a0-u2-l6-e7",
+              "type": "listening",
+              "dutch": "zeventien",
+              "question": "What number did you hear?",
+              "options": ["zestien", "zeventien", "achttien", "negentien"],
+              "correctAnswer": "zeventien"
+            },
+            {
+              "id": "a0-u2-l6-e8",
+              "type": "multiple_choice",
+              "question": "How do you say 'there are nine chairs'?",
+              "options": ["Ik heb negen stoelen", "Er zijn negen stoelen", "Er zijn acht stoelen", "Ik ga negen stoelen"],
+              "correctAnswer": "Er zijn negen stoelen"
+            },
+            {
+              "id": "a0-u2-l6-e9",
+              "type": "translation_to_en",
+              "dutch": "Hoeveel kost dat?",
+              "correctAnswer": "How much does that cost?"
+            },
+            {
+              "id": "a0-u2-l6-e10",
+              "type": "translation_to_nl",
+              "english": "I have eleven euros",
+              "correctAnswer": "Ik heb elf euro"
+            },
+            {
+              "id": "a0-u2-l6-e11",
+              "type": "fill_blank",
+              "sentence": "Ik heb ___ jaar.",
+              "options": ["negentien", "blauw", "goed", "klein"],
+              "correctAnswer": "negentien",
+              "translation": "I am ___ years old."
+            },
+            {
+              "id": "a0-u2-l6-e12",
+              "type": "sentence_order",
+              "words": ["Er", "zijn", "twintig", "leerlingen."],
+              "correctAnswer": "Er zijn twintig leerlingen.",
+              "translation": "There are twenty students."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a0-u3",
+      "title": "Essential Everyday Words",
+      "titleNl": "Essentiële Alledaagse Woorden",
+      "description": "The most useful words for navigating everyday situations in the Netherlands",
+      "theme": "essentials",
+      "color": "#f59e0b",
+      "order": 3,
+      "lessons": [
+        {
+          "id": "a0-u3-l1",
+          "title": "Yes, No & Maybe",
+          "titleNl": "Ja, Nee en Misschien",
+          "description": "Learn how to agree, disagree, and express uncertainty in Dutch",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u3-l1-e1",
+              "type": "multiple_choice",
+              "question": "What does 'misschien' mean?",
+              "options": ["yes", "no", "maybe", "certainly"],
+              "correctAnswer": "maybe"
+            },
+            {
+              "id": "a0-u3-l1-e2",
+              "type": "multiple_choice",
+              "question": "Which word means 'certainly' in Dutch?",
+              "options": ["ja", "nee", "misschien", "zeker"],
+              "correctAnswer": "zeker"
+            },
+            {
+              "id": "a0-u3-l1-e3",
+              "type": "translation_to_en",
+              "dutch": "jawel",
+              "correctAnswer": "yes indeed",
+              "acceptedAnswers": ["yes indeed", "yes of course", "oh yes"]
+            },
+            {
+              "id": "a0-u3-l1-e4",
+              "type": "translation_to_en",
+              "dutch": "nee hoor",
+              "correctAnswer": "no, not at all",
+              "acceptedAnswers": ["no not at all", "no, not at all", "of course not"]
+            },
+            {
+              "id": "a0-u3-l1-e5",
+              "type": "translation_to_nl",
+              "english": "yes",
+              "correctAnswer": "ja"
+            },
+            {
+              "id": "a0-u3-l1-e6",
+              "type": "translation_to_nl",
+              "english": "maybe",
+              "correctAnswer": "misschien"
+            },
+            {
+              "id": "a0-u3-l1-e7",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "ja", "english": "yes" },
+                { "dutch": "nee", "english": "no" },
+                { "dutch": "misschien", "english": "maybe" },
+                { "dutch": "zeker", "english": "certainly" }
+              ]
+            },
+            {
+              "id": "a0-u3-l1-e8",
+              "type": "listening",
+              "dutch": "misschien",
+              "question": "What did you hear?",
+              "options": ["ja", "nee", "misschien", "oké"],
+              "correctAnswer": "misschien"
+            },
+            {
+              "id": "a0-u3-l1-e9",
+              "type": "fill_blank",
+              "sentence": "— Ga je mee? — ___, goed idee!",
+              "options": ["Ja", "Nee", "Misschien", "Tot ziens"],
+              "correctAnswer": "Ja",
+              "translation": "— Are you coming? — ___, good idea!"
+            },
+            {
+              "id": "a0-u3-l1-e10",
+              "type": "sentence_order",
+              "words": ["Ja,", "dat", "is", "goed."],
+              "correctAnswer": "Ja, dat is goed.",
+              "translation": "Yes, that is good."
+            }
+          ]
+        },
+        {
+          "id": "a0-u3-l2",
+          "title": "Please & Thank You",
+          "titleNl": "Alsjeblieft en Dank Je Wel",
+          "description": "Master essential polite phrases in Dutch",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u3-l2-e1",
+              "type": "multiple_choice",
+              "question": "What does 'alsjeblieft' mean?",
+              "options": ["thank you", "please / here you go", "goodbye", "excellent"],
+              "correctAnswer": "please / here you go"
+            },
+            {
+              "id": "a0-u3-l2-e2",
+              "type": "multiple_choice",
+              "question": "How do you say 'you're welcome' in Dutch?",
+              "options": ["dank je wel", "bedankt", "graag gedaan", "geen probleem"],
+              "correctAnswer": "graag gedaan"
+            },
+            {
+              "id": "a0-u3-l2-e3",
+              "type": "translation_to_en",
+              "dutch": "dank je wel",
+              "correctAnswer": "thank you",
+              "acceptedAnswers": ["thank you", "thanks"]
+            },
+            {
+              "id": "a0-u3-l2-e4",
+              "type": "translation_to_en",
+              "dutch": "geen probleem",
+              "correctAnswer": "no problem"
+            },
+            {
+              "id": "a0-u3-l2-e5",
+              "type": "translation_to_nl",
+              "english": "thanks",
+              "correctAnswer": "bedankt",
+              "acceptedAnswers": ["bedankt", "dank je wel"]
+            },
+            {
+              "id": "a0-u3-l2-e6",
+              "type": "translation_to_nl",
+              "english": "don't mention it",
+              "correctAnswer": "van niets",
+              "acceptedAnswers": ["van niets", "graag gedaan"]
+            },
+            {
+              "id": "a0-u3-l2-e7",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "alsjeblieft", "english": "please / here you go" },
+                { "dutch": "dank je wel", "english": "thank you" },
+                { "dutch": "graag gedaan", "english": "you're welcome" },
+                { "dutch": "van niets", "english": "don't mention it" }
+              ]
+            },
+            {
+              "id": "a0-u3-l2-e8",
+              "type": "listening",
+              "dutch": "dank je wel",
+              "question": "What did you hear?",
+              "options": ["alsjeblieft", "dank je wel", "graag gedaan", "bedankt"],
+              "correctAnswer": "dank je wel"
+            },
+            {
+              "id": "a0-u3-l2-e9",
+              "type": "fill_blank",
+              "sentence": "— Dank je wel! — ___, hoor.",
+              "options": ["Graag gedaan", "Tot ziens", "Hallo", "Doei"],
+              "correctAnswer": "Graag gedaan",
+              "translation": "— Thank you! — ___, you know."
+            },
+            {
+              "id": "a0-u3-l2-e10",
+              "type": "sentence_order",
+              "words": ["Dank", "je", "wel", "voor", "de", "hulp."],
+              "correctAnswer": "Dank je wel voor de hulp.",
+              "translation": "Thank you for the help."
+            }
+          ]
+        },
+        {
+          "id": "a0-u3-l3",
+          "title": "Basic Question Words",
+          "titleNl": "Basisvraagwoorden",
+          "description": "Learn essential Dutch question words",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u3-l3-e1",
+              "type": "multiple_choice",
+              "question": "What does 'waarom?' mean?",
+              "options": ["what?", "who?", "where?", "why?"],
+              "correctAnswer": "why?"
+            },
+            {
+              "id": "a0-u3-l3-e2",
+              "type": "multiple_choice",
+              "question": "Which word means 'when?' in Dutch?",
+              "options": ["wat?", "wie?", "wanneer?", "hoe?"],
+              "correctAnswer": "wanneer?"
+            },
+            {
+              "id": "a0-u3-l3-e3",
+              "type": "translation_to_en",
+              "dutch": "waar?",
+              "correctAnswer": "where?"
+            },
+            {
+              "id": "a0-u3-l3-e4",
+              "type": "translation_to_en",
+              "dutch": "wie?",
+              "correctAnswer": "who?"
+            },
+            {
+              "id": "a0-u3-l3-e5",
+              "type": "translation_to_nl",
+              "english": "what?",
+              "correctAnswer": "wat?"
+            },
+            {
+              "id": "a0-u3-l3-e6",
+              "type": "translation_to_nl",
+              "english": "how?",
+              "correctAnswer": "hoe?"
+            },
+            {
+              "id": "a0-u3-l3-e7",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "wat?", "english": "what?" },
+                { "dutch": "wie?", "english": "who?" },
+                { "dutch": "waar?", "english": "where?" },
+                { "dutch": "waarom?", "english": "why?" }
+              ]
+            },
+            {
+              "id": "a0-u3-l3-e8",
+              "type": "listening",
+              "dutch": "wanneer?",
+              "question": "What did you hear?",
+              "options": ["wat?", "wie?", "wanneer?", "waarom?"],
+              "correctAnswer": "wanneer?"
+            },
+            {
+              "id": "a0-u3-l3-e9",
+              "type": "fill_blank",
+              "sentence": "___ is jouw naam?",
+              "options": ["Wat", "Wie", "Waar", "Hoe"],
+              "correctAnswer": "Wat",
+              "translation": "___ is your name?"
+            },
+            {
+              "id": "a0-u3-l3-e10",
+              "type": "fill_blank",
+              "sentence": "___ woon jij?",
+              "options": ["Waar", "Wat", "Wie", "Hoe"],
+              "correctAnswer": "Waar",
+              "translation": "___ do you live?"
+            }
+          ]
+        },
+        {
+          "id": "a0-u3-l4",
+          "title": "Common Adjectives",
+          "titleNl": "Veelgebruikte Bijvoeglijke Naamwoorden",
+          "description": "Learn essential Dutch adjectives to describe the world around you",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u3-l4-e1",
+              "type": "multiple_choice",
+              "question": "What is the opposite of 'groot'?",
+              "options": ["goed", "slecht", "klein", "nieuw"],
+              "correctAnswer": "klein"
+            },
+            {
+              "id": "a0-u3-l4-e2",
+              "type": "multiple_choice",
+              "question": "What does 'duur' mean?",
+              "options": ["cheap", "old", "expensive", "new"],
+              "correctAnswer": "expensive"
+            },
+            {
+              "id": "a0-u3-l4-e3",
+              "type": "translation_to_en",
+              "dutch": "mooi",
+              "correctAnswer": "beautiful",
+              "acceptedAnswers": ["beautiful", "nice", "pretty"]
+            },
+            {
+              "id": "a0-u3-l4-e4",
+              "type": "translation_to_en",
+              "dutch": "goedkoop",
+              "correctAnswer": "cheap"
+            },
+            {
+              "id": "a0-u3-l4-e5",
+              "type": "translation_to_nl",
+              "english": "new",
+              "correctAnswer": "nieuw"
+            },
+            {
+              "id": "a0-u3-l4-e6",
+              "type": "translation_to_nl",
+              "english": "old",
+              "correctAnswer": "oud"
+            },
+            {
+              "id": "a0-u3-l4-e7",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "groot", "english": "big" },
+                { "dutch": "klein", "english": "small" },
+                { "dutch": "mooi", "english": "beautiful" },
+                { "dutch": "lelijk", "english": "ugly" }
+              ]
+            },
+            {
+              "id": "a0-u3-l4-e8",
+              "type": "listening",
+              "dutch": "groot",
+              "question": "What did you hear?",
+              "options": ["groot", "klein", "goed", "oud"],
+              "correctAnswer": "groot"
+            },
+            {
+              "id": "a0-u3-l4-e9",
+              "type": "fill_blank",
+              "sentence": "De auto is ___.",
+              "options": ["nieuw", "hallo", "tien", "morgen"],
+              "correctAnswer": "nieuw",
+              "translation": "The car is ___."
+            },
+            {
+              "id": "a0-u3-l4-e10",
+              "type": "sentence_order",
+              "words": ["Het", "huis", "is", "groot."],
+              "correctAnswer": "Het huis is groot.",
+              "translation": "The house is big."
+            }
+          ]
+        },
+        {
+          "id": "a0-u3-l5",
+          "title": "Time & Place Words",
+          "titleNl": "Tijd- en Plaatswoorden",
+          "description": "Learn Dutch words for time and location",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u3-l5-e1",
+              "type": "multiple_choice",
+              "question": "What does 'gisteren' mean?",
+              "options": ["today", "tomorrow", "yesterday", "now"],
+              "correctAnswer": "yesterday"
+            },
+            {
+              "id": "a0-u3-l5-e2",
+              "type": "multiple_choice",
+              "question": "Which word means 'straight ahead'?",
+              "options": ["links", "rechts", "hier", "rechtdoor"],
+              "correctAnswer": "rechtdoor"
+            },
+            {
+              "id": "a0-u3-l5-e3",
+              "type": "translation_to_en",
+              "dutch": "vandaag",
+              "correctAnswer": "today"
+            },
+            {
+              "id": "a0-u3-l5-e4",
+              "type": "translation_to_en",
+              "dutch": "morgen",
+              "correctAnswer": "tomorrow"
+            },
+            {
+              "id": "a0-u3-l5-e5",
+              "type": "translation_to_nl",
+              "english": "here",
+              "correctAnswer": "hier"
+            },
+            {
+              "id": "a0-u3-l5-e6",
+              "type": "translation_to_nl",
+              "english": "later",
+              "correctAnswer": "later"
+            },
+            {
+              "id": "a0-u3-l5-e7",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "nu", "english": "now" },
+                { "dutch": "hier", "english": "here" },
+                { "dutch": "daar", "english": "there" },
+                { "dutch": "links", "english": "left" }
+              ]
+            },
+            {
+              "id": "a0-u3-l5-e8",
+              "type": "listening",
+              "dutch": "vandaag",
+              "question": "What did you hear?",
+              "options": ["gisteren", "vandaag", "morgen", "later"],
+              "correctAnswer": "vandaag"
+            },
+            {
+              "id": "a0-u3-l5-e9",
+              "type": "fill_blank",
+              "sentence": "De supermarkt is ___, bij de hoek.",
+              "options": ["daar", "gisteren", "groot", "duur"],
+              "correctAnswer": "daar",
+              "translation": "The supermarket is ___, at the corner."
+            },
+            {
+              "id": "a0-u3-l5-e10",
+              "type": "sentence_order",
+              "words": ["Ga", "rechtdoor", "en", "dan", "links."],
+              "correctAnswer": "Ga rechtdoor en dan links.",
+              "translation": "Go straight ahead and then left."
+            }
+          ]
+        },
+        {
+          "id": "a0-u3-l6",
+          "title": "Unit 3 Review",
+          "titleNl": "Herhaling Les 3",
+          "description": "Review all essential everyday words from Unit 3",
+          "xpReward": 75,
+          "estimatedMinutes": 8,
+          "exercises": [
+            {
+              "id": "a0-u3-l6-e1",
+              "type": "multiple_choice",
+              "question": "What does 'zeker' mean?",
+              "options": ["maybe", "no", "certainly", "yes indeed"],
+              "correctAnswer": "certainly"
+            },
+            {
+              "id": "a0-u3-l6-e2",
+              "type": "translation_to_en",
+              "dutch": "bedankt",
+              "correctAnswer": "thanks",
+              "acceptedAnswers": ["thanks", "thank you"]
+            },
+            {
+              "id": "a0-u3-l6-e3",
+              "type": "translation_to_nl",
+              "english": "why?",
+              "correctAnswer": "waarom?"
+            },
+            {
+              "id": "a0-u3-l6-e4",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "morgen", "english": "tomorrow" },
+                { "dutch": "gisteren", "english": "yesterday" },
+                { "dutch": "rechts", "english": "right" },
+                { "dutch": "rechtdoor", "english": "straight ahead" }
+              ]
+            },
+            {
+              "id": "a0-u3-l6-e5",
+              "type": "fill_blank",
+              "sentence": "— Dank je! — ___, hoor.",
+              "options": ["Graag gedaan", "Tot ziens", "Doei", "Hallo"],
+              "correctAnswer": "Graag gedaan",
+              "translation": "— Thanks! — ___, you know."
+            },
+            {
+              "id": "a0-u3-l6-e6",
+              "type": "sentence_order",
+              "words": ["Het", "huis", "is", "mooi", "en", "groot."],
+              "correctAnswer": "Het huis is mooi en groot.",
+              "translation": "The house is beautiful and big."
+            },
+            {
+              "id": "a0-u3-l6-e7",
+              "type": "listening",
+              "dutch": "geen probleem",
+              "question": "What did you hear?",
+              "options": ["dank je wel", "graag gedaan", "geen probleem", "van niets"],
+              "correctAnswer": "geen probleem"
+            },
+            {
+              "id": "a0-u3-l6-e8",
+              "type": "multiple_choice",
+              "question": "What does 'lelijk' mean?",
+              "options": ["beautiful", "big", "ugly", "cheap"],
+              "correctAnswer": "ugly"
+            },
+            {
+              "id": "a0-u3-l6-e9",
+              "type": "translation_to_en",
+              "dutch": "nu",
+              "correctAnswer": "now"
+            },
+            {
+              "id": "a0-u3-l6-e10",
+              "type": "translation_to_nl",
+              "english": "which?",
+              "correctAnswer": "welke?",
+              "acceptedAnswers": ["welke?", "welk?"]
+            },
+            {
+              "id": "a0-u3-l6-e11",
+              "type": "fill_blank",
+              "sentence": "De auto is ___ maar mooi.",
+              "options": ["duur", "hallo", "morgen", "wie"],
+              "correctAnswer": "duur",
+              "translation": "The car is ___ but beautiful."
+            },
+            {
+              "id": "a0-u3-l6-e12",
+              "type": "sentence_order",
+              "words": ["Wanneer", "is", "de", "winkel", "open?"],
+              "correctAnswer": "Wanneer is de winkel open?",
+              "translation": "When is the shop open?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a0-u4",
+      "title": "Simple Sentences",
+      "titleNl": "Eenvoudige Zinnen",
+      "description": "Build your first Dutch sentences using core verbs: zijn, hebben, willen",
+      "theme": "sentences",
+      "color": "#10b981",
+      "order": 4,
+      "lessons": [
+        {
+          "id": "a0-u4-l1",
+          "title": "I Am...",
+          "titleNl": "Ik Ben...",
+          "description": "Learn the verb 'zijn' (to be) and describe yourself and others",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u4-l1-e1",
+              "type": "multiple_choice",
+              "question": "How do you say 'she is' in Dutch?",
+              "options": ["hij ben", "zij is", "zij zijn", "jij bent"],
+              "correctAnswer": "zij is"
+            },
+            {
+              "id": "a0-u4-l1-e2",
+              "type": "multiple_choice",
+              "question": "What is the correct form: 'Wij ___ vrienden'?",
+              "options": ["ben", "bent", "is", "zijn"],
+              "correctAnswer": "zijn"
+            },
+            {
+              "id": "a0-u4-l1-e3",
+              "type": "translation_to_en",
+              "dutch": "Ik ben Nederlands",
+              "correctAnswer": "I am Dutch"
+            },
+            {
+              "id": "a0-u4-l1-e4",
+              "type": "translation_to_en",
+              "dutch": "Zij is groot",
+              "correctAnswer": "She is tall",
+              "acceptedAnswers": ["She is tall", "She is big"]
+            },
+            {
+              "id": "a0-u4-l1-e5",
+              "type": "translation_to_nl",
+              "english": "We are friends",
+              "correctAnswer": "Wij zijn vrienden",
+              "acceptedAnswers": ["Wij zijn vrienden", "We zijn vrienden"]
+            },
+            {
+              "id": "a0-u4-l1-e6",
+              "type": "fill_blank",
+              "sentence": "Jij ___ aardig.",
+              "options": ["bent", "ben", "is", "zijn"],
+              "correctAnswer": "bent",
+              "translation": "You are friendly."
+            },
+            {
+              "id": "a0-u4-l1-e7",
+              "type": "fill_blank",
+              "sentence": "Hij ___ leraar.",
+              "options": ["is", "ben", "bent", "zijn"],
+              "correctAnswer": "is",
+              "translation": "He is a teacher."
+            },
+            {
+              "id": "a0-u4-l1-e8",
+              "type": "sentence_order",
+              "words": ["Ik", "ben", "Nederlands."],
+              "correctAnswer": "Ik ben Nederlands.",
+              "translation": "I am Dutch."
+            },
+            {
+              "id": "a0-u4-l1-e9",
+              "type": "listening",
+              "dutch": "Wij zijn vrienden",
+              "question": "What did you hear?",
+              "options": ["Wij zijn vrienden", "Jullie zijn vrienden", "Zij zijn vrienden", "Ik ben een vriend"],
+              "correctAnswer": "Wij zijn vrienden"
+            },
+            {
+              "id": "a0-u4-l1-e10",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "ik ben", "english": "I am" },
+                { "dutch": "jij bent", "english": "you are" },
+                { "dutch": "hij is", "english": "he is" },
+                { "dutch": "wij zijn", "english": "we are" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a0-u4-l2",
+          "title": "This Is / That Is",
+          "titleNl": "Dit Is / Dat Is",
+          "description": "Learn to point out and identify things in Dutch",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u4-l2-e1",
+              "type": "multiple_choice",
+              "question": "What does 'dit is' mean?",
+              "options": ["that is", "this is", "it is", "what is"],
+              "correctAnswer": "this is"
+            },
+            {
+              "id": "a0-u4-l2-e2",
+              "type": "multiple_choice",
+              "question": "How do you ask 'what is this?' in Dutch?",
+              "options": ["Wat is dat?", "Wie is dit?", "Wat is dit?", "Hoe is dit?"],
+              "correctAnswer": "Wat is dit?"
+            },
+            {
+              "id": "a0-u4-l2-e3",
+              "type": "translation_to_en",
+              "dutch": "Dit is een hond.",
+              "correctAnswer": "This is a dog."
+            },
+            {
+              "id": "a0-u4-l2-e4",
+              "type": "translation_to_en",
+              "dutch": "Dat is een kat.",
+              "correctAnswer": "That is a cat."
+            },
+            {
+              "id": "a0-u4-l2-e5",
+              "type": "translation_to_nl",
+              "english": "This is a book.",
+              "correctAnswer": "Dit is een boek."
+            },
+            {
+              "id": "a0-u4-l2-e6",
+              "type": "fill_blank",
+              "sentence": "___ is een boek.",
+              "options": ["Dit", "Wat", "Wie", "Hoe"],
+              "correctAnswer": "Dit",
+              "translation": "___ is a book."
+            },
+            {
+              "id": "a0-u4-l2-e7",
+              "type": "fill_blank",
+              "sentence": "Het ___ een mooi huis.",
+              "options": ["is", "ben", "bent", "zijn"],
+              "correctAnswer": "is",
+              "translation": "It ___ a beautiful house."
+            },
+            {
+              "id": "a0-u4-l2-e8",
+              "type": "sentence_order",
+              "words": ["Wat", "is", "dit?"],
+              "correctAnswer": "Wat is dit?",
+              "translation": "What is this?"
+            },
+            {
+              "id": "a0-u4-l2-e9",
+              "type": "listening",
+              "dutch": "Dit is een hond.",
+              "question": "What did you hear?",
+              "options": ["Dit is een hond.", "Dat is een hond.", "Dit is een kat.", "Dit is een boek."],
+              "correctAnswer": "Dit is een hond."
+            },
+            {
+              "id": "a0-u4-l2-e10",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "dit is", "english": "this is" },
+                { "dutch": "dat is", "english": "that is" },
+                { "dutch": "het is", "english": "it is" },
+                { "dutch": "wat is dit?", "english": "what is this?" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a0-u4-l3",
+          "title": "I Have...",
+          "titleNl": "Ik Heb...",
+          "description": "Learn the verb 'hebben' (to have) and talk about possessions",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u4-l3-e1",
+              "type": "multiple_choice",
+              "question": "What is the correct form: 'Hij ___ twee katten'?",
+              "options": ["heb", "hebt", "heeft", "hebben"],
+              "correctAnswer": "heeft"
+            },
+            {
+              "id": "a0-u4-l3-e2",
+              "type": "multiple_choice",
+              "question": "How do you say 'I have a bike' in Dutch?",
+              "options": ["Ik ben een fiets", "Ik ga een fiets", "Ik heb een fiets", "Ik doe een fiets"],
+              "correctAnswer": "Ik heb een fiets"
+            },
+            {
+              "id": "a0-u4-l3-e3",
+              "type": "translation_to_en",
+              "dutch": "Jij hebt een hond.",
+              "correctAnswer": "You have a dog."
+            },
+            {
+              "id": "a0-u4-l3-e4",
+              "type": "translation_to_en",
+              "dutch": "Hij heeft twee katten.",
+              "correctAnswer": "He has two cats."
+            },
+            {
+              "id": "a0-u4-l3-e5",
+              "type": "translation_to_nl",
+              "english": "We have a house.",
+              "correctAnswer": "Wij hebben een huis.",
+              "acceptedAnswers": ["Wij hebben een huis.", "We hebben een huis."]
+            },
+            {
+              "id": "a0-u4-l3-e6",
+              "type": "fill_blank",
+              "sentence": "Ik ___ een fiets.",
+              "options": ["heb", "hebt", "heeft", "hebben"],
+              "correctAnswer": "heb",
+              "translation": "I ___ a bike."
+            },
+            {
+              "id": "a0-u4-l3-e7",
+              "type": "fill_blank",
+              "sentence": "Wij ___ een grote tuin.",
+              "options": ["hebben", "heb", "hebt", "heeft"],
+              "correctAnswer": "hebben",
+              "translation": "We ___ a large garden."
+            },
+            {
+              "id": "a0-u4-l3-e8",
+              "type": "sentence_order",
+              "words": ["Ik", "heb", "een", "fiets."],
+              "correctAnswer": "Ik heb een fiets.",
+              "translation": "I have a bike."
+            },
+            {
+              "id": "a0-u4-l3-e9",
+              "type": "listening",
+              "dutch": "Jij hebt een hond.",
+              "question": "What did you hear?",
+              "options": ["Ik heb een hond.", "Jij hebt een hond.", "Hij heeft een hond.", "Jij hebt een kat."],
+              "correctAnswer": "Jij hebt een hond."
+            },
+            {
+              "id": "a0-u4-l3-e10",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "ik heb", "english": "I have" },
+                { "dutch": "jij hebt", "english": "you have" },
+                { "dutch": "hij heeft", "english": "he has" },
+                { "dutch": "wij hebben", "english": "we have" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a0-u4-l4",
+          "title": "I Want / I Would Like",
+          "titleNl": "Ik Wil...",
+          "description": "Express wants and wishes politely in Dutch",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u4-l4-e1",
+              "type": "multiple_choice",
+              "question": "What is the polite way to say 'I want a coffee'?",
+              "options": ["Ik wil een koffie.", "Ik wil graag een koffie.", "Mag ik een koffie?", "Ik wil graag een koffie. and Mag ik een koffie? are both correct"],
+              "correctAnswer": "Ik wil graag een koffie. and Mag ik een koffie? are both correct"
+            },
+            {
+              "id": "a0-u4-l4-e2",
+              "type": "multiple_choice",
+              "question": "What does 'mag ik' mean?",
+              "options": ["I want", "I would like", "may I have", "I need"],
+              "correctAnswer": "may I have"
+            },
+            {
+              "id": "a0-u4-l4-e3",
+              "type": "translation_to_en",
+              "dutch": "Ik wil water.",
+              "correctAnswer": "I want water."
+            },
+            {
+              "id": "a0-u4-l4-e4",
+              "type": "translation_to_en",
+              "dutch": "Ik wil graag een koffie.",
+              "correctAnswer": "I would like a coffee."
+            },
+            {
+              "id": "a0-u4-l4-e5",
+              "type": "translation_to_nl",
+              "english": "May I have the bill?",
+              "correctAnswer": "Mag ik de rekening?",
+              "acceptedAnswers": ["Mag ik de rekening?", "Mag ik de rekening alsjeblieft?"]
+            },
+            {
+              "id": "a0-u4-l4-e6",
+              "type": "fill_blank",
+              "sentence": "Ik wil ___ een thee.",
+              "options": ["graag", "slecht", "groot", "morgen"],
+              "correctAnswer": "graag",
+              "translation": "I would ___ like a tea."
+            },
+            {
+              "id": "a0-u4-l4-e7",
+              "type": "fill_blank",
+              "sentence": "___ ik de rekening?",
+              "options": ["Mag", "Heb", "Ben", "Ga"],
+              "correctAnswer": "Mag",
+              "translation": "___ I have the bill?"
+            },
+            {
+              "id": "a0-u4-l4-e8",
+              "type": "sentence_order",
+              "words": ["Ik", "wil", "graag", "een", "koffie."],
+              "correctAnswer": "Ik wil graag een koffie.",
+              "translation": "I would like a coffee."
+            },
+            {
+              "id": "a0-u4-l4-e9",
+              "type": "listening",
+              "dutch": "Mag ik de rekening?",
+              "question": "What did you hear?",
+              "options": ["Ik wil de rekening.", "Mag ik de rekening?", "Mag ik een koffie?", "Ik wil graag de rekening."],
+              "correctAnswer": "Mag ik de rekening?"
+            },
+            {
+              "id": "a0-u4-l4-e10",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "ik wil", "english": "I want" },
+                { "dutch": "ik wil graag", "english": "I would like" },
+                { "dutch": "mag ik", "english": "may I have" },
+                { "dutch": "graag", "english": "gladly / please" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a0-u4-l5",
+          "title": "Where Is...?",
+          "titleNl": "Waar Is...?",
+          "description": "Ask for and give simple directions in Dutch",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            {
+              "id": "a0-u4-l5-e1",
+              "type": "multiple_choice",
+              "question": "How do you say 'where is the supermarket?' in Dutch?",
+              "options": ["Wie is de supermarkt?", "Wat is de supermarkt?", "Waar is de supermarkt?", "Hoe is de supermarkt?"],
+              "correctAnswer": "Waar is de supermarkt?"
+            },
+            {
+              "id": "a0-u4-l5-e2",
+              "type": "multiple_choice",
+              "question": "What does 'ik zoek' mean?",
+              "options": ["I have", "I am", "I'm looking for", "I want"],
+              "correctAnswer": "I'm looking for"
+            },
+            {
+              "id": "a0-u4-l5-e3",
+              "type": "translation_to_en",
+              "dutch": "Het is hier.",
+              "correctAnswer": "It is here."
+            },
+            {
+              "id": "a0-u4-l5-e4",
+              "type": "translation_to_en",
+              "dutch": "Rechtdoor en dan links.",
+              "correctAnswer": "Straight ahead and then left."
+            },
+            {
+              "id": "a0-u4-l5-e5",
+              "type": "translation_to_nl",
+              "english": "Where is the station?",
+              "correctAnswer": "Waar is het station?"
+            },
+            {
+              "id": "a0-u4-l5-e6",
+              "type": "fill_blank",
+              "sentence": "Ik ___ de supermarkt.",
+              "options": ["zoek", "ben", "heb", "wil"],
+              "correctAnswer": "zoek",
+              "translation": "I am ___ the supermarket."
+            },
+            {
+              "id": "a0-u4-l5-e7",
+              "type": "fill_blank",
+              "sentence": "Het station is ___, niet rechts.",
+              "options": ["links", "hier", "groot", "goed"],
+              "correctAnswer": "links",
+              "translation": "The station is ___ , not right."
+            },
+            {
+              "id": "a0-u4-l5-e8",
+              "type": "sentence_order",
+              "words": ["Waar", "is", "de", "supermarkt?"],
+              "correctAnswer": "Waar is de supermarkt?",
+              "translation": "Where is the supermarket?"
+            },
+            {
+              "id": "a0-u4-l5-e9",
+              "type": "listening",
+              "dutch": "Het is daar, aan de linkerkant.",
+              "question": "What did you hear?",
+              "options": ["Het is hier, aan de rechterkant.", "Het is daar, aan de linkerkant.", "Het is rechtdoor.", "Ik zoek de supermarkt."],
+              "correctAnswer": "Het is daar, aan de linkerkant."
+            },
+            {
+              "id": "a0-u4-l5-e10",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "waar is?", "english": "where is?" },
+                { "dutch": "ik zoek", "english": "I'm looking for" },
+                { "dutch": "het is hier", "english": "it is here" },
+                { "dutch": "rechtdoor", "english": "straight ahead" }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "a0-u4-l6",
+          "title": "Unit 4 Review",
+          "titleNl": "Herhaling Les 4",
+          "description": "Review all simple sentences from Unit 4 — zijn, hebben, willen, and directions",
+          "xpReward": 75,
+          "estimatedMinutes": 8,
+          "exercises": [
+            {
+              "id": "a0-u4-l6-e1",
+              "type": "multiple_choice",
+              "question": "Which is correct: 'Jij ___ aardig'?",
+              "options": ["ben", "bent", "is", "zijn"],
+              "correctAnswer": "bent"
+            },
+            {
+              "id": "a0-u4-l6-e2",
+              "type": "translation_to_en",
+              "dutch": "Wij hebben een grote tuin.",
+              "correctAnswer": "We have a large garden."
+            },
+            {
+              "id": "a0-u4-l6-e3",
+              "type": "translation_to_nl",
+              "english": "I would like a tea, please.",
+              "correctAnswer": "Ik wil graag een thee, alsjeblieft."
+            },
+            {
+              "id": "a0-u4-l6-e4",
+              "type": "word_match",
+              "pairs": [
+                { "dutch": "zij is", "english": "she is" },
+                { "dutch": "hij heeft", "english": "he has" },
+                { "dutch": "ik wil", "english": "I want" },
+                { "dutch": "ik zoek", "english": "I'm looking for" }
+              ]
+            },
+            {
+              "id": "a0-u4-l6-e5",
+              "type": "fill_blank",
+              "sentence": "Dit ___ een mooi huis.",
+              "options": ["is", "ben", "zijn", "heb"],
+              "correctAnswer": "is",
+              "translation": "This ___ a beautiful house."
+            },
+            {
+              "id": "a0-u4-l6-e6",
+              "type": "sentence_order",
+              "words": ["Hij", "heeft", "twee", "katten."],
+              "correctAnswer": "Hij heeft twee katten.",
+              "translation": "He has two cats."
+            },
+            {
+              "id": "a0-u4-l6-e7",
+              "type": "listening",
+              "dutch": "Waar is het station?",
+              "question": "What did you hear?",
+              "options": ["Waar is het station?", "Waar is de supermarkt?", "Hoe kom ik bij het station?", "Ik zoek het station."],
+              "correctAnswer": "Waar is het station?"
+            },
+            {
+              "id": "a0-u4-l6-e8",
+              "type": "multiple_choice",
+              "question": "What does 'dat is' mean?",
+              "options": ["this is", "that is", "it is", "what is"],
+              "correctAnswer": "that is"
+            },
+            {
+              "id": "a0-u4-l6-e9",
+              "type": "translation_to_en",
+              "dutch": "Mag ik een koffie, alsjeblieft?",
+              "correctAnswer": "May I have a coffee, please?"
+            },
+            {
+              "id": "a0-u4-l6-e10",
+              "type": "fill_blank",
+              "sentence": "Ga ___ en dan rechts.",
+              "options": ["rechtdoor", "gisteren", "duur", "mooi"],
+              "correctAnswer": "rechtdoor",
+              "translation": "Go ___ and then right."
+            },
+            {
+              "id": "a0-u4-l6-e11",
+              "type": "translation_to_nl",
+              "english": "She is a teacher.",
+              "correctAnswer": "Zij is lerares."
+            },
+            {
+              "id": "a0-u4-l6-e12",
+              "type": "sentence_order",
+              "words": ["Ik", "wil", "graag", "de", "rekening."],
+              "correctAnswer": "Ik wil graag de rekening.",
+              "translation": "I would like the bill."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

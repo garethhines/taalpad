@@ -1,86 +1,164 @@
 'use client'
 
-import { useState } from 'react'
-import { Lock, CheckCircle2, Clock, Zap, ChevronRight } from 'lucide-react'
-import { mockUnits } from '@/lib/mock-data'
+import { useEffect, useRef } from 'react'
+import Link from 'next/link'
+import { Lock, CheckCircle2, ChevronRight, BookOpen } from 'lucide-react'
+import { useProfile } from '@/hooks/useProfile'
+import { useLearningProgress } from '@/hooks/useLearningProgress'
+import { buildLearningPath } from '@/lib/curriculum/index'
 import { cn } from '@/lib/utils'
-import Card from '@/components/ui/Card'
-import Badge from '@/components/ui/Badge'
-import XPBadge from '@/components/ui/XPBadge'
 import ProgressBar from '@/components/ui/ProgressBar'
-import type { Lesson, Unit } from '@/lib/types'
+import type { LevelWithStatus, UnitWithStatus, LessonWithStatus } from '@/lib/types'
 
 export default function LearnPage() {
-  const [expandedUnit, setExpandedUnit] = useState<string | null>('unit-2')
+  const { user } = useProfile()
+  const { progress } = useLearningProgress(user?.id)
+  const levels = buildLearningPath(progress)
+  const currentRef = useRef<HTMLDivElement>(null)
+
+  // Smooth-scroll to the user's current position on load
+  useEffect(() => {
+    if (currentRef.current) {
+      setTimeout(() => {
+        currentRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+      }, 300)
+    }
+  }, [progress.length])
 
   return (
     <div className="flex flex-col min-h-full bg-slate-50">
       {/* Header */}
       <div className="bg-white px-5 pt-14 pb-5 border-b border-slate-100">
         <h1 className="text-2xl font-bold text-slate-900">Learn</h1>
-        <p className="text-sm text-slate-500 mt-1">Continue your Dutch journey</p>
+        <p className="text-sm text-slate-500 mt-0.5">Your Dutch learning path</p>
       </div>
 
-      <div className="flex-1 px-4 py-5 space-y-4">
-        {mockUnits.map((unit) => (
-          <UnitCard
-            key={unit.id}
-            unit={unit}
-            isExpanded={expandedUnit === unit.id}
-            onToggle={() => setExpandedUnit(expandedUnit === unit.id ? null : unit.id)}
-          />
+      {/* Path */}
+      <div className="flex-1 px-4 py-6">
+        {levels.map((level, li) => (
+          <div key={level.id}>
+            <LevelBanner level={level} isFirst={li === 0} />
+            <div className="relative">
+              {/* Vertical spine connecting the unit cards */}
+              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-slate-100" />
+              <div className="space-y-4 pb-2">
+                {level.units.map((unit) => (
+                  <UnitCard
+                    key={unit.id}
+                    unit={unit}
+                    currentRef={
+                      unit.lessons.some((l) => l.isCurrentLesson) ? currentRef : undefined
+                    }
+                  />
+                ))}
+              </div>
+            </div>
+          </div>
         ))}
+        <div className="h-8" />
       </div>
+    </div>
+  )
+}
+
+// ----------------------------------------------------------------
+
+function LevelBanner({ level, isFirst }: { level: LevelWithStatus; isFirst: boolean }) {
+  const bgColor = level.isCompleted
+    ? '#16a34a'
+    : level.isCurrent
+      ? '#1a365d'
+      : '#94a3b8'
+
+  return (
+    <div className={cn('flex items-center gap-3 mb-5', !isFirst && 'mt-10')}>
+      <div
+        className="flex items-center gap-2 px-4 py-2 rounded-full text-white text-sm font-bold shadow-sm shrink-0"
+        style={{ backgroundColor: bgColor }}
+      >
+        {level.isCompleted && <CheckCircle2 size={13} fill="currentColor" />}
+        <span>{level.id}</span>
+        <span className="font-normal opacity-80">·</span>
+        <span className="font-medium">{level.title}</span>
+      </div>
+      <div className="flex-1 h-px bg-slate-200" />
     </div>
   )
 }
 
 function UnitCard({
   unit,
-  isExpanded,
-  onToggle,
+  currentRef,
 }: {
-  unit: Unit
-  isExpanded: boolean
-  onToggle: () => void
+  unit: UnitWithStatus
+  currentRef?: React.RefObject<HTMLDivElement>
 }) {
+  const isCurrentUnit = unit.lessons.some((l) => l.isCurrentLesson)
+  const nextLesson = unit.lessons.find((l) => l.isCurrentLesson || (!l.isCompleted && !l.isLocked))
+
   return (
-    <div className="overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm">
+    <div
+      ref={isCurrentUnit ? currentRef : undefined}
+      className={cn(
+        'ml-12 rounded-2xl border bg-white overflow-hidden transition-all duration-200',
+        unit.isLocked && 'opacity-50 bg-slate-50',
+        isCurrentUnit && 'border-primary-900/40 shadow-md',
+        !isCurrentUnit && !unit.isLocked && 'border-slate-200 shadow-sm',
+        unit.isCompleted && 'border-emerald-200',
+      )}
+    >
       {/* Unit header */}
-      <button
-        className="w-full text-left p-4 flex items-center gap-3"
-        onClick={onToggle}
-      >
-        <div
-          className="w-12 h-12 rounded-2xl flex items-center justify-center shrink-0 text-white font-bold text-sm"
-          style={{ backgroundColor: unit.color }}
-        >
-          {unit.order}
-        </div>
-        <div className="flex-1 min-w-0">
-          <div className="flex items-center gap-2">
-            <p className="font-bold text-slate-800">{unit.title}</p>
-            {unit.isCompleted && (
-              <CheckCircle2 size={16} className="text-emerald-500 shrink-0" fill="currentColor" />
+      <div className="p-4">
+        <div className="flex items-start gap-3">
+          <div
+            className={cn(
+              'w-10 h-10 rounded-xl shrink-0 flex items-center justify-center',
+              unit.isCompleted ? 'bg-emerald-100' : unit.isLocked ? 'bg-slate-100' : 'text-white',
+            )}
+            style={
+              !unit.isCompleted && !unit.isLocked ? { backgroundColor: unit.color } : undefined
+            }
+          >
+            {unit.isCompleted ? (
+              <CheckCircle2 size={20} className="text-emerald-600" />
+            ) : unit.isLocked ? (
+              <Lock size={16} className="text-slate-400" />
+            ) : (
+              <BookOpen size={18} className="text-white" />
             )}
           </div>
-          <p className="text-xs text-slate-500 mt-0.5 truncate">{unit.titleNl}</p>
-          <div className="flex items-center gap-2 mt-2">
-            <ProgressBar value={unit.progress} size="sm" color="blue" className="flex-1" />
-            <span className="text-xs text-slate-400 shrink-0">{unit.progress}%</span>
+
+          <div className="flex-1 min-w-0">
+            <p className="font-bold text-slate-800 text-sm leading-snug">{unit.title}</p>
+            <p className="text-xs text-slate-500 mt-0.5 line-clamp-1">{unit.description}</p>
+            <div className="flex items-center gap-2 mt-2">
+              <ProgressBar
+                value={unit.progress}
+                size="sm"
+                color={unit.isCompleted ? 'green' : 'blue'}
+                className="flex-1"
+              />
+              <span className="text-xs text-slate-400 shrink-0">
+                {unit.completedLessons}/{unit.lessons.length}
+              </span>
+            </div>
           </div>
         </div>
-        <ChevronRight
-          size={18}
-          className={cn(
-            'text-slate-300 shrink-0 transition-transform duration-200',
-            isExpanded && 'rotate-90'
-          )}
-        />
-      </button>
 
-      {/* Lessons */}
-      {isExpanded && (
+        {/* Continue / Start CTA */}
+        {isCurrentUnit && nextLesson && (
+          <Link
+            href={`/learn/${nextLesson.id}`}
+            className="mt-3 w-full flex items-center justify-center gap-2 bg-primary-900 text-white text-sm font-bold py-3 rounded-xl hover:bg-primary-800 active:bg-primary-950 transition-colors"
+          >
+            {nextLesson.isCurrentLesson ? 'Continue' : 'Start'}
+            <ChevronRight size={16} />
+          </Link>
+        )}
+      </div>
+
+      {/* Lesson rows — visible for all unlocked units */}
+      {!unit.isLocked && (
         <div className="border-t border-slate-50 divide-y divide-slate-50">
           {unit.lessons.map((lesson) => (
             <LessonRow key={lesson.id} lesson={lesson} />
@@ -91,52 +169,56 @@ function UnitCard({
   )
 }
 
-function LessonRow({ lesson }: { lesson: Lesson }) {
-  const typeColors: Record<Lesson['type'], string> = {
-    vocabulary: 'info',
-    grammar: 'warning',
-    conversation: 'success',
-    listening: 'default',
-  }
-
-  return (
+function LessonRow({ lesson }: { lesson: LessonWithStatus }) {
+  const inner = (
     <div
       className={cn(
-        'px-4 py-3 flex items-center gap-3',
-        lesson.isLocked ? 'opacity-50' : 'cursor-pointer active:bg-slate-50'
+        'flex items-center gap-3 px-4 py-3 transition-colors',
+        !lesson.isLocked && !lesson.isCompleted && 'hover:bg-slate-50',
+        lesson.isCurrentLesson && 'bg-primary-50/60',
       )}
     >
-      {/* Status icon */}
-      <div className="w-9 h-9 rounded-xl shrink-0 flex items-center justify-center bg-slate-50">
+      {/* Status indicator */}
+      <div className="w-6 h-6 shrink-0 flex items-center justify-center">
         {lesson.isCompleted ? (
-          <CheckCircle2 size={18} className="text-emerald-500" fill="currentColor" />
+          <CheckCircle2 size={17} className="text-emerald-500" fill="currentColor" />
         ) : lesson.isLocked ? (
-          <Lock size={16} className="text-slate-400" />
+          <Lock size={12} className="text-slate-300" />
+        ) : lesson.isCurrentLesson ? (
+          <div className="w-2.5 h-2.5 bg-primary-900 rounded-full animate-pulse" />
         ) : (
-          <div className="w-3 h-3 bg-primary-900 rounded-full" />
+          <div className="w-2 h-2 bg-slate-300 rounded-full" />
         )}
       </div>
 
       <div className="flex-1 min-w-0">
-        <p className={cn(
-          'text-sm font-semibold',
-          lesson.isCompleted ? 'text-slate-500' : 'text-slate-800'
-        )}>
+        <p
+          className={cn(
+            'text-sm font-semibold truncate',
+            lesson.isCompleted && 'text-slate-400',
+            lesson.isLocked && 'text-slate-300',
+            lesson.isCurrentLesson && 'text-primary-900',
+            !lesson.isCompleted && !lesson.isLocked && !lesson.isCurrentLesson && 'text-slate-700',
+          )}
+        >
           {lesson.title}
         </p>
-        <div className="flex items-center gap-2 mt-0.5">
-          <Badge variant={typeColors[lesson.type] as any}>{lesson.type}</Badge>
-          <span className="flex items-center gap-0.5 text-xs text-slate-400">
-            <Clock size={11} />
-            {lesson.estimatedMinutes}m
-          </span>
-          <XPBadge xp={lesson.xpReward} size="sm" />
-        </div>
+        {lesson.score !== null && lesson.score !== undefined && (
+          <p className="text-xs text-emerald-600 font-medium">{lesson.score}%</p>
+        )}
       </div>
 
+      {lesson.isCompleted && lesson.score === 100 && (
+        <span className="text-xs">⭐</span>
+      )}
       {!lesson.isLocked && !lesson.isCompleted && (
-        <ChevronRight size={16} className="text-slate-300 shrink-0" />
+        <ChevronRight size={13} className="text-slate-300 shrink-0" />
       )}
     </div>
   )
+
+  if (!lesson.isLocked && !lesson.isCompleted) {
+    return <Link href={`/learn/${lesson.id}`}>{inner}</Link>
+  }
+  return <div>{inner}</div>
 }
