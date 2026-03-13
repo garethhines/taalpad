@@ -249,6 +249,75 @@ export async function recordLessonCompletion(
   return updated
 }
 
+/**
+ * Records a completed flashcard study session — updates streak and streak_history
+ * without marking any lesson as complete.
+ */
+export async function recordFlashcardSession(
+  supabase: SupabaseClient,
+  userId: string,
+  cardsReviewed: number,
+): Promise<UserProfile | null> {
+  const profile = await getUserProfile(supabase, userId)
+  if (!profile) return null
+
+  const todayStr = new Date().toISOString().split('T')[0]
+  const newStreak = computeNewStreak(profile.last_activity_date, profile.current_streak)
+
+  const updated = await updateUserProfile(supabase, userId, {
+    current_streak: newStreak,
+    longest_streak: Math.max(newStreak, profile.longest_streak),
+    last_activity_date: todayStr,
+  })
+
+  // Upsert streak_history row (accumulate if already studied today)
+  const { data: existing } = await supabase
+    .from('streak_history')
+    .select('xp_earned, lessons_completed')
+    .eq('user_id', userId)
+    .eq('date', todayStr)
+    .maybeSingle()
+
+  await supabase.from('streak_history').upsert(
+    {
+      user_id: userId,
+      date: todayStr,
+      xp_earned: existing?.xp_earned ?? 0,
+      lessons_completed: existing?.lessons_completed ?? 0,
+    },
+    { onConflict: 'user_id,date', ignoreDuplicates: true },
+  )
+
+  return updated
+}
+
+/**
+ * Resets all progress for a user — clears learning progress, vocabulary progress,
+ * streak history, and resets the profile stats back to A0.
+ */
+export async function resetAllProgress(
+  supabase: SupabaseClient,
+  userId: string,
+): Promise<void> {
+  await Promise.all([
+    supabase.from('learning_progress').delete().eq('user_id', userId),
+    supabase.from('vocabulary_progress').delete().eq('user_id', userId),
+    supabase.from('streak_history').delete().eq('user_id', userId),
+  ])
+
+  await supabase
+    .from('users_profile')
+    .update({
+      total_xp: 0,
+      current_level: 'A0' as LevelEnum,
+      current_streak: 0,
+      longest_streak: 0,
+      last_activity_date: null,
+      placement_level: null,
+    })
+    .eq('id', userId)
+}
+
 // ----------------------------------------------------------------
 // Streak History
 // ----------------------------------------------------------------

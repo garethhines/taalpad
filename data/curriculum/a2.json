@@ -5,52 +5,628 @@
   "color": "#10b981",
   "units": [
     { "id": "a2-u1", "title": "Daily Routines", "titleNl": "Dagelijkse Routines", "description": "Describe your daily schedule from morning to night", "theme": "routines", "color": "#10b981", "order": 11, "level": "A2", "lessons": [
-      { "id": "a2-u1-l1", "title": "Morning Routine", "titleNl": "Ochtendroutine", "description": "Waking up, getting ready, and breakfast vocabulary", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u1-l2", "title": "At Work or School", "titleNl": "Op het Werk of School", "description": "Talking about your working day", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u1-l3", "title": "Evening & Hobbies", "titleNl": "Avond en Hobby's", "description": "Free time, hobbies, and relaxing", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u1-l4", "title": "The Weekend", "titleNl": "Het Weekend", "description": "Weekend plans and activities", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u1-l5", "title": "Frequency Adverbs", "titleNl": "Frequentiebijwoorden", "description": "Always, sometimes, never — how often do you do things?", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u1-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 1 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] }
+      { "id": "a2-u1-l1", "title": "Morning Routine", "titleNl": "Ochtendroutine", "description": "Waking up, getting ready, and breakfast vocabulary", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u1-l1-e1", "type": "multiple_choice", "question": "What does 'ontbijt' mean?", "options": ["lunch", "breakfast", "dinner", "snack"], "correctAnswer": "breakfast" },
+        { "id": "a2-u1-l1-e2", "type": "multiple_choice", "question": "What does 'opstaan' mean?", "options": ["to go to sleep", "to sit down", "to get up", "to eat"], "correctAnswer": "to get up" },
+        { "id": "a2-u1-l1-e3", "type": "translation_to_en", "dutch": "douchen", "correctAnswer": "to shower", "acceptedAnswers": ["to shower", "shower", "to take a shower"] },
+        { "id": "a2-u1-l1-e4", "type": "translation_to_en", "dutch": "tanden poetsen", "correctAnswer": "to brush teeth", "acceptedAnswers": ["to brush teeth", "brush teeth", "brushing teeth"] },
+        { "id": "a2-u1-l1-e5", "type": "translation_to_nl", "english": "to get dressed", "correctAnswer": "je aankleden", "acceptedAnswers": ["je aankleden", "aankleden"] },
+        { "id": "a2-u1-l1-e6", "type": "word_match", "pairs": [
+          { "dutch": "opstaan", "english": "to get up" },
+          { "dutch": "douchen", "english": "to shower" },
+          { "dutch": "ontbijt", "english": "breakfast" },
+          { "dutch": "tandenborstel", "english": "toothbrush" }
+        ]},
+        { "id": "a2-u1-l1-e7", "type": "fill_blank", "sentence": "Ik ___ elke ochtend om zeven uur op.", "options": ["sta", "eet", "ga", "slaap"], "correctAnswer": "sta", "translation": "I get up every morning at seven o'clock." },
+        { "id": "a2-u1-l1-e8", "type": "sentence_order", "words": ["Ik", "poets", "mijn", "tanden", "voor", "het", "ontbijt."], "correctAnswer": "Ik poets mijn tanden voor het ontbijt.", "translation": "I brush my teeth before breakfast." },
+        { "id": "a2-u1-l1-e9", "type": "listening", "dutch": "ontbijt", "question": "What did you hear?", "options": ["ontbijt", "avondeten", "lunch", "snack"], "correctAnswer": "ontbijt" },
+        { "id": "a2-u1-l1-e10", "type": "translation_to_en", "dutch": "wekker", "correctAnswer": "alarm clock", "acceptedAnswers": ["alarm clock", "alarm"] }
+      ]},
+      { "id": "a2-u1-l2", "title": "At Work or School", "titleNl": "Op het Werk of School", "description": "Talking about your working day", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u1-l2-e1", "type": "multiple_choice", "question": "What does 'vergadering' mean?", "options": ["office", "meeting", "deadline", "break"], "correctAnswer": "meeting" },
+        { "id": "a2-u1-l2-e2", "type": "multiple_choice", "question": "How do you say 'lunch break' in Dutch?", "options": ["koffiepauze", "lunchpauze", "middagpauze", "werkpauze"], "correctAnswer": "lunchpauze" },
+        { "id": "a2-u1-l2-e3", "type": "translation_to_en", "dutch": "collega", "correctAnswer": "colleague", "acceptedAnswers": ["colleague", "coworker", "co-worker"] },
+        { "id": "a2-u1-l2-e4", "type": "translation_to_en", "dutch": "pauze", "correctAnswer": "break", "acceptedAnswers": ["break", "pause", "rest"] },
+        { "id": "a2-u1-l2-e5", "type": "translation_to_nl", "english": "homework", "correctAnswer": "huiswerk", "acceptedAnswers": ["huiswerk"] },
+        { "id": "a2-u1-l2-e6", "type": "word_match", "pairs": [
+          { "dutch": "vergadering", "english": "meeting" },
+          { "dutch": "collega", "english": "colleague" },
+          { "dutch": "pauze", "english": "break" },
+          { "dutch": "huiswerk", "english": "homework" }
+        ]},
+        { "id": "a2-u1-l2-e7", "type": "fill_blank", "sentence": "De ___ begint om negen uur.", "options": ["vergadering", "pauze", "lunch", "avond"], "correctAnswer": "vergadering", "translation": "The meeting starts at nine o'clock." },
+        { "id": "a2-u1-l2-e8", "type": "sentence_order", "words": ["Ik", "werk", "van", "negen", "tot", "vijf."], "correctAnswer": "Ik werk van negen tot vijf.", "translation": "I work from nine to five." },
+        { "id": "a2-u1-l2-e9", "type": "listening", "dutch": "vergadering", "question": "What did you hear?", "options": ["vergadering", "vakantie", "verjaardag", "vertrek"], "correctAnswer": "vergadering" },
+        { "id": "a2-u1-l2-e10", "type": "multiple_choice", "question": "What does 'werken' mean?", "options": ["to study", "to sleep", "to work", "to play"], "correctAnswer": "to work" }
+      ]},
+      { "id": "a2-u1-l3", "title": "Evening & Hobbies", "titleNl": "Avond en Hobby's", "description": "Free time, hobbies, and relaxing", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u1-l3-e1", "type": "multiple_choice", "question": "What does 'vrije tijd' mean?", "options": ["work time", "free time", "bed time", "school time"], "correctAnswer": "free time" },
+        { "id": "a2-u1-l3-e2", "type": "multiple_choice", "question": "What does 'televisie kijken' mean?", "options": ["to listen to music", "to read a book", "to watch television", "to play games"], "correctAnswer": "to watch television" },
+        { "id": "a2-u1-l3-e3", "type": "translation_to_en", "dutch": "lezen", "correctAnswer": "to read", "acceptedAnswers": ["to read", "read"] },
+        { "id": "a2-u1-l3-e4", "type": "translation_to_en", "dutch": "koken", "correctAnswer": "to cook", "acceptedAnswers": ["to cook", "cook", "cooking"] },
+        { "id": "a2-u1-l3-e5", "type": "translation_to_nl", "english": "to go for a walk", "correctAnswer": "wandelen", "acceptedAnswers": ["wandelen", "een wandeling maken"] },
+        { "id": "a2-u1-l3-e6", "type": "word_match", "pairs": [
+          { "dutch": "lezen", "english": "to read" },
+          { "dutch": "koken", "english": "to cook" },
+          { "dutch": "wandelen", "english": "to walk" },
+          { "dutch": "tekenen", "english": "to draw" }
+        ]},
+        { "id": "a2-u1-l3-e7", "type": "fill_blank", "sentence": "In de avond ___ ik graag een boek.", "options": ["lees", "kook", "werk", "slaap"], "correctAnswer": "lees", "translation": "In the evening I like to read a book." },
+        { "id": "a2-u1-l3-e8", "type": "sentence_order", "words": ["Mijn", "hobby", "is", "gitaar", "spelen."], "correctAnswer": "Mijn hobby is gitaar spelen.", "translation": "My hobby is playing guitar." },
+        { "id": "a2-u1-l3-e9", "type": "listening", "dutch": "vrije tijd", "question": "What did you hear?", "options": ["vrije tijd", "werk tijd", "school tijd", "slaap tijd"], "correctAnswer": "vrije tijd" },
+        { "id": "a2-u1-l3-e10", "type": "translation_to_en", "dutch": "ontspannen", "correctAnswer": "to relax", "acceptedAnswers": ["to relax", "relax", "relaxing"] }
+      ]},
+      { "id": "a2-u1-l4", "title": "The Weekend", "titleNl": "Het Weekend", "description": "Weekend plans and activities", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u1-l4-e1", "type": "multiple_choice", "question": "What does 'uitslapen' mean?", "options": ["to go out", "to sleep in", "to sleep early", "to nap"], "correctAnswer": "to sleep in" },
+        { "id": "a2-u1-l4-e2", "type": "multiple_choice", "question": "What does 'boodschappen doen' mean?", "options": ["to cook dinner", "to go shopping", "to do homework", "to visit friends"], "correctAnswer": "to go shopping" },
+        { "id": "a2-u1-l4-e3", "type": "translation_to_en", "dutch": "zaterdagochtend", "correctAnswer": "Saturday morning", "acceptedAnswers": ["Saturday morning"] },
+        { "id": "a2-u1-l4-e4", "type": "translation_to_en", "dutch": "vrienden bezoeken", "correctAnswer": "to visit friends", "acceptedAnswers": ["to visit friends", "visit friends", "visiting friends"] },
+        { "id": "a2-u1-l4-e5", "type": "translation_to_nl", "english": "to go out", "correctAnswer": "uitgaan", "acceptedAnswers": ["uitgaan", "eruit gaan"] },
+        { "id": "a2-u1-l4-e6", "type": "word_match", "pairs": [
+          { "dutch": "uitslapen", "english": "to sleep in" },
+          { "dutch": "boodschappen doen", "english": "to go shopping" },
+          { "dutch": "schoonmaken", "english": "to clean" },
+          { "dutch": "sporten", "english": "to exercise" }
+        ]},
+        { "id": "a2-u1-l4-e7", "type": "fill_blank", "sentence": "In het weekend ___ ik graag uit.", "options": ["slaap", "ga", "werk", "lees"], "correctAnswer": "slaap", "translation": "At the weekend I like to sleep in." },
+        { "id": "a2-u1-l4-e8", "type": "sentence_order", "words": ["Zaterdag", "ga", "ik", "naar", "de", "markt."], "correctAnswer": "Zaterdag ga ik naar de markt.", "translation": "On Saturday I go to the market." },
+        { "id": "a2-u1-l4-e9", "type": "listening", "dutch": "boodschappen doen", "question": "What did you hear?", "options": ["boodschappen doen", "huiswerk maken", "vrienden bezoeken", "sport doen"], "correctAnswer": "boodschappen doen" },
+        { "id": "a2-u1-l4-e10", "type": "multiple_choice", "question": "Which word means 'weekend'?", "options": ["werkweek", "vakantie", "weekend", "vrije dag"], "correctAnswer": "weekend" }
+      ]},
+      { "id": "a2-u1-l5", "title": "Frequency Adverbs", "titleNl": "Frequentiebijwoorden", "description": "Always, sometimes, never — how often do you do things?", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u1-l5-e1", "type": "multiple_choice", "question": "What does 'altijd' mean?", "options": ["sometimes", "never", "always", "often"], "correctAnswer": "always" },
+        { "id": "a2-u1-l5-e2", "type": "multiple_choice", "question": "What does 'nooit' mean?", "options": ["always", "never", "sometimes", "rarely"], "correctAnswer": "never" },
+        { "id": "a2-u1-l5-e3", "type": "translation_to_en", "dutch": "soms", "correctAnswer": "sometimes", "acceptedAnswers": ["sometimes"] },
+        { "id": "a2-u1-l5-e4", "type": "translation_to_en", "dutch": "vaak", "correctAnswer": "often", "acceptedAnswers": ["often", "frequently"] },
+        { "id": "a2-u1-l5-e5", "type": "translation_to_nl", "english": "rarely", "correctAnswer": "zelden", "acceptedAnswers": ["zelden", "weinig"] },
+        { "id": "a2-u1-l5-e6", "type": "word_match", "pairs": [
+          { "dutch": "altijd", "english": "always" },
+          { "dutch": "vaak", "english": "often" },
+          { "dutch": "soms", "english": "sometimes" },
+          { "dutch": "nooit", "english": "never" }
+        ]},
+        { "id": "a2-u1-l5-e7", "type": "fill_blank", "sentence": "Ik ga ___ naar de sportschool.", "options": ["nooit", "soms", "altijd", "vaak"], "correctAnswer": "nooit", "translation": "I never go to the gym." },
+        { "id": "a2-u1-l5-e8", "type": "sentence_order", "words": ["Ze", "eet", "altijd", "gezond."], "correctAnswer": "Ze eet altijd gezond.", "translation": "She always eats healthily." },
+        { "id": "a2-u1-l5-e9", "type": "listening", "dutch": "altijd", "question": "What did you hear?", "options": ["altijd", "nooit", "soms", "vaak"], "correctAnswer": "altijd" },
+        { "id": "a2-u1-l5-e10", "type": "multiple_choice", "question": "What does 'regelmatig' mean?", "options": ["rarely", "always", "regularly", "never"], "correctAnswer": "regularly" }
+      ]},
+      { "id": "a2-u1-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 1 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [
+        { "id": "a2-u1-l6-e1", "type": "multiple_choice", "question": "What does 'dagelijkse routine' mean?", "options": ["weekend activity", "daily routine", "morning exercise", "evening walk"], "correctAnswer": "daily routine" },
+        { "id": "a2-u1-l6-e2", "type": "translation_to_en", "dutch": "opstaan", "correctAnswer": "to get up", "acceptedAnswers": ["to get up", "get up", "to wake up"] },
+        { "id": "a2-u1-l6-e3", "type": "translation_to_nl", "english": "always", "correctAnswer": "altijd", "acceptedAnswers": ["altijd"] },
+        { "id": "a2-u1-l6-e4", "type": "word_match", "pairs": [
+          { "dutch": "ontbijt", "english": "breakfast" },
+          { "dutch": "vergadering", "english": "meeting" },
+          { "dutch": "vrije tijd", "english": "free time" },
+          { "dutch": "weekend", "english": "weekend" }
+        ]},
+        { "id": "a2-u1-l6-e5", "type": "fill_blank", "sentence": "Ik ___ elke dag om acht uur op.", "options": ["sta", "ga", "kom", "slaap"], "correctAnswer": "sta", "translation": "I get up every day at eight o'clock." },
+        { "id": "a2-u1-l6-e6", "type": "sentence_order", "words": ["Hij", "werkt", "altijd", "hard."], "correctAnswer": "Hij werkt altijd hard.", "translation": "He always works hard." },
+        { "id": "a2-u1-l6-e7", "type": "listening", "dutch": "douchen", "question": "What did you hear?", "options": ["douchen", "koken", "lezen", "slapen"], "correctAnswer": "douchen" },
+        { "id": "a2-u1-l6-e8", "type": "multiple_choice", "question": "What does 'soms' mean?", "options": ["always", "never", "sometimes", "often"], "correctAnswer": "sometimes" },
+        { "id": "a2-u1-l6-e9", "type": "translation_to_en", "dutch": "boodschappen doen", "correctAnswer": "to go shopping", "acceptedAnswers": ["to go shopping", "go shopping", "shopping"] },
+        { "id": "a2-u1-l6-e10", "type": "fill_blank", "sentence": "In het weekend ___ ik graag.", "options": ["uitgerust", "uitgerust", "ontspan", "werkt"], "correctAnswer": "ontspan", "translation": "At the weekend I like to relax." }
+      ]}
     ]},
     { "id": "a2-u2", "title": "Health & Body", "titleNl": "Gezondheid en Lichaam", "description": "Body parts, common ailments, and visiting the doctor", "theme": "health", "color": "#f43f5e", "order": 12, "level": "A2", "lessons": [
-      { "id": "a2-u2-l1", "title": "Parts of the Body", "titleNl": "Lichaamsdelen", "description": "Head, shoulders, knees and toes — in Dutch", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u2-l2", "title": "Feeling Ill", "titleNl": "Ziek Zijn", "description": "Describing symptoms: headache, fever, stomach ache", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u2-l3", "title": "At the Doctor", "titleNl": "Bij de Dokter", "description": "Making an appointment and explaining symptoms", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u2-l4", "title": "At the Pharmacy", "titleNl": "Bij de Apotheek", "description": "Buying medicine and understanding instructions", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u2-l5", "title": "Healthy Living", "titleNl": "Gezond Leven", "description": "Sport, diet, sleep — healthy lifestyle vocabulary", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u2-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 2 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] }
+      { "id": "a2-u2-l1", "title": "Parts of the Body", "titleNl": "Lichaamsdelen", "description": "Head, shoulders, knees and toes — in Dutch", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u2-l1-e1", "type": "multiple_choice", "question": "What does 'hoofd' mean?", "options": ["hand", "foot", "head", "arm"], "correctAnswer": "head" },
+        { "id": "a2-u2-l1-e2", "type": "multiple_choice", "question": "What does 'knie' mean?", "options": ["elbow", "knee", "ankle", "wrist"], "correctAnswer": "knee" },
+        { "id": "a2-u2-l1-e3", "type": "translation_to_en", "dutch": "schouder", "correctAnswer": "shoulder", "acceptedAnswers": ["shoulder"] },
+        { "id": "a2-u2-l1-e4", "type": "translation_to_en", "dutch": "vinger", "correctAnswer": "finger", "acceptedAnswers": ["finger"] },
+        { "id": "a2-u2-l1-e5", "type": "translation_to_nl", "english": "stomach", "correctAnswer": "buik", "acceptedAnswers": ["buik", "maag"] },
+        { "id": "a2-u2-l1-e6", "type": "word_match", "pairs": [
+          { "dutch": "hoofd", "english": "head" },
+          { "dutch": "schouder", "english": "shoulder" },
+          { "dutch": "knie", "english": "knee" },
+          { "dutch": "voet", "english": "foot" }
+        ]},
+        { "id": "a2-u2-l1-e7", "type": "fill_blank", "sentence": "Mijn ___ doet pijn.", "options": ["rug", "huis", "boek", "auto"], "correctAnswer": "rug", "translation": "My back hurts." },
+        { "id": "a2-u2-l1-e8", "type": "sentence_order", "words": ["Hij", "heeft", "pijn", "in", "zijn", "been."], "correctAnswer": "Hij heeft pijn in zijn been.", "translation": "He has pain in his leg." },
+        { "id": "a2-u2-l1-e9", "type": "listening", "dutch": "schouder", "question": "What did you hear?", "options": ["schouder", "knie", "elleboog", "pols"], "correctAnswer": "schouder" },
+        { "id": "a2-u2-l1-e10", "type": "translation_to_en", "dutch": "oog", "correctAnswer": "eye", "acceptedAnswers": ["eye"] }
+      ]},
+      { "id": "a2-u2-l2", "title": "Feeling Ill", "titleNl": "Ziek Zijn", "description": "Describing symptoms: headache, fever, stomach ache", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u2-l2-e1", "type": "multiple_choice", "question": "What does 'hoofdpijn' mean?", "options": ["stomach ache", "back pain", "headache", "toothache"], "correctAnswer": "headache" },
+        { "id": "a2-u2-l2-e2", "type": "multiple_choice", "question": "What does 'koorts' mean?", "options": ["cough", "cold", "fever", "flu"], "correctAnswer": "fever" },
+        { "id": "a2-u2-l2-e3", "type": "translation_to_en", "dutch": "hoesten", "correctAnswer": "to cough", "acceptedAnswers": ["to cough", "cough"] },
+        { "id": "a2-u2-l2-e4", "type": "translation_to_en", "dutch": "buikpijn", "correctAnswer": "stomach ache", "acceptedAnswers": ["stomach ache", "stomach pain", "tummy ache"] },
+        { "id": "a2-u2-l2-e5", "type": "translation_to_nl", "english": "I feel sick", "correctAnswer": "Ik voel me ziek", "acceptedAnswers": ["Ik voel me ziek", "Ik ben ziek"] },
+        { "id": "a2-u2-l2-e6", "type": "word_match", "pairs": [
+          { "dutch": "hoofdpijn", "english": "headache" },
+          { "dutch": "koorts", "english": "fever" },
+          { "dutch": "hoesten", "english": "cough" },
+          { "dutch": "buikpijn", "english": "stomach ache" }
+        ]},
+        { "id": "a2-u2-l2-e7", "type": "fill_blank", "sentence": "Ik heb ___ en ik moet naar de dokter.", "options": ["koorts", "vakantie", "honger", "dorst"], "correctAnswer": "koorts", "translation": "I have a fever and I need to go to the doctor." },
+        { "id": "a2-u2-l2-e8", "type": "sentence_order", "words": ["Ik", "voel", "me", "niet", "lekker", "vandaag."], "correctAnswer": "Ik voel me niet lekker vandaag.", "translation": "I do not feel well today." },
+        { "id": "a2-u2-l2-e9", "type": "listening", "dutch": "hoofdpijn", "question": "What did you hear?", "options": ["hoofdpijn", "buikpijn", "rugpijn", "tandpijn"], "correctAnswer": "hoofdpijn" },
+        { "id": "a2-u2-l2-e10", "type": "multiple_choice", "question": "What does 'niezen' mean?", "options": ["to cough", "to sneeze", "to vomit", "to faint"], "correctAnswer": "to sneeze" }
+      ]},
+      { "id": "a2-u2-l3", "title": "At the Doctor", "titleNl": "Bij de Dokter", "description": "Making an appointment and explaining symptoms", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u2-l3-e1", "type": "multiple_choice", "question": "What does 'afspraak maken' mean?", "options": ["to cancel an appointment", "to make an appointment", "to miss an appointment", "to reschedule"], "correctAnswer": "to make an appointment" },
+        { "id": "a2-u2-l3-e2", "type": "multiple_choice", "question": "What does 'huisarts' mean?", "options": ["specialist", "pharmacist", "general practitioner", "nurse"], "correctAnswer": "general practitioner" },
+        { "id": "a2-u2-l3-e3", "type": "translation_to_en", "dutch": "recept", "correctAnswer": "prescription", "acceptedAnswers": ["prescription", "recipe"] },
+        { "id": "a2-u2-l3-e4", "type": "translation_to_en", "dutch": "bloeddruk", "correctAnswer": "blood pressure", "acceptedAnswers": ["blood pressure"] },
+        { "id": "a2-u2-l3-e5", "type": "translation_to_nl", "english": "waiting room", "correctAnswer": "wachtkamer", "acceptedAnswers": ["wachtkamer"] },
+        { "id": "a2-u2-l3-e6", "type": "word_match", "pairs": [
+          { "dutch": "huisarts", "english": "GP / doctor" },
+          { "dutch": "recept", "english": "prescription" },
+          { "dutch": "wachtkamer", "english": "waiting room" },
+          { "dutch": "afspraak", "english": "appointment" }
+        ]},
+        { "id": "a2-u2-l3-e7", "type": "fill_blank", "sentence": "Ik wil graag een ___ maken bij de dokter.", "options": ["afspraak", "recept", "pil", "zalf"], "correctAnswer": "afspraak", "translation": "I would like to make an appointment with the doctor." },
+        { "id": "a2-u2-l3-e8", "type": "sentence_order", "words": ["De", "dokter", "schrijft", "een", "recept", "voor."], "correctAnswer": "De dokter schrijft een recept voor.", "translation": "The doctor writes a prescription." },
+        { "id": "a2-u2-l3-e9", "type": "listening", "dutch": "huisarts", "question": "What did you hear?", "options": ["huisarts", "tandarts", "specialist", "verpleegster"], "correctAnswer": "huisarts" },
+        { "id": "a2-u2-l3-e10", "type": "translation_to_en", "dutch": "klachten", "correctAnswer": "complaints / symptoms", "acceptedAnswers": ["complaints", "symptoms", "complaints / symptoms"] }
+      ]},
+      { "id": "a2-u2-l4", "title": "At the Pharmacy", "titleNl": "Bij de Apotheek", "description": "Buying medicine and understanding instructions", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u2-l4-e1", "type": "multiple_choice", "question": "What does 'apotheek' mean?", "options": ["hospital", "pharmacy", "clinic", "surgery"], "correctAnswer": "pharmacy" },
+        { "id": "a2-u2-l4-e2", "type": "multiple_choice", "question": "What does 'pijnstiller' mean?", "options": ["antibiotic", "vitamin", "painkiller", "cough syrup"], "correctAnswer": "painkiller" },
+        { "id": "a2-u2-l4-e3", "type": "translation_to_en", "dutch": "tablet", "correctAnswer": "tablet", "acceptedAnswers": ["tablet", "pill"] },
+        { "id": "a2-u2-l4-e4", "type": "translation_to_en", "dutch": "druppels", "correctAnswer": "drops", "acceptedAnswers": ["drops", "ear drops", "eye drops"] },
+        { "id": "a2-u2-l4-e5", "type": "translation_to_nl", "english": "three times a day", "correctAnswer": "drie keer per dag", "acceptedAnswers": ["drie keer per dag"] },
+        { "id": "a2-u2-l4-e6", "type": "word_match", "pairs": [
+          { "dutch": "apotheek", "english": "pharmacy" },
+          { "dutch": "pijnstiller", "english": "painkiller" },
+          { "dutch": "zalf", "english": "ointment" },
+          { "dutch": "siroop", "english": "syrup" }
+        ]},
+        { "id": "a2-u2-l4-e7", "type": "fill_blank", "sentence": "Neem twee ___ drie keer per dag.", "options": ["tabletten", "lessen", "boeken", "afspraken"], "correctAnswer": "tabletten", "translation": "Take two tablets three times a day." },
+        { "id": "a2-u2-l4-e8", "type": "sentence_order", "words": ["Heeft", "u", "iets", "voor", "hoofdpijn?"], "correctAnswer": "Heeft u iets voor hoofdpijn?", "translation": "Do you have something for a headache?" },
+        { "id": "a2-u2-l4-e9", "type": "listening", "dutch": "pijnstiller", "question": "What did you hear?", "options": ["pijnstiller", "antibioticum", "vitamine", "siroop"], "correctAnswer": "pijnstiller" },
+        { "id": "a2-u2-l4-e10", "type": "multiple_choice", "question": "What does 'bijsluiter' mean?", "options": ["prescription", "package leaflet", "receipt", "label"], "correctAnswer": "package leaflet" }
+      ]},
+      { "id": "a2-u2-l5", "title": "Healthy Living", "titleNl": "Gezond Leven", "description": "Sport, diet, sleep — healthy lifestyle vocabulary", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u2-l5-e1", "type": "multiple_choice", "question": "What does 'gezond eten' mean?", "options": ["to eat quickly", "to eat healthy", "to eat together", "to skip meals"], "correctAnswer": "to eat healthy" },
+        { "id": "a2-u2-l5-e2", "type": "multiple_choice", "question": "What does 'sporten' mean?", "options": ["to sleep", "to relax", "to exercise", "to eat"], "correctAnswer": "to exercise" },
+        { "id": "a2-u2-l5-e3", "type": "translation_to_en", "dutch": "voldoende slapen", "correctAnswer": "to sleep enough", "acceptedAnswers": ["to sleep enough", "to get enough sleep", "enough sleep"] },
+        { "id": "a2-u2-l5-e4", "type": "translation_to_en", "dutch": "stress", "correctAnswer": "stress", "acceptedAnswers": ["stress"] },
+        { "id": "a2-u2-l5-e5", "type": "translation_to_nl", "english": "vegetables", "correctAnswer": "groenten", "acceptedAnswers": ["groenten", "groente"] },
+        { "id": "a2-u2-l5-e6", "type": "word_match", "pairs": [
+          { "dutch": "groenten", "english": "vegetables" },
+          { "dutch": "fruit", "english": "fruit" },
+          { "dutch": "bewegen", "english": "to move / exercise" },
+          { "dutch": "roken", "english": "to smoke" }
+        ]},
+        { "id": "a2-u2-l5-e7", "type": "fill_blank", "sentence": "Het is belangrijk om elke dag te ___.", "options": ["bewegen", "eten", "drinken", "slapen"], "correctAnswer": "bewegen", "translation": "It is important to exercise every day." },
+        { "id": "a2-u2-l5-e8", "type": "sentence_order", "words": ["Ze", "eet", "elke", "dag", "veel", "groenten."], "correctAnswer": "Ze eet elke dag veel groenten.", "translation": "She eats a lot of vegetables every day." },
+        { "id": "a2-u2-l5-e9", "type": "listening", "dutch": "bewegen", "question": "What did you hear?", "options": ["bewegen", "slapen", "roken", "eten"], "correctAnswer": "bewegen" },
+        { "id": "a2-u2-l5-e10", "type": "translation_to_en", "dutch": "gezondheid", "correctAnswer": "health", "acceptedAnswers": ["health"] }
+      ]},
+      { "id": "a2-u2-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 2 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [
+        { "id": "a2-u2-l6-e1", "type": "multiple_choice", "question": "What does 'koorts' mean?", "options": ["cold", "fever", "cough", "flu"], "correctAnswer": "fever" },
+        { "id": "a2-u2-l6-e2", "type": "translation_to_en", "dutch": "hoofd", "correctAnswer": "head", "acceptedAnswers": ["head"] },
+        { "id": "a2-u2-l6-e3", "type": "translation_to_nl", "english": "pharmacy", "correctAnswer": "apotheek", "acceptedAnswers": ["apotheek"] },
+        { "id": "a2-u2-l6-e4", "type": "word_match", "pairs": [
+          { "dutch": "huisarts", "english": "GP / doctor" },
+          { "dutch": "hoofdpijn", "english": "headache" },
+          { "dutch": "pijnstiller", "english": "painkiller" },
+          { "dutch": "gezondheid", "english": "health" }
+        ]},
+        { "id": "a2-u2-l6-e5", "type": "fill_blank", "sentence": "Ik heb ___ in mijn rug.", "options": ["pijn", "koorts", "hoofd", "arm"], "correctAnswer": "pijn", "translation": "I have pain in my back." },
+        { "id": "a2-u2-l6-e6", "type": "sentence_order", "words": ["De", "apotheek", "is", "om", "de", "hoek."], "correctAnswer": "De apotheek is om de hoek.", "translation": "The pharmacy is around the corner." },
+        { "id": "a2-u2-l6-e7", "type": "listening", "dutch": "buikpijn", "question": "What did you hear?", "options": ["buikpijn", "hoofdpijn", "rugpijn", "keelpijn"], "correctAnswer": "buikpijn" },
+        { "id": "a2-u2-l6-e8", "type": "multiple_choice", "question": "What does 'afspraak' mean?", "options": ["prescription", "waiting room", "appointment", "symptom"], "correctAnswer": "appointment" },
+        { "id": "a2-u2-l6-e9", "type": "translation_to_en", "dutch": "sporten", "correctAnswer": "to exercise", "acceptedAnswers": ["to exercise", "to do sports", "exercise"] },
+        { "id": "a2-u2-l6-e10", "type": "fill_blank", "sentence": "Ik ga elke week naar de ___.", "options": ["sportschool", "apotheek", "dokter", "school"], "correctAnswer": "sportschool", "translation": "I go to the gym every week." }
+      ]}
     ]},
     { "id": "a2-u3", "title": "Housing & Neighbourhood", "titleNl": "Wonen en de Buurt", "description": "Talk about where you live, your home, and your neighbourhood in the Netherlands", "theme": "housing", "color": "#f59e0b", "order": 13, "level": "A2", "lessons": [
-      { "id": "a2-u3-l1", "title": "Types of Housing", "titleNl": "Soorten Woningen", "description": "Apartments, houses, and student rooms in the Netherlands", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u3-l2", "title": "Rooms & Furniture", "titleNl": "Kamers en Meubilair", "description": "Describe the rooms and furniture in your home", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u3-l3", "title": "Your Neighbourhood", "titleNl": "Jouw Buurt", "description": "Shops, parks, and schools near your home", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u3-l4", "title": "Renting in the Netherlands", "titleNl": "Huren in Nederland", "description": "Renting vocabulary and talking to your landlord", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u3-l5", "title": "Dutch Cities & Geography", "titleNl": "Nederlandse Steden en Geografie", "description": "Major cities, the Randstad, and Dutch provinces", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u3-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 3 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] }
+      { "id": "a2-u3-l1", "title": "Types of Housing", "titleNl": "Soorten Woningen", "description": "Apartments, houses, and student rooms in the Netherlands", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u3-l1-e1", "type": "multiple_choice", "question": "What does 'appartement' mean?", "options": ["house", "apartment", "studio", "room"], "correctAnswer": "apartment" },
+        { "id": "a2-u3-l1-e2", "type": "multiple_choice", "question": "What does 'rijtjeshuis' mean?", "options": ["detached house", "terraced house", "farmhouse", "villa"], "correctAnswer": "terraced house" },
+        { "id": "a2-u3-l1-e3", "type": "translation_to_en", "dutch": "studio", "correctAnswer": "studio", "acceptedAnswers": ["studio", "studio apartment", "bedsit"] },
+        { "id": "a2-u3-l1-e4", "type": "translation_to_en", "dutch": "huurwoning", "correctAnswer": "rental property", "acceptedAnswers": ["rental property", "rental home", "rented house"] },
+        { "id": "a2-u3-l1-e5", "type": "translation_to_nl", "english": "detached house", "correctAnswer": "vrijstaand huis", "acceptedAnswers": ["vrijstaand huis", "vrijstaande woning"] },
+        { "id": "a2-u3-l1-e6", "type": "word_match", "pairs": [
+          { "dutch": "appartement", "english": "apartment" },
+          { "dutch": "rijtjeshuis", "english": "terraced house" },
+          { "dutch": "studio", "english": "studio" },
+          { "dutch": "studentenkamer", "english": "student room" }
+        ]},
+        { "id": "a2-u3-l1-e7", "type": "fill_blank", "sentence": "Ik woon in een ___ op de derde verdieping.", "options": ["appartement", "tuin", "kelder", "zolder"], "correctAnswer": "appartement", "translation": "I live in an apartment on the third floor." },
+        { "id": "a2-u3-l1-e8", "type": "sentence_order", "words": ["In", "Nederland", "zijn", "veel", "rijtjeshuizen."], "correctAnswer": "In Nederland zijn veel rijtjeshuizen.", "translation": "In the Netherlands there are many terraced houses." },
+        { "id": "a2-u3-l1-e9", "type": "listening", "dutch": "appartement", "question": "What did you hear?", "options": ["appartement", "rijtjeshuis", "boerderij", "villa"], "correctAnswer": "appartement" },
+        { "id": "a2-u3-l1-e10", "type": "translation_to_en", "dutch": "verdieping", "correctAnswer": "floor / storey", "acceptedAnswers": ["floor", "storey", "level", "floor / storey"] }
+      ]},
+      { "id": "a2-u3-l2", "title": "Rooms & Furniture", "titleNl": "Kamers en Meubilair", "description": "Describe the rooms and furniture in your home", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u3-l2-e1", "type": "multiple_choice", "question": "What does 'woonkamer' mean?", "options": ["bedroom", "bathroom", "kitchen", "living room"], "correctAnswer": "living room" },
+        { "id": "a2-u3-l2-e2", "type": "multiple_choice", "question": "What does 'kast' mean?", "options": ["table", "chair", "wardrobe / cupboard", "bed"], "correctAnswer": "wardrobe / cupboard" },
+        { "id": "a2-u3-l2-e3", "type": "translation_to_en", "dutch": "slaapkamer", "correctAnswer": "bedroom", "acceptedAnswers": ["bedroom"] },
+        { "id": "a2-u3-l2-e4", "type": "translation_to_en", "dutch": "bank", "correctAnswer": "sofa", "acceptedAnswers": ["sofa", "couch", "settee"] },
+        { "id": "a2-u3-l2-e5", "type": "translation_to_nl", "english": "kitchen", "correctAnswer": "keuken", "acceptedAnswers": ["keuken"] },
+        { "id": "a2-u3-l2-e6", "type": "word_match", "pairs": [
+          { "dutch": "woonkamer", "english": "living room" },
+          { "dutch": "slaapkamer", "english": "bedroom" },
+          { "dutch": "keuken", "english": "kitchen" },
+          { "dutch": "badkamer", "english": "bathroom" }
+        ]},
+        { "id": "a2-u3-l2-e7", "type": "fill_blank", "sentence": "De ___ staat in de slaapkamer.", "options": ["kast", "bank", "koelkast", "televisie"], "correctAnswer": "kast", "translation": "The wardrobe is in the bedroom." },
+        { "id": "a2-u3-l2-e8", "type": "sentence_order", "words": ["Onze", "woonkamer", "heeft", "een", "grote", "bank."], "correctAnswer": "Onze woonkamer heeft een grote bank.", "translation": "Our living room has a big sofa." },
+        { "id": "a2-u3-l2-e9", "type": "listening", "dutch": "slaapkamer", "question": "What did you hear?", "options": ["slaapkamer", "woonkamer", "keuken", "badkamer"], "correctAnswer": "slaapkamer" },
+        { "id": "a2-u3-l2-e10", "type": "translation_to_en", "dutch": "koelkast", "correctAnswer": "fridge", "acceptedAnswers": ["fridge", "refrigerator"] }
+      ]},
+      { "id": "a2-u3-l3", "title": "Your Neighbourhood", "titleNl": "Jouw Buurt", "description": "Shops, parks, and schools near your home", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u3-l3-e1", "type": "multiple_choice", "question": "What does 'buurt' mean?", "options": ["city", "neighbourhood", "street", "town"], "correctAnswer": "neighbourhood" },
+        { "id": "a2-u3-l3-e2", "type": "multiple_choice", "question": "What does 'supermarkt' mean?", "options": ["market", "pharmacy", "supermarket", "bakery"], "correctAnswer": "supermarket" },
+        { "id": "a2-u3-l3-e3", "type": "translation_to_en", "dutch": "park", "correctAnswer": "park", "acceptedAnswers": ["park"] },
+        { "id": "a2-u3-l3-e4", "type": "translation_to_en", "dutch": "bibliotheek", "correctAnswer": "library", "acceptedAnswers": ["library"] },
+        { "id": "a2-u3-l3-e5", "type": "translation_to_nl", "english": "post office", "correctAnswer": "postkantoor", "acceptedAnswers": ["postkantoor"] },
+        { "id": "a2-u3-l3-e6", "type": "word_match", "pairs": [
+          { "dutch": "supermarkt", "english": "supermarket" },
+          { "dutch": "park", "english": "park" },
+          { "dutch": "bibliotheek", "english": "library" },
+          { "dutch": "school", "english": "school" }
+        ]},
+        { "id": "a2-u3-l3-e7", "type": "fill_blank", "sentence": "Er is een ___ vlak bij mijn huis.", "options": ["supermarkt", "auto", "vliegtuig", "trein"], "correctAnswer": "supermarkt", "translation": "There is a supermarket right near my house." },
+        { "id": "a2-u3-l3-e8", "type": "sentence_order", "words": ["De", "school", "is", "aan", "het", "einde", "van", "de", "straat."], "correctAnswer": "De school is aan het einde van de straat.", "translation": "The school is at the end of the street." },
+        { "id": "a2-u3-l3-e9", "type": "listening", "dutch": "bibliotheek", "question": "What did you hear?", "options": ["bibliotheek", "supermarkt", "school", "ziekenhuis"], "correctAnswer": "bibliotheek" },
+        { "id": "a2-u3-l3-e10", "type": "translation_to_en", "dutch": "ziekenhuis", "correctAnswer": "hospital", "acceptedAnswers": ["hospital"] }
+      ]},
+      { "id": "a2-u3-l4", "title": "Renting in the Netherlands", "titleNl": "Huren in Nederland", "description": "Renting vocabulary and talking to your landlord", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u3-l4-e1", "type": "multiple_choice", "question": "What does 'huurbaas' mean?", "options": ["tenant", "estate agent", "landlord", "neighbour"], "correctAnswer": "landlord" },
+        { "id": "a2-u3-l4-e2", "type": "multiple_choice", "question": "What does 'huurprijs' mean?", "options": ["deposit", "rent", "mortgage", "service charge"], "correctAnswer": "rent" },
+        { "id": "a2-u3-l4-e3", "type": "translation_to_en", "dutch": "borg", "correctAnswer": "deposit", "acceptedAnswers": ["deposit", "security deposit"] },
+        { "id": "a2-u3-l4-e4", "type": "translation_to_en", "dutch": "huurcontract", "correctAnswer": "rental contract", "acceptedAnswers": ["rental contract", "tenancy agreement", "lease"] },
+        { "id": "a2-u3-l4-e5", "type": "translation_to_nl", "english": "tenant", "correctAnswer": "huurder", "acceptedAnswers": ["huurder"] },
+        { "id": "a2-u3-l4-e6", "type": "word_match", "pairs": [
+          { "dutch": "huurbaas", "english": "landlord" },
+          { "dutch": "huurder", "english": "tenant" },
+          { "dutch": "borg", "english": "deposit" },
+          { "dutch": "huurcontract", "english": "rental contract" }
+        ]},
+        { "id": "a2-u3-l4-e7", "type": "fill_blank", "sentence": "De ___ is vijfhonderd euro per maand.", "options": ["huurprijs", "borg", "woning", "kamer"], "correctAnswer": "huurprijs", "translation": "The rent is five hundred euros per month." },
+        { "id": "a2-u3-l4-e8", "type": "sentence_order", "words": ["Ik", "wil", "graag", "het", "huurcontract", "tekenen."], "correctAnswer": "Ik wil graag het huurcontract tekenen.", "translation": "I would like to sign the rental contract." },
+        { "id": "a2-u3-l4-e9", "type": "listening", "dutch": "huurcontract", "question": "What did you hear?", "options": ["huurcontract", "huurprijs", "huurbaas", "huurder"], "correctAnswer": "huurcontract" },
+        { "id": "a2-u3-l4-e10", "type": "multiple_choice", "question": "What does 'opleveren' mean in a rental context?", "options": ["to rent out", "to hand back / vacate", "to repair", "to move in"], "correctAnswer": "to hand back / vacate" }
+      ]},
+      { "id": "a2-u3-l5", "title": "Dutch Cities & Geography", "titleNl": "Nederlandse Steden en Geografie", "description": "Major cities, the Randstad, and Dutch provinces", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u3-l5-e1", "type": "multiple_choice", "question": "What is the capital of the Netherlands?", "options": ["Rotterdam", "Utrecht", "Amsterdam", "Den Haag"], "correctAnswer": "Amsterdam" },
+        { "id": "a2-u3-l5-e2", "type": "multiple_choice", "question": "What does 'provincie' mean?", "options": ["city", "town", "province", "region"], "correctAnswer": "province" },
+        { "id": "a2-u3-l5-e3", "type": "translation_to_en", "dutch": "de Randstad", "correctAnswer": "the Randstad", "acceptedAnswers": ["the Randstad", "Randstad", "the conurbation"] },
+        { "id": "a2-u3-l5-e4", "type": "translation_to_en", "dutch": "polder", "correctAnswer": "polder", "acceptedAnswers": ["polder", "reclaimed land"] },
+        { "id": "a2-u3-l5-e5", "type": "translation_to_nl", "english": "the coast", "correctAnswer": "de kust", "acceptedAnswers": ["de kust", "kust"] },
+        { "id": "a2-u3-l5-e6", "type": "word_match", "pairs": [
+          { "dutch": "Amsterdam", "english": "capital city" },
+          { "dutch": "Rotterdam", "english": "largest port" },
+          { "dutch": "Den Haag", "english": "seat of government" },
+          { "dutch": "Utrecht", "english": "central city" }
+        ]},
+        { "id": "a2-u3-l5-e7", "type": "fill_blank", "sentence": "Nederland heeft twaalf ___.", "options": ["provincies", "steden", "rivieren", "eilanden"], "correctAnswer": "provincies", "translation": "The Netherlands has twelve provinces." },
+        { "id": "a2-u3-l5-e8", "type": "sentence_order", "words": ["Amsterdam", "is", "de", "hoofdstad", "van", "Nederland."], "correctAnswer": "Amsterdam is de hoofdstad van Nederland.", "translation": "Amsterdam is the capital of the Netherlands." },
+        { "id": "a2-u3-l5-e9", "type": "listening", "dutch": "provincie", "question": "What did you hear?", "options": ["provincie", "stad", "dorp", "regio"], "correctAnswer": "provincie" },
+        { "id": "a2-u3-l5-e10", "type": "translation_to_en", "dutch": "rivier", "correctAnswer": "river", "acceptedAnswers": ["river"] }
+      ]},
+      { "id": "a2-u3-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 3 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [
+        { "id": "a2-u3-l6-e1", "type": "multiple_choice", "question": "What does 'woonkamer' mean?", "options": ["bedroom", "kitchen", "living room", "bathroom"], "correctAnswer": "living room" },
+        { "id": "a2-u3-l6-e2", "type": "translation_to_en", "dutch": "buurt", "correctAnswer": "neighbourhood", "acceptedAnswers": ["neighbourhood", "neighborhood"] },
+        { "id": "a2-u3-l6-e3", "type": "translation_to_nl", "english": "landlord", "correctAnswer": "huurbaas", "acceptedAnswers": ["huurbaas", "verhuurder"] },
+        { "id": "a2-u3-l6-e4", "type": "word_match", "pairs": [
+          { "dutch": "appartement", "english": "apartment" },
+          { "dutch": "keuken", "english": "kitchen" },
+          { "dutch": "supermarkt", "english": "supermarket" },
+          { "dutch": "huurcontract", "english": "rental contract" }
+        ]},
+        { "id": "a2-u3-l6-e5", "type": "fill_blank", "sentence": "Ik woon in een groot ___ in Amsterdam.", "options": ["appartement", "stad", "markt", "school"], "correctAnswer": "appartement", "translation": "I live in a large apartment in Amsterdam." },
+        { "id": "a2-u3-l6-e6", "type": "sentence_order", "words": ["De", "bibliotheek", "is", "vlak", "bij", "het", "park."], "correctAnswer": "De bibliotheek is vlak bij het park.", "translation": "The library is right next to the park." },
+        { "id": "a2-u3-l6-e7", "type": "listening", "dutch": "rijtjeshuis", "question": "What did you hear?", "options": ["rijtjeshuis", "appartement", "studio", "boerderij"], "correctAnswer": "rijtjeshuis" },
+        { "id": "a2-u3-l6-e8", "type": "multiple_choice", "question": "What is the Dutch word for 'deposit' (in a rental)?", "options": ["huur", "borg", "contract", "belasting"], "correctAnswer": "borg" },
+        { "id": "a2-u3-l6-e9", "type": "translation_to_en", "dutch": "hoofdstad", "correctAnswer": "capital city", "acceptedAnswers": ["capital city", "capital"] },
+        { "id": "a2-u3-l6-e10", "type": "fill_blank", "sentence": "Nederland heeft twaalf ___.", "options": ["provincies", "steden", "bergen", "zeeën"], "correctAnswer": "provincies", "translation": "The Netherlands has twelve provinces." }
+      ]}
     ]},
     { "id": "a2-u4", "title": "Work & Study", "titleNl": "Werk en Studie", "description": "Talk about your job, education, and professional life in Dutch", "theme": "work", "color": "#6366f1", "order": 14, "level": "A2", "lessons": [
-      { "id": "a2-u4-l1", "title": "Jobs & Professions", "titleNl": "Beroepen", "description": "Common job titles and what they involve", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u4-l2", "title": "Education System", "titleNl": "Het Onderwijssysteem", "description": "Dutch school types, university, and studying", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u4-l3", "title": "At the Office", "titleNl": "Op Kantoor", "description": "Office vocabulary, meetings, and working with colleagues", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u4-l4", "title": "Work–Life Balance", "titleNl": "Werk-Privébalans", "description": "Working hours, holidays, and part-time culture in the Netherlands", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u4-l5", "title": "Applying for a Job", "titleNl": "Solliciteren", "description": "CV vocabulary, cover letters, and interview phrases", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u4-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 4 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] }
+      { "id": "a2-u4-l1", "title": "Jobs & Professions", "titleNl": "Beroepen", "description": "Common job titles and what they involve", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u4-l1-e1", "type": "multiple_choice", "question": "What does 'verpleegkundige' mean?", "options": ["doctor", "nurse", "pharmacist", "dentist"], "correctAnswer": "nurse" },
+        { "id": "a2-u4-l1-e2", "type": "multiple_choice", "question": "What does 'leraar' mean?", "options": ["lawyer", "teacher", "engineer", "manager"], "correctAnswer": "teacher" },
+        { "id": "a2-u4-l1-e3", "type": "translation_to_en", "dutch": "ingenieur", "correctAnswer": "engineer", "acceptedAnswers": ["engineer"] },
+        { "id": "a2-u4-l1-e4", "type": "translation_to_en", "dutch": "advocaat", "correctAnswer": "lawyer", "acceptedAnswers": ["lawyer", "solicitor", "attorney"] },
+        { "id": "a2-u4-l1-e5", "type": "translation_to_nl", "english": "doctor", "correctAnswer": "dokter", "acceptedAnswers": ["dokter", "arts"] },
+        { "id": "a2-u4-l1-e6", "type": "word_match", "pairs": [
+          { "dutch": "leraar", "english": "teacher" },
+          { "dutch": "ingenieur", "english": "engineer" },
+          { "dutch": "advocaat", "english": "lawyer" },
+          { "dutch": "kok", "english": "chef / cook" }
+        ]},
+        { "id": "a2-u4-l1-e7", "type": "fill_blank", "sentence": "Mijn vader werkt als ___.", "options": ["ingenieur", "school", "kantoor", "boek"], "correctAnswer": "ingenieur", "translation": "My father works as an engineer." },
+        { "id": "a2-u4-l1-e8", "type": "sentence_order", "words": ["Zij", "is", "verpleegkundige", "in", "het", "ziekenhuis."], "correctAnswer": "Zij is verpleegkundige in het ziekenhuis.", "translation": "She is a nurse in the hospital." },
+        { "id": "a2-u4-l1-e9", "type": "listening", "dutch": "leraar", "question": "What did you hear?", "options": ["leraar", "dokter", "advocaat", "kok"], "correctAnswer": "leraar" },
+        { "id": "a2-u4-l1-e10", "type": "translation_to_en", "dutch": "accountant", "correctAnswer": "accountant", "acceptedAnswers": ["accountant"] }
+      ]},
+      { "id": "a2-u4-l2", "title": "Education System", "titleNl": "Het Onderwijssysteem", "description": "Dutch school types, university, and studying", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u4-l2-e1", "type": "multiple_choice", "question": "What does 'universiteit' mean?", "options": ["primary school", "secondary school", "university", "college"], "correctAnswer": "university" },
+        { "id": "a2-u4-l2-e2", "type": "multiple_choice", "question": "What does 'basisschool' mean?", "options": ["secondary school", "university", "primary school", "vocational school"], "correctAnswer": "primary school" },
+        { "id": "a2-u4-l2-e3", "type": "translation_to_en", "dutch": "studeren", "correctAnswer": "to study", "acceptedAnswers": ["to study", "study"] },
+        { "id": "a2-u4-l2-e4", "type": "translation_to_en", "dutch": "diploma", "correctAnswer": "diploma", "acceptedAnswers": ["diploma", "degree", "qualification"] },
+        { "id": "a2-u4-l2-e5", "type": "translation_to_nl", "english": "student", "correctAnswer": "student", "acceptedAnswers": ["student"] },
+        { "id": "a2-u4-l2-e6", "type": "word_match", "pairs": [
+          { "dutch": "basisschool", "english": "primary school" },
+          { "dutch": "middelbare school", "english": "secondary school" },
+          { "dutch": "universiteit", "english": "university" },
+          { "dutch": "hogeschool", "english": "university of applied sciences" }
+        ]},
+        { "id": "a2-u4-l2-e7", "type": "fill_blank", "sentence": "Ik ___ psychologie aan de universiteit.", "options": ["studeer", "werk", "leer", "volg"], "correctAnswer": "studeer", "translation": "I study psychology at university." },
+        { "id": "a2-u4-l2-e8", "type": "sentence_order", "words": ["In", "Nederland", "begint", "school", "om", "half", "negen."], "correctAnswer": "In Nederland begint school om half negen.", "translation": "In the Netherlands school starts at half past eight." },
+        { "id": "a2-u4-l2-e9", "type": "listening", "dutch": "universiteit", "question": "What did you hear?", "options": ["universiteit", "hogeschool", "basisschool", "middelbare school"], "correctAnswer": "universiteit" },
+        { "id": "a2-u4-l2-e10", "type": "translation_to_en", "dutch": "cijfer", "correctAnswer": "grade / mark", "acceptedAnswers": ["grade", "mark", "grade / mark"] }
+      ]},
+      { "id": "a2-u4-l3", "title": "At the Office", "titleNl": "Op Kantoor", "description": "Office vocabulary, meetings, and working with colleagues", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u4-l3-e1", "type": "multiple_choice", "question": "What does 'bureau' mean?", "options": ["chair", "desk", "shelf", "lamp"], "correctAnswer": "desk" },
+        { "id": "a2-u4-l3-e2", "type": "multiple_choice", "question": "What does 'e-mail sturen' mean?", "options": ["to receive an email", "to delete an email", "to send an email", "to read an email"], "correctAnswer": "to send an email" },
+        { "id": "a2-u4-l3-e3", "type": "translation_to_en", "dutch": "printer", "correctAnswer": "printer", "acceptedAnswers": ["printer"] },
+        { "id": "a2-u4-l3-e4", "type": "translation_to_en", "dutch": "deadline", "correctAnswer": "deadline", "acceptedAnswers": ["deadline"] },
+        { "id": "a2-u4-l3-e5", "type": "translation_to_nl", "english": "meeting room", "correctAnswer": "vergaderzaal", "acceptedAnswers": ["vergaderzaal", "vergaderruimte"] },
+        { "id": "a2-u4-l3-e6", "type": "word_match", "pairs": [
+          { "dutch": "bureau", "english": "desk" },
+          { "dutch": "vergadering", "english": "meeting" },
+          { "dutch": "deadline", "english": "deadline" },
+          { "dutch": "collega", "english": "colleague" }
+        ]},
+        { "id": "a2-u4-l3-e7", "type": "fill_blank", "sentence": "De ___ is morgen om twaalf uur.", "options": ["deadline", "vakantie", "lunch", "pauze"], "correctAnswer": "deadline", "translation": "The deadline is tomorrow at twelve o'clock." },
+        { "id": "a2-u4-l3-e8", "type": "sentence_order", "words": ["Wij", "hebben", "elke", "maandag", "een", "vergadering."], "correctAnswer": "Wij hebben elke maandag een vergadering.", "translation": "We have a meeting every Monday." },
+        { "id": "a2-u4-l3-e9", "type": "listening", "dutch": "vergaderzaal", "question": "What did you hear?", "options": ["vergaderzaal", "vergadering", "bureau", "kantoor"], "correctAnswer": "vergaderzaal" },
+        { "id": "a2-u4-l3-e10", "type": "translation_to_en", "dutch": "leidinggevende", "correctAnswer": "manager / supervisor", "acceptedAnswers": ["manager", "supervisor", "manager / supervisor"] }
+      ]},
+      { "id": "a2-u4-l4", "title": "Work-Life Balance", "titleNl": "Werk-Privébalans", "description": "Working hours, holidays, and part-time culture in the Netherlands", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u4-l4-e1", "type": "multiple_choice", "question": "What does 'parttime werken' mean?", "options": ["to work full time", "to work part time", "to work overtime", "to work from home"], "correctAnswer": "to work part time" },
+        { "id": "a2-u4-l4-e2", "type": "multiple_choice", "question": "What does 'vakantiedagen' mean?", "options": ["sick days", "working days", "holiday days", "weekend days"], "correctAnswer": "holiday days" },
+        { "id": "a2-u4-l4-e3", "type": "translation_to_en", "dutch": "thuiswerken", "correctAnswer": "to work from home", "acceptedAnswers": ["to work from home", "working from home", "remote working"] },
+        { "id": "a2-u4-l4-e4", "type": "translation_to_en", "dutch": "overwerken", "correctAnswer": "to work overtime", "acceptedAnswers": ["to work overtime", "overtime"] },
+        { "id": "a2-u4-l4-e5", "type": "translation_to_nl", "english": "annual leave", "correctAnswer": "jaarlijks verlof", "acceptedAnswers": ["jaarlijks verlof", "vakantiedagen", "verlof"] },
+        { "id": "a2-u4-l4-e6", "type": "word_match", "pairs": [
+          { "dutch": "parttime", "english": "part time" },
+          { "dutch": "thuiswerken", "english": "working from home" },
+          { "dutch": "vakantiedagen", "english": "holiday days" },
+          { "dutch": "overwerken", "english": "to work overtime" }
+        ]},
+        { "id": "a2-u4-l4-e7", "type": "fill_blank", "sentence": "Ik werk drie dagen per week, want ik werk ___.", "options": ["parttime", "fulltime", "thuis", "over"], "correctAnswer": "parttime", "translation": "I work three days a week because I work part time." },
+        { "id": "a2-u4-l4-e8", "type": "sentence_order", "words": ["In", "Nederland", "werken", "veel", "mensen", "parttime."], "correctAnswer": "In Nederland werken veel mensen parttime.", "translation": "In the Netherlands many people work part time." },
+        { "id": "a2-u4-l4-e9", "type": "listening", "dutch": "thuiswerken", "question": "What did you hear?", "options": ["thuiswerken", "overwerken", "parttime", "vakantie"], "correctAnswer": "thuiswerken" },
+        { "id": "a2-u4-l4-e10", "type": "translation_to_en", "dutch": "vrije dag", "correctAnswer": "day off", "acceptedAnswers": ["day off", "free day"] }
+      ]},
+      { "id": "a2-u4-l5", "title": "Applying for a Job", "titleNl": "Solliciteren", "description": "CV vocabulary, cover letters, and interview phrases", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u4-l5-e1", "type": "multiple_choice", "question": "What does 'sollicitatie' mean?", "options": ["resignation", "job application", "pay rise", "contract"], "correctAnswer": "job application" },
+        { "id": "a2-u4-l5-e2", "type": "multiple_choice", "question": "What does 'cv' stand for in Dutch?", "options": ["curriculum vitae", "cover letter", "job offer", "reference"], "correctAnswer": "curriculum vitae" },
+        { "id": "a2-u4-l5-e3", "type": "translation_to_en", "dutch": "sollicitatiegesprek", "correctAnswer": "job interview", "acceptedAnswers": ["job interview", "interview"] },
+        { "id": "a2-u4-l5-e4", "type": "translation_to_en", "dutch": "motivatiebrief", "correctAnswer": "cover letter", "acceptedAnswers": ["cover letter", "motivation letter"] },
+        { "id": "a2-u4-l5-e5", "type": "translation_to_nl", "english": "work experience", "correctAnswer": "werkervaring", "acceptedAnswers": ["werkervaring"] },
+        { "id": "a2-u4-l5-e6", "type": "word_match", "pairs": [
+          { "dutch": "sollicitatie", "english": "job application" },
+          { "dutch": "cv", "english": "curriculum vitae" },
+          { "dutch": "motivatiebrief", "english": "cover letter" },
+          { "dutch": "werkervaring", "english": "work experience" }
+        ]},
+        { "id": "a2-u4-l5-e7", "type": "fill_blank", "sentence": "Ik heb mijn ___ en motivatiebrief opgestuurd.", "options": ["cv", "diploma", "contract", "loon"], "correctAnswer": "cv", "translation": "I have sent my CV and cover letter." },
+        { "id": "a2-u4-l5-e8", "type": "sentence_order", "words": ["Het", "sollicitatiegesprek", "is", "volgende", "week", "dinsdag."], "correctAnswer": "Het sollicitatiegesprek is volgende week dinsdag.", "translation": "The job interview is next Tuesday." },
+        { "id": "a2-u4-l5-e9", "type": "listening", "dutch": "sollicitatiegesprek", "question": "What did you hear?", "options": ["sollicitatiegesprek", "motivatiebrief", "werkervaring", "diploma"], "correctAnswer": "sollicitatiegesprek" },
+        { "id": "a2-u4-l5-e10", "type": "multiple_choice", "question": "What does 'loon' mean?", "options": ["bonus", "salary / wage", "contract", "tax"], "correctAnswer": "salary / wage" }
+      ]},
+      { "id": "a2-u4-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 4 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [
+        { "id": "a2-u4-l6-e1", "type": "multiple_choice", "question": "What does 'leraar' mean?", "options": ["lawyer", "engineer", "teacher", "nurse"], "correctAnswer": "teacher" },
+        { "id": "a2-u4-l6-e2", "type": "translation_to_en", "dutch": "universiteit", "correctAnswer": "university", "acceptedAnswers": ["university"] },
+        { "id": "a2-u4-l6-e3", "type": "translation_to_nl", "english": "job interview", "correctAnswer": "sollicitatiegesprek", "acceptedAnswers": ["sollicitatiegesprek"] },
+        { "id": "a2-u4-l6-e4", "type": "word_match", "pairs": [
+          { "dutch": "parttime", "english": "part time" },
+          { "dutch": "bureau", "english": "desk" },
+          { "dutch": "sollicitatie", "english": "job application" },
+          { "dutch": "loon", "english": "salary" }
+        ]},
+        { "id": "a2-u4-l6-e5", "type": "fill_blank", "sentence": "Ze heeft veel ___ in de zorgsector.", "options": ["werkervaring", "vakantie", "diploma", "pauze"], "correctAnswer": "werkervaring", "translation": "She has a lot of work experience in the healthcare sector." },
+        { "id": "a2-u4-l6-e6", "type": "sentence_order", "words": ["Hij", "solliciteert", "naar", "een", "nieuwe", "baan."], "correctAnswer": "Hij solliciteert naar een nieuwe baan.", "translation": "He is applying for a new job." },
+        { "id": "a2-u4-l6-e7", "type": "listening", "dutch": "werkervaring", "question": "What did you hear?", "options": ["werkervaring", "werktijd", "werkdag", "werkgever"], "correctAnswer": "werkervaring" },
+        { "id": "a2-u4-l6-e8", "type": "multiple_choice", "question": "What does 'thuiswerken' mean?", "options": ["to commute", "to work overtime", "to work from home", "to take leave"], "correctAnswer": "to work from home" },
+        { "id": "a2-u4-l6-e9", "type": "translation_to_en", "dutch": "collega", "correctAnswer": "colleague", "acceptedAnswers": ["colleague", "coworker"] },
+        { "id": "a2-u4-l6-e10", "type": "fill_blank", "sentence": "In Nederland werken veel mensen ___.", "options": ["parttime", "fulltime", "altijd", "nooit"], "correctAnswer": "parttime", "translation": "In the Netherlands many people work part time." }
+      ]}
     ]},
     { "id": "a2-u5", "title": "Weather & Seasons", "titleNl": "Weer en Seizoenen", "description": "Describe the weather, the four seasons, and the famously wet Dutch climate", "theme": "weather", "color": "#0ea5e9", "order": 15, "level": "A2", "lessons": [
-      { "id": "a2-u5-l1", "title": "Weather Vocabulary", "titleNl": "Weervocabulaire", "description": "Sun, rain, wind, clouds — essential Dutch weather words", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u5-l2", "title": "The Four Seasons", "titleNl": "De Vier Seizoenen", "description": "Lente, zomer, herfst, winter — and seasonal activities", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u5-l3", "title": "Weather Forecasts", "titleNl": "Weersvoorspellingen", "description": "Reading and listening to Dutch weather forecasts", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u5-l4", "title": "Dutch Climate", "titleNl": "Het Nederlandse Klimaat", "description": "Why it always rains and how the Dutch cope with it", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u5-l5", "title": "Dressing for the Weather", "titleNl": "Kleden voor het Weer", "description": "Clothing vocabulary in seasonal context", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u5-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 5 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] }
+      { "id": "a2-u5-l1", "title": "Weather Vocabulary", "titleNl": "Weervocabulaire", "description": "Sun, rain, wind, clouds — essential Dutch weather words", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u5-l1-e1", "type": "multiple_choice", "question": "What does 'het regent' mean?", "options": ["it is snowing", "it is windy", "it is raining", "it is sunny"], "correctAnswer": "it is raining" },
+        { "id": "a2-u5-l1-e2", "type": "multiple_choice", "question": "What does 'bewolkt' mean?", "options": ["sunny", "windy", "cloudy", "foggy"], "correctAnswer": "cloudy" },
+        { "id": "a2-u5-l1-e3", "type": "translation_to_en", "dutch": "het waait", "correctAnswer": "it is windy", "acceptedAnswers": ["it is windy", "it is blowing"] },
+        { "id": "a2-u5-l1-e4", "type": "translation_to_en", "dutch": "onweer", "correctAnswer": "thunderstorm", "acceptedAnswers": ["thunderstorm", "storm", "thunder"] },
+        { "id": "a2-u5-l1-e5", "type": "translation_to_nl", "english": "it is snowing", "correctAnswer": "het sneeuwt", "acceptedAnswers": ["het sneeuwt"] },
+        { "id": "a2-u5-l1-e6", "type": "word_match", "pairs": [
+          { "dutch": "het regent", "english": "it is raining" },
+          { "dutch": "het waait", "english": "it is windy" },
+          { "dutch": "het sneeuwt", "english": "it is snowing" },
+          { "dutch": "het is zonnig", "english": "it is sunny" }
+        ]},
+        { "id": "a2-u5-l1-e7", "type": "fill_blank", "sentence": "Het is vandaag ___ en koud.", "options": ["bewolkt", "zonnig", "droog", "warm"], "correctAnswer": "bewolkt", "translation": "It is cloudy and cold today." },
+        { "id": "a2-u5-l1-e8", "type": "sentence_order", "words": ["Het", "regent", "bijna", "elke", "dag", "in", "Nederland."], "correctAnswer": "Het regent bijna elke dag in Nederland.", "translation": "It rains almost every day in the Netherlands." },
+        { "id": "a2-u5-l1-e9", "type": "listening", "dutch": "onweer", "question": "What did you hear?", "options": ["onweer", "regen", "sneeuw", "wind"], "correctAnswer": "onweer" },
+        { "id": "a2-u5-l1-e10", "type": "translation_to_en", "dutch": "temperatuur", "correctAnswer": "temperature", "acceptedAnswers": ["temperature"] }
+      ]},
+      { "id": "a2-u5-l2", "title": "The Four Seasons", "titleNl": "De Vier Seizoenen", "description": "Lente, zomer, herfst, winter — and seasonal activities", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u5-l2-e1", "type": "multiple_choice", "question": "What does 'lente' mean?", "options": ["summer", "autumn", "winter", "spring"], "correctAnswer": "spring" },
+        { "id": "a2-u5-l2-e2", "type": "multiple_choice", "question": "What does 'herfst' mean?", "options": ["spring", "summer", "autumn", "winter"], "correctAnswer": "autumn" },
+        { "id": "a2-u5-l2-e3", "type": "translation_to_en", "dutch": "zomer", "correctAnswer": "summer", "acceptedAnswers": ["summer"] },
+        { "id": "a2-u5-l2-e4", "type": "translation_to_en", "dutch": "winter", "correctAnswer": "winter", "acceptedAnswers": ["winter"] },
+        { "id": "a2-u5-l2-e5", "type": "translation_to_nl", "english": "spring", "correctAnswer": "lente", "acceptedAnswers": ["lente", "voorjaar"] },
+        { "id": "a2-u5-l2-e6", "type": "word_match", "pairs": [
+          { "dutch": "lente", "english": "spring" },
+          { "dutch": "zomer", "english": "summer" },
+          { "dutch": "herfst", "english": "autumn" },
+          { "dutch": "winter", "english": "winter" }
+        ]},
+        { "id": "a2-u5-l2-e7", "type": "fill_blank", "sentence": "In de ___ bloeien de tulpen.", "options": ["lente", "winter", "herfst", "nacht"], "correctAnswer": "lente", "translation": "In spring the tulips bloom." },
+        { "id": "a2-u5-l2-e8", "type": "sentence_order", "words": ["Mijn", "favoriete", "seizoen", "is", "de", "zomer."], "correctAnswer": "Mijn favoriete seizoen is de zomer.", "translation": "My favourite season is summer." },
+        { "id": "a2-u5-l2-e9", "type": "listening", "dutch": "herfst", "question": "What did you hear?", "options": ["herfst", "lente", "zomer", "winter"], "correctAnswer": "herfst" },
+        { "id": "a2-u5-l2-e10", "type": "multiple_choice", "question": "In which season do leaves fall from trees in the Netherlands?", "options": ["lente", "zomer", "herfst", "winter"], "correctAnswer": "herfst" }
+      ]},
+      { "id": "a2-u5-l3", "title": "Weather Forecasts", "titleNl": "Weersvoorspellingen", "description": "Reading and listening to Dutch weather forecasts", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u5-l3-e1", "type": "multiple_choice", "question": "What does 'weersvoorspelling' mean?", "options": ["weather map", "weather forecast", "weather station", "weather report"], "correctAnswer": "weather forecast" },
+        { "id": "a2-u5-l3-e2", "type": "multiple_choice", "question": "What does 'graad' mean in weather context?", "options": ["cloud", "rain", "degree", "wind"], "correctAnswer": "degree" },
+        { "id": "a2-u5-l3-e3", "type": "translation_to_en", "dutch": "verwacht", "correctAnswer": "expected", "acceptedAnswers": ["expected", "forecast"] },
+        { "id": "a2-u5-l3-e4", "type": "translation_to_en", "dutch": "buien", "correctAnswer": "showers", "acceptedAnswers": ["showers", "rain showers"] },
+        { "id": "a2-u5-l3-e5", "type": "translation_to_nl", "english": "maximum temperature", "correctAnswer": "maximumtemperatuur", "acceptedAnswers": ["maximumtemperatuur", "maximum temperatuur"] },
+        { "id": "a2-u5-l3-e6", "type": "word_match", "pairs": [
+          { "dutch": "weersvoorspelling", "english": "weather forecast" },
+          { "dutch": "graad", "english": "degree" },
+          { "dutch": "buien", "english": "showers" },
+          { "dutch": "verwacht", "english": "expected" }
+        ]},
+        { "id": "a2-u5-l3-e7", "type": "fill_blank", "sentence": "Morgen worden er ___ verwacht.", "options": ["buien", "zonnig", "warm", "droog"], "correctAnswer": "buien", "translation": "Tomorrow showers are expected." },
+        { "id": "a2-u5-l3-e8", "type": "sentence_order", "words": ["De", "temperatuur", "stijgt", "tot", "twintig", "graden."], "correctAnswer": "De temperatuur stijgt tot twintig graden.", "translation": "The temperature rises to twenty degrees." },
+        { "id": "a2-u5-l3-e9", "type": "listening", "dutch": "weersvoorspelling", "question": "What did you hear?", "options": ["weersvoorspelling", "weersbericht", "temperatuur", "buien"], "correctAnswer": "weersvoorspelling" },
+        { "id": "a2-u5-l3-e10", "type": "translation_to_en", "dutch": "zuidwestenwind", "correctAnswer": "south-westerly wind", "acceptedAnswers": ["south-westerly wind", "southwesterly wind", "south-west wind"] }
+      ]},
+      { "id": "a2-u5-l4", "title": "Dutch Climate", "titleNl": "Het Nederlandse Klimaat", "description": "Why it always rains and how the Dutch cope with it", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u5-l4-e1", "type": "multiple_choice", "question": "The Netherlands has a ... climate.", "options": ["Mediterranean", "tropical", "temperate maritime", "continental"], "correctAnswer": "temperate maritime" },
+        { "id": "a2-u5-l4-e2", "type": "multiple_choice", "question": "What does 'regenjas' mean?", "options": ["umbrella", "raincoat", "rain boots", "rain gauge"], "correctAnswer": "raincoat" },
+        { "id": "a2-u5-l4-e3", "type": "translation_to_en", "dutch": "paraplu", "correctAnswer": "umbrella", "acceptedAnswers": ["umbrella"] },
+        { "id": "a2-u5-l4-e4", "type": "translation_to_en", "dutch": "mist", "correctAnswer": "fog / mist", "acceptedAnswers": ["fog", "mist", "fog / mist"] },
+        { "id": "a2-u5-l4-e5", "type": "translation_to_nl", "english": "flood", "correctAnswer": "overstroming", "acceptedAnswers": ["overstroming"] },
+        { "id": "a2-u5-l4-e6", "type": "word_match", "pairs": [
+          { "dutch": "regenjas", "english": "raincoat" },
+          { "dutch": "paraplu", "english": "umbrella" },
+          { "dutch": "mist", "english": "fog" },
+          { "dutch": "overstroming", "english": "flood" }
+        ]},
+        { "id": "a2-u5-l4-e7", "type": "fill_blank", "sentence": "In Nederland regent het vaak, dus ik neem altijd een ___ mee.", "options": ["paraplu", "zonnebril", "handschoen", "sjaal"], "correctAnswer": "paraplu", "translation": "In the Netherlands it often rains, so I always bring an umbrella." },
+        { "id": "a2-u5-l4-e8", "type": "sentence_order", "words": ["Het", "Nederlandse", "klimaat", "is", "nat", "en", "gematigd."], "correctAnswer": "Het Nederlandse klimaat is nat en gematigd.", "translation": "The Dutch climate is wet and temperate." },
+        { "id": "a2-u5-l4-e9", "type": "listening", "dutch": "regenjas", "question": "What did you hear?", "options": ["regenjas", "paraplu", "winterjas", "zomerjas"], "correctAnswer": "regenjas" },
+        { "id": "a2-u5-l4-e10", "type": "translation_to_en", "dutch": "dijk", "correctAnswer": "dyke / dike", "acceptedAnswers": ["dyke", "dike", "dyke / dike"] }
+      ]},
+      { "id": "a2-u5-l5", "title": "Dressing for the Weather", "titleNl": "Kleden voor het Weer", "description": "Clothing vocabulary in seasonal context", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u5-l5-e1", "type": "multiple_choice", "question": "What does 'jas' mean?", "options": ["hat", "scarf", "coat / jacket", "gloves"], "correctAnswer": "coat / jacket" },
+        { "id": "a2-u5-l5-e2", "type": "multiple_choice", "question": "What do you wear on your hands when it is cold?", "options": ["laarzen", "handschoenen", "sjaal", "muts"], "correctAnswer": "handschoenen" },
+        { "id": "a2-u5-l5-e3", "type": "translation_to_en", "dutch": "sjaal", "correctAnswer": "scarf", "acceptedAnswers": ["scarf"] },
+        { "id": "a2-u5-l5-e4", "type": "translation_to_en", "dutch": "laarzen", "correctAnswer": "boots", "acceptedAnswers": ["boots", "rubber boots", "wellies"] },
+        { "id": "a2-u5-l5-e5", "type": "translation_to_nl", "english": "hat / woolly hat", "correctAnswer": "muts", "acceptedAnswers": ["muts"] },
+        { "id": "a2-u5-l5-e6", "type": "word_match", "pairs": [
+          { "dutch": "jas", "english": "coat" },
+          { "dutch": "sjaal", "english": "scarf" },
+          { "dutch": "handschoenen", "english": "gloves" },
+          { "dutch": "laarzen", "english": "boots" }
+        ]},
+        { "id": "a2-u5-l5-e7", "type": "fill_blank", "sentence": "Het is koud buiten, dus trek een ___ aan.", "options": ["jas", "zonnebril", "korte broek", "sandaal"], "correctAnswer": "jas", "translation": "It is cold outside, so put on a coat." },
+        { "id": "a2-u5-l5-e8", "type": "sentence_order", "words": ["In", "de", "winter", "draag", "ik", "een", "warme", "jas."], "correctAnswer": "In de winter draag ik een warme jas.", "translation": "In winter I wear a warm coat." },
+        { "id": "a2-u5-l5-e9", "type": "listening", "dutch": "handschoenen", "question": "What did you hear?", "options": ["handschoenen", "laarzen", "sjaal", "muts"], "correctAnswer": "handschoenen" },
+        { "id": "a2-u5-l5-e10", "type": "translation_to_en", "dutch": "zonnebril", "correctAnswer": "sunglasses", "acceptedAnswers": ["sunglasses"] }
+      ]},
+      { "id": "a2-u5-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 5 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [
+        { "id": "a2-u5-l6-e1", "type": "multiple_choice", "question": "What does 'lente' mean?", "options": ["summer", "autumn", "winter", "spring"], "correctAnswer": "spring" },
+        { "id": "a2-u5-l6-e2", "type": "translation_to_en", "dutch": "het regent", "correctAnswer": "it is raining", "acceptedAnswers": ["it is raining", "it rains"] },
+        { "id": "a2-u5-l6-e3", "type": "translation_to_nl", "english": "umbrella", "correctAnswer": "paraplu", "acceptedAnswers": ["paraplu"] },
+        { "id": "a2-u5-l6-e4", "type": "word_match", "pairs": [
+          { "dutch": "onweer", "english": "thunderstorm" },
+          { "dutch": "buien", "english": "showers" },
+          { "dutch": "mist", "english": "fog" },
+          { "dutch": "graden", "english": "degrees" }
+        ]},
+        { "id": "a2-u5-l6-e5", "type": "fill_blank", "sentence": "In de ___ vallen de bladeren van de bomen.", "options": ["herfst", "lente", "zomer", "dag"], "correctAnswer": "herfst", "translation": "In autumn the leaves fall from the trees." },
+        { "id": "a2-u5-l6-e6", "type": "sentence_order", "words": ["Neem", "een", "paraplu", "mee,", "want", "het", "gaat", "regenen."], "correctAnswer": "Neem een paraplu mee, want het gaat regenen.", "translation": "Take an umbrella because it is going to rain." },
+        { "id": "a2-u5-l6-e7", "type": "listening", "dutch": "bewolkt", "question": "What did you hear?", "options": ["bewolkt", "zonnig", "regenachtig", "mistig"], "correctAnswer": "bewolkt" },
+        { "id": "a2-u5-l6-e8", "type": "multiple_choice", "question": "What does 'dijk' mean?", "options": ["flood", "river", "dyke", "coast"], "correctAnswer": "dyke" },
+        { "id": "a2-u5-l6-e9", "type": "translation_to_en", "dutch": "temperatuur", "correctAnswer": "temperature", "acceptedAnswers": ["temperature"] },
+        { "id": "a2-u5-l6-e10", "type": "fill_blank", "sentence": "In de winter draag ik een warme ___.", "options": ["jas", "zonnebril", "pet", "sandaal"], "correctAnswer": "jas", "translation": "In winter I wear a warm coat." }
+      ]}
     ]},
     { "id": "a2-u6", "title": "Past Tense", "titleNl": "Verleden Tijd", "description": "Talk about what happened yesterday, last week, and in the past", "theme": "grammar", "color": "#8b5cf6", "order": 16, "level": "A2", "lessons": [
-      { "id": "a2-u6-l1", "title": "Regular Past Tense", "titleNl": "Regelmatige Verleden Tijd", "description": "Forming past tense verbs with -te and -de endings", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u6-l2", "title": "Perfect Tense with hebben", "titleNl": "Voltooid Tegenwoordige Tijd met hebben", "description": "Ik heb gewerkt — past participles with hebben", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u6-l3", "title": "Perfect Tense with zijn", "titleNl": "Voltooid Tegenwoordige Tijd met zijn", "description": "Ik ben gegaan — past participles with zijn for motion verbs", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u6-l4", "title": "Common Irregular Verbs", "titleNl": "Veelgebruikte Onregelmatige Werkwoorden", "description": "gaan→gegaan, komen→gekomen, zien→gezien and more", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u6-l5", "title": "Telling Stories in the Past", "titleNl": "Verhalen in de Verleden Tijd", "description": "Narrating past events using all past tense forms", "xpReward": 60, "estimatedMinutes": 7, "exercises": [] },
-      { "id": "a2-u6-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 6 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [] }
+      { "id": "a2-u6-l1", "title": "Regular Past Tense", "titleNl": "Regelmatige Verleden Tijd", "description": "Forming past tense verbs with -te and -de endings", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u6-l1-e1", "type": "multiple_choice", "question": "What is the past tense of 'werken'?", "options": ["werkde", "werkte", "gewerkt", "werkten"], "correctAnswer": "werkte" },
+        { "id": "a2-u6-l1-e2", "type": "multiple_choice", "question": "What is the past tense of 'leven'?", "options": ["leefde", "levte", "leeften", "leefde"], "correctAnswer": "leefde" },
+        { "id": "a2-u6-l1-e3", "type": "translation_to_en", "dutch": "hij werkte", "correctAnswer": "he worked", "acceptedAnswers": ["he worked"] },
+        { "id": "a2-u6-l1-e4", "type": "translation_to_en", "dutch": "zij speelde", "correctAnswer": "she played", "acceptedAnswers": ["she played"] },
+        { "id": "a2-u6-l1-e5", "type": "translation_to_nl", "english": "I walked", "correctAnswer": "ik liep", "acceptedAnswers": ["ik liep", "ik wandelde"] },
+        { "id": "a2-u6-l1-e6", "type": "word_match", "pairs": [
+          { "dutch": "werkte", "english": "worked" },
+          { "dutch": "speelde", "english": "played" },
+          { "dutch": "luisterde", "english": "listened" },
+          { "dutch": "kookte", "english": "cooked" }
+        ]},
+        { "id": "a2-u6-l1-e7", "type": "fill_blank", "sentence": "Gisteren ___ ik de hele dag.", "options": ["werkte", "werk", "werken", "gewerkt"], "correctAnswer": "werkte", "translation": "Yesterday I worked all day." },
+        { "id": "a2-u6-l1-e8", "type": "sentence_order", "words": ["Ze", "speelde", "gisteren", "gitaar."], "correctAnswer": "Ze speelde gisteren gitaar.", "translation": "She played guitar yesterday." },
+        { "id": "a2-u6-l1-e9", "type": "listening", "dutch": "werkte", "question": "What did you hear?", "options": ["werkte", "werk", "werken", "werkend"], "correctAnswer": "werkte" },
+        { "id": "a2-u6-l1-e10", "type": "multiple_choice", "question": "Verbs ending in 't' or 'k' in the stem use which past tense ending?", "options": ["-de", "-te", "-en", "-ge"], "correctAnswer": "-te" }
+      ]},
+      { "id": "a2-u6-l2", "title": "Perfect Tense with hebben", "titleNl": "Voltooid Tegenwoordige Tijd met hebben", "description": "Ik heb gewerkt — past participles with hebben", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u6-l2-e1", "type": "multiple_choice", "question": "What is the past participle of 'werken'?", "options": ["werkte", "werkten", "gewerkt", "gewerk"], "correctAnswer": "gewerkt" },
+        { "id": "a2-u6-l2-e2", "type": "multiple_choice", "question": "Which sentence uses the perfect tense correctly?", "options": ["Ik werkte gisteren", "Ik heb gisteren gewerkt", "Ik gewerkt gisteren", "Ik heb gisteren werkte"], "correctAnswer": "Ik heb gisteren gewerkt" },
+        { "id": "a2-u6-l2-e3", "type": "translation_to_en", "dutch": "Ik heb gegeten", "correctAnswer": "I have eaten", "acceptedAnswers": ["I have eaten", "I ate"] },
+        { "id": "a2-u6-l2-e4", "type": "translation_to_en", "dutch": "Zij heeft gespeeld", "correctAnswer": "She has played", "acceptedAnswers": ["She has played", "She played"] },
+        { "id": "a2-u6-l2-e5", "type": "translation_to_nl", "english": "I have worked", "correctAnswer": "Ik heb gewerkt", "acceptedAnswers": ["Ik heb gewerkt"] },
+        { "id": "a2-u6-l2-e6", "type": "word_match", "pairs": [
+          { "dutch": "gewerkt", "english": "worked" },
+          { "dutch": "gegeten", "english": "eaten" },
+          { "dutch": "gespeeld", "english": "played" },
+          { "dutch": "gekookt", "english": "cooked" }
+        ]},
+        { "id": "a2-u6-l2-e7", "type": "fill_blank", "sentence": "Ik heb een boek ___.", "options": ["gelezen", "gelees", "leesde", "lees"], "correctAnswer": "gelezen", "translation": "I have read a book." },
+        { "id": "a2-u6-l2-e8", "type": "sentence_order", "words": ["Hij", "heeft", "de", "hele", "dag", "geslapen."], "correctAnswer": "Hij heeft de hele dag geslapen.", "translation": "He has slept the whole day." },
+        { "id": "a2-u6-l2-e9", "type": "listening", "dutch": "gewerkt", "question": "What did you hear?", "options": ["gewerkt", "geplaatst", "gespeeld", "gegeten"], "correctAnswer": "gewerkt" },
+        { "id": "a2-u6-l2-e10", "type": "multiple_choice", "question": "How do you form the past participle of a regular verb?", "options": ["stem + -te", "ge- + stem + -t or -d", "stem + -en", "ge- + stem"], "correctAnswer": "ge- + stem + -t or -d" }
+      ]},
+      { "id": "a2-u6-l3", "title": "Perfect Tense with zijn", "titleNl": "Voltooid Tegenwoordige Tijd met zijn", "description": "Ik ben gegaan — past participles with zijn for motion verbs", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u6-l3-e1", "type": "multiple_choice", "question": "Which auxiliary verb does 'gaan' use in the perfect tense?", "options": ["hebben", "zijn", "worden", "kunnen"], "correctAnswer": "zijn" },
+        { "id": "a2-u6-l3-e2", "type": "multiple_choice", "question": "Which sentence is correct?", "options": ["Ik heb naar huis gegaan", "Ik ben naar huis gegaan", "Ik ben naar huis gaan", "Ik heb naar huis gegaan zijn"], "correctAnswer": "Ik ben naar huis gegaan" },
+        { "id": "a2-u6-l3-e3", "type": "translation_to_en", "dutch": "Ik ben gegaan", "correctAnswer": "I have gone", "acceptedAnswers": ["I have gone", "I went"] },
+        { "id": "a2-u6-l3-e4", "type": "translation_to_en", "dutch": "Zij is gekomen", "correctAnswer": "She has come", "acceptedAnswers": ["She has come", "She came"] },
+        { "id": "a2-u6-l3-e5", "type": "translation_to_nl", "english": "I have arrived", "correctAnswer": "Ik ben aangekomen", "acceptedAnswers": ["Ik ben aangekomen"] },
+        { "id": "a2-u6-l3-e6", "type": "word_match", "pairs": [
+          { "dutch": "gegaan", "english": "gone" },
+          { "dutch": "gekomen", "english": "come" },
+          { "dutch": "gevallen", "english": "fallen" },
+          { "dutch": "gereden", "english": "ridden / driven" }
+        ]},
+        { "id": "a2-u6-l3-e7", "type": "fill_blank", "sentence": "Wij zijn gisteren naar Amsterdam ___.", "options": ["gegaan", "gegaan zijn", "gaan", "gaat"], "correctAnswer": "gegaan", "translation": "We went to Amsterdam yesterday." },
+        { "id": "a2-u6-l3-e8", "type": "sentence_order", "words": ["Ze", "is", "vroeg", "naar", "bed", "gegaan."], "correctAnswer": "Ze is vroeg naar bed gegaan.", "translation": "She went to bed early." },
+        { "id": "a2-u6-l3-e9", "type": "listening", "dutch": "gegaan", "question": "What did you hear?", "options": ["gegaan", "gekomen", "gevallen", "gebleven"], "correctAnswer": "gegaan" },
+        { "id": "a2-u6-l3-e10", "type": "multiple_choice", "question": "Motion verbs and change-of-state verbs typically use which auxiliary?", "options": ["hebben", "zijn", "willen", "mogen"], "correctAnswer": "zijn" }
+      ]},
+      { "id": "a2-u6-l4", "title": "Common Irregular Verbs", "titleNl": "Veelgebruikte Onregelmatige Werkwoorden", "description": "gaan→gegaan, komen→gekomen, zien→gezien and more", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u6-l4-e1", "type": "multiple_choice", "question": "What is the past participle of 'zien'?", "options": ["gezien", "geziet", "gezag", "gezie"], "correctAnswer": "gezien" },
+        { "id": "a2-u6-l4-e2", "type": "multiple_choice", "question": "What is the past participle of 'schrijven'?", "options": ["geschreven", "geschrijft", "schrijfte", "geschreven"], "correctAnswer": "geschreven" },
+        { "id": "a2-u6-l4-e3", "type": "translation_to_en", "dutch": "gezegd", "correctAnswer": "said", "acceptedAnswers": ["said"] },
+        { "id": "a2-u6-l4-e4", "type": "translation_to_en", "dutch": "gedaan", "correctAnswer": "done", "acceptedAnswers": ["done"] },
+        { "id": "a2-u6-l4-e5", "type": "translation_to_nl", "english": "I have seen", "correctAnswer": "Ik heb gezien", "acceptedAnswers": ["Ik heb gezien"] },
+        { "id": "a2-u6-l4-e6", "type": "word_match", "pairs": [
+          { "dutch": "gezien", "english": "seen" },
+          { "dutch": "gedaan", "english": "done" },
+          { "dutch": "geschreven", "english": "written" },
+          { "dutch": "gezegd", "english": "said" }
+        ]},
+        { "id": "a2-u6-l4-e7", "type": "fill_blank", "sentence": "Heb je de film al ___?", "options": ["gezien", "zien", "zag", "gezag"], "correctAnswer": "gezien", "translation": "Have you seen the film yet?" },
+        { "id": "a2-u6-l4-e8", "type": "sentence_order", "words": ["Ik", "heb", "hem", "gisteren", "gesproken."], "correctAnswer": "Ik heb hem gisteren gesproken.", "translation": "I spoke to him yesterday." },
+        { "id": "a2-u6-l4-e9", "type": "listening", "dutch": "gezien", "question": "What did you hear?", "options": ["gezien", "gedaan", "gezegd", "geschreven"], "correctAnswer": "gezien" },
+        { "id": "a2-u6-l4-e10", "type": "translation_to_en", "dutch": "gekregen", "correctAnswer": "received / got", "acceptedAnswers": ["received", "got", "received / got"] }
+      ]},
+      { "id": "a2-u6-l5", "title": "Telling Stories in the Past", "titleNl": "Verhalen in de Verleden Tijd", "description": "Narrating past events using all past tense forms", "xpReward": 60, "estimatedMinutes": 7, "exercises": [
+        { "id": "a2-u6-l5-e1", "type": "multiple_choice", "question": "What does 'gisteren' mean?", "options": ["tomorrow", "today", "yesterday", "last week"], "correctAnswer": "yesterday" },
+        { "id": "a2-u6-l5-e2", "type": "multiple_choice", "question": "What does 'vorig jaar' mean?", "options": ["next year", "this year", "last year", "every year"], "correctAnswer": "last year" },
+        { "id": "a2-u6-l5-e3", "type": "translation_to_en", "dutch": "vorige week", "correctAnswer": "last week", "acceptedAnswers": ["last week"] },
+        { "id": "a2-u6-l5-e4", "type": "translation_to_en", "dutch": "toen", "correctAnswer": "then / at that time", "acceptedAnswers": ["then", "at that time", "when"] },
+        { "id": "a2-u6-l5-e5", "type": "translation_to_nl", "english": "last night", "correctAnswer": "gisterenavond", "acceptedAnswers": ["gisterenavond", "gisternacht"] },
+        { "id": "a2-u6-l5-e6", "type": "word_match", "pairs": [
+          { "dutch": "gisteren", "english": "yesterday" },
+          { "dutch": "vorige week", "english": "last week" },
+          { "dutch": "vorig jaar", "english": "last year" },
+          { "dutch": "toen", "english": "then" }
+        ]},
+        { "id": "a2-u6-l5-e7", "type": "fill_blank", "sentence": "___ ben ik naar het museum geweest.", "options": ["Gisteren", "Morgen", "Nu", "Altijd"], "correctAnswer": "Gisteren", "translation": "Yesterday I went to the museum." },
+        { "id": "a2-u6-l5-e8", "type": "sentence_order", "words": ["Vorige", "week", "hebben", "we", "een", "feestje", "gevierd."], "correctAnswer": "Vorige week hebben we een feestje gevierd.", "translation": "Last week we celebrated a party." },
+        { "id": "a2-u6-l5-e9", "type": "listening", "dutch": "gisteren", "question": "What did you hear?", "options": ["gisteren", "morgen", "vandaag", "overmorgen"], "correctAnswer": "gisteren" },
+        { "id": "a2-u6-l5-e10", "type": "multiple_choice", "question": "Which time expression refers to the past?", "options": ["morgen", "straks", "volgende week", "vorig jaar"], "correctAnswer": "vorig jaar" }
+      ]},
+      { "id": "a2-u6-l6", "title": "Unit Review", "titleNl": "Herhaling", "description": "Review Unit 6 content", "xpReward": 80, "estimatedMinutes": 10, "exercises": [
+        { "id": "a2-u6-l6-e1", "type": "multiple_choice", "question": "What is the past participle of 'gaan'?", "options": ["gegaan", "geging", "ging", "gegaan zijn"], "correctAnswer": "gegaan" },
+        { "id": "a2-u6-l6-e2", "type": "translation_to_en", "dutch": "Ik heb gewerkt", "correctAnswer": "I have worked", "acceptedAnswers": ["I have worked", "I worked"] },
+        { "id": "a2-u6-l6-e3", "type": "translation_to_nl", "english": "She went", "correctAnswer": "Ze is gegaan", "acceptedAnswers": ["Ze is gegaan", "Zij is gegaan"] },
+        { "id": "a2-u6-l6-e4", "type": "word_match", "pairs": [
+          { "dutch": "gisteren", "english": "yesterday" },
+          { "dutch": "vorige week", "english": "last week" },
+          { "dutch": "gezien", "english": "seen" },
+          { "dutch": "geschreven", "english": "written" }
+        ]},
+        { "id": "a2-u6-l6-e5", "type": "fill_blank", "sentence": "Hij ___ gisteren zijn huiswerk.", "options": ["maakte", "maakt", "gemaakt", "maken"], "correctAnswer": "maakte", "translation": "He did his homework yesterday." },
+        { "id": "a2-u6-l6-e6", "type": "sentence_order", "words": ["Ik", "ben", "vorige", "week", "naar", "Parijs", "geweest."], "correctAnswer": "Ik ben vorige week naar Parijs geweest.", "translation": "I was in Paris last week." },
+        { "id": "a2-u6-l6-e7", "type": "listening", "dutch": "geschreven", "question": "What did you hear?", "options": ["geschreven", "gezien", "gedaan", "gezegd"], "correctAnswer": "geschreven" },
+        { "id": "a2-u6-l6-e8", "type": "multiple_choice", "question": "Which auxiliary is used with 'komen' in the perfect tense?", "options": ["hebben", "zijn", "worden", "zullen"], "correctAnswer": "zijn" },
+        { "id": "a2-u6-l6-e9", "type": "translation_to_en", "dutch": "We hebben gegeten", "correctAnswer": "We have eaten", "acceptedAnswers": ["We have eaten", "We ate"] },
+        { "id": "a2-u6-l6-e10", "type": "fill_blank", "sentence": "Heb jij die film al ___?", "options": ["gezien", "zien", "zag", "bekeken"], "correctAnswer": "gezien", "translation": "Have you seen that film yet?" }
+      ]}
     ]}
   ]
 }

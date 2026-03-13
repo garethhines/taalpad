@@ -4837,6 +4837,330 @@
           ]
         }
       ]
+    },
+    {
+      "id": "a1-u7",
+      "title": "Hobbies & Free Time",
+      "titleNl": "Hobby's en Vrije Tijd",
+      "description": "Talk about what you enjoy doing in your free time",
+      "theme": "hobbies",
+      "color": "#f59e0b",
+      "order": 11,
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "a1-u7-l1",
+          "title": "Sports & Activities",
+          "titleNl": "Sport en Activiteiten",
+          "description": "Vocabulary for common sports and physical activities",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            { "id": "a1-u7-l1-e1", "type": "multiple_choice", "question": "What does 'voetbal' mean?", "options": ["basketball", "tennis", "football / soccer", "volleyball"], "correctAnswer": "football / soccer" },
+            { "id": "a1-u7-l1-e2", "type": "multiple_choice", "question": "What does 'zwemmen' mean?", "options": ["to run", "to cycle", "to swim", "to skate"], "correctAnswer": "to swim" },
+            { "id": "a1-u7-l1-e3", "type": "translation_to_en", "dutch": "fietsen", "correctAnswer": "to cycle", "acceptedAnswers": ["to cycle", "cycling", "to ride a bike"] },
+            { "id": "a1-u7-l1-e4", "type": "translation_to_en", "dutch": "schaatsen", "correctAnswer": "to skate", "acceptedAnswers": ["to skate", "ice skating", "to ice skate"] },
+            { "id": "a1-u7-l1-e5", "type": "translation_to_nl", "english": "to run", "correctAnswer": "hardlopen", "acceptedAnswers": ["hardlopen", "rennen", "lopen"] },
+            { "id": "a1-u7-l1-e6", "type": "word_match", "pairs": [
+              { "dutch": "voetbal", "english": "football" },
+              { "dutch": "zwemmen", "english": "swimming" },
+              { "dutch": "fietsen", "english": "cycling" },
+              { "dutch": "tennis", "english": "tennis" }
+            ]},
+            { "id": "a1-u7-l1-e7", "type": "fill_blank", "sentence": "Ik ___ elke ochtend vijf kilometer.", "options": ["hardloop", "zwem", "fiets", "schaats"], "correctAnswer": "hardloop", "translation": "I run five kilometres every morning." },
+            { "id": "a1-u7-l1-e8", "type": "sentence_order", "words": ["Hij", "speelt", "elke", "week", "voetbal."], "correctAnswer": "Hij speelt elke week voetbal.", "translation": "He plays football every week." },
+            { "id": "a1-u7-l1-e9", "type": "listening", "dutch": "schaatsen", "question": "What did you hear?", "options": ["schaatsen", "zwemmen", "fietsen", "hardlopen"], "correctAnswer": "schaatsen" },
+            { "id": "a1-u7-l1-e10", "type": "translation_to_en", "dutch": "sportschool", "correctAnswer": "gym", "acceptedAnswers": ["gym", "fitness centre", "sports centre"] }
+          ]
+        },
+        {
+          "id": "a1-u7-l2",
+          "title": "Music & Arts",
+          "titleNl": "Muziek en Kunst",
+          "description": "Talking about music and artistic hobbies",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            { "id": "a1-u7-l2-e1", "type": "multiple_choice", "question": "What does 'muziek luisteren' mean?", "options": ["to make music", "to listen to music", "to sing", "to play an instrument"], "correctAnswer": "to listen to music" },
+            { "id": "a1-u7-l2-e2", "type": "multiple_choice", "question": "What does 'schilderen' mean?", "options": ["to draw", "to sculpt", "to paint", "to photograph"], "correctAnswer": "to paint" },
+            { "id": "a1-u7-l2-e3", "type": "translation_to_en", "dutch": "zingen", "correctAnswer": "to sing", "acceptedAnswers": ["to sing", "sing"] },
+            { "id": "a1-u7-l2-e4", "type": "translation_to_en", "dutch": "tekenen", "correctAnswer": "to draw", "acceptedAnswers": ["to draw", "drawing"] },
+            { "id": "a1-u7-l2-e5", "type": "translation_to_nl", "english": "guitar", "correctAnswer": "gitaar", "acceptedAnswers": ["gitaar"] },
+            { "id": "a1-u7-l2-e6", "type": "word_match", "pairs": [
+              { "dutch": "zingen", "english": "to sing" },
+              { "dutch": "schilderen", "english": "to paint" },
+              { "dutch": "tekenen", "english": "to draw" },
+              { "dutch": "gitaar spelen", "english": "to play guitar" }
+            ]},
+            { "id": "a1-u7-l2-e7", "type": "fill_blank", "sentence": "Ze ___ heel goed piano.", "options": ["speelt", "zingt", "tekent", "schildert"], "correctAnswer": "speelt", "translation": "She plays piano very well." },
+            { "id": "a1-u7-l2-e8", "type": "sentence_order", "words": ["Ik", "hou", "van", "klassieke", "muziek."], "correctAnswer": "Ik hou van klassieke muziek.", "translation": "I love classical music." },
+            { "id": "a1-u7-l2-e9", "type": "listening", "dutch": "schilderen", "question": "What did you hear?", "options": ["schilderen", "tekenen", "zingen", "spelen"], "correctAnswer": "schilderen" },
+            { "id": "a1-u7-l2-e10", "type": "translation_to_en", "dutch": "museum", "correctAnswer": "museum", "acceptedAnswers": ["museum"] }
+          ]
+        },
+        {
+          "id": "a1-u7-l3",
+          "title": "Reading & Films",
+          "titleNl": "Lezen en Films",
+          "description": "Talking about books, films, and series",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            { "id": "a1-u7-l3-e1", "type": "multiple_choice", "question": "What does 'boek' mean?", "options": ["magazine", "newspaper", "book", "comic"], "correctAnswer": "book" },
+            { "id": "a1-u7-l3-e2", "type": "multiple_choice", "question": "What does 'bioscoop' mean?", "options": ["theatre", "cinema", "library", "museum"], "correctAnswer": "cinema" },
+            { "id": "a1-u7-l3-e3", "type": "translation_to_en", "dutch": "roman", "correctAnswer": "novel", "acceptedAnswers": ["novel"] },
+            { "id": "a1-u7-l3-e4", "type": "translation_to_en", "dutch": "serie", "correctAnswer": "series / TV show", "acceptedAnswers": ["series", "TV series", "TV show", "show"] },
+            { "id": "a1-u7-l3-e5", "type": "translation_to_nl", "english": "film", "correctAnswer": "film", "acceptedAnswers": ["film"] },
+            { "id": "a1-u7-l3-e6", "type": "word_match", "pairs": [
+              { "dutch": "boek", "english": "book" },
+              { "dutch": "bioscoop", "english": "cinema" },
+              { "dutch": "roman", "english": "novel" },
+              { "dutch": "tijdschrift", "english": "magazine" }
+            ]},
+            { "id": "a1-u7-l3-e7", "type": "fill_blank", "sentence": "Ik ___ graag thrillers.", "options": ["lees", "kijk", "hoor", "schrijf"], "correctAnswer": "lees", "translation": "I like reading thrillers." },
+            { "id": "a1-u7-l3-e8", "type": "sentence_order", "words": ["Welke", "film", "wil", "jij", "zien?"], "correctAnswer": "Welke film wil jij zien?", "translation": "Which film do you want to see?" },
+            { "id": "a1-u7-l3-e9", "type": "listening", "dutch": "bioscoop", "question": "What did you hear?", "options": ["bioscoop", "theater", "museum", "bibliotheek"], "correctAnswer": "bioscoop" },
+            { "id": "a1-u7-l3-e10", "type": "translation_to_en", "dutch": "schrijver", "correctAnswer": "writer / author", "acceptedAnswers": ["writer", "author"] }
+          ]
+        },
+        {
+          "id": "a1-u7-l4",
+          "title": "Social Activities",
+          "titleNl": "Sociale Activiteiten",
+          "description": "Activities you do with others",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            { "id": "a1-u7-l4-e1", "type": "multiple_choice", "question": "What does 'uitgaan' mean?", "options": ["to stay home", "to go out", "to sleep in", "to work"], "correctAnswer": "to go out" },
+            { "id": "a1-u7-l4-e2", "type": "multiple_choice", "question": "What does 'een feestje geven' mean?", "options": ["to go to a party", "to give a present", "to throw a party", "to celebrate alone"], "correctAnswer": "to throw a party" },
+            { "id": "a1-u7-l4-e3", "type": "translation_to_en", "dutch": "afspreken", "correctAnswer": "to meet up", "acceptedAnswers": ["to meet up", "to arrange to meet", "to make an appointment"] },
+            { "id": "a1-u7-l4-e4", "type": "translation_to_en", "dutch": "restaurant", "correctAnswer": "restaurant", "acceptedAnswers": ["restaurant"] },
+            { "id": "a1-u7-l4-e5", "type": "translation_to_nl", "english": "to have a drink", "correctAnswer": "iets drinken", "acceptedAnswers": ["iets drinken", "een drankje doen"] },
+            { "id": "a1-u7-l4-e6", "type": "word_match", "pairs": [
+              { "dutch": "uitgaan", "english": "to go out" },
+              { "dutch": "afspreken", "english": "to meet up" },
+              { "dutch": "restaurant", "english": "restaurant" },
+              { "dutch": "café", "english": "café / pub" }
+            ]},
+            { "id": "a1-u7-l4-e7", "type": "fill_blank", "sentence": "Zullen we vanavond ___ in de stad?", "options": ["afspreken", "slapen", "werken", "leren"], "correctAnswer": "afspreken", "translation": "Shall we meet up in town tonight?" },
+            { "id": "a1-u7-l4-e8", "type": "sentence_order", "words": ["We", "gaan", "zaterdag", "naar", "een", "concert."], "correctAnswer": "We gaan zaterdag naar een concert.", "translation": "We are going to a concert on Saturday." },
+            { "id": "a1-u7-l4-e9", "type": "listening", "dutch": "afspreken", "question": "What did you hear?", "options": ["afspreken", "uitgaan", "dansen", "feesten"], "correctAnswer": "afspreken" },
+            { "id": "a1-u7-l4-e10", "type": "translation_to_en", "dutch": "gezellig", "correctAnswer": "cosy / fun / sociable", "acceptedAnswers": ["cosy", "fun", "sociable", "pleasant", "gezellig"] }
+          ]
+        },
+        {
+          "id": "a1-u7-l5",
+          "title": "Talking About Hobbies",
+          "titleNl": "Over Hobby's Praten",
+          "description": "Expressing what you like and dislike doing",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            { "id": "a1-u7-l5-e1", "type": "multiple_choice", "question": "How do you say 'I like reading' in Dutch?", "options": ["Ik lees graag.", "Ik lees niet.", "Ik hou van niet lezen.", "Ik vind lezen moeilijk."], "correctAnswer": "Ik lees graag." },
+            { "id": "a1-u7-l5-e2", "type": "multiple_choice", "question": "What does 'ik hou van' mean?", "options": ["I dislike", "I am afraid of", "I love / I like", "I think about"], "correctAnswer": "I love / I like" },
+            { "id": "a1-u7-l5-e3", "type": "translation_to_en", "dutch": "Wat is jouw hobby?", "correctAnswer": "What is your hobby?", "acceptedAnswers": ["What is your hobby?", "What are your hobbies?"] },
+            { "id": "a1-u7-l5-e4", "type": "translation_to_en", "dutch": "Ik vind het leuk.", "correctAnswer": "I like it.", "acceptedAnswers": ["I like it.", "I find it fun.", "I enjoy it."] },
+            { "id": "a1-u7-l5-e5", "type": "translation_to_nl", "english": "I do not like sport.", "correctAnswer": "Ik hou niet van sport.", "acceptedAnswers": ["Ik hou niet van sport.", "Ik doe niet graag aan sport."] },
+            { "id": "a1-u7-l5-e6", "type": "word_match", "pairs": [
+              { "dutch": "graag", "english": "gladly / like to" },
+              { "dutch": "ik hou van", "english": "I love" },
+              { "dutch": "ik vind het leuk", "english": "I like it" },
+              { "dutch": "ik vind het niet leuk", "english": "I do not like it" }
+            ]},
+            { "id": "a1-u7-l5-e7", "type": "fill_blank", "sentence": "Ik ___ van wandelen in de natuur.", "options": ["hou", "vind", "doe", "ga"], "correctAnswer": "hou", "translation": "I love walking in nature." },
+            { "id": "a1-u7-l5-e8", "type": "sentence_order", "words": ["Mijn", "hobby", "is", "koken", "en", "bakken."], "correctAnswer": "Mijn hobby is koken en bakken.", "translation": "My hobby is cooking and baking." },
+            { "id": "a1-u7-l5-e9", "type": "listening", "dutch": "ik hou van", "question": "What did you hear?", "options": ["ik hou van", "ik vind het leuk", "ik doe graag", "ik speel"], "correctAnswer": "ik hou van" },
+            { "id": "a1-u7-l5-e10", "type": "multiple_choice", "question": "What does 'Dat is niet mijn ding' mean?", "options": ["That is my hobby.", "That is not my thing.", "I am good at that.", "I want to try that."], "correctAnswer": "That is not my thing." }
+          ]
+        },
+        {
+          "id": "a1-u7-l6",
+          "title": "Unit Review",
+          "titleNl": "Herhaling",
+          "description": "Review Unit 7 content",
+          "xpReward": 80,
+          "estimatedMinutes": 10,
+          "exercises": [
+            { "id": "a1-u7-l6-e1", "type": "multiple_choice", "question": "What does 'fietsen' mean?", "options": ["to swim", "to run", "to cycle", "to skate"], "correctAnswer": "to cycle" },
+            { "id": "a1-u7-l6-e2", "type": "translation_to_en", "dutch": "bioscoop", "correctAnswer": "cinema", "acceptedAnswers": ["cinema"] },
+            { "id": "a1-u7-l6-e3", "type": "translation_to_nl", "english": "to sing", "correctAnswer": "zingen", "acceptedAnswers": ["zingen"] },
+            { "id": "a1-u7-l6-e4", "type": "word_match", "pairs": [
+              { "dutch": "voetbal", "english": "football" },
+              { "dutch": "schilderen", "english": "to paint" },
+              { "dutch": "afspreken", "english": "to meet up" },
+              { "dutch": "gezellig", "english": "cosy / fun" }
+            ]},
+            { "id": "a1-u7-l6-e5", "type": "fill_blank", "sentence": "Ik ___ elke week naar de sportschool.", "options": ["ga", "ben", "heb", "doe"], "correctAnswer": "ga", "translation": "I go to the gym every week." },
+            { "id": "a1-u7-l6-e6", "type": "sentence_order", "words": ["Ze", "speelt", "graag", "gitaar", "in", "haar", "vrije", "tijd."], "correctAnswer": "Ze speelt graag gitaar in haar vrije tijd.", "translation": "She likes playing guitar in her free time." },
+            { "id": "a1-u7-l6-e7", "type": "listening", "dutch": "gezellig", "question": "What did you hear?", "options": ["gezellig", "grappig", "leuk", "mooi"], "correctAnswer": "gezellig" },
+            { "id": "a1-u7-l6-e8", "type": "multiple_choice", "question": "What does 'Ik hou van lezen' mean?", "options": ["I dislike reading.", "I love reading.", "I am reading.", "I should read."], "correctAnswer": "I love reading." },
+            { "id": "a1-u7-l6-e9", "type": "translation_to_en", "dutch": "uitgaan", "correctAnswer": "to go out", "acceptedAnswers": ["to go out", "to go out partying"] },
+            { "id": "a1-u7-l6-e10", "type": "fill_blank", "sentence": "Mijn favoriete ___ is wandelen.", "options": ["hobby", "boek", "film", "sport"], "correctAnswer": "hobby", "translation": "My favourite hobby is walking." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a1-u8",
+      "title": "Feelings & Emotions",
+      "titleNl": "Gevoelens en Emoties",
+      "description": "Express how you feel and describe emotions in Dutch",
+      "theme": "emotions",
+      "color": "#ec4899",
+      "order": 12,
+      "level": "A1",
+      "lessons": [
+        {
+          "id": "a1-u8-l1",
+          "title": "Basic Feelings",
+          "titleNl": "Basisgevoelens",
+          "description": "Essential Dutch words for how you feel",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            { "id": "a1-u8-l1-e1", "type": "multiple_choice", "question": "What does 'blij' mean?", "options": ["sad", "angry", "happy", "tired"], "correctAnswer": "happy" },
+            { "id": "a1-u8-l1-e2", "type": "multiple_choice", "question": "What does 'moe' mean?", "options": ["hungry", "tired", "bored", "sick"], "correctAnswer": "tired" },
+            { "id": "a1-u8-l1-e3", "type": "translation_to_en", "dutch": "verdrietig", "correctAnswer": "sad", "acceptedAnswers": ["sad", "upset"] },
+            { "id": "a1-u8-l1-e4", "type": "translation_to_en", "dutch": "bang", "correctAnswer": "scared / afraid", "acceptedAnswers": ["scared", "afraid", "frightened"] },
+            { "id": "a1-u8-l1-e5", "type": "translation_to_nl", "english": "surprised", "correctAnswer": "verrast", "acceptedAnswers": ["verrast"] },
+            { "id": "a1-u8-l1-e6", "type": "word_match", "pairs": [
+              { "dutch": "blij", "english": "happy" },
+              { "dutch": "verdrietig", "english": "sad" },
+              { "dutch": "moe", "english": "tired" },
+              { "dutch": "bang", "english": "scared" }
+            ]},
+            { "id": "a1-u8-l1-e7", "type": "fill_blank", "sentence": "Ik voel me ___ vandaag.", "options": ["blij", "boek", "groot", "snel"], "correctAnswer": "blij", "translation": "I feel happy today." },
+            { "id": "a1-u8-l1-e8", "type": "sentence_order", "words": ["Hoe", "voel", "jij", "je?"], "correctAnswer": "Hoe voel jij je?", "translation": "How do you feel?" },
+            { "id": "a1-u8-l1-e9", "type": "listening", "dutch": "verdrietig", "question": "What did you hear?", "options": ["verdrietig", "blij", "boos", "moe"], "correctAnswer": "verdrietig" },
+            { "id": "a1-u8-l1-e10", "type": "translation_to_en", "dutch": "opgewonden", "correctAnswer": "excited", "acceptedAnswers": ["excited"] }
+          ]
+        },
+        {
+          "id": "a1-u8-l2",
+          "title": "Expressing Happiness & Sadness",
+          "titleNl": "Vreugde en Verdriet Uitdrukken",
+          "description": "Talk about joy and sadness in Dutch",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            { "id": "a1-u8-l2-e1", "type": "multiple_choice", "question": "What does 'Ik ben zo blij!' mean?", "options": ["I am so sad!", "I am so happy!", "I am so tired!", "I am so angry!"], "correctAnswer": "I am so happy!" },
+            { "id": "a1-u8-l2-e2", "type": "multiple_choice", "question": "What does 'huilen' mean?", "options": ["to laugh", "to smile", "to cry", "to shout"], "correctAnswer": "to cry" },
+            { "id": "a1-u8-l2-e3", "type": "translation_to_en", "dutch": "lachen", "correctAnswer": "to laugh", "acceptedAnswers": ["to laugh", "to smile"] },
+            { "id": "a1-u8-l2-e4", "type": "translation_to_en", "dutch": "geluk", "correctAnswer": "happiness / luck", "acceptedAnswers": ["happiness", "luck", "happiness / luck"] },
+            { "id": "a1-u8-l2-e5", "type": "translation_to_nl", "english": "I am happy", "correctAnswer": "Ik ben blij", "acceptedAnswers": ["Ik ben blij", "Ik voel me blij"] },
+            { "id": "a1-u8-l2-e6", "type": "word_match", "pairs": [
+              { "dutch": "lachen", "english": "to laugh" },
+              { "dutch": "huilen", "english": "to cry" },
+              { "dutch": "geluk", "english": "happiness" },
+              { "dutch": "verdriet", "english": "sadness" }
+            ]},
+            { "id": "a1-u8-l2-e7", "type": "fill_blank", "sentence": "Ze ___ omdat ze zo blij is.", "options": ["lacht", "huilt", "slaapt", "werkt"], "correctAnswer": "lacht", "translation": "She is laughing because she is so happy." },
+            { "id": "a1-u8-l2-e8", "type": "sentence_order", "words": ["Ik", "ben", "zo", "blij", "met", "dit", "nieuws."], "correctAnswer": "Ik ben zo blij met dit nieuws.", "translation": "I am so happy with this news." },
+            { "id": "a1-u8-l2-e9", "type": "listening", "dutch": "huilen", "question": "What did you hear?", "options": ["huilen", "lachen", "glimlachen", "schreeuwen"], "correctAnswer": "huilen" },
+            { "id": "a1-u8-l2-e10", "type": "translation_to_en", "dutch": "glimlachen", "correctAnswer": "to smile", "acceptedAnswers": ["to smile"] }
+          ]
+        },
+        {
+          "id": "a1-u8-l3",
+          "title": "Anger & Frustration",
+          "titleNl": "Boosheid en Frustratie",
+          "description": "Expressing anger and frustration in Dutch",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            { "id": "a1-u8-l3-e1", "type": "multiple_choice", "question": "What does 'boos' mean?", "options": ["happy", "sad", "angry", "scared"], "correctAnswer": "angry" },
+            { "id": "a1-u8-l3-e2", "type": "multiple_choice", "question": "What does 'gefrustreerd' mean?", "options": ["satisfied", "frustrated", "relaxed", "amused"], "correctAnswer": "frustrated" },
+            { "id": "a1-u8-l3-e3", "type": "translation_to_en", "dutch": "woedend", "correctAnswer": "furious", "acceptedAnswers": ["furious", "very angry", "enraged"] },
+            { "id": "a1-u8-l3-e4", "type": "translation_to_en", "dutch": "schreeuwen", "correctAnswer": "to shout / to scream", "acceptedAnswers": ["to shout", "to scream", "to yell"] },
+            { "id": "a1-u8-l3-e5", "type": "translation_to_nl", "english": "I am angry", "correctAnswer": "Ik ben boos", "acceptedAnswers": ["Ik ben boos"] },
+            { "id": "a1-u8-l3-e6", "type": "word_match", "pairs": [
+              { "dutch": "boos", "english": "angry" },
+              { "dutch": "woedend", "english": "furious" },
+              { "dutch": "gefrustreerd", "english": "frustrated" },
+              { "dutch": "geïrriteerd", "english": "irritated" }
+            ]},
+            { "id": "a1-u8-l3-e7", "type": "fill_blank", "sentence": "Hij is ___ op zijn collega.", "options": ["boos", "blij", "moe", "bang"], "correctAnswer": "boos", "translation": "He is angry with his colleague." },
+            { "id": "a1-u8-l3-e8", "type": "sentence_order", "words": ["Ik", "ben", "zo", "gefrustreerd", "door", "dit", "probleem."], "correctAnswer": "Ik ben zo gefrustreerd door dit probleem.", "translation": "I am so frustrated by this problem." },
+            { "id": "a1-u8-l3-e9", "type": "listening", "dutch": "woedend", "question": "What did you hear?", "options": ["woedend", "boos", "gefrustreerd", "geïrriteerd"], "correctAnswer": "woedend" },
+            { "id": "a1-u8-l3-e10", "type": "translation_to_en", "dutch": "kalm blijven", "correctAnswer": "to stay calm", "acceptedAnswers": ["to stay calm", "to remain calm"] }
+          ]
+        },
+        {
+          "id": "a1-u8-l4",
+          "title": "Love & Relationships",
+          "titleNl": "Liefde en Relaties",
+          "description": "Vocabulary for love, friendship, and relationships",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            { "id": "a1-u8-l4-e1", "type": "multiple_choice", "question": "What does 'verliefd' mean?", "options": ["married", "in love", "single", "divorced"], "correctAnswer": "in love" },
+            { "id": "a1-u8-l4-e2", "type": "multiple_choice", "question": "What does 'vriend' mean?", "options": ["enemy", "boyfriend / friend", "colleague", "neighbour"], "correctAnswer": "boyfriend / friend" },
+            { "id": "a1-u8-l4-e3", "type": "translation_to_en", "dutch": "liefde", "correctAnswer": "love", "acceptedAnswers": ["love"] },
+            { "id": "a1-u8-l4-e4", "type": "translation_to_en", "dutch": "getrouwd", "correctAnswer": "married", "acceptedAnswers": ["married"] },
+            { "id": "a1-u8-l4-e5", "type": "translation_to_nl", "english": "girlfriend", "correctAnswer": "vriendin", "acceptedAnswers": ["vriendin"] },
+            { "id": "a1-u8-l4-e6", "type": "word_match", "pairs": [
+              { "dutch": "verliefd", "english": "in love" },
+              { "dutch": "liefde", "english": "love" },
+              { "dutch": "getrouwd", "english": "married" },
+              { "dutch": "vriendschap", "english": "friendship" }
+            ]},
+            { "id": "a1-u8-l4-e7", "type": "fill_blank", "sentence": "Ik ben ___ op jou.", "options": ["verliefd", "boos", "bang", "moe"], "correctAnswer": "verliefd", "translation": "I am in love with you." },
+            { "id": "a1-u8-l4-e8", "type": "sentence_order", "words": ["Ze", "zijn", "al", "tien", "jaar", "getrouwd."], "correctAnswer": "Ze zijn al tien jaar getrouwd.", "translation": "They have been married for ten years." },
+            { "id": "a1-u8-l4-e9", "type": "listening", "dutch": "verliefd", "question": "What did you hear?", "options": ["verliefd", "getrouwd", "vriendschap", "liefde"], "correctAnswer": "verliefd" },
+            { "id": "a1-u8-l4-e10", "type": "translation_to_en", "dutch": "kussen", "correctAnswer": "to kiss", "acceptedAnswers": ["to kiss", "kiss"] }
+          ]
+        },
+        {
+          "id": "a1-u8-l5",
+          "title": "Describing Personality",
+          "titleNl": "Persoonlijkheid Beschrijven",
+          "description": "Words to describe people's character",
+          "xpReward": 60,
+          "estimatedMinutes": 7,
+          "exercises": [
+            { "id": "a1-u8-l5-e1", "type": "multiple_choice", "question": "What does 'aardig' mean?", "options": ["rude", "kind / nice", "funny", "shy"], "correctAnswer": "kind / nice" },
+            { "id": "a1-u8-l5-e2", "type": "multiple_choice", "question": "What does 'verlegen' mean?", "options": ["outgoing", "friendly", "shy", "honest"], "correctAnswer": "shy" },
+            { "id": "a1-u8-l5-e3", "type": "translation_to_en", "dutch": "grappig", "correctAnswer": "funny", "acceptedAnswers": ["funny", "amusing"] },
+            { "id": "a1-u8-l5-e4", "type": "translation_to_en", "dutch": "eerlijk", "correctAnswer": "honest", "acceptedAnswers": ["honest"] },
+            { "id": "a1-u8-l5-e5", "type": "translation_to_nl", "english": "patient", "correctAnswer": "geduldig", "acceptedAnswers": ["geduldig"] },
+            { "id": "a1-u8-l5-e6", "type": "word_match", "pairs": [
+              { "dutch": "aardig", "english": "kind / nice" },
+              { "dutch": "grappig", "english": "funny" },
+              { "dutch": "verlegen", "english": "shy" },
+              { "dutch": "geduldig", "english": "patient" }
+            ]},
+            { "id": "a1-u8-l5-e7", "type": "fill_blank", "sentence": "Mijn vriend is heel ___ en behulpzaam.", "options": ["aardig", "boos", "moe", "bang"], "correctAnswer": "aardig", "translation": "My friend is very kind and helpful." },
+            { "id": "a1-u8-l5-e8", "type": "sentence_order", "words": ["Ze", "is", "erg", "grappig", "en", "heeft", "een", "goed", "gevoel", "voor", "humor."], "correctAnswer": "Ze is erg grappig en heeft een goed gevoel voor humor.", "translation": "She is very funny and has a good sense of humour." },
+            { "id": "a1-u8-l5-e9", "type": "listening", "dutch": "geduldig", "question": "What did you hear?", "options": ["geduldig", "aardig", "grappig", "verlegen"], "correctAnswer": "geduldig" },
+            { "id": "a1-u8-l5-e10", "type": "translation_to_en", "dutch": "zelfverzekerd", "correctAnswer": "confident", "acceptedAnswers": ["confident", "self-confident"] }
+          ]
+        },
+        {
+          "id": "a1-u8-l6",
+          "title": "Unit Review",
+          "titleNl": "Herhaling",
+          "description": "Review Unit 8 content",
+          "xpReward": 80,
+          "estimatedMinutes": 10,
+          "exercises": [
+            { "id": "a1-u8-l6-e1", "type": "multiple_choice", "question": "What does 'verdrietig' mean?", "options": ["happy", "angry", "sad", "tired"], "correctAnswer": "sad" },
+            { "id": "a1-u8-l6-e2", "type": "translation_to_en", "dutch": "boos", "correctAnswer": "angry", "acceptedAnswers": ["angry"] },
+            { "id": "a1-u8-l6-e3", "type": "translation_to_nl", "english": "in love", "correctAnswer": "verliefd", "acceptedAnswers": ["verliefd"] },
+            { "id": "a1-u8-l6-e4", "type": "word_match", "pairs": [
+              { "dutch": "blij", "english": "happy" },
+              { "dutch": "moe", "english": "tired" },
+              { "dutch": "aardig", "english": "kind" },
+              { "dutch": "eerlijk", "english": "honest" }
+            ]},
+            { "id": "a1-u8-l6-e5", "type": "fill_blank", "sentence": "Ik voel me ___ omdat ik slecht heb geslapen.", "options": ["moe", "blij", "verliefd", "aardig"], "correctAnswer": "moe", "translation": "I feel tired because I slept badly." },
+            { "id": "a1-u8-l6-e6", "type": "sentence_order", "words": ["Hoe", "voel", "jij", "je", "vandaag?"], "correctAnswer": "Hoe voel jij je vandaag?", "translation": "How do you feel today?" },
+            { "id": "a1-u8-l6-e7", "type": "listening", "dutch": "grappig", "question": "What did you hear?", "options": ["grappig", "aardig", "eerlijk", "verlegen"], "correctAnswer": "grappig" },
+            { "id": "a1-u8-l6-e8", "type": "multiple_choice", "question": "What does 'glimlachen' mean?", "options": ["to cry", "to shout", "to smile", "to laugh"], "correctAnswer": "to smile" },
+            { "id": "a1-u8-l6-e9", "type": "translation_to_en", "dutch": "vriendschap", "correctAnswer": "friendship", "acceptedAnswers": ["friendship"] },
+            { "id": "a1-u8-l6-e10", "type": "fill_blank", "sentence": "Ze is heel ___ en helpt altijd anderen.", "options": ["aardig", "boos", "woedend", "bang"], "correctAnswer": "aardig", "translation": "She is very kind and always helps others." }
+          ]
+        }
+      ]
     }
   ]
 }

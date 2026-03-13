@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from 'react'
 import Link from 'next/link'
-import { Lock, CheckCircle2, ChevronRight, BookOpen, ClipboardCheck } from 'lucide-react'
+import { Lock, CheckCircle2, ChevronRight, BookOpen, ClipboardCheck, RotateCcw } from 'lucide-react'
 import { useProfile } from '@/hooks/useProfile'
 import { useLearningProgress } from '@/hooks/useLearningProgress'
 import { buildLearningPath } from '@/lib/curriculum/index'
@@ -194,7 +194,7 @@ function LessonRow({ lesson }: { lesson: LessonWithStatus }) {
     <div
       className={cn(
         'flex items-center gap-3 px-4 py-3 transition-colors',
-        !lesson.isLocked && !lesson.isCompleted && 'hover:bg-slate-50',
+        !lesson.isLocked && 'hover:bg-slate-50',
         lesson.isCurrentLesson && 'bg-primary-50/60',
       )}
     >
@@ -229,7 +229,10 @@ function LessonRow({ lesson }: { lesson: LessonWithStatus }) {
       </div>
 
       {lesson.isCompleted && lesson.score === 100 && (
-        <span className="text-xs">⭐</span>
+        <span className="text-xs mr-1">⭐</span>
+      )}
+      {lesson.isCompleted && (
+        <RotateCcw size={12} className="text-slate-300 shrink-0" />
       )}
       {!lesson.isLocked && !lesson.isCompleted && (
         <ChevronRight size={13} className="text-slate-300 shrink-0" />
@@ -237,7 +240,7 @@ function LessonRow({ lesson }: { lesson: LessonWithStatus }) {
     </div>
   )
 
-  if (!lesson.isLocked && !lesson.isCompleted) {
+  if (!lesson.isLocked) {
     return <Link href={`/learn/${lesson.id}`}>{inner}</Link>
   }
   return <div>{inner}</div>

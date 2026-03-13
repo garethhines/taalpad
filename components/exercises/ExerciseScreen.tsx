@@ -41,7 +41,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
   function checkAnswer(currentAnswer: string | null): boolean {
     if (!currentAnswer || !exercise) return false
 
-    const normalise = (s: string) => s.trim().toLowerCase().replace(/[.!?,]/g, '')
+    const normalise = (s: string) => s.trim().toLowerCase().replace(/[.!?,;:'"()]/g, '').replace(/\s+/g, ' ')
 
     if (exercise.type === 'word_match') return wordMatchDone
 

@@ -1,9 +1,9 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, useRef } from 'react'
 import { X } from 'lucide-react'
 import { createClient } from '@/lib/supabase/client'
-import { recordFlashcardReview } from '@/lib/supabase/queries'
+import { recordFlashcardReview, recordFlashcardSession } from '@/lib/supabase/queries'
 import { useProfile } from '@/hooks/useProfile'
 import { cn } from '@/lib/utils'
 import FlashCard from './FlashCard'
@@ -29,12 +29,12 @@ interface Props {
 }
 
 export default function StudySession({ title, initialQueue, progress, onBack, onSessionComplete }: Props) {
-  const { user } = useProfile()
+  const { user, refreshProfile } = useProfile()
   const progressMap = new Map(progress.map((p) => [p.word_id, p]))
 
   // Session state
   const [queue, setQueue] = useState<VocabWord[]>(() => [...initialQueue])
-  const [repeatQueue, setRepeatQueue] = useState<VocabWord[]>([])
+  const repeatQueueRef = useRef<VocabWord[]>([])
   const [rated, setRated] = useState<RatedWord[]>([])
   const [flipped, setFlipped] = useState(false)
   const [done, setDone] = useState(false)
@@ -56,6 +56,10 @@ export default function StudySession({ title, initialQueue, progress, onBack, on
 
     const previousFamiliarity = getFamiliarity(currentWord.id)
     const supabase = createClient()
+
+    // Flip card back before DB round-trip so animation plays immediately
+    setFlipped(false)
+
     const updated = await recordFlashcardReview(
       supabase,
       user.id,
@@ -65,36 +69,40 @@ export default function StudySession({ title, initialQueue, progress, onBack, on
     )
     const newFamiliarity = updated?.familiarity ?? previousFamiliarity
 
-    // Track result
-    setRated((prev) => [...prev, { word: currentWord, rating, previousFamiliarity, newFamiliarity }])
+    const newRated = [...rated, { word: currentWord, rating, previousFamiliarity, newFamiliarity }]
+    setRated(newRated)
 
     // Wrong/Hard → re-queue this card (max 1 repeat per card)
     const hasBeenRepeated = rated.some((r) => r.word.id === currentWord.id)
     if ((rating === 'wrong' || rating === 'hard') && !hasBeenRepeated) {
-      setRepeatQueue((prev) => [...prev, currentWord])
+      repeatQueueRef.current = [...repeatQueueRef.current, currentWord]
     }
+
+    // Wait for flip-back animation before advancing to next card
+    await new Promise((resolve) => setTimeout(resolve, 350))
 
     // Advance queue
     const newQueue = queue.slice(1)
-    if (newQueue.length === 0 && repeatQueue.length > 0) {
+    if (newQueue.length === 0 && repeatQueueRef.current.length > 0) {
       // Done with main queue — add repeat cards (max 10)
-      setQueue(repeatQueue.slice(0, 10))
-      setRepeatQueue([])
+      setQueue(repeatQueueRef.current.slice(0, 10))
+      repeatQueueRef.current = []
     } else if (newQueue.length === 0) {
-      // Truly done
+      // Truly done — record streak
       setDone(true)
       onSessionComplete()
+      await recordFlashcardSession(supabase, user.id, newRated.length)
+      await refreshProfile()
     } else {
       setQueue(newQueue)
     }
 
-    setFlipped(false)
     setSaving(false)
   }
 
   function handleRepeat() {
     setQueue([...initialQueue].sort(() => Math.random() - 0.5))
-    setRepeatQueue([])
+    repeatQueueRef.current = []
     setRated([])
     setFlipped(false)
     setDone(false)
@@ -146,6 +154,7 @@ export default function StudySession({ title, initialQueue, progress, onBack, on
         <FlashCard
           word={currentWord}
           familiarity={currentFamiliarity}
+          flipped={flipped}
           onFlip={() => setFlipped(true)}
         />
 

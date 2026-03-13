@@ -5,14 +5,14 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import {
   LogOut, Flame, Zap, Award, BookOpen, Layers, Clock,
-  Shield, Edit3, Check, X, Volume2, Mic, ChevronRight,
+  Shield, Edit3, Check, X, Volume2, Mic, ChevronRight, Trash2,
 } from 'lucide-react'
 import { useProfile } from '@/hooks/useProfile'
 import { useVocabularyProgress } from '@/hooks/useVocabularyProgress'
 import { useLearningProgress } from '@/hooks/useLearningProgress'
 import { useProfileSettings } from '@/hooks/useProfileSettings'
 import { createClient } from '@/lib/supabase/client'
-import { updateUserProfile } from '@/lib/supabase/queries'
+import { updateUserProfile, resetAllProgress } from '@/lib/supabase/queries'
 import { countWordsMastered, TOTAL_WORDS } from '@/lib/vocabulary'
 import { getCEFRTitle, formatXP } from '@/lib/utils'
 import { getEffectiveStreak, getLevelProgress } from '@/lib/streak'
@@ -31,6 +31,8 @@ export default function ProfilePage() {
   const [editingName, setEditingName] = useState(false)
   const [nameInput, setNameInput] = useState(profile?.display_name ?? '')
   const [savingName, setSavingName] = useState(false)
+  const [showResetConfirm, setShowResetConfirm] = useState(false)
+  const [resetting, setResetting] = useState(false)
 
   // Derived stats
   const streak = profile ? getEffectiveStreak(profile) : 0
@@ -61,6 +63,16 @@ export default function ProfilePage() {
     await refreshProfile()
     setSavingName(false)
     setEditingName(false)
+  }
+
+  async function handleResetProgress() {
+    if (!user) return
+    setResetting(true)
+    const supabase = createClient()
+    await resetAllProgress(supabase, user.id)
+    await refreshProfile()
+    setResetting(false)
+    setShowResetConfirm(false)
   }
 
   async function handleSignOut() {
@@ -134,6 +146,39 @@ export default function ProfilePage() {
           </div>
         </div>
       </div>
+
+      {/* ── RESET CONFIRM MODAL ─────────────────────────────────────────── */}
+      {showResetConfirm && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-5">
+          <div className="bg-white rounded-3xl p-6 w-full max-w-sm shadow-2xl space-y-4">
+            <div className="text-center space-y-2">
+              <div className="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto">
+                <Trash2 size={22} className="text-orange-500" />
+              </div>
+              <h2 className="text-lg font-bold text-slate-800">Reset all progress?</h2>
+              <p className="text-sm text-slate-500 leading-relaxed">
+                This will permanently delete all your lesson progress, flashcard history, XP, and streak. This cannot be undone.
+              </p>
+            </div>
+            <div className="flex gap-3">
+              <button
+                onClick={() => setShowResetConfirm(false)}
+                disabled={resetting}
+                className="flex-1 py-3 rounded-2xl border border-slate-200 text-sm font-semibold text-slate-600 hover:bg-slate-50 transition-colors"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={handleResetProgress}
+                disabled={resetting}
+                className="flex-1 py-3 rounded-2xl bg-orange-500 text-white text-sm font-semibold hover:bg-orange-600 transition-colors disabled:opacity-60"
+              >
+                {resetting ? 'Resetting…' : 'Yes, reset'}
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* ── BODY ─────────────────────────────────────────────────────────── */}
       <div className="px-4 py-6 lg:px-10 lg:py-8 max-w-4xl mx-auto">
@@ -254,6 +299,16 @@ export default function ProfilePage() {
                 <InfoRow label="Interface language" value="English" />
               </Card>
             </section>
+
+            {/* Reset progress */}
+            <button
+              onClick={() => setShowResetConfirm(true)}
+              disabled={resetting}
+              className="w-full flex items-center justify-center gap-2 py-3.5 text-sm font-semibold text-orange-500 rounded-2xl border border-orange-100 bg-white hover:bg-orange-50 transition-colors disabled:opacity-50"
+            >
+              <Trash2 size={16} />
+              Reset All Progress
+            </button>
 
             {/* Sign out */}
             <button

@@ -1,6 +1,5 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import SpeakerButton from '@/components/ui/SpeakerButton'
 import { cn } from '@/lib/utils'
 import type { VocabWord } from '@/lib/vocabulary'
@@ -8,6 +7,7 @@ import type { VocabWord } from '@/lib/vocabulary'
 interface Props {
   word: VocabWord
   familiarity: number
+  flipped?: boolean
   onFlip?: () => void
 }
 
@@ -21,15 +21,9 @@ const FAMILIARITY_COLORS = [
   'bg-emerald-100 text-emerald-700',
 ]
 
-export default function FlashCard({ word, familiarity, onFlip }: Props) {
-  const [flipped, setFlipped] = useState(false)
-
-  // Reset flip when word changes
-  useEffect(() => { setFlipped(false) }, [word.id])
-
+export default function FlashCard({ word, familiarity, flipped = false, onFlip }: Props) {
   function handleFlip() {
     if (!flipped) {
-      setFlipped(true)
       onFlip?.()
     }
   }

@@ -109,7 +109,14 @@ export default function PlacementResult({
           </button>
 
           <button
-            onClick={() => router.push('/learn')}
+            onClick={async () => {
+              if (!user) { router.push('/learn'); return }
+              setSaving(true)
+              const supabase = createClient()
+              await completePlacementTest(supabase, user.id, 'A0')
+              await refreshProfile()
+              router.push('/learn')
+            }}
             disabled={saving}
             className="w-full text-slate-400 text-xs py-2 hover:text-slate-600 transition-colors"
           >

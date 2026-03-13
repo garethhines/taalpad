@@ -2088,6 +2088,330 @@
           ]
         }
       ]
+    },
+    {
+      "id": "a0-u5",
+      "title": "Basic Questions",
+      "titleNl": "Basisvragen",
+      "description": "Learn how to ask simple questions in Dutch",
+      "theme": "questions",
+      "color": "#10b981",
+      "order": 5,
+      "level": "A0",
+      "lessons": [
+        {
+          "id": "a0-u5-l1",
+          "title": "Question Words",
+          "titleNl": "Vraagwoorden",
+          "description": "Learn the essential Dutch question words",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            { "id": "a0-u5-l1-e1", "type": "multiple_choice", "question": "What does 'wat' mean?", "options": ["who", "where", "what", "when"], "correctAnswer": "what" },
+            { "id": "a0-u5-l1-e2", "type": "multiple_choice", "question": "What does 'wie' mean?", "options": ["what", "who", "where", "why"], "correctAnswer": "who" },
+            { "id": "a0-u5-l1-e3", "type": "translation_to_en", "dutch": "waar", "correctAnswer": "where", "acceptedAnswers": ["where"] },
+            { "id": "a0-u5-l1-e4", "type": "translation_to_en", "dutch": "wanneer", "correctAnswer": "when", "acceptedAnswers": ["when"] },
+            { "id": "a0-u5-l1-e5", "type": "translation_to_nl", "english": "why", "correctAnswer": "waarom", "acceptedAnswers": ["waarom"] },
+            { "id": "a0-u5-l1-e6", "type": "word_match", "pairs": [
+              { "dutch": "wat", "english": "what" },
+              { "dutch": "wie", "english": "who" },
+              { "dutch": "waar", "english": "where" },
+              { "dutch": "wanneer", "english": "when" }
+            ]},
+            { "id": "a0-u5-l1-e7", "type": "fill_blank", "sentence": "___ is jouw naam?", "options": ["Wat", "Wie", "Waar", "Hoe"], "correctAnswer": "Wat", "translation": "What is your name?" },
+            { "id": "a0-u5-l1-e8", "type": "sentence_order", "words": ["Wie", "is", "dat?"], "correctAnswer": "Wie is dat?", "translation": "Who is that?" },
+            { "id": "a0-u5-l1-e9", "type": "listening", "dutch": "wanneer", "question": "What did you hear?", "options": ["wanneer", "waarom", "wie", "wat"], "correctAnswer": "wanneer" },
+            { "id": "a0-u5-l1-e10", "type": "translation_to_en", "dutch": "hoe", "correctAnswer": "how", "acceptedAnswers": ["how"] }
+          ]
+        },
+        {
+          "id": "a0-u5-l2",
+          "title": "Where Questions",
+          "titleNl": "Waar-Vragen",
+          "description": "Asking and answering where questions",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            { "id": "a0-u5-l2-e1", "type": "multiple_choice", "question": "How do you ask 'Where do you live?' in Dutch?", "options": ["Wat woon jij?", "Waar woon jij?", "Wie woon jij?", "Hoe woon jij?"], "correctAnswer": "Waar woon jij?" },
+            { "id": "a0-u5-l2-e2", "type": "multiple_choice", "question": "What does 'Waar is de supermarkt?' mean?", "options": ["When is the supermarket open?", "Where is the supermarket?", "What is a supermarket?", "Who is at the supermarket?"], "correctAnswer": "Where is the supermarket?" },
+            { "id": "a0-u5-l2-e3", "type": "translation_to_en", "dutch": "Waar ben jij?", "correctAnswer": "Where are you?", "acceptedAnswers": ["Where are you?"] },
+            { "id": "a0-u5-l2-e4", "type": "translation_to_en", "dutch": "hier", "correctAnswer": "here", "acceptedAnswers": ["here"] },
+            { "id": "a0-u5-l2-e5", "type": "translation_to_nl", "english": "there", "correctAnswer": "daar", "acceptedAnswers": ["daar"] },
+            { "id": "a0-u5-l2-e6", "type": "word_match", "pairs": [
+              { "dutch": "hier", "english": "here" },
+              { "dutch": "daar", "english": "there" },
+              { "dutch": "links", "english": "left" },
+              { "dutch": "rechts", "english": "right" }
+            ]},
+            { "id": "a0-u5-l2-e7", "type": "fill_blank", "sentence": "Waar ___ de bibliotheek?", "options": ["is", "zijn", "ben", "heeft"], "correctAnswer": "is", "translation": "Where is the library?" },
+            { "id": "a0-u5-l2-e8", "type": "sentence_order", "words": ["Waar", "woon", "jij?"], "correctAnswer": "Waar woon jij?", "translation": "Where do you live?" },
+            { "id": "a0-u5-l2-e9", "type": "listening", "dutch": "hier", "question": "What did you hear?", "options": ["hier", "daar", "links", "rechts"], "correctAnswer": "hier" },
+            { "id": "a0-u5-l2-e10", "type": "translation_to_en", "dutch": "rechtdoor", "correctAnswer": "straight ahead", "acceptedAnswers": ["straight ahead", "straight on"] }
+          ]
+        },
+        {
+          "id": "a0-u5-l3",
+          "title": "Who & What",
+          "titleNl": "Wie en Wat",
+          "description": "Asking who and what questions",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            { "id": "a0-u5-l3-e1", "type": "multiple_choice", "question": "How do you ask 'What is this?' in Dutch?", "options": ["Wie is dit?", "Wat is dit?", "Hoe is dit?", "Waar is dit?"], "correctAnswer": "Wat is dit?" },
+            { "id": "a0-u5-l3-e2", "type": "multiple_choice", "question": "What does 'Wie is jouw leraar?' mean?", "options": ["What does your teacher say?", "Who is your teacher?", "Where is your teacher?", "When is your teacher?"], "correctAnswer": "Who is your teacher?" },
+            { "id": "a0-u5-l3-e3", "type": "translation_to_en", "dutch": "Wat doe jij?", "correctAnswer": "What do you do?", "acceptedAnswers": ["What do you do?", "What are you doing?"] },
+            { "id": "a0-u5-l3-e4", "type": "translation_to_en", "dutch": "Wie is dat?", "correctAnswer": "Who is that?", "acceptedAnswers": ["Who is that?"] },
+            { "id": "a0-u5-l3-e5", "type": "translation_to_nl", "english": "What is your name?", "correctAnswer": "Wat is jouw naam?", "acceptedAnswers": ["Wat is jouw naam?", "Wat is uw naam?", "Hoe heet jij?"] },
+            { "id": "a0-u5-l3-e6", "type": "word_match", "pairs": [
+              { "dutch": "Wat is dit?", "english": "What is this?" },
+              { "dutch": "Wie ben jij?", "english": "Who are you?" },
+              { "dutch": "Wat doe jij?", "english": "What do you do?" },
+              { "dutch": "Wie woont hier?", "english": "Who lives here?" }
+            ]},
+            { "id": "a0-u5-l3-e7", "type": "fill_blank", "sentence": "___ is jouw favoriete kleur?", "options": ["Wat", "Wie", "Waar", "Wanneer"], "correctAnswer": "Wat", "translation": "What is your favourite colour?" },
+            { "id": "a0-u5-l3-e8", "type": "sentence_order", "words": ["Wat", "is", "jouw", "telefoonnummer?"], "correctAnswer": "Wat is jouw telefoonnummer?", "translation": "What is your phone number?" },
+            { "id": "a0-u5-l3-e9", "type": "listening", "dutch": "Wat is dit?", "question": "What did you hear?", "options": ["Wat is dit?", "Wie is dit?", "Hoe is dit?", "Waar is dit?"], "correctAnswer": "Wat is dit?" },
+            { "id": "a0-u5-l3-e10", "type": "translation_to_en", "dutch": "iemand", "correctAnswer": "someone", "acceptedAnswers": ["someone", "somebody"] }
+          ]
+        },
+        {
+          "id": "a0-u5-l4",
+          "title": "When & How Many",
+          "titleNl": "Wanneer en Hoeveel",
+          "description": "Asking about time and quantity",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            { "id": "a0-u5-l4-e1", "type": "multiple_choice", "question": "What does 'Hoe laat is het?' mean?", "options": ["How old are you?", "What time is it?", "How much is it?", "How long is it?"], "correctAnswer": "What time is it?" },
+            { "id": "a0-u5-l4-e2", "type": "multiple_choice", "question": "What does 'hoeveel' mean?", "options": ["how long", "how old", "how many / how much", "how often"], "correctAnswer": "how many / how much" },
+            { "id": "a0-u5-l4-e3", "type": "translation_to_en", "dutch": "Wanneer begin je?", "correctAnswer": "When do you start?", "acceptedAnswers": ["When do you start?", "When do you begin?"] },
+            { "id": "a0-u5-l4-e4", "type": "translation_to_en", "dutch": "Hoeveel kost dat?", "correctAnswer": "How much does that cost?", "acceptedAnswers": ["How much does that cost?", "How much is that?"] },
+            { "id": "a0-u5-l4-e5", "type": "translation_to_nl", "english": "How long?", "correctAnswer": "Hoe lang?", "acceptedAnswers": ["Hoe lang?"] },
+            { "id": "a0-u5-l4-e6", "type": "word_match", "pairs": [
+              { "dutch": "wanneer", "english": "when" },
+              { "dutch": "hoeveel", "english": "how many / how much" },
+              { "dutch": "hoe laat", "english": "what time" },
+              { "dutch": "hoe lang", "english": "how long" }
+            ]},
+            { "id": "a0-u5-l4-e7", "type": "fill_blank", "sentence": "___ appels wil jij?", "options": ["Hoeveel", "Wanneer", "Hoe laat", "Waarom"], "correctAnswer": "Hoeveel", "translation": "How many apples do you want?" },
+            { "id": "a0-u5-l4-e8", "type": "sentence_order", "words": ["Wanneer", "vertrekt", "de", "trein?"], "correctAnswer": "Wanneer vertrekt de trein?", "translation": "When does the train depart?" },
+            { "id": "a0-u5-l4-e9", "type": "listening", "dutch": "hoeveel", "question": "What did you hear?", "options": ["hoeveel", "wanneer", "hoe laat", "hoe lang"], "correctAnswer": "hoeveel" },
+            { "id": "a0-u5-l4-e10", "type": "translation_to_en", "dutch": "Hoe oud ben jij?", "correctAnswer": "How old are you?", "acceptedAnswers": ["How old are you?"] }
+          ]
+        },
+        {
+          "id": "a0-u5-l5",
+          "title": "Yes/No Questions",
+          "titleNl": "Ja/Nee-Vragen",
+          "description": "Forming and answering yes/no questions",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            { "id": "a0-u5-l5-e1", "type": "multiple_choice", "question": "How do you turn 'Jij spreekt Nederlands' into a yes/no question?", "options": ["Jij spreekt Nederlands?", "Spreek jij Nederlands?", "Nederlands spreek jij?", "Spreekt jij Nederlands?"], "correctAnswer": "Spreek jij Nederlands?" },
+            { "id": "a0-u5-l5-e2", "type": "multiple_choice", "question": "What does 'Ben jij student?' mean?", "options": ["You are a student.", "Are you a student?", "Who is a student?", "Where is the student?"], "correctAnswer": "Are you a student?" },
+            { "id": "a0-u5-l5-e3", "type": "translation_to_en", "dutch": "Heb jij een pen?", "correctAnswer": "Do you have a pen?", "acceptedAnswers": ["Do you have a pen?", "Have you got a pen?"] },
+            { "id": "a0-u5-l5-e4", "type": "translation_to_en", "dutch": "ja", "correctAnswer": "yes", "acceptedAnswers": ["yes"] },
+            { "id": "a0-u5-l5-e5", "type": "translation_to_nl", "english": "no", "correctAnswer": "nee", "acceptedAnswers": ["nee", "neen"] },
+            { "id": "a0-u5-l5-e6", "type": "word_match", "pairs": [
+              { "dutch": "ja", "english": "yes" },
+              { "dutch": "nee", "english": "no" },
+              { "dutch": "misschien", "english": "maybe" },
+              { "dutch": "zeker", "english": "certainly" }
+            ]},
+            { "id": "a0-u5-l5-e7", "type": "fill_blank", "sentence": "___ jij Nederlands?", "options": ["Spreek", "Spreekt", "Sprekend", "Gesproken"], "correctAnswer": "Spreek", "translation": "Do you speak Dutch?" },
+            { "id": "a0-u5-l5-e8", "type": "sentence_order", "words": ["Woon", "jij", "in", "Amsterdam?"], "correctAnswer": "Woon jij in Amsterdam?", "translation": "Do you live in Amsterdam?" },
+            { "id": "a0-u5-l5-e9", "type": "listening", "dutch": "misschien", "question": "What did you hear?", "options": ["misschien", "zeker", "ja", "nee"], "correctAnswer": "misschien" },
+            { "id": "a0-u5-l5-e10", "type": "translation_to_en", "dutch": "Ga jij mee?", "correctAnswer": "Are you coming along?", "acceptedAnswers": ["Are you coming along?", "Are you coming with me?", "Will you come?"] }
+          ]
+        },
+        {
+          "id": "a0-u5-l6",
+          "title": "Unit Review",
+          "titleNl": "Herhaling",
+          "description": "Review Unit 5 content",
+          "xpReward": 70,
+          "estimatedMinutes": 8,
+          "exercises": [
+            { "id": "a0-u5-l6-e1", "type": "multiple_choice", "question": "What does 'waar' mean?", "options": ["what", "who", "where", "when"], "correctAnswer": "where" },
+            { "id": "a0-u5-l6-e2", "type": "translation_to_en", "dutch": "wanneer", "correctAnswer": "when", "acceptedAnswers": ["when"] },
+            { "id": "a0-u5-l6-e3", "type": "translation_to_nl", "english": "how many", "correctAnswer": "hoeveel", "acceptedAnswers": ["hoeveel"] },
+            { "id": "a0-u5-l6-e4", "type": "word_match", "pairs": [
+              { "dutch": "wat", "english": "what" },
+              { "dutch": "wie", "english": "who" },
+              { "dutch": "waarom", "english": "why" },
+              { "dutch": "hoe", "english": "how" }
+            ]},
+            { "id": "a0-u5-l6-e5", "type": "fill_blank", "sentence": "___ heet jij?", "options": ["Hoe", "Wat", "Wie", "Wanneer"], "correctAnswer": "Hoe", "translation": "What is your name? (lit. How are you called?)" },
+            { "id": "a0-u5-l6-e6", "type": "sentence_order", "words": ["Waar", "is", "het", "station?"], "correctAnswer": "Waar is het station?", "translation": "Where is the station?" },
+            { "id": "a0-u5-l6-e7", "type": "listening", "dutch": "waarom", "question": "What did you hear?", "options": ["waarom", "wanneer", "wie", "wat"], "correctAnswer": "waarom" },
+            { "id": "a0-u5-l6-e8", "type": "multiple_choice", "question": "How do you say 'Are you a student?' in Dutch?", "options": ["Jij bent student?", "Ben jij student?", "Bent jij student?", "Jij is student?"], "correctAnswer": "Ben jij student?" },
+            { "id": "a0-u5-l6-e9", "type": "translation_to_en", "dutch": "Hoeveel kost dit?", "correctAnswer": "How much does this cost?", "acceptedAnswers": ["How much does this cost?", "How much is this?"] },
+            { "id": "a0-u5-l6-e10", "type": "fill_blank", "sentence": "___ jij koffie of thee?", "options": ["Wil", "Wilt", "Wil jij", "Wil je"], "correctAnswer": "Wil", "translation": "Do you want coffee or tea?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a0-u6",
+      "title": "The Alphabet & Pronunciation",
+      "titleNl": "Het Alfabet en Uitspraak",
+      "description": "Master the Dutch alphabet and key pronunciation rules",
+      "theme": "pronunciation",
+      "color": "#f59e0b",
+      "order": 6,
+      "level": "A0",
+      "lessons": [
+        {
+          "id": "a0-u6-l1",
+          "title": "The Dutch Alphabet",
+          "titleNl": "Het Nederlandse Alfabet",
+          "description": "Learn all 26 letters of the Dutch alphabet",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            { "id": "a0-u6-l1-e1", "type": "multiple_choice", "question": "How many letters does the Dutch alphabet have?", "options": ["24", "25", "26", "27"], "correctAnswer": "26" },
+            { "id": "a0-u6-l1-e2", "type": "multiple_choice", "question": "The letter 'g' in Dutch is pronounced like which sound?", "options": ["like English 'g' in 'go'", "like English 'y'", "a guttural sound from the throat", "like 'zh'"], "correctAnswer": "a guttural sound from the throat" },
+            { "id": "a0-u6-l1-e3", "type": "translation_to_en", "dutch": "alfabet", "correctAnswer": "alphabet", "acceptedAnswers": ["alphabet"] },
+            { "id": "a0-u6-l1-e4", "type": "translation_to_en", "dutch": "letter", "correctAnswer": "letter", "acceptedAnswers": ["letter"] },
+            { "id": "a0-u6-l1-e5", "type": "translation_to_nl", "english": "capital letter", "correctAnswer": "hoofdletter", "acceptedAnswers": ["hoofdletter"] },
+            { "id": "a0-u6-l1-e6", "type": "word_match", "pairs": [
+              { "dutch": "a", "english": "ah" },
+              { "dutch": "e", "english": "ay" },
+              { "dutch": "i", "english": "ee" },
+              { "dutch": "o", "english": "oh" }
+            ]},
+            { "id": "a0-u6-l1-e7", "type": "fill_blank", "sentence": "Het Nederlandse alfabet heeft zesentwintig ___.", "options": ["letters", "woorden", "klinkers", "zinnen"], "correctAnswer": "letters", "translation": "The Dutch alphabet has twenty-six letters." },
+            { "id": "a0-u6-l1-e8", "type": "sentence_order", "words": ["De", "letter", "'g'", "klinkt", "anders", "dan", "in", "het", "Engels."], "correctAnswer": "De letter 'g' klinkt anders dan in het Engels.", "translation": "The letter 'g' sounds different than in English." },
+            { "id": "a0-u6-l1-e9", "type": "listening", "dutch": "alfabet", "question": "What did you hear?", "options": ["alfabet", "letter", "woord", "klinker"], "correctAnswer": "alfabet" },
+            { "id": "a0-u6-l1-e10", "type": "translation_to_en", "dutch": "kleine letter", "correctAnswer": "lowercase letter", "acceptedAnswers": ["lowercase letter", "small letter"] }
+          ]
+        },
+        {
+          "id": "a0-u6-l2",
+          "title": "Vowel Sounds",
+          "titleNl": "Klinkers",
+          "description": "Dutch short and long vowel pronunciation",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            { "id": "a0-u6-l2-e1", "type": "multiple_choice", "question": "A Dutch 'long a' (aa) sounds most like which English word?", "options": ["cat", "car", "cake", "call"], "correctAnswer": "car" },
+            { "id": "a0-u6-l2-e2", "type": "multiple_choice", "question": "Which word has a long vowel sound?", "options": ["kat", "man", "raam", "bed"], "correctAnswer": "raam" },
+            { "id": "a0-u6-l2-e3", "type": "translation_to_en", "dutch": "klinker", "correctAnswer": "vowel", "acceptedAnswers": ["vowel"] },
+            { "id": "a0-u6-l2-e4", "type": "translation_to_en", "dutch": "medeklinker", "correctAnswer": "consonant", "acceptedAnswers": ["consonant"] },
+            { "id": "a0-u6-l2-e5", "type": "translation_to_nl", "english": "short vowel", "correctAnswer": "korte klinker", "acceptedAnswers": ["korte klinker"] },
+            { "id": "a0-u6-l2-e6", "type": "word_match", "pairs": [
+              { "dutch": "aa", "english": "long a" },
+              { "dutch": "ee", "english": "long e" },
+              { "dutch": "oo", "english": "long o" },
+              { "dutch": "uu", "english": "long u" }
+            ]},
+            { "id": "a0-u6-l2-e7", "type": "fill_blank", "sentence": "Het woord 'raam' heeft een lange ___ a.", "options": ["klinker", "medeklinker", "letter", "zin"], "correctAnswer": "klinker", "translation": "The word 'raam' has a long vowel a." },
+            { "id": "a0-u6-l2-e8", "type": "sentence_order", "words": ["Dutch", "heeft", "korte", "en", "lange", "klinkers."], "correctAnswer": "Dutch heeft korte en lange klinkers.", "translation": "Dutch has short and long vowels." },
+            { "id": "a0-u6-l2-e9", "type": "listening", "dutch": "klinker", "question": "What did you hear?", "options": ["klinker", "medeklinker", "letter", "alfabet"], "correctAnswer": "klinker" },
+            { "id": "a0-u6-l2-e10", "type": "multiple_choice", "question": "The Dutch 'oe' makes which sound?", "options": ["like 'oo' in 'boot'", "like 'oe' in 'poet'", "like 'u' in 'cup'", "like 'oe' in 'foe'"], "correctAnswer": "like 'oo' in 'boot'" }
+          ]
+        },
+        {
+          "id": "a0-u6-l3",
+          "title": "Consonants & Special Sounds",
+          "titleNl": "Medeklinkers en Speciale Klanken",
+          "description": "Dutch consonant sounds that differ from English",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            { "id": "a0-u6-l3-e1", "type": "multiple_choice", "question": "The Dutch 'r' is typically pronounced how?", "options": ["like English 'r'", "rolled or guttural", "silent", "like 'w'"], "correctAnswer": "rolled or guttural" },
+            { "id": "a0-u6-l3-e2", "type": "multiple_choice", "question": "The Dutch 'w' sounds closest to which English sound?", "options": ["'v' in 'very'", "'w' in 'win'", "'f' in 'fun'", "'b' in 'bin'"], "correctAnswer": "'v' in 'very'" },
+            { "id": "a0-u6-l3-e3", "type": "translation_to_en", "dutch": "medeklinker", "correctAnswer": "consonant", "acceptedAnswers": ["consonant"] },
+            { "id": "a0-u6-l3-e4", "type": "translation_to_en", "dutch": "uitspraak", "correctAnswer": "pronunciation", "acceptedAnswers": ["pronunciation"] },
+            { "id": "a0-u6-l3-e5", "type": "translation_to_nl", "english": "to pronounce", "correctAnswer": "uitspreken", "acceptedAnswers": ["uitspreken"] },
+            { "id": "a0-u6-l3-e6", "type": "word_match", "pairs": [
+              { "dutch": "g", "english": "guttural / throat sound" },
+              { "dutch": "w", "english": "like 'v'" },
+              { "dutch": "r", "english": "rolled" },
+              { "dutch": "ch", "english": "like 'g' (guttural)" }
+            ]},
+            { "id": "a0-u6-l3-e7", "type": "fill_blank", "sentence": "De 'g' in het Nederlands is een ___ klank.", "options": ["keelklank", "lipklank", "nasaal", "stil"], "correctAnswer": "keelklank", "translation": "The 'g' in Dutch is a guttural sound." },
+            { "id": "a0-u6-l3-e8", "type": "sentence_order", "words": ["De", "uitspraak", "van", "de", "'g'", "is", "moeilijk."], "correctAnswer": "De uitspraak van de 'g' is moeilijk.", "translation": "The pronunciation of the 'g' is difficult." },
+            { "id": "a0-u6-l3-e9", "type": "listening", "dutch": "uitspraak", "question": "What did you hear?", "options": ["uitspraak", "alfabet", "klinker", "medeklinker"], "correctAnswer": "uitspraak" },
+            { "id": "a0-u6-l3-e10", "type": "multiple_choice", "question": "At the end of a word, 'b' and 'd' in Dutch are often pronounced as which sounds?", "options": ["b and d", "p and t", "f and s", "m and n"], "correctAnswer": "p and t" }
+          ]
+        },
+        {
+          "id": "a0-u6-l4",
+          "title": "Dutch Digraphs",
+          "titleNl": "Nederlandse Tweeklanken",
+          "description": "Learn the special two-letter combinations: ij/ei, ou/au, ui, oe, eu",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            { "id": "a0-u6-l4-e1", "type": "multiple_choice", "question": "The Dutch 'ij' sound is closest to which English sound?", "options": ["'ee' in 'tree'", "'i' in 'kite'", "'ow' in 'cow'", "'oo' in 'moon'"], "correctAnswer": "'i' in 'kite'" },
+            { "id": "a0-u6-l4-e2", "type": "multiple_choice", "question": "'ij' and 'ei' in Dutch sound...", "options": ["different", "the same", "one is long, one is short", "one is silent"], "correctAnswer": "the same" },
+            { "id": "a0-u6-l4-e3", "type": "translation_to_en", "dutch": "ijs", "correctAnswer": "ice / ice cream", "acceptedAnswers": ["ice", "ice cream"] },
+            { "id": "a0-u6-l4-e4", "type": "translation_to_en", "dutch": "huis", "correctAnswer": "house", "acceptedAnswers": ["house"] },
+            { "id": "a0-u6-l4-e5", "type": "translation_to_nl", "english": "time", "correctAnswer": "tijd", "acceptedAnswers": ["tijd"] },
+            { "id": "a0-u6-l4-e6", "type": "word_match", "pairs": [
+              { "dutch": "ij / ei", "english": "like 'i' in 'kite'" },
+              { "dutch": "ou / au", "english": "like 'ow' in 'low'" },
+              { "dutch": "ui", "english": "unique Dutch sound (round lips)" },
+              { "dutch": "oe", "english": "like 'oo' in 'boot'" }
+            ]},
+            { "id": "a0-u6-l4-e7", "type": "fill_blank", "sentence": "'Ijs' en 'eis' hebben de ___ klank.", "options": ["zelfde", "andere", "lange", "korte"], "correctAnswer": "zelfde", "translation": "'Ijs' and 'eis' have the same sound." },
+            { "id": "a0-u6-l4-e8", "type": "sentence_order", "words": ["De", "klank", "'ui'", "bestaat", "niet", "in", "het", "Engels."], "correctAnswer": "De klank 'ui' bestaat niet in het Engels.", "translation": "The sound 'ui' does not exist in English." },
+            { "id": "a0-u6-l4-e9", "type": "listening", "dutch": "ijs", "question": "What did you hear?", "options": ["ijs", "huis", "tijd", "huid"], "correctAnswer": "ijs" },
+            { "id": "a0-u6-l4-e10", "type": "translation_to_en", "dutch": "muis", "correctAnswer": "mouse", "acceptedAnswers": ["mouse"] }
+          ]
+        },
+        {
+          "id": "a0-u6-l5",
+          "title": "Stress & Rhythm",
+          "titleNl": "Klemtoon en Ritme",
+          "description": "Learn where to place stress in Dutch words",
+          "xpReward": 50,
+          "estimatedMinutes": 5,
+          "exercises": [
+            { "id": "a0-u6-l5-e1", "type": "multiple_choice", "question": "In most Dutch words, where does the stress fall?", "options": ["on the last syllable", "on the first syllable", "on the middle syllable", "Dutch has no stress"], "correctAnswer": "on the first syllable" },
+            { "id": "a0-u6-l5-e2", "type": "multiple_choice", "question": "What does 'klemtoon' mean?", "options": ["intonation", "rhythm", "stress / accent", "vowel"], "correctAnswer": "stress / accent" },
+            { "id": "a0-u6-l5-e3", "type": "translation_to_en", "dutch": "lettergreep", "correctAnswer": "syllable", "acceptedAnswers": ["syllable"] },
+            { "id": "a0-u6-l5-e4", "type": "translation_to_en", "dutch": "ritme", "correctAnswer": "rhythm", "acceptedAnswers": ["rhythm"] },
+            { "id": "a0-u6-l5-e5", "type": "translation_to_nl", "english": "intonation", "correctAnswer": "intonatie", "acceptedAnswers": ["intonatie"] },
+            { "id": "a0-u6-l5-e6", "type": "word_match", "pairs": [
+              { "dutch": "klemtoon", "english": "stress" },
+              { "dutch": "lettergreep", "english": "syllable" },
+              { "dutch": "ritme", "english": "rhythm" },
+              { "dutch": "intonatie", "english": "intonation" }
+            ]},
+            { "id": "a0-u6-l5-e7", "type": "fill_blank", "sentence": "Het woord 'hallo' heeft twee ___.", "options": ["lettergrepen", "klinkers", "letters", "medeklinkers"], "correctAnswer": "lettergrepen", "translation": "The word 'hallo' has two syllables." },
+            { "id": "a0-u6-l5-e8", "type": "sentence_order", "words": ["De", "klemtoon", "ligt", "op", "de", "eerste", "lettergreep."], "correctAnswer": "De klemtoon ligt op de eerste lettergreep.", "translation": "The stress falls on the first syllable." },
+            { "id": "a0-u6-l5-e9", "type": "listening", "dutch": "klemtoon", "question": "What did you hear?", "options": ["klemtoon", "lettergreep", "ritme", "intonatie"], "correctAnswer": "klemtoon" },
+            { "id": "a0-u6-l5-e10", "type": "multiple_choice", "question": "How many syllables does 'universiteit' have?", "options": ["3", "4", "5", "6"], "correctAnswer": "5" }
+          ]
+        },
+        {
+          "id": "a0-u6-l6",
+          "title": "Spelling & Spelling Out",
+          "titleNl": "Spelling en Spellen",
+          "description": "Learn to spell words aloud in Dutch",
+          "xpReward": 70,
+          "estimatedMinutes": 8,
+          "exercises": [
+            { "id": "a0-u6-l6-e1", "type": "multiple_choice", "question": "How do you say 'Can you spell that?' in Dutch?", "options": ["Kun je dat zeggen?", "Kun je dat spellen?", "Kun je dat schrijven?", "Kun je dat lezen?"], "correctAnswer": "Kun je dat spellen?" },
+            { "id": "a0-u6-l6-e2", "type": "multiple_choice", "question": "What does 'spellen' mean?", "options": ["to write", "to read", "to spell", "to say"], "correctAnswer": "to spell" },
+            { "id": "a0-u6-l6-e3", "type": "translation_to_en", "dutch": "spelling", "correctAnswer": "spelling", "acceptedAnswers": ["spelling"] },
+            { "id": "a0-u6-l6-e4", "type": "translation_to_en", "dutch": "hoofdletter", "correctAnswer": "capital letter", "acceptedAnswers": ["capital letter", "uppercase letter"] },
+            { "id": "a0-u6-l6-e5", "type": "translation_to_nl", "english": "to write down", "correctAnswer": "opschrijven", "acceptedAnswers": ["opschrijven", "neerschrijven"] },
+            { "id": "a0-u6-l6-e6", "type": "word_match", "pairs": [
+              { "dutch": "spellen", "english": "to spell" },
+              { "dutch": "hoofdletter", "english": "capital letter" },
+              { "dutch": "kleine letter", "english": "lowercase letter" },
+              { "dutch": "uitspreken", "english": "to pronounce" }
+            ]},
+            { "id": "a0-u6-l6-e7", "type": "fill_blank", "sentence": "Kun je jouw naam ___?", "options": ["spellen", "zingen", "tekenen", "lezen"], "correctAnswer": "spellen", "translation": "Can you spell your name?" },
+            { "id": "a0-u6-l6-e8", "type": "sentence_order", "words": ["Hoe", "schrijf", "je", "dat?"], "correctAnswer": "Hoe schrijf je dat?", "translation": "How do you write that?" },
+            { "id": "a0-u6-l6-e9", "type": "listening", "dutch": "spellen", "question": "What did you hear?", "options": ["spellen", "schrijven", "lezen", "zeggen"], "correctAnswer": "spellen" },
+            { "id": "a0-u6-l6-e10", "type": "translation_to_en", "dutch": "Kun je dat herhalen?", "correctAnswer": "Can you repeat that?", "acceptedAnswers": ["Can you repeat that?", "Could you repeat that?"] }
+          ]
+        }
+      ]
     }
   ]
 }

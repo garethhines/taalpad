@@ -38,13 +38,14 @@ export default function PlacementTest() {
   const startTimeRef = useRef(Date.now())
   const inputRef = useRef<HTMLInputElement>(null)
 
-  // Timer
+  // Timer — stop when test is done
   useEffect(() => {
+    if (adaptive.isDone) return
     const id = setInterval(() => {
       setElapsed(Math.floor((Date.now() - startTimeRef.current) / 1000))
     }, 1000)
     return () => clearInterval(id)
-  }, [])
+  }, [adaptive.isDone])
 
   const currentQuestion = getNextQuestion(adaptive, queue, answeredIds)
 
