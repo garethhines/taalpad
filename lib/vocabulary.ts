@@ -81,9 +81,9 @@ export function buildDailyReviewQueue(
     .filter((w): w is VocabWord => w !== undefined)
 }
 
-/** Practice Unit Vocab: all words in a unit (new + studied) */
+/** Practice Unit Vocab: all words in a unit (new + studied), shuffled */
 export function buildUnitQueue(unitId: string): VocabWord[] {
-  return getWordsByUnit(unitId)
+  return [...getWordsByUnit(unitId)].sort(() => Math.random() - 0.5)
 }
 
 /** Weak Words: words with familiarity 0 or 1 (studied but struggling) */
