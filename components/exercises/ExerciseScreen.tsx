@@ -142,9 +142,9 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
   }
 
   return (
-    <div className="flex flex-col min-h-screen bg-white">
+    <div className="flex flex-col h-[100dvh] bg-white">
       {/* Top bar */}
-      <div className="px-4 pt-12 pb-4 flex items-center gap-3">
+      <div className="px-4 pt-12 pb-3 flex items-center gap-3 shrink-0">
         <button
           onClick={() => router.back()}
           className="p-2 -ml-1 rounded-xl text-slate-400 hover:text-slate-600 hover:bg-slate-100"
@@ -165,12 +165,12 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
       </div>
 
       {/* Exercise counter */}
-      <p className="text-center text-xs text-slate-400 mb-2">
+      <p className="text-center text-xs text-slate-400 mb-1 shrink-0">
         {index + 1} / {exercises.length}
       </p>
 
       {/* Exercise content */}
-      <div className="flex-1 px-5 py-4 overflow-y-auto">
+      <div className="flex-1 px-5 py-3 overflow-y-auto min-h-0">
         {exercise && (
           <>
             {exercise.type === 'multiple_choice' && (
@@ -226,7 +226,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
       </div>
 
       {/* Feedback banner + bottom button */}
-      <div className="px-4 pb-8 space-y-3">
+      <div className="px-4 pb-6 pt-2 space-y-3 shrink-0">
         {checkState !== 'unchecked' && exercise?.type !== 'word_match' && (
           <div
             className={cn(

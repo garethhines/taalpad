@@ -73,6 +73,7 @@ export default function ProfilePage() {
     await refreshProfile()
     setResetting(false)
     setShowResetConfirm(false)
+    router.push('/learn')
   }
 
   async function handleSignOut() {
