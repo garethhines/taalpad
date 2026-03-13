@@ -11,9 +11,14 @@ const withPWA = require('next-pwa')({
   buildExcludes: [/middleware-manifest\.json$/, /chunks\/pages\/_error.*\.js$/],
 })
 
+const { version } = require('./package.json')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  env: {
+    NEXT_PUBLIC_APP_VERSION: version,
+  },
 
   // Recommended security headers (also set in vercel.json for static assets)
   async headers() {

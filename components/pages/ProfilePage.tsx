@@ -295,7 +295,7 @@ export default function ProfilePage() {
             <section>
               <SectionLabel>About</SectionLabel>
               <Card className="overflow-hidden divide-y divide-slate-50">
-                <InfoRow label="Version" value="1.0.0" />
+                <InfoRow label="Version" value={process.env.NEXT_PUBLIC_APP_VERSION ?? '—'} />
                 <InfoRow label="Learning language" value="Dutch (Nederlands)" />
                 <InfoRow label="Interface language" value="English" />
               </Card>
