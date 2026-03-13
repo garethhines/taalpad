@@ -1,22 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server'
 
 /**
- * TTS proxy — converts Dutch text to audio using ElevenLabs.
+ * TTS proxy — converts Dutch text to audio using Azure Cognitive Services.
  *
- * Requires env var: ELEVENLABS_API_KEY
+ * Required env vars:
+ *   AZURE_TTS_KEY    — your Azure Speech resource key
+ *   AZURE_TTS_REGION — your Azure resource region (e.g. "westeurope")
  *
- * ElevenLabs free tier: 10,000 chars/month.
- * Default voice: "Rachel" (free pre-made voice, works with multilingual v2).
- * Override with ELEVENLABS_VOICE_ID env var.
- * Find voice IDs at: https://elevenlabs.io/docs/api-reference/get-voices
+ * Free tier: 500,000 neural characters/month.
+ * Default voice: nl-NL-FennaNeural (natural Dutch female voice).
+ * Override voice with AZURE_TTS_VOICE env var.
  *
- * If ELEVENLABS_API_KEY is not set, returns 503 and the client falls
- * back to the browser Web Speech API automatically.
+ * If keys are not set, returns 503 and the client falls back to the
+ * browser Web Speech API automatically.
  */
 
-const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY
-// "Rachel" — free pre-made voice, clear and natural with multilingual v2
-const VOICE_ID = process.env.ELEVENLABS_VOICE_ID ?? '21m00Tcm4TlvDq8ikWAM'
+const AZURE_TTS_KEY = process.env.AZURE_TTS_KEY
+const AZURE_TTS_REGION = process.env.AZURE_TTS_REGION
+const AZURE_TTS_VOICE = process.env.AZURE_TTS_VOICE ?? 'nl-NL-FennaNeural'
 
 export async function GET(req: NextRequest) {
   const text = req.nextUrl.searchParams.get('text')
@@ -25,35 +26,33 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: 'Missing text param' }, { status: 400 })
   }
 
-  if (!ELEVENLABS_API_KEY) {
+  if (!AZURE_TTS_KEY || !AZURE_TTS_REGION) {
     return NextResponse.json({ error: 'TTS API not configured' }, { status: 503 })
   }
 
+  const ssml = `<speak version='1.0' xml:lang='nl-NL'>
+  <voice name='${AZURE_TTS_VOICE}'>
+    ${text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')}
+  </voice>
+</speak>`
+
   const res = await fetch(
-    `https://api.elevenlabs.io/v1/text-to-speech/${VOICE_ID}/stream`,
+    `https://${AZURE_TTS_REGION}.tts.speech.microsoft.com/cognitiveservices/v1`,
     {
       method: 'POST',
       headers: {
-        'xi-api-key': ELEVENLABS_API_KEY,
-        'Content-Type': 'application/json',
+        'Ocp-Apim-Subscription-Key': AZURE_TTS_KEY,
+        'Content-Type': 'application/ssml+xml',
+        'X-Microsoft-OutputFormat': 'audio-16khz-128kbitrate-mono-mp3',
       },
-      body: JSON.stringify({
-        text,
-        model_id: 'eleven_multilingual_v2',
-        voice_settings: {
-          stability: 0.5,
-          similarity_boost: 0.75,
-          style: 0.3,
-          use_speaker_boost: true,
-        },
-      }),
+      body: ssml,
     },
   )
 
   if (!res.ok) {
     const msg = await res.text()
-    console.error('[TTS] ElevenLabs error:', res.status, msg)
-    return NextResponse.json({ error: 'TTS request failed', elevenlabs_status: res.status, detail: msg }, { status: 502 })
+    console.error('[TTS] Azure error:', res.status, msg)
+    return NextResponse.json({ error: 'TTS request failed', azure_status: res.status, detail: msg }, { status: 502 })
   }
 
   const audio = await res.arrayBuffer()
@@ -61,7 +60,6 @@ export async function GET(req: NextRequest) {
   return new NextResponse(audio, {
     headers: {
       'Content-Type': 'audio/mpeg',
-      // Cache for 1 hour — same word/phrase will sound identical
       'Cache-Control': 'public, max-age=3600, stale-while-revalidate=86400',
     },
   })
