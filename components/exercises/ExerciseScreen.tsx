@@ -142,7 +142,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
   }
 
   return (
-    <div className="fixed inset-0 z-40 flex flex-col bg-white">
+    <div className="fixed inset-0 z-[60] flex flex-col bg-white">
       {/* Top bar */}
       <div className="px-4 pt-12 pb-3 flex items-center gap-3 shrink-0">
         <button
