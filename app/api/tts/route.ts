@@ -52,7 +52,7 @@ export async function GET(req: NextRequest) {
   if (!res.ok) {
     const msg = await res.text()
     console.error('[TTS] ElevenLabs error:', res.status, msg)
-    return NextResponse.json({ error: 'TTS request failed' }, { status: 502 })
+    return NextResponse.json({ error: 'TTS request failed', elevenlabs_status: res.status, detail: msg }, { status: 502 })
   }
 
   const audio = await res.arrayBuffer()
