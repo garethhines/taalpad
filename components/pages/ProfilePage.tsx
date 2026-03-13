@@ -130,7 +130,7 @@ export default function ProfilePage() {
               <div className="flex items-center gap-2 mt-2">
                 <div className="flex items-center gap-1.5 bg-amber-400/20 text-amber-300 text-xs font-semibold px-2.5 py-1 rounded-full">
                   <Shield size={11} fill="currentColor" />
-                  {level} · {getCEFRTitle(level)}
+                  <span className="whitespace-nowrap">{level} · {getCEFRTitle(level)}</span>
                 </div>
                 <span className="text-blue-300/60 text-xs">Member since {memberSince}</span>
               </div>
@@ -295,7 +295,7 @@ export default function ProfilePage() {
             <section>
               <SectionLabel>About</SectionLabel>
               <Card className="overflow-hidden divide-y divide-slate-50">
-                <InfoRow label="Version" value="0.1.0" />
+                <InfoRow label="Version" value="1.0.0" />
                 <InfoRow label="Learning language" value="Dutch (Nederlands)" />
                 <InfoRow label="Interface language" value="English" />
               </Card>
