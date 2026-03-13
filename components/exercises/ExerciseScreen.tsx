@@ -64,9 +64,21 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
     ? Math.round((index / exercises.length) * 100)
     : Math.round((reviewIndex / mistakeQueue.length) * 100)
 
+  function optionsAreDutch(ex: Exercise): boolean {
+    if (ex.type === 'fill_blank') return true
+    if (ex.type === 'listening') return false
+    if (ex.type === 'multiple_choice') {
+      const q = ex.question.toLowerCase()
+      return !q.includes('mean') && !q.includes('in english') && !q.includes('what is') && !q.includes('what number')
+    }
+    return false
+  }
+
   function handleOptionSelect(value: string) {
     setAnswer(value)
-    if (settingsMounted && settings.optionTts && ttsSupported) speak(value)
+    if (settingsMounted && settings.optionTts && ttsSupported && exercise && optionsAreDutch(exercise)) {
+      speak(value)
+    }
   }
 
   function checkAnswer(currentAnswer: string | null): boolean {
