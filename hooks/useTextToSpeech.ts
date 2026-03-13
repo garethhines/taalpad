@@ -32,7 +32,10 @@ export function useTextToSpeech(options: UseTextToSpeechOptions = {}) {
     (text: string) => {
       if (!isSupported) return
 
+      // Chrome/Android: resume if paused, then cancel before speaking
+      if (window.speechSynthesis.paused) window.speechSynthesis.resume()
       window.speechSynthesis.cancel()
+
       const utterance = new SpeechSynthesisUtterance(text)
       utterance.lang = lang
       utterance.rate = rate
@@ -50,7 +53,8 @@ export function useTextToSpeech(options: UseTextToSpeechOptions = {}) {
       utterance.onend = () => { setIsSpeaking(false); setCurrentText(null) }
       utterance.onerror = () => { setIsSpeaking(false); setCurrentText(null) }
 
-      window.speechSynthesis.speak(utterance)
+      // Small delay after cancel — fixes Chrome mobile silent-speech bug
+      setTimeout(() => window.speechSynthesis.speak(utterance), 50)
     },
     [isSupported, lang, rate, pitch],
   )

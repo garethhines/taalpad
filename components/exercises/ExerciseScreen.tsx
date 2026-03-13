@@ -7,6 +7,7 @@ import { cn } from '@/lib/utils'
 import { calculateXPReward } from '@/lib/curriculum/index'
 import { useTextToSpeech } from '@/hooks/useTextToSpeech'
 import { useProfileSettings } from '@/hooks/useProfileSettings'
+import { useAudioFeedback } from '@/hooks/useAudioFeedback'
 import type { CurriculumLesson, Exercise } from '@/lib/types'
 
 import MultipleChoice from './types/MultipleChoice'
@@ -49,6 +50,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
 
   const { speak, isSupported: ttsSupported } = useTextToSpeech()
   const { settings, updateSetting, mounted: settingsMounted } = useProfileSettings()
+  const { playCorrect, playIncorrect } = useAudioFeedback(settingsMounted ? settings.soundEnabled : false)
 
   const exercises = lesson.exercises
   const exercise: Exercise = phase === 'lesson' ? exercises[index] : mistakeQueue[reviewIndex]
@@ -86,7 +88,12 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
   function handleCheck() {
     const isCorrect = checkAnswer(answer)
     setCheckState(isCorrect ? 'correct' : 'incorrect')
-    if (isCorrect && phase === 'lesson') setCorrectCount((c) => c + 1)
+    if (isCorrect) {
+      if (phase === 'lesson') setCorrectCount((c) => c + 1)
+      playCorrect()
+    } else {
+      playIncorrect()
+    }
   }
 
   async function handleContinue() {
