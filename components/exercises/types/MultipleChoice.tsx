@@ -1,5 +1,6 @@
 'use client'
 
+import { useMemo } from 'react'
 import { cn } from '@/lib/utils'
 import SpeakerButton from '@/components/ui/SpeakerButton'
 import type { MultipleChoiceExercise } from '@/lib/types'
@@ -12,6 +13,11 @@ interface Props {
 }
 
 export default function MultipleChoice({ exercise, selected, onSelect, isChecked }: Props) {
+  const shuffledOptions = useMemo(
+    () => [...exercise.options].sort(() => Math.random() - 0.5),
+    [exercise.id], // eslint-disable-line react-hooks/exhaustive-deps
+  )
+
   return (
     <div className="flex flex-col gap-6">
       {/* Prompt */}
@@ -27,7 +33,7 @@ export default function MultipleChoice({ exercise, selected, onSelect, isChecked
 
       {/* Options */}
       <div className="grid grid-cols-1 gap-3">
-        {exercise.options.map((option) => {
+        {shuffledOptions.map((option) => {
           const isSelected = selected === option
           const isCorrect = option === exercise.correctAnswer
           let state: 'default' | 'selected' | 'correct' | 'wrong' = 'default'

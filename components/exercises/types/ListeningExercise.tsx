@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useMemo } from 'react'
 import { cn } from '@/lib/utils'
 import { useTextToSpeech } from '@/hooks/useTextToSpeech'
 import type { ListeningExercise as ListeningExerciseType } from '@/lib/types'
@@ -14,6 +14,10 @@ interface Props {
 
 export default function ListeningExercise({ exercise, selected, onSelect, isChecked }: Props) {
   const { speak, isSpeaking, isSupported } = useTextToSpeech()
+  const shuffledOptions = useMemo(
+    () => [...exercise.options].sort(() => Math.random() - 0.5),
+    [exercise.id], // eslint-disable-line react-hooks/exhaustive-deps
+  )
 
   // Auto-play on mount
   useEffect(() => {
@@ -57,7 +61,7 @@ export default function ListeningExercise({ exercise, selected, onSelect, isChec
 
       {/* Options */}
       <div className="grid grid-cols-1 gap-3">
-        {exercise.options.map((option) => {
+        {shuffledOptions.map((option) => {
           const isSelected = selected === option
           const isCorrect = option === exercise.correctAnswer
           let state: 'default' | 'selected' | 'correct' | 'wrong' = 'default'

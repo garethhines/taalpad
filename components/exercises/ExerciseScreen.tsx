@@ -2,7 +2,7 @@
 
 import { useState, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
-import { X, CheckCircle2, XCircle, Zap, Volume2, VolumeX } from 'lucide-react'
+import { X, CheckCircle2, XCircle, Zap, Volume2, VolumeX, AlertCircle } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { calculateXPReward } from '@/lib/curriculum/index'
 import { useTextToSpeech } from '@/hooks/useTextToSpeech'
@@ -23,14 +23,26 @@ interface Props {
 }
 
 type CheckState = 'unchecked' | 'correct' | 'incorrect'
+type Phase = 'lesson' | 'review'
 
 export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
   const router = useRouter()
+
+  // Lesson phase state
   const [index, setIndex] = useState(0)
+  const [correctCount, setCorrectCount] = useState(0)
+
+  // Review phase state
+  const [phase, setPhase] = useState<Phase>('lesson')
+  const [mistakeQueue, setMistakeQueue] = useState<Exercise[]>([])
+  const [reviewIndex, setReviewIndex] = useState(0)
+
+  // Per-question state
   const [answer, setAnswer] = useState<string | null>(null)
   const [checkState, setCheckState] = useState<CheckState>('unchecked')
-  const [correctCount, setCorrectCount] = useState(0)
   const [wordMatchDone, setWordMatchDone] = useState(false)
+
+  // Completion state
   const [saving, setSaving] = useState(false)
   const [done, setDone] = useState(false)
   const [earnedXP, setEarnedXP] = useState(0)
@@ -39,62 +51,86 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
   const { settings, updateSetting, mounted: settingsMounted } = useProfileSettings()
 
   const exercises = lesson.exercises
-  const exercise = exercises[index]
-  const isLastExercise = index === exercises.length - 1
-  const progress = Math.round((index / exercises.length) * 100)
+  const exercise: Exercise = phase === 'lesson' ? exercises[index] : mistakeQueue[reviewIndex]
 
-  // Speak the selected option if option TTS is enabled
+  const isLastLesson = index === exercises.length - 1
+  const isLastReview = reviewIndex === mistakeQueue.length - 1
+  const isLast = phase === 'lesson' ? isLastLesson : isLastReview
+
+  // Progress bar: lesson phase = exercise progress; review phase = review progress
+  const progress = phase === 'lesson'
+    ? Math.round((index / exercises.length) * 100)
+    : Math.round((reviewIndex / mistakeQueue.length) * 100)
+
   function handleOptionSelect(value: string) {
     setAnswer(value)
-    if (settingsMounted && settings.optionTts && ttsSupported) {
-      speak(value)
-    }
+    if (settingsMounted && settings.optionTts && ttsSupported) speak(value)
   }
 
   function checkAnswer(currentAnswer: string | null): boolean {
     if (!currentAnswer || !exercise) return false
-
     const normalise = (s: string) => s.trim().toLowerCase().replace(/[.!?,;:'"()]/g, '').replace(/\s+/g, ' ')
-
     if (exercise.type === 'word_match') return wordMatchDone
-
     if (exercise.type === 'multiple_choice' || exercise.type === 'listening' || exercise.type === 'fill_blank') {
       return currentAnswer === exercise.correctAnswer
     }
-
     const correct = normalise(exercise.correctAnswer)
     const given = normalise(currentAnswer)
     if (given === correct) return true
     const accepted: string[] =
       'acceptedAnswers' in exercise && Array.isArray(exercise.acceptedAnswers)
-        ? exercise.acceptedAnswers
-        : []
+        ? exercise.acceptedAnswers : []
     return accepted.some((a: string) => normalise(a) === given)
   }
 
   function handleCheck() {
     const isCorrect = checkAnswer(answer)
     setCheckState(isCorrect ? 'correct' : 'incorrect')
-    if (isCorrect) setCorrectCount((c) => c + 1)
+    if (isCorrect && phase === 'lesson') setCorrectCount((c) => c + 1)
   }
 
   async function handleContinue() {
-    if (isLastExercise) {
-      // Lesson complete
-      const total = exercises.length
-      const xp = calculateXPReward(lesson.xpReward, correctCount + (checkState === 'correct' ? 1 : 0), total)
-      const score = Math.round(((correctCount + (checkState === 'correct' ? 1 : 0)) / total) * 100)
-      setEarnedXP(xp)
-      setDone(true)
-      setSaving(true)
-      await onComplete(xp, score)
-      setSaving(false)
+    // Collect mistake from this question if wrong (lesson phase only, non-word_match)
+    let updatedMistakes = mistakeQueue
+    if (phase === 'lesson' && checkState === 'incorrect' && exercise?.type !== 'word_match') {
+      if (!updatedMistakes.some((e) => e.id === exercise.id)) {
+        updatedMistakes = [...updatedMistakes, exercise]
+        setMistakeQueue(updatedMistakes)
+      }
+    }
+
+    if (phase === 'lesson' && isLastLesson) {
+      if (updatedMistakes.length > 0) {
+        // Transition to review phase
+        setPhase('review')
+        setReviewIndex(0)
+        setAnswer(null)
+        setCheckState('unchecked')
+        setWordMatchDone(false)
+      } else {
+        await completeLesson(correctCount + (checkState === 'correct' ? 1 : 0))
+      }
+    } else if (phase === 'review' && isLastReview) {
+      await completeLesson(correctCount)
     } else {
-      setIndex((i) => i + 1)
+      // Advance to next question
+      if (phase === 'lesson') setIndex((i) => i + 1)
+      else setReviewIndex((i) => i + 1)
       setAnswer(null)
       setCheckState('unchecked')
       setWordMatchDone(false)
     }
+  }
+
+  async function completeLesson(finalCorrect: number) {
+    const total = exercises.length
+    const xp = calculateXPReward(lesson.xpReward, finalCorrect, total)
+    const score = Math.round((finalCorrect / total) * 100)
+    setEarnedXP(xp)
+    setDone(true)
+    setSaving(true)
+    await onComplete(xp, score)
+    setSaving(false)
   }
 
   const handleWordMatchComplete = useCallback((_correct: boolean) => {
@@ -105,17 +141,15 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
   const canCheck =
     exercise?.type === 'word_match'
       ? wordMatchDone
-      : exercise?.type === 'sentence_order'
-        ? (answer?.trim().length ?? 0) > 0
-        : (answer?.trim().length ?? 0) > 0
+      : (answer?.trim().length ?? 0) > 0
 
+  // ── Completion screen ────────────────────────────────────────────────────
   if (done) {
     const total = exercises.length
-    const finalCorrect = correctCount
-    const scorePercent = Math.round((finalCorrect / total) * 100)
+    const scorePercent = Math.round((correctCount / total) * 100)
 
     return (
-      <div className="flex flex-col min-h-screen bg-white items-center justify-center px-6 gap-8 text-center">
+      <div className="fixed inset-0 z-[60] flex flex-col bg-white items-center justify-center px-6 gap-8 text-center">
         <div className="text-6xl">{scorePercent >= 80 ? '🎉' : scorePercent >= 50 ? '👍' : '💪'}</div>
         <div>
           <h2 className="text-2xl font-bold text-slate-800">
@@ -124,14 +158,13 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
           <p className="text-slate-500 mt-1">{lesson.title} complete</p>
         </div>
 
-        {/* Score breakdown */}
         <div className="flex gap-8">
           <div className="text-center">
-            <p className="text-3xl font-bold text-emerald-600">{finalCorrect}</p>
+            <p className="text-3xl font-bold text-emerald-600">{correctCount}</p>
             <p className="text-sm text-slate-400">Correct</p>
           </div>
           <div className="text-center">
-            <p className="text-3xl font-bold text-red-500">{total - finalCorrect}</p>
+            <p className="text-3xl font-bold text-red-500">{total - correctCount}</p>
             <p className="text-sm text-slate-400">Mistakes</p>
           </div>
           <div className="text-center">
@@ -154,6 +187,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
     )
   }
 
+  // ── Lesson / Review screen ───────────────────────────────────────────────
   return (
     <div className="fixed inset-0 z-[60] flex flex-col bg-white">
       {/* Top bar */}
@@ -164,10 +198,12 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
         >
           <X size={20} />
         </button>
-        {/* Progress bar */}
         <div className="flex-1 bg-slate-100 rounded-full h-3 overflow-hidden">
           <div
-            className="h-full bg-primary-900 rounded-full transition-all duration-500"
+            className={cn(
+              'h-full rounded-full transition-all duration-500',
+              phase === 'review' ? 'bg-amber-400' : 'bg-primary-900',
+            )}
             style={{ width: `${progress}%` }}
           />
         </div>
@@ -186,10 +222,23 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
         </div>
       </div>
 
-      {/* Exercise counter */}
-      <p className="text-center text-xs text-slate-400 mb-1 shrink-0">
-        {index + 1} / {exercises.length}
-      </p>
+      {/* Review phase banner */}
+      {phase === 'review' && (
+        <div className="mx-4 mb-1 shrink-0 flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-2xl px-4 py-2.5">
+          <AlertCircle size={16} className="text-amber-500 shrink-0" />
+          <div className="flex-1 min-w-0">
+            <p className="text-xs font-bold text-amber-700">Correct your errors</p>
+            <p className="text-[11px] text-amber-600">Review {reviewIndex + 1} of {mistakeQueue.length}</p>
+          </div>
+        </div>
+      )}
+
+      {/* Exercise counter (lesson phase only) */}
+      {phase === 'lesson' && (
+        <p className="text-center text-xs text-slate-400 mb-1 shrink-0">
+          {index + 1} / {exercises.length}
+        </p>
+      )}
 
       {/* Exercise content */}
       <div className="flex-1 px-5 py-3 overflow-y-auto min-h-0">
@@ -252,23 +301,25 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
         {checkState !== 'unchecked' && exercise?.type !== 'word_match' && (
           <div
             className={cn(
-              'flex items-center gap-3 px-4 py-3 rounded-2xl',
+              'flex items-start gap-3 px-4 py-3 rounded-2xl',
               checkState === 'correct' ? 'bg-emerald-50' : 'bg-red-50',
             )}
           >
             {checkState === 'correct' ? (
-              <CheckCircle2 size={20} className="text-emerald-600 shrink-0" />
+              <CheckCircle2 size={20} className="text-emerald-600 shrink-0 mt-0.5" />
             ) : (
-              <XCircle size={20} className="text-red-500 shrink-0" />
+              <XCircle size={20} className="text-red-500 shrink-0 mt-0.5" />
             )}
-            <p
-              className={cn(
-                'text-sm font-semibold',
-                checkState === 'correct' ? 'text-emerald-700' : 'text-red-600',
+            <div>
+              <p className={cn('text-sm font-semibold', checkState === 'correct' ? 'text-emerald-700' : 'text-red-600')}>
+                {checkState === 'correct' ? 'Correct!' : 'Not quite!'}
+              </p>
+              {checkState === 'incorrect' && 'correctAnswer' in exercise && (
+                <p className="text-xs text-red-500 mt-0.5">
+                  Answer: <span className="font-bold">{exercise.correctAnswer}</span>
+                </p>
               )}
-            >
-              {checkState === 'correct' ? 'Correct!' : 'Not quite — keep going!'}
-            </p>
+            </div>
           </div>
         )}
 
@@ -295,7 +346,11 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
                 : 'bg-primary-900 text-white hover:bg-primary-800',
             )}
           >
-            {isLastExercise ? 'Finish' : 'Continue'}
+            {isLast
+              ? phase === 'review'
+                ? 'Finish'
+                : (mistakeQueue.length > 0 || checkState === 'incorrect') ? 'Review Errors' : 'Finish'
+              : 'Continue'}
           </button>
         )}
       </div>

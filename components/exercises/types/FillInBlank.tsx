@@ -1,5 +1,6 @@
 'use client'
 
+import { useMemo } from 'react'
 import { cn } from '@/lib/utils'
 import type { FillBlankExercise } from '@/lib/types'
 
@@ -11,6 +12,11 @@ interface Props {
 }
 
 export default function FillInBlank({ exercise, selected, onSelect, isChecked }: Props) {
+  const shuffledOptions = useMemo(
+    () => [...exercise.options].sort(() => Math.random() - 0.5),
+    [exercise.id], // eslint-disable-line react-hooks/exhaustive-deps
+  )
+
   // Split sentence at ___ to render the blank inline
   const parts = exercise.sentence.split('___')
 
@@ -40,7 +46,7 @@ export default function FillInBlank({ exercise, selected, onSelect, isChecked }:
 
       {/* Option buttons */}
       <div className="grid grid-cols-2 gap-3">
-        {exercise.options.map((option) => {
+        {shuffledOptions.map((option) => {
           const isSelected = selected === option
           const isCorrect = option === exercise.correctAnswer
           let state: 'default' | 'selected' | 'correct' | 'wrong' = 'default'
