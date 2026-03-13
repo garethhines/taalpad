@@ -6,7 +6,8 @@ import { NextRequest, NextResponse } from 'next/server'
  * Requires env var: ELEVENLABS_API_KEY
  *
  * ElevenLabs free tier: 10,000 chars/month.
- * Recommended voice: "Nicole" or any multilingual v2 voice.
+ * Default voice: "Rachel" (free pre-made voice, works with multilingual v2).
+ * Override with ELEVENLABS_VOICE_ID env var.
  * Find voice IDs at: https://elevenlabs.io/docs/api-reference/get-voices
  *
  * If ELEVENLABS_API_KEY is not set, returns 503 and the client falls
@@ -14,8 +15,8 @@ import { NextRequest, NextResponse } from 'next/server'
  */
 
 const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY
-// "Nicole" — calm, clear female voice that works well for Dutch
-const VOICE_ID = process.env.ELEVENLABS_VOICE_ID ?? 'piTKgcLEGmPE4e6mEKli'
+// "Rachel" — free pre-made voice, clear and natural with multilingual v2
+const VOICE_ID = process.env.ELEVENLABS_VOICE_ID ?? '21m00Tcm4TlvDq8ikWAM'
 
 export async function GET(req: NextRequest) {
   const text = req.nextUrl.searchParams.get('text')
