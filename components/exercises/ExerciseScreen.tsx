@@ -2,9 +2,11 @@
 
 import { useState, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
-import { X, CheckCircle2, XCircle, Zap } from 'lucide-react'
+import { X, CheckCircle2, XCircle, Zap, Volume2, VolumeX } from 'lucide-react'
 import { cn } from '@/lib/utils'
 import { calculateXPReward } from '@/lib/curriculum/index'
+import { useTextToSpeech } from '@/hooks/useTextToSpeech'
+import { useProfileSettings } from '@/hooks/useProfileSettings'
 import type { CurriculumLesson, Exercise } from '@/lib/types'
 
 import MultipleChoice from './types/MultipleChoice'
@@ -33,10 +35,21 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
   const [done, setDone] = useState(false)
   const [earnedXP, setEarnedXP] = useState(0)
 
+  const { speak, isSupported: ttsSupported } = useTextToSpeech()
+  const { settings, updateSetting, mounted: settingsMounted } = useProfileSettings()
+
   const exercises = lesson.exercises
   const exercise = exercises[index]
   const isLastExercise = index === exercises.length - 1
   const progress = Math.round((index / exercises.length) * 100)
+
+  // Speak the selected option if option TTS is enabled
+  function handleOptionSelect(value: string) {
+    setAnswer(value)
+    if (settingsMounted && settings.optionTts && ttsSupported) {
+      speak(value)
+    }
+  }
 
   function checkAnswer(currentAnswer: string | null): boolean {
     if (!currentAnswer || !exercise) return false
@@ -158,7 +171,16 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
             style={{ width: `${progress}%` }}
           />
         </div>
-        <div className="flex items-center gap-1 shrink-0">
+        <div className="flex items-center gap-2 shrink-0">
+          {settingsMounted && ttsSupported && (
+            <button
+              onClick={() => updateSetting('optionTts', !settings.optionTts)}
+              className="p-1.5 rounded-xl text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors"
+              aria-label={settings.optionTts ? 'Mute option audio' : 'Unmute option audio'}
+            >
+              {settings.optionTts ? <Volume2 size={16} /> : <VolumeX size={16} />}
+            </button>
+          )}
           <Zap size={14} className="text-amber-500" fill="currentColor" />
           <span className="text-xs font-bold text-amber-600">{lesson.xpReward}</span>
         </div>
@@ -177,7 +199,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
               <MultipleChoice
                 exercise={exercise}
                 selected={answer}
-                onSelect={setAnswer}
+                onSelect={handleOptionSelect}
                 isChecked={checkState !== 'unchecked'}
               />
             )}
@@ -194,7 +216,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
               <FillInBlank
                 exercise={exercise}
                 selected={answer}
-                onSelect={setAnswer}
+                onSelect={handleOptionSelect}
                 isChecked={checkState !== 'unchecked'}
               />
             )}
@@ -217,7 +239,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
               <ListeningExercise
                 exercise={exercise}
                 selected={answer}
-                onSelect={setAnswer}
+                onSelect={handleOptionSelect}
                 isChecked={checkState !== 'unchecked'}
               />
             )}

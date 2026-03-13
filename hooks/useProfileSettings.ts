@@ -5,11 +5,13 @@ import { useState, useEffect } from 'react'
 export interface ProfileSettings {
   soundEnabled: boolean
   ttsAutoPlay: boolean
+  optionTts: boolean  // speak selected option in exercises
 }
 
 const DEFAULT_SETTINGS: ProfileSettings = {
   soundEnabled: true,
   ttsAutoPlay: true,
+  optionTts: true,
 }
 
 export function useProfileSettings() {
