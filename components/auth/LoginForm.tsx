@@ -93,6 +93,7 @@ export default function LoginForm() {
 
       <Button
         type="submit"
+        variant="accent"
         fullWidth
         size="lg"
         disabled={loading || !email || !password}
