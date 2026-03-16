@@ -67,11 +67,11 @@ export default function DeckSelector({ progress, onStart }: Props) {
   }
 
   return (
-    <div className="flex flex-col min-h-full bg-slate-50">
+    <div className="flex flex-col min-h-full bg-slate-50 dark:bg-slate-950">
       {/* Header */}
-      <div className="bg-white px-5 pt-14 pb-5 border-b border-slate-100">
-        <h1 className="text-2xl font-bold text-slate-900">Flashcards</h1>
-        <p className="text-sm text-slate-500 mt-1">Vocabulary spaced repetition</p>
+      <div className="bg-gradient-to-br from-[#1a365d] via-[#1e3a5f] to-[#2d4a7a] px-5 pt-14 pb-6">
+        <h1 className="text-[22px] font-black tracking-tight text-white">Flashcards</h1>
+        <p className="text-sm text-white/60 mt-0.5">Vocabulary spaced repetition</p>
       </div>
 
       <div className="flex-1 px-4 py-5 space-y-5">
@@ -187,7 +187,7 @@ function ModeCard({
       className={cn(
         'w-full text-left rounded-2xl border p-4 flex items-center gap-4 transition-all duration-150',
         primary
-          ? 'bg-primary-900 border-primary-900 text-white shadow-md shadow-primary-900/20 hover:bg-primary-800 active:bg-primary-950'
+          ? 'bg-gradient-to-br from-violet-700 to-violet-900 border-violet-700 text-white shadow-md shadow-violet-900/20 hover:shadow-accent-glow active:from-violet-800'
           : 'bg-white border-slate-200 shadow-sm hover:shadow-md hover:border-slate-300 active:scale-[0.98]',
         disabled && 'opacity-50 cursor-not-allowed hover:shadow-sm hover:border-slate-200 active:scale-100',
       )}
@@ -197,14 +197,14 @@ function ModeCard({
       </div>
       <div className="flex-1 min-w-0">
         <p className={cn('font-bold text-sm', primary ? 'text-white' : 'text-slate-800')}>{title}</p>
-        <p className={cn('text-xs mt-0.5 truncate', primary ? 'text-blue-200' : 'text-slate-500')}>{subtitle}</p>
+        <p className={cn('text-xs mt-0.5 truncate', primary ? 'text-violet-200' : 'text-slate-500')}>{subtitle}</p>
       </div>
       {badge !== undefined && badge > 0 ? (
         <span className="shrink-0 bg-red-500 text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center">
           {badge > 99 ? '99+' : badge}
         </span>
       ) : (
-        <ChevronRight size={16} className={cn('shrink-0', primary ? 'text-blue-300' : 'text-slate-300')} />
+        <ChevronRight size={16} className={cn('shrink-0', primary ? 'text-violet-300' : 'text-slate-300')} />
       )}
     </button>
   )

@@ -72,7 +72,7 @@ export default function FlashCard({ word, familiarity, flipped = false, onFlip }
 
         {/* ── BACK ── */}
         <div
-          className="absolute inset-0 bg-primary-900 rounded-3xl shadow-lg p-8 flex flex-col items-center justify-center gap-5"
+          className="absolute inset-0 bg-gradient-to-br from-violet-800 to-violet-900 rounded-3xl shadow-lg p-8 flex flex-col items-center justify-center gap-5"
           style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)', minHeight: '300px' }}
         >
           <p className="text-4xl font-bold text-white text-center leading-tight">
@@ -82,24 +82,24 @@ export default function FlashCard({ word, familiarity, flipped = false, onFlip }
           {word.example && (
             <div className="text-center space-y-1.5">
               <div className="flex items-start gap-2 justify-center">
-                <p className="text-blue-200 text-sm italic leading-relaxed">
+                <p className="text-violet-200 text-sm italic leading-relaxed">
                   &ldquo;{word.example}&rdquo;
                 </p>
                 <SpeakerButton text={word.example} size="sm" className="mt-0.5 shrink-0 !bg-white/10 !text-white hover:!bg-white/20" />
               </div>
               {word.exampleTranslation && (
-                <p className="text-blue-300/80 text-xs">{word.exampleTranslation}</p>
+                <p className="text-violet-200/80 text-xs">{word.exampleTranslation}</p>
               )}
             </div>
           )}
 
           {word.notes && (
             <div className="bg-white/10 rounded-xl px-4 py-2.5 text-center">
-              <p className="text-blue-200 text-xs leading-relaxed">{word.notes}</p>
+              <p className="text-violet-200 text-xs leading-relaxed">{word.notes}</p>
             </div>
           )}
 
-          <p className="text-blue-300/60 text-xs mt-1">How well did you know this?</p>
+          <p className="text-violet-300/60 text-xs mt-1">How well did you know this?</p>
         </div>
       </div>
     </div>
