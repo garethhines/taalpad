@@ -67,11 +67,11 @@ export default function DeckSelector({ progress, onStart }: Props) {
   }
 
   return (
-    <div className="flex flex-col min-h-full bg-slate-50">
+    <div className="flex flex-col min-h-full bg-slate-50 dark:bg-slate-950">
       {/* Header */}
-      <div className="bg-white px-5 pt-14 pb-5 border-b border-slate-100">
-        <h1 className="text-2xl font-bold text-slate-900">Flashcards</h1>
-        <p className="text-sm text-slate-500 mt-1">Vocabulary spaced repetition</p>
+      <div className="bg-gradient-to-br from-[#1a365d] via-[#1e3a5f] to-[#2d4a7a] px-5 pt-14 pb-6">
+        <h1 className="text-[22px] font-black tracking-tight text-white">Flashcards</h1>
+        <p className="text-sm text-white/60 mt-0.5">Vocabulary spaced repetition</p>
       </div>
 
       <div className="flex-1 px-4 py-5 space-y-5">
@@ -123,8 +123,8 @@ export default function DeckSelector({ progress, onStart }: Props) {
         </div>
 
         {/* Familiarity legend */}
-        <div className="bg-white rounded-2xl border border-slate-100 p-4 space-y-2">
-          <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Familiarity levels</p>
+        <div className="bg-white dark:bg-white/5 rounded-2xl border border-slate-100 dark:border-white/[0.07] p-4 space-y-2">
+          <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide">Familiarity levels</p>
           <div className="space-y-1.5">
             {[
               { level: 0, label: 'New', interval: 'review now', color: 'bg-slate-200' },
@@ -136,8 +136,8 @@ export default function DeckSelector({ progress, onStart }: Props) {
             ].map(({ level, label, interval, color }) => (
               <div key={level} className="flex items-center gap-3">
                 <div className={cn('w-2.5 h-2.5 rounded-full shrink-0', color)} />
-                <span className="text-xs text-slate-600 flex-1">{label}</span>
-                <span className="text-xs text-slate-400">review in {interval}</span>
+                <span className="text-xs text-slate-600 dark:text-slate-300 flex-1">{label}</span>
+                <span className="text-xs text-slate-400 dark:text-slate-500">review in {interval}</span>
               </div>
             ))}
           </div>
@@ -187,7 +187,7 @@ function ModeCard({
       className={cn(
         'w-full text-left rounded-2xl border p-4 flex items-center gap-4 transition-all duration-150',
         primary
-          ? 'bg-primary-900 border-primary-900 text-white shadow-md shadow-primary-900/20 hover:bg-primary-800 active:bg-primary-950'
+          ? 'bg-gradient-to-br from-violet-700 to-violet-900 border-violet-700 text-white shadow-md shadow-violet-900/20 hover:shadow-accent-glow active:from-violet-800'
           : 'bg-white border-slate-200 shadow-sm hover:shadow-md hover:border-slate-300 active:scale-[0.98]',
         disabled && 'opacity-50 cursor-not-allowed hover:shadow-sm hover:border-slate-200 active:scale-100',
       )}
@@ -197,14 +197,14 @@ function ModeCard({
       </div>
       <div className="flex-1 min-w-0">
         <p className={cn('font-bold text-sm', primary ? 'text-white' : 'text-slate-800')}>{title}</p>
-        <p className={cn('text-xs mt-0.5 truncate', primary ? 'text-blue-200' : 'text-slate-500')}>{subtitle}</p>
+        <p className={cn('text-xs mt-0.5 truncate', primary ? 'text-violet-200' : 'text-slate-500')}>{subtitle}</p>
       </div>
       {badge !== undefined && badge > 0 ? (
         <span className="shrink-0 bg-red-500 text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center">
           {badge > 99 ? '99+' : badge}
         </span>
       ) : (
-        <ChevronRight size={16} className={cn('shrink-0', primary ? 'text-blue-300' : 'text-slate-300')} />
+        <ChevronRight size={16} className={cn('shrink-0', primary ? 'text-violet-300' : 'text-slate-300')} />
       )}
     </button>
   )
@@ -212,12 +212,12 @@ function ModeCard({
 
 function UnitPicker({ onSelect, onBack }: { onSelect: (unitId: string) => void; onBack: () => void }) {
   return (
-    <div className="flex flex-col min-h-full bg-slate-50">
-      <div className="bg-white px-5 pt-14 pb-5 border-b border-slate-100 flex items-center gap-3">
+    <div className="flex flex-col min-h-full bg-slate-50 dark:bg-slate-950">
+      <div className="bg-white dark:bg-slate-900 px-5 pt-14 pb-5 border-b border-slate-100 dark:border-white/[0.07] flex items-center gap-3">
         <button onClick={onBack} className="p-2 -ml-2 text-slate-400 hover:text-slate-600 rounded-xl hover:bg-slate-100">
           <ChevronRight size={20} className="rotate-180" />
         </button>
-        <h1 className="text-xl font-bold text-slate-900">Choose a Unit</h1>
+        <h1 className="text-xl font-bold text-slate-900 dark:text-slate-100">Choose a Unit</h1>
       </div>
       <div className="flex-1 px-4 py-5 space-y-3">
         {ALL_UNITS.map((unit) => {
@@ -229,7 +229,7 @@ function UnitPicker({ onSelect, onBack }: { onSelect: (unitId: string) => void; 
               onClick={() => hasWords && onSelect(unit.id)}
               disabled={!hasWords}
               className={cn(
-                'w-full text-left bg-white rounded-2xl border border-slate-200 p-4 flex items-center gap-4 transition-all shadow-sm',
+                'w-full text-left bg-white dark:bg-white/5 rounded-2xl border border-slate-200 dark:border-white/[0.07] p-4 flex items-center gap-4 transition-all shadow-sm',
                 hasWords ? 'hover:border-slate-300 hover:shadow-md active:scale-[0.98]' : 'opacity-40 cursor-not-allowed',
               )}
             >
@@ -238,8 +238,8 @@ function UnitPicker({ onSelect, onBack }: { onSelect: (unitId: string) => void; 
                 {unit.order}
               </div>
               <div className="flex-1 min-w-0">
-                <p className="font-bold text-slate-800 text-sm">{unit.title}</p>
-                <p className="text-xs text-slate-400">{hasWords ? `${wordCount} words` : 'No cards yet'}</p>
+                <p className="font-bold text-slate-800 dark:text-slate-100 text-sm">{unit.title}</p>
+                <p className="text-xs text-slate-400 dark:text-slate-500">{hasWords ? `${wordCount} words` : 'No cards yet'}</p>
               </div>
               {hasWords ? <ChevronRight size={16} className="text-slate-300 shrink-0" /> : <Lock size={14} className="text-slate-300 shrink-0" />}
             </button>

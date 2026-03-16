@@ -16,7 +16,7 @@ export default function WeeklyActivityChart({ data, className }: Props) {
   return (
     <div className={cn('space-y-3', className)}>
       {/* Sub-header stats */}
-      <div className="flex items-center justify-between text-xs text-slate-500">
+      <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
         <span>{totalWeekXP > 0 ? `${totalWeekXP} XP this week` : 'No activity yet'}</span>
         <span>{activeDays}/7 active days</span>
       </div>
@@ -34,13 +34,15 @@ export default function WeeklyActivityChart({ data, className }: Props) {
                   <div
                     className={cn(
                       'w-full rounded-t-md transition-all duration-500',
-                      day.isToday ? 'bg-primary-900' : 'bg-primary-200',
+                      day.isToday
+                        ? 'bg-gradient-to-t from-violet-600 to-violet-400 shadow-accent-glow'
+                        : 'bg-primary-200 dark:bg-[rgba(147,197,253,0.2)]',
                     )}
                     style={{ height: `${heightPct}%` }}
                     title={`${day.xp} XP`}
                   />
                 ) : (
-                  <div className="w-full h-1 bg-slate-100 rounded" />
+                  <div className="w-full h-1 bg-slate-100 dark:bg-white/5 rounded" />
                 )}
               </div>
 
@@ -48,7 +50,7 @@ export default function WeeklyActivityChart({ data, className }: Props) {
               <span
                 className={cn(
                   'text-[10px] font-medium',
-                  day.isToday ? 'text-primary-900' : 'text-slate-400',
+                  day.isToday ? 'text-violet-600 dark:text-violet-400' : 'text-slate-400 dark:text-slate-500',
                 )}
               >
                 {day.isToday ? '·' : day.labelShort}
@@ -65,7 +67,7 @@ export default function WeeklyActivityChart({ data, className }: Props) {
             <span
               className={cn(
                 'text-[10px]',
-                day.isToday ? 'font-bold text-primary-900' : 'text-slate-400',
+                day.isToday ? 'font-bold text-violet-600 dark:text-violet-400' : 'text-slate-400 dark:text-slate-500',
               )}
             >
               {day.isToday ? 'Today' : day.label}

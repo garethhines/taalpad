@@ -18,7 +18,7 @@ export default function BottomNav() {
   ]
 
   return (
-    <nav className="lg:hidden fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-white dark:bg-slate-800 border-t border-slate-100 dark:border-slate-700 px-2 pb-safe-bottom z-50">
+    <nav className="lg:hidden fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-white/95 dark:bg-slate-950/95 backdrop-blur-sm border-t border-slate-100 dark:border-white/5 px-2 pb-safe-bottom z-50">
       <div className="flex items-center justify-around py-2">
         {navItems.map(({ href, label, icon: Icon, badge }) => {
           const isActive = pathname === href || pathname.startsWith(href + '/')
@@ -28,23 +28,21 @@ export default function BottomNav() {
               href={href}
               className={cn(
                 'flex flex-col items-center gap-1 px-4 py-2 rounded-xl transition-all duration-200',
-                isActive ? 'text-primary-900' : 'text-slate-400 hover:text-slate-600',
+                isActive ? 'text-violet-700 dark:text-violet-400' : 'text-slate-400 dark:text-slate-500 hover:text-slate-600 dark:hover:text-slate-400',
               )}
             >
-              <div className={cn('relative p-1.5 rounded-xl transition-all duration-200', isActive && 'bg-primary-50')}>
+              <div className={cn('relative p-1.5 rounded-xl transition-all duration-200', isActive && 'bg-violet-100 dark:bg-violet-900/25')}>
                 <Icon
                   size={22}
                   strokeWidth={isActive ? 2.5 : 2}
-                  className={cn(isActive && 'text-primary-900')}
                 />
-                {/* Due-count badge */}
                 {badge > 0 && (
                   <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-red-500 text-white text-[9px] font-bold rounded-full flex items-center justify-center leading-none">
                     {badge > 9 ? '9+' : badge}
                   </span>
                 )}
               </div>
-              <span className={cn('text-[11px] font-medium', isActive ? 'text-primary-900' : 'text-slate-400')}>
+              <span className={cn('text-[11px] font-medium')}>
                 {label}
               </span>
             </Link>

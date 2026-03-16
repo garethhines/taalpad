@@ -9,9 +9,8 @@
   --background-rgb: 248, 250, 252;
 }
 
-html.dark {
-  color-scheme: dark;
-  --foreground-rgb: 248, 250, 252;
+.dark {
+  --foreground-rgb: 241, 245, 249;
   --background-rgb: 15, 23, 42;
 }
 
@@ -53,6 +52,10 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #cbd5e1;
   border-radius: 2px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
 }
 
 /* Remove number input arrows */

@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import './globals.css'
-import { ThemeSync } from '@/components/providers/ThemeSync'
+import ThemeProvider from '@/components/providers/ThemeProvider'
 
 export const metadata: Metadata = {
   title: 'Taalpad — Learn Dutch',
@@ -42,9 +42,10 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
       </head>
-      <body className="bg-slate-50 text-slate-900 min-h-screen dark:bg-slate-900 dark:text-slate-100">
-        <ThemeSync />
-        {children}
+      <body className="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen">
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

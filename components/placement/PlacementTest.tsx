@@ -118,7 +118,7 @@ export default function PlacementTest() {
   const maxQuestions = 30
 
   return (
-    <div className="min-h-screen bg-white flex flex-col max-w-xl mx-auto">
+    <div className="min-h-screen bg-white dark:bg-slate-950 flex flex-col max-w-xl mx-auto">
       {/* ── Top bar ──────────────────────────────────────────────────── */}
       <div className="px-5 pt-12 pb-4 border-b border-slate-100 flex items-center gap-4">
         <button
@@ -136,7 +136,7 @@ export default function PlacementTest() {
           </div>
           <div className="w-full bg-slate-100 rounded-full h-2">
             <div
-              className="h-2 bg-primary-900 rounded-full transition-all duration-500"
+              className="h-2 bg-gradient-to-r from-violet-600 to-violet-400 rounded-full transition-all duration-500"
               style={{ width: `${Math.min(((questionNumber - 1) / maxQuestions) * 100, 100)}%` }}
             />
           </div>
@@ -197,7 +197,7 @@ export default function PlacementTest() {
             className={cn(
               'w-full py-4 rounded-2xl font-bold text-base transition-all',
               canCheck
-                ? 'bg-primary-900 text-white hover:bg-primary-800 active:scale-[0.98]'
+                ? 'bg-gradient-to-br from-violet-600 to-violet-800 text-white hover:shadow-accent-glow active:scale-[0.98]'
                 : 'bg-slate-100 text-slate-400 cursor-not-allowed',
             )}
           >
@@ -210,7 +210,7 @@ export default function PlacementTest() {
               'w-full py-4 rounded-2xl font-bold text-base transition-all active:scale-[0.98]',
               isCorrect
                 ? 'bg-emerald-600 text-white hover:bg-emerald-700'
-                : 'bg-primary-900 text-white hover:bg-primary-800',
+                : 'bg-gradient-to-br from-violet-600 to-violet-800 text-white hover:shadow-accent-glow',
             )}
           >
             Continue
@@ -265,7 +265,7 @@ function QuestionContent({
                 className={cn(
                   'w-full text-left px-5 py-4 rounded-2xl border-2 text-sm font-medium transition-all duration-150',
                   !checked && !isSelected && 'bg-white border-slate-200 text-slate-700 hover:border-primary-300 hover:bg-primary-50',
-                  !checked && isSelected && 'bg-primary-50 border-primary-900 text-primary-900',
+                  !checked && isSelected && 'bg-violet-50 border-violet-600 text-violet-700 dark:bg-violet-900/20 dark:border-violet-500 dark:text-violet-200',
                   isCorrectOption && 'bg-emerald-50 border-emerald-500 text-emerald-800',
                   isWrongSelection && 'bg-red-50 border-red-400 text-red-700',
                   checked && !isCorrectOption && !isWrongSelection && 'opacity-50 bg-white border-slate-200',
@@ -291,7 +291,7 @@ function QuestionContent({
               className={cn(
                 'inline-block min-w-[80px] border-b-2 mx-1 px-2 font-bold transition-colors',
                 !selected && 'border-slate-400 text-slate-400',
-                selected && !checked && 'border-primary-900 text-primary-900',
+                selected && !checked && 'border-violet-600 text-violet-700 dark:border-violet-400 dark:text-violet-200',
                 checked && isCorrect && 'border-emerald-500 text-emerald-700',
                 checked && isCorrect === false && 'border-red-400 text-red-600',
               )}
@@ -318,7 +318,7 @@ function QuestionContent({
                 className={cn(
                   'px-4 py-3.5 rounded-2xl border-2 font-semibold text-sm transition-all',
                   !checked && !isSelected && 'bg-white border-slate-200 text-slate-700 hover:border-primary-300 hover:bg-primary-50',
-                  !checked && isSelected && 'bg-primary-50 border-primary-900 text-primary-900',
+                  !checked && isSelected && 'bg-violet-50 border-violet-600 text-violet-700 dark:bg-violet-900/20 dark:border-violet-500 dark:text-violet-200',
                   isCorrectChoice && 'bg-emerald-50 border-emerald-500 text-emerald-800',
                   isWrongSelection && 'bg-red-50 border-red-400 text-red-700',
                   checked && !isCorrectChoice && !isWrongSelection && 'opacity-40',
@@ -360,7 +360,7 @@ function QuestionContent({
           placeholder={`Type in ${labelTo}…`}
           className={cn(
             'w-full px-4 py-4 rounded-2xl border-2 text-base font-medium transition-all focus:outline-none',
-            !checked && 'bg-white border-slate-200 text-slate-800 focus:border-primary-900',
+            !checked && 'bg-white border-slate-200 text-slate-800 focus:border-violet-600',
             checked && isCorrect && 'bg-emerald-50 border-emerald-500 text-emerald-800',
             checked && isCorrect === false && 'bg-red-50 border-red-400 text-red-700',
           )}

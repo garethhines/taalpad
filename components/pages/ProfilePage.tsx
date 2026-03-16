@@ -5,16 +5,18 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import {
   LogOut, Flame, Zap, Award, BookOpen, Layers, Clock,
-  Shield, Edit3, Check, X, Volume2, Mic, ChevronRight, Trash2, Moon,
+  Shield, Edit3, Check, X, Volume2, Mic, ChevronRight, Trash2,
+  Sun, Moon, Monitor,
 } from 'lucide-react'
 import { useProfile } from '@/hooks/useProfile'
+import { useTheme } from '@/components/providers/ThemeProvider'
 import { useVocabularyProgress } from '@/hooks/useVocabularyProgress'
 import { useLearningProgress } from '@/hooks/useLearningProgress'
 import { useProfileSettings } from '@/hooks/useProfileSettings'
 import { createClient } from '@/lib/supabase/client'
 import { updateUserProfile, resetAllProgress } from '@/lib/supabase/queries'
 import { countWordsMastered, TOTAL_WORDS } from '@/lib/vocabulary'
-import { getCEFRTitle, formatXP } from '@/lib/utils'
+import { getCEFRTitle, formatXP, cn } from '@/lib/utils'
 import { getEffectiveStreak, getLevelProgress } from '@/lib/streak'
 import { getLessonById } from '@/lib/curriculum/index'
 import ProgressBar from '@/components/ui/ProgressBar'
@@ -85,13 +87,13 @@ export default function ProfilePage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 dark:bg-slate-900">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-950">
       {/* ── HEADER ───────────────────────────────────────────────────────── */}
-      <div className="bg-primary-900 text-white px-5 pt-14 pb-10 lg:px-10 lg:pt-10">
+      <div className="bg-gradient-to-br from-[#1a365d] via-[#1e3a5f] to-[#2d4a7a] text-white px-5 pt-14 pb-10 lg:px-10 lg:pt-10">
         <div className="max-w-4xl mx-auto">
           <div className="flex items-start gap-5">
             {/* Avatar */}
-            <div className="w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-blue-400 to-primary-800 rounded-2xl flex items-center justify-center text-2xl lg:text-3xl font-bold border-2 border-white/20 shrink-0">
+            <div className="w-16 h-16 lg:w-20 lg:h-20 bg-gradient-to-br from-violet-400 to-primary-900 rounded-2xl flex items-center justify-center text-2xl lg:text-3xl font-bold border-2 border-white/20 shrink-0">
               {displayName.charAt(0).toUpperCase()}
             </div>
 
@@ -143,7 +145,7 @@ export default function ProfilePage() {
               <span className="text-blue-200">XP Progress</span>
               <span className="font-semibold">{formatXP(totalXP)} XP</span>
             </div>
-            <ProgressBar value={xpPercent} color="amber" />
+            <ProgressBar value={xpPercent} color="violet" glow />
           </div>
         </div>
       </div>
@@ -151,13 +153,13 @@ export default function ProfilePage() {
       {/* ── RESET CONFIRM MODAL ─────────────────────────────────────────── */}
       {showResetConfirm && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 px-5">
-          <div className="bg-white rounded-3xl p-6 w-full max-w-sm shadow-2xl space-y-4">
+          <div className="bg-white dark:bg-slate-800 rounded-3xl p-6 w-full max-w-sm shadow-2xl space-y-4">
             <div className="text-center space-y-2">
               <div className="w-12 h-12 bg-orange-100 rounded-2xl flex items-center justify-center mx-auto">
                 <Trash2 size={22} className="text-orange-500" />
               </div>
-              <h2 className="text-lg font-bold text-slate-800">Reset all progress?</h2>
-              <p className="text-sm text-slate-500 leading-relaxed">
+              <h2 className="text-lg font-bold text-slate-800 dark:text-slate-100">Reset all progress?</h2>
+              <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
                 This will permanently delete all your lesson progress, flashcard history, XP, and streak. This cannot be undone.
               </p>
             </div>
@@ -245,15 +247,15 @@ export default function ProfilePage() {
             {/* Settings */}
             <section>
               <SectionLabel>Settings</SectionLabel>
-              <Card className="overflow-hidden divide-y divide-slate-50 dark:divide-slate-700">
+              <Card className="overflow-hidden divide-y divide-slate-50 dark:divide-white/5">
                 {/* Display name */}
                 <button
                   onClick={() => { setNameInput(displayName); setEditingName(true) }}
-                  className="w-full flex items-center gap-3 px-4 py-3.5 hover:bg-slate-50 dark:hover:bg-slate-700 text-left"
+                  className="w-full flex items-center gap-3 px-4 py-3.5 hover:bg-slate-50 text-left"
                 >
                   <Edit3 size={16} className="text-slate-400 shrink-0" />
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-slate-700 dark:text-slate-200">Display Name</p>
+                    <p className="text-sm font-medium text-slate-700">Display Name</p>
                     <p className="text-xs text-slate-400 truncate">{displayName}</p>
                   </div>
                   <ChevronRight size={14} className="text-slate-300 shrink-0" />
@@ -264,7 +266,7 @@ export default function ProfilePage() {
                   <div className="flex items-center gap-3 px-4 py-3.5">
                     <Volume2 size={16} className="text-slate-400 shrink-0" />
                     <div className="flex-1">
-                      <p className="text-sm font-medium text-slate-700 dark:text-slate-200">Sound Effects</p>
+                      <p className="text-sm font-medium text-slate-700">Sound Effects</p>
                       <p className="text-xs text-slate-400">Play sounds on correct/incorrect</p>
                     </div>
                     <ToggleSwitch
@@ -279,7 +281,7 @@ export default function ProfilePage() {
                   <div className="flex items-center gap-3 px-4 py-3.5">
                     <Mic size={16} className="text-slate-400 shrink-0" />
                     <div className="flex-1">
-                      <p className="text-sm font-medium text-slate-700 dark:text-slate-200">Auto-play Dutch Audio</p>
+                      <p className="text-sm font-medium text-slate-700">Auto-play Dutch Audio</p>
                       <p className="text-xs text-slate-400">Auto-play pronunciation in lessons</p>
                     </div>
                     <ToggleSwitch
@@ -289,18 +291,15 @@ export default function ProfilePage() {
                   </div>
                 )}
 
-                {/* Dark mode toggle */}
+                {/* Theme picker */}
                 {mounted && (
                   <div className="flex items-center gap-3 px-4 py-3.5">
-                    <Moon size={16} className="text-slate-400 shrink-0" />
+                    <Sun size={16} className="text-slate-400 shrink-0" />
                     <div className="flex-1">
-                      <p className="text-sm font-medium text-slate-700 dark:text-slate-200">Dark Mode</p>
-                      <p className="text-xs text-slate-400">Switch to a dark colour scheme</p>
+                      <p className="text-sm font-medium text-slate-700 dark:text-slate-200">Theme</p>
+                      <p className="text-xs text-slate-400">App appearance</p>
                     </div>
-                    <ToggleSwitch
-                      checked={settings.darkMode}
-                      onChange={(v) => updateSetting('darkMode', v)}
-                    />
+                    <ThemePicker />
                   </div>
                 )}
               </Card>
@@ -309,7 +308,7 @@ export default function ProfilePage() {
             {/* App info */}
             <section>
               <SectionLabel>About</SectionLabel>
-              <Card className="overflow-hidden divide-y divide-slate-50">
+              <Card className="overflow-hidden divide-y divide-slate-50 dark:divide-white/5">
                 <InfoRow label="Version" value={process.env.NEXT_PUBLIC_APP_VERSION ?? '—'} />
                 <InfoRow label="Learning language" value="Dutch (Nederlands)" />
                 <InfoRow label="Interface language" value="English" />
@@ -345,14 +344,14 @@ export default function ProfilePage() {
 // ── Sub-components ────────────────────────────────────────────────────────────
 
 function SectionLabel({ children }: { children: React.ReactNode }) {
-  return <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-2.5">{children}</p>
+  return <p className="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider mb-2.5">{children}</p>
 }
 
 function StatCard({ icon, value, label }: { icon: React.ReactNode; value: string | number; label: string }) {
   return (
     <Card className="p-3 text-center">
       <div className="flex justify-center mb-1">{icon}</div>
-      <p className="text-xl font-bold text-slate-800">{value}</p>
+      <p className="text-xl font-bold text-slate-800 dark:text-slate-100">{value}</p>
       <p className="text-[11px] text-slate-400 font-medium">{label}</p>
     </Card>
   )
@@ -361,8 +360,8 @@ function StatCard({ icon, value, label }: { icon: React.ReactNode; value: string
 function InfoRow({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex items-center justify-between px-4 py-3">
-      <span className="text-sm text-slate-500">{label}</span>
-      <span className="text-sm font-medium text-slate-700">{value}</span>
+      <span className="text-sm text-slate-500 dark:text-slate-400">{label}</span>
+      <span className="text-sm font-medium text-slate-700 dark:text-slate-200">{value}</span>
     </div>
   )
 }
@@ -375,7 +374,7 @@ function ToggleSwitch({ checked, onChange }: { checked: boolean; onChange: (v: b
       aria-checked={checked}
       onClick={() => onChange(!checked)}
       className={`relative inline-flex h-6 w-11 shrink-0 rounded-full transition-colors duration-200 ease-in-out focus:outline-none ${
-        checked ? 'bg-primary-900' : 'bg-slate-200'
+        checked ? 'bg-violet-600' : 'bg-slate-200'
       }`}
     >
       <span
@@ -384,5 +383,33 @@ function ToggleSwitch({ checked, onChange }: { checked: boolean; onChange: (v: b
         }`}
       />
     </button>
+  )
+}
+
+function ThemePicker() {
+  const { theme, setTheme } = useTheme()
+  const options: { value: 'light' | 'system' | 'dark'; icon: React.ReactNode; label: string }[] = [
+    { value: 'light', icon: <Sun size={13} />, label: 'Light' },
+    { value: 'system', icon: <Monitor size={13} />, label: 'System' },
+    { value: 'dark', icon: <Moon size={13} />, label: 'Dark' },
+  ]
+  return (
+    <div className="flex bg-slate-100 dark:bg-white/10 rounded-xl p-0.5 gap-0.5">
+      {options.map((opt) => (
+        <button
+          key={opt.value}
+          onClick={() => setTheme(opt.value)}
+          className={cn(
+            'flex items-center gap-1 px-2.5 py-1.5 rounded-lg text-[11px] font-bold transition-all',
+            theme === opt.value
+              ? 'bg-white dark:bg-slate-700 text-slate-800 dark:text-slate-100 shadow-sm'
+              : 'text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-300',
+          )}
+        >
+          {opt.icon}
+          {opt.label}
+        </button>
+      ))}
+    </div>
   )
 }

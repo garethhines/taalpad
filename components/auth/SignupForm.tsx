@@ -130,6 +130,7 @@ export default function SignupForm() {
 
       <Button
         type="submit"
+        variant="accent"
         fullWidth
         size="lg"
         disabled={loading || !displayName || !email || !password}
