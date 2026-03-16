@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { createClient } from '@/lib/supabase/client'
 import { getLearningProgress } from '@/lib/supabase/queries'
 import type { LearningProgress } from '@/lib/types'
@@ -8,6 +8,7 @@ import type { LearningProgress } from '@/lib/types'
 export function useLearningProgress(userId: string | undefined) {
   const [progress, setProgress] = useState<LearningProgress[]>([])
   const [loading, setLoading] = useState(true)
+  const [tick, setTick] = useState(0)
 
   useEffect(() => {
     if (!userId) {
@@ -19,7 +20,9 @@ export function useLearningProgress(userId: string | undefined) {
     getLearningProgress(supabase, userId)
       .then((data) => setProgress(data))
       .finally(() => setLoading(false))
-  }, [userId])
+  }, [userId, tick])
 
-  return { progress, loading }
+  const refresh = useCallback(() => setTick((t) => t + 1), [])
+
+  return { progress, loading, refresh }
 }

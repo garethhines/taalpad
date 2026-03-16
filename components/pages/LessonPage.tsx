@@ -21,6 +21,8 @@ export default function LessonPage({ lesson, unitId }: Props) {
     const supabase = createClient()
     await recordLessonCompletion(supabase, user.id, unitId, lesson.id, xpEarned, score)
     await refreshProfile()
+    // Clear Next.js router cache so /learn and /dashboard re-fetch progress data
+    router.refresh()
   }
 
   return (

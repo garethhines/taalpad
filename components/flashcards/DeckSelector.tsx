@@ -32,7 +32,7 @@ export default function DeckSelector({ progress, onStart }: Props) {
   const masteredCount = countWordsMastered(progress)
   const studiedCount = countWordsStudied(progress)
   const weakCount = buildWeakWordsQueue(progress).length
-  const quick10Queue = buildQuick10Queue(progress)
+  const quick10Queue = buildQuick10Queue()
 
   function startMode(mode: StudyMode, unitId?: string) {
     let queue: VocabWord[]
@@ -103,8 +103,8 @@ export default function DeckSelector({ progress, onStart }: Props) {
           <ModeCard
             icon={<Zap size={20} className="text-amber-500" />}
             title="Quick 10"
-            subtitle={quick10Queue.length > 0 ? `${quick10Queue.length} card${quick10Queue.length !== 1 ? 's' : ''} selected` : 'No cards studied yet'}
-            disabled={quick10Queue.length === 0}
+            subtitle="10 random cards from all vocabulary"
+            disabled={false}
             onClick={() => startMode('quick10')}
           />
           <ModeCard
