@@ -6,12 +6,20 @@ export interface ProfileSettings {
   soundEnabled: boolean
   ttsAutoPlay: boolean
   optionTts: boolean  // speak selected option in exercises
+  darkMode: boolean
 }
 
 const DEFAULT_SETTINGS: ProfileSettings = {
   soundEnabled: true,
   ttsAutoPlay: true,
   optionTts: true,
+  darkMode: false,
+}
+
+function applyDarkMode(dark: boolean) {
+  if (typeof document !== 'undefined') {
+    document.documentElement.classList.toggle('dark', dark)
+  }
 }
 
 export function useProfileSettings() {
@@ -22,7 +30,11 @@ export function useProfileSettings() {
     setMounted(true)
     try {
       const saved = localStorage.getItem('taalpad-settings')
-      if (saved) setSettings({ ...DEFAULT_SETTINGS, ...JSON.parse(saved) })
+      if (saved) {
+        const parsed = { ...DEFAULT_SETTINGS, ...JSON.parse(saved) }
+        setSettings(parsed)
+        applyDarkMode(parsed.darkMode)
+      }
     } catch {
       // ignore
     }
@@ -32,6 +44,7 @@ export function useProfileSettings() {
     setSettings((prev) => {
       const next = { ...prev, [key]: value }
       try { localStorage.setItem('taalpad-settings', JSON.stringify(next)) } catch {}
+      if (key === 'darkMode') applyDarkMode(value as boolean)
       return next
     })
   }

@@ -18,7 +18,7 @@ export default function BottomNav() {
   ]
 
   return (
-    <nav className="lg:hidden fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-white border-t border-slate-100 px-2 pb-safe-bottom z-50">
+    <nav className="lg:hidden fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-white dark:bg-slate-800 border-t border-slate-100 dark:border-slate-700 px-2 pb-safe-bottom z-50">
       <div className="flex items-center justify-around py-2">
         {navItems.map(({ href, label, icon: Icon, badge }) => {
           const isActive = pathname === href || pathname.startsWith(href + '/')
