@@ -16,7 +16,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
     return (
       <div className="flex flex-col gap-1.5">
         {label && (
-          <label htmlFor={inputId} className="text-sm font-medium text-slate-700">
+          <label htmlFor={inputId} className="text-sm font-medium text-slate-700 dark:text-slate-300">
             {label}
           </label>
         )}
@@ -30,9 +30,9 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
             ref={ref}
             id={inputId}
             className={cn(
-              'w-full bg-slate-50 border border-slate-200 rounded-xl py-3 text-sm text-slate-900',
-              'placeholder:text-slate-400',
-              'focus:outline-none focus:ring-2 focus:ring-primary-900/20 focus:border-primary-900',
+              'w-full bg-slate-50 dark:bg-white/5 border border-slate-200 dark:border-white/[0.1] rounded-xl py-3 text-sm text-slate-900 dark:text-slate-100',
+              'placeholder:text-slate-400 dark:placeholder:text-slate-500',
+              'focus:outline-none focus:ring-2 focus:ring-violet-600/20 focus:border-violet-600',
               'transition-colors duration-150',
               icon ? 'pl-11' : 'pl-4',
               rightElement ? 'pr-11' : 'pr-4',
@@ -48,7 +48,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           )}
         </div>
         {error && <p className="text-xs text-red-500">{error}</p>}
-        {hint && !error && <p className="text-xs text-slate-400">{hint}</p>}
+        {hint && !error && <p className="text-xs text-slate-400 dark:text-slate-500">{hint}</p>}
       </div>
     )
   },
