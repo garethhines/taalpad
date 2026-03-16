@@ -47,10 +47,10 @@ export default function SessionSummary({ rated, onBack, onRepeat }: Props) {
   const message = accuracy >= 80 ? 'Great session!' : accuracy >= 50 ? 'Good effort!' : 'Keep practising!'
 
   return (
-    <div className="flex flex-col min-h-screen bg-slate-50">
+    <div className="flex flex-col min-h-screen bg-slate-50 dark:bg-slate-950">
       {/* Header */}
-      <div className="bg-white px-5 pt-14 pb-5 border-b border-slate-100">
-        <h1 className="text-xl font-bold text-slate-900">Session Complete</h1>
+      <div className="bg-white px-5 pt-14 pb-5 border-b border-slate-100 dark:bg-slate-900 dark:border-white/5">
+        <h1 className="text-xl font-bold text-slate-900 dark:text-slate-100">Session Complete</h1>
       </div>
 
       <div className="flex-1 px-5 py-8 flex flex-col gap-6">
@@ -86,17 +86,17 @@ export default function SessionSummary({ rated, onBack, onRepeat }: Props) {
         {/* Rating breakdown */}
         <div className="grid grid-cols-4 gap-3">
           {(Object.entries(ratingCounts) as [FlashcardRating, number][]).map(([rating, count]) => (
-            <div key={rating} className="bg-white rounded-2xl border border-slate-100 p-3 text-center shadow-sm">
+            <div key={rating} className="bg-white rounded-2xl border border-slate-100 p-3 text-center shadow-sm dark:bg-white/5 dark:border-white/[0.07]">
               <span className={`text-xl font-bold ${RATING_COLORS[rating]}`}>{RATING_EMOJI[rating]}</span>
-              <p className="text-2xl font-bold text-slate-800 mt-1">{count}</p>
-              <p className="text-xs text-slate-400 capitalize">{rating}</p>
+              <p className="text-2xl font-bold text-slate-800 mt-1 dark:text-slate-100">{count}</p>
+              <p className="text-xs text-slate-400 capitalize dark:text-slate-500">{rating}</p>
             </div>
           ))}
         </div>
 
         {/* Improved words */}
         {rated.filter((r) => r.newFamiliarity > r.previousFamiliarity).length > 0 && (
-          <div className="bg-emerald-50 rounded-2xl p-4 border border-emerald-100">
+          <div className="bg-emerald-50 rounded-2xl p-4 border border-emerald-100 dark:bg-emerald-900/20 dark:border-emerald-800">
             <div className="flex items-center gap-2 mb-2">
               <CheckCircle2 size={16} className="text-emerald-600" />
               <p className="text-sm font-semibold text-emerald-700">Words improved</p>
@@ -105,7 +105,7 @@ export default function SessionSummary({ rated, onBack, onRepeat }: Props) {
               {rated
                 .filter((r) => r.newFamiliarity > r.previousFamiliarity)
                 .map((r) => (
-                  <span key={r.word.id} className="bg-white text-emerald-800 text-xs font-medium px-2.5 py-1 rounded-full border border-emerald-200">
+                  <span key={r.word.id} className="bg-white text-emerald-800 text-xs font-medium px-2.5 py-1 rounded-full border border-emerald-200 dark:bg-white/10 dark:text-emerald-300 dark:border-emerald-700">
                     {r.word.dutch}
                   </span>
                 ))}
@@ -117,14 +117,14 @@ export default function SessionSummary({ rated, onBack, onRepeat }: Props) {
         <div className="flex gap-3 mt-auto">
           <button
             onClick={onBack}
-            className="flex-1 flex items-center justify-center gap-2 py-4 rounded-2xl border-2 border-slate-200 bg-white text-slate-700 font-semibold text-sm hover:bg-slate-50"
+            className="flex-1 flex items-center justify-center gap-2 py-4 rounded-2xl border-2 border-slate-200 bg-white text-slate-700 font-semibold text-sm hover:bg-slate-50 dark:border-white/10 dark:bg-white/5 dark:text-slate-200"
           >
             <ArrowLeft size={16} />
             Decks
           </button>
           <button
             onClick={onRepeat}
-            className="flex-1 flex items-center justify-center gap-2 py-4 rounded-2xl bg-primary-900 text-white font-semibold text-sm hover:bg-primary-800"
+            className="flex-1 flex items-center justify-center gap-2 py-4 rounded-2xl bg-gradient-to-br from-violet-600 to-violet-800 text-white font-semibold text-sm hover:shadow-accent-glow"
           >
             <RotateCcw size={16} />
             Again
