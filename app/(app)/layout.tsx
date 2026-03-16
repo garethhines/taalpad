@@ -26,7 +26,7 @@ export default async function AppLayout({
         • Mobile  — centered "phone card" (max-w-md, white bg, shadow) + BottomNav
         • Desktop — fixed sidebar (w-64) + full-width scrollable main area
       */}
-      <div className="min-h-screen bg-slate-100 lg:bg-slate-50">
+      <div className="min-h-screen bg-slate-100 lg:bg-slate-50 dark:bg-slate-900">
         {/* Desktop sidebar */}
         <Sidebar />
 
@@ -34,9 +34,9 @@ export default async function AppLayout({
         <div
           className={[
             // Mobile: centered phone card
-            'max-w-md mx-auto bg-white shadow-xl min-h-screen',
+            'max-w-md mx-auto bg-white dark:bg-slate-900 shadow-xl min-h-screen',
             // Desktop: full-width, shifted right of sidebar
-            'lg:ml-64 lg:max-w-none lg:shadow-none lg:bg-slate-50',
+            'lg:ml-64 lg:max-w-none lg:shadow-none lg:bg-slate-50 dark:lg:bg-slate-900',
           ].join(' ')}
         >
           {/* Extra bottom padding on mobile for the nav bar; none needed on desktop */}

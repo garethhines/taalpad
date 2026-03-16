@@ -9,6 +9,12 @@
   --background-rgb: 248, 250, 252;
 }
 
+html.dark {
+  color-scheme: dark;
+  --foreground-rgb: 248, 250, 252;
+  --background-rgb: 15, 23, 42;
+}
+
 * {
   box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;

@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import {
   LogOut, Flame, Zap, Award, BookOpen, Layers, Clock,
-  Shield, Edit3, Check, X, Volume2, Mic, ChevronRight, Trash2,
+  Shield, Edit3, Check, X, Volume2, Mic, ChevronRight, Trash2, Moon,
 } from 'lucide-react'
 import { useProfile } from '@/hooks/useProfile'
 import { useVocabularyProgress } from '@/hooks/useVocabularyProgress'
@@ -85,7 +85,7 @@ export default function ProfilePage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-slate-50 dark:bg-slate-900">
       {/* ── HEADER ───────────────────────────────────────────────────────── */}
       <div className="bg-primary-900 text-white px-5 pt-14 pb-10 lg:px-10 lg:pt-10">
         <div className="max-w-4xl mx-auto">
@@ -245,15 +245,15 @@ export default function ProfilePage() {
             {/* Settings */}
             <section>
               <SectionLabel>Settings</SectionLabel>
-              <Card className="overflow-hidden divide-y divide-slate-50">
+              <Card className="overflow-hidden divide-y divide-slate-50 dark:divide-slate-700">
                 {/* Display name */}
                 <button
                   onClick={() => { setNameInput(displayName); setEditingName(true) }}
-                  className="w-full flex items-center gap-3 px-4 py-3.5 hover:bg-slate-50 text-left"
+                  className="w-full flex items-center gap-3 px-4 py-3.5 hover:bg-slate-50 dark:hover:bg-slate-700 text-left"
                 >
                   <Edit3 size={16} className="text-slate-400 shrink-0" />
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-slate-700">Display Name</p>
+                    <p className="text-sm font-medium text-slate-700 dark:text-slate-200">Display Name</p>
                     <p className="text-xs text-slate-400 truncate">{displayName}</p>
                   </div>
                   <ChevronRight size={14} className="text-slate-300 shrink-0" />
@@ -264,7 +264,7 @@ export default function ProfilePage() {
                   <div className="flex items-center gap-3 px-4 py-3.5">
                     <Volume2 size={16} className="text-slate-400 shrink-0" />
                     <div className="flex-1">
-                      <p className="text-sm font-medium text-slate-700">Sound Effects</p>
+                      <p className="text-sm font-medium text-slate-700 dark:text-slate-200">Sound Effects</p>
                       <p className="text-xs text-slate-400">Play sounds on correct/incorrect</p>
                     </div>
                     <ToggleSwitch
@@ -279,12 +279,27 @@ export default function ProfilePage() {
                   <div className="flex items-center gap-3 px-4 py-3.5">
                     <Mic size={16} className="text-slate-400 shrink-0" />
                     <div className="flex-1">
-                      <p className="text-sm font-medium text-slate-700">Auto-play Dutch Audio</p>
+                      <p className="text-sm font-medium text-slate-700 dark:text-slate-200">Auto-play Dutch Audio</p>
                       <p className="text-xs text-slate-400">Auto-play pronunciation in lessons</p>
                     </div>
                     <ToggleSwitch
                       checked={settings.ttsAutoPlay}
                       onChange={(v) => updateSetting('ttsAutoPlay', v)}
+                    />
+                  </div>
+                )}
+
+                {/* Dark mode toggle */}
+                {mounted && (
+                  <div className="flex items-center gap-3 px-4 py-3.5">
+                    <Moon size={16} className="text-slate-400 shrink-0" />
+                    <div className="flex-1">
+                      <p className="text-sm font-medium text-slate-700 dark:text-slate-200">Dark Mode</p>
+                      <p className="text-xs text-slate-400">Switch to a dark colour scheme</p>
+                    </div>
+                    <ToggleSwitch
+                      checked={settings.darkMode}
+                      onChange={(v) => updateSetting('darkMode', v)}
                     />
                   </div>
                 )}

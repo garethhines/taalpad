@@ -23,7 +23,7 @@ export default function Sidebar() {
   const streak = profile ? getEffectiveStreak(profile) : 0
 
   return (
-    <aside className="hidden lg:flex fixed inset-y-0 left-0 w-64 flex-col bg-white border-r border-slate-100 z-40">
+    <aside className="hidden lg:flex fixed inset-y-0 left-0 w-64 flex-col bg-white dark:bg-slate-800 border-r border-slate-100 dark:border-slate-700 z-40">
       {/* Wordmark */}
       <div className="px-6 py-6">
         <div className="flex items-center gap-2.5">
@@ -50,8 +50,8 @@ export default function Sidebar() {
               className={cn(
                 'flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm font-medium transition-all duration-150',
                 isActive
-                  ? 'bg-primary-50 text-primary-900'
-                  : 'text-slate-500 hover:bg-slate-50 hover:text-slate-800',
+                  ? 'bg-primary-50 text-primary-900 dark:bg-primary-900/20 dark:text-primary-300'
+                  : 'text-slate-500 hover:bg-slate-50 hover:text-slate-800 dark:text-slate-400 dark:hover:bg-slate-700 dark:hover:text-slate-100',
               )}
             >
               <Icon size={18} strokeWidth={isActive ? 2.5 : 2} />
@@ -68,11 +68,11 @@ export default function Sidebar() {
 
       {/* Streak + XP mini-stats */}
       {profile && (
-        <div className="px-4 py-4 mx-3 mb-3 bg-slate-50 rounded-2xl space-y-2">
+        <div className="px-4 py-4 mx-3 mb-3 bg-slate-50 dark:bg-slate-700/50 rounded-2xl space-y-2">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Flame size={15} className="text-orange-500" fill="currentColor" />
-              <span className="text-xs font-semibold text-slate-700">{streak} day streak</span>
+              <span className="text-xs font-semibold text-slate-700 dark:text-slate-200">{streak} day streak</span>
             </div>
             <div className="flex items-center gap-1.5">
               <Zap size={13} className="text-amber-500" fill="currentColor" />
@@ -84,13 +84,13 @@ export default function Sidebar() {
 
       {/* User info */}
       {profile && (
-        <div className="px-4 py-4 border-t border-slate-100">
+        <div className="px-4 py-4 border-t border-slate-100 dark:border-slate-700">
           <Link href="/profile" className="flex items-center gap-3 group">
             <div className="w-9 h-9 bg-primary-900 rounded-xl flex items-center justify-center text-sm font-bold text-white shrink-0">
               {profile.display_name.charAt(0).toUpperCase()}
             </div>
             <div className="flex-1 min-w-0">
-              <p className="text-sm font-semibold text-slate-800 truncate group-hover:text-primary-900 transition-colors">
+              <p className="text-sm font-semibold text-slate-800 dark:text-slate-100 truncate group-hover:text-primary-900 dark:group-hover:text-primary-300 transition-colors">
                 {profile.display_name}
               </p>
               <p className="text-xs text-slate-400">CEFR {profile.current_level}</p>
