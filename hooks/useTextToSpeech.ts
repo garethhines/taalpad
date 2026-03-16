@@ -36,7 +36,10 @@ function scoreVoice(voice: SpeechSynthesisVoice): number {
   return score
 }
 
-/** Play an audio blob URL, resolves when done */
+/** Module-level audio cache — survives remounts, cleared on full navigation */
+const ttsCache = new Map<string, ArrayBuffer>()
+
+/** Play an audio ArrayBuffer, resolves when done */
 function playAudioBuffer(buffer: ArrayBuffer): Promise<void> {
   return new Promise((resolve, reject) => {
     const blob = new Blob([buffer], { type: 'audio/mpeg' })
@@ -86,13 +89,19 @@ export function useTextToSpeech(options: UseTextToSpeechOptions = {}) {
     if (apiAvailableRef.current === false) return false
 
     try {
-      const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}`)
-      if (!res.ok) {
-        if (res.status === 503) apiAvailableRef.current = false // not configured
-        return false
+      let buffer: ArrayBuffer
+      if (ttsCache.has(text)) {
+        buffer = ttsCache.get(text)!
+      } else {
+        const res = await fetch(`/api/tts?text=${encodeURIComponent(text)}`)
+        if (!res.ok) {
+          if (res.status === 503) apiAvailableRef.current = false // not configured
+          return false
+        }
+        apiAvailableRef.current = true
+        buffer = await res.arrayBuffer()
+        ttsCache.set(text, buffer)
       }
-      apiAvailableRef.current = true
-      const buffer = await res.arrayBuffer()
       setIsSpeaking(true)
       setCurrentText(text)
       await playAudioBuffer(buffer)

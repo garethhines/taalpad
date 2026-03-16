@@ -95,12 +95,22 @@ export function buildWeakWordsQueue(progress: VocabularyProgress[]): VocabWord[]
     .filter((w): w is VocabWord => w !== undefined)
 }
 
-/** Quick 10: random selection of up to 10 due words */
+/** Quick 10: 10 cards — due words first, padded with soonest-upcoming if needed */
 export function buildQuick10Queue(progress: VocabularyProgress[]): VocabWord[] {
   const due = buildDailyReviewQueue(progress)
-  // Shuffle and take 10
   const shuffled = [...due].sort(() => Math.random() - 0.5)
-  return shuffled.slice(0, 10)
+  if (shuffled.length >= 10) return shuffled.slice(0, 10)
+
+  // Pad with studied words that aren't due yet, sorted by soonest review date
+  const dueIds = new Set(due.map((w) => w.id))
+  const upcoming = progress
+    .filter((p) => !dueIds.has(p.word_id) && p.next_review_date && new Date(p.next_review_date) > new Date())
+    .sort((a, b) => new Date(a.next_review_date).getTime() - new Date(b.next_review_date).getTime())
+    .map((p) => getWordById(p.word_id))
+    .filter((w): w is VocabWord => w !== undefined)
+    .slice(0, 10 - shuffled.length)
+
+  return [...shuffled, ...upcoming]
 }
 
 /** Count of words due for review (for the badge) */

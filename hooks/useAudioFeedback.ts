@@ -40,23 +40,29 @@ export function useAudioFeedback(enabled: boolean) {
     if (!enabled) return
     const ctx = getCtx()
     if (!ctx) return
-    // Resume if suspended (required after user gesture on some browsers)
-    if (ctx.state === 'suspended') ctx.resume()
-    const t = ctx.currentTime
-    // Two ascending tones: a pleasant "ding ding"
-    playTone(880, t, 0.15, ctx)
-    playTone(1100, t + 0.12, 0.2, ctx)
+    // Resume if suspended, then schedule tones after resume completes
+    const schedule = () => {
+      const t = ctx.currentTime
+      // Two ascending tones: a pleasant "ding ding"
+      playTone(880, t, 0.15, ctx)
+      playTone(1100, t + 0.12, 0.2, ctx)
+    }
+    if (ctx.state === 'suspended') ctx.resume().then(schedule)
+    else schedule()
   }, [enabled]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const playIncorrect = useCallback(() => {
     if (!enabled) return
     const ctx = getCtx()
     if (!ctx) return
-    if (ctx.state === 'suspended') ctx.resume()
-    const t = ctx.currentTime
-    // Short descending buzz
-    playTone(300, t, 0.12, ctx, 0.25)
-    playTone(220, t + 0.1, 0.18, ctx, 0.2)
+    const schedule = () => {
+      const t = ctx.currentTime
+      // Short descending buzz
+      playTone(300, t, 0.12, ctx, 0.25)
+      playTone(220, t + 0.1, 0.18, ctx, 0.2)
+    }
+    if (ctx.state === 'suspended') ctx.resume().then(schedule)
+    else schedule()
   }, [enabled]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return { playCorrect, playIncorrect }

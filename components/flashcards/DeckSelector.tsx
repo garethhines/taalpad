@@ -103,7 +103,7 @@ export default function DeckSelector({ progress, onStart }: Props) {
           <ModeCard
             icon={<Zap size={20} className="text-amber-500" />}
             title="Quick 10"
-            subtitle={quick10Queue.length > 0 ? `10 random due cards` : 'No cards due yet'}
+            subtitle={quick10Queue.length > 0 ? `${quick10Queue.length} card${quick10Queue.length !== 1 ? 's' : ''} selected` : 'No cards studied yet'}
             disabled={quick10Queue.length === 0}
             onClick={() => startMode('quick10')}
           />
