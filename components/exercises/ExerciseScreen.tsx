@@ -168,7 +168,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
     const scorePercent = Math.round((correctCount / total) * 100)
 
     return (
-      <div className="fixed inset-0 z-[60] flex flex-col bg-white items-center justify-center px-6 gap-8 text-center">
+      <div className="fixed inset-0 z-[60] flex flex-col bg-white dark:bg-slate-950 items-center justify-center px-6 gap-8 text-center">
         <div className="text-6xl">{scorePercent >= 80 ? '🎉' : scorePercent >= 50 ? '👍' : '💪'}</div>
         <div>
           <h2 className="text-2xl font-bold text-slate-800">
@@ -198,7 +198,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
         <button
           onClick={() => router.push('/learn')}
           disabled={saving}
-          className="w-full max-w-xs bg-primary-900 text-white font-bold py-4 rounded-2xl hover:bg-primary-800 disabled:opacity-60 transition-colors"
+          className="w-full max-w-xs bg-gradient-to-br from-violet-600 to-violet-800 text-white font-extrabold py-4 rounded-2xl hover:shadow-accent-glow disabled:opacity-60 transition-all"
         >
           {saving ? 'Saving…' : 'Continue'}
         </button>
@@ -221,7 +221,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
           <div
             className={cn(
               'h-full rounded-full transition-all duration-500',
-              phase === 'review' ? 'bg-amber-400' : 'bg-primary-900',
+              phase === 'review' ? 'bg-amber-400' : 'bg-gradient-to-r from-violet-600 to-violet-400',
             )}
             style={{ width: `${progress}%` }}
           />
@@ -349,7 +349,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
             className={cn(
               'w-full py-4 rounded-2xl font-bold text-base transition-all',
               canCheck
-                ? 'bg-primary-900 text-white hover:bg-primary-800 active:scale-[0.98]'
+                ? 'bg-gradient-to-br from-violet-600 to-violet-800 text-white hover:shadow-accent-glow active:scale-[0.98]'
                 : 'bg-slate-100 text-slate-400 cursor-not-allowed',
             )}
           >
@@ -362,7 +362,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
               'w-full py-4 rounded-2xl font-bold text-base transition-all active:scale-[0.98]',
               checkState === 'correct'
                 ? 'bg-emerald-600 text-white hover:bg-emerald-700'
-                : 'bg-primary-900 text-white hover:bg-primary-800',
+                : 'bg-gradient-to-br from-violet-600 to-violet-800 text-white hover:shadow-accent-glow',
             )}
           >
             {isLast
