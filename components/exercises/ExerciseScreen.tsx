@@ -208,7 +208,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
 
   // ── Lesson / Review screen ───────────────────────────────────────────────
   return (
-    <div className="fixed inset-0 z-[60] flex flex-col bg-white">
+    <div className="fixed inset-0 z-[60] flex flex-col bg-white dark:bg-slate-900">
       {/* Top bar */}
       <div className="px-4 pt-12 pb-3 flex items-center gap-3 shrink-0">
         <button
@@ -321,7 +321,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
           <div
             className={cn(
               'flex items-start gap-3 px-4 py-3 rounded-2xl',
-              checkState === 'correct' ? 'bg-emerald-50' : 'bg-red-50',
+              checkState === 'correct' ? 'bg-emerald-50 dark:bg-emerald-900/20' : 'bg-red-50 dark:bg-red-900/20',
             )}
           >
             {checkState === 'correct' ? (

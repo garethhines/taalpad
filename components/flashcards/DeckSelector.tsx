@@ -123,8 +123,8 @@ export default function DeckSelector({ progress, onStart }: Props) {
         </div>
 
         {/* Familiarity legend */}
-        <div className="bg-white rounded-2xl border border-slate-100 p-4 space-y-2">
-          <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide">Familiarity levels</p>
+        <div className="bg-white dark:bg-white/5 rounded-2xl border border-slate-100 dark:border-white/[0.07] p-4 space-y-2">
+          <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide">Familiarity levels</p>
           <div className="space-y-1.5">
             {[
               { level: 0, label: 'New', interval: 'review now', color: 'bg-slate-200' },
@@ -136,8 +136,8 @@ export default function DeckSelector({ progress, onStart }: Props) {
             ].map(({ level, label, interval, color }) => (
               <div key={level} className="flex items-center gap-3">
                 <div className={cn('w-2.5 h-2.5 rounded-full shrink-0', color)} />
-                <span className="text-xs text-slate-600 flex-1">{label}</span>
-                <span className="text-xs text-slate-400">review in {interval}</span>
+                <span className="text-xs text-slate-600 dark:text-slate-300 flex-1">{label}</span>
+                <span className="text-xs text-slate-400 dark:text-slate-500">review in {interval}</span>
               </div>
             ))}
           </div>
@@ -212,12 +212,12 @@ function ModeCard({
 
 function UnitPicker({ onSelect, onBack }: { onSelect: (unitId: string) => void; onBack: () => void }) {
   return (
-    <div className="flex flex-col min-h-full bg-slate-50">
-      <div className="bg-white px-5 pt-14 pb-5 border-b border-slate-100 flex items-center gap-3">
+    <div className="flex flex-col min-h-full bg-slate-50 dark:bg-slate-950">
+      <div className="bg-white dark:bg-slate-900 px-5 pt-14 pb-5 border-b border-slate-100 dark:border-white/[0.07] flex items-center gap-3">
         <button onClick={onBack} className="p-2 -ml-2 text-slate-400 hover:text-slate-600 rounded-xl hover:bg-slate-100">
           <ChevronRight size={20} className="rotate-180" />
         </button>
-        <h1 className="text-xl font-bold text-slate-900">Choose a Unit</h1>
+        <h1 className="text-xl font-bold text-slate-900 dark:text-slate-100">Choose a Unit</h1>
       </div>
       <div className="flex-1 px-4 py-5 space-y-3">
         {ALL_UNITS.map((unit) => {
@@ -229,7 +229,7 @@ function UnitPicker({ onSelect, onBack }: { onSelect: (unitId: string) => void; 
               onClick={() => hasWords && onSelect(unit.id)}
               disabled={!hasWords}
               className={cn(
-                'w-full text-left bg-white rounded-2xl border border-slate-200 p-4 flex items-center gap-4 transition-all shadow-sm',
+                'w-full text-left bg-white dark:bg-white/5 rounded-2xl border border-slate-200 dark:border-white/[0.07] p-4 flex items-center gap-4 transition-all shadow-sm',
                 hasWords ? 'hover:border-slate-300 hover:shadow-md active:scale-[0.98]' : 'opacity-40 cursor-not-allowed',
               )}
             >
@@ -238,8 +238,8 @@ function UnitPicker({ onSelect, onBack }: { onSelect: (unitId: string) => void; 
                 {unit.order}
               </div>
               <div className="flex-1 min-w-0">
-                <p className="font-bold text-slate-800 text-sm">{unit.title}</p>
-                <p className="text-xs text-slate-400">{hasWords ? `${wordCount} words` : 'No cards yet'}</p>
+                <p className="font-bold text-slate-800 dark:text-slate-100 text-sm">{unit.title}</p>
+                <p className="text-xs text-slate-400 dark:text-slate-500">{hasWords ? `${wordCount} words` : 'No cards yet'}</p>
               </div>
               {hasWords ? <ChevronRight size={16} className="text-slate-300 shrink-0" /> : <Lock size={14} className="text-slate-300 shrink-0" />}
             </button>

@@ -72,7 +72,7 @@ export default function SessionSummary({ rated, onBack, onRepeat }: Props) {
               <circle
                 cx="64" cy="64" r="56"
                 fill="none"
-                stroke={accuracy >= 80 ? '#16a34a' : accuracy >= 50 ? '#2563eb' : '#f59e0b'}
+                stroke={accuracy >= 80 ? '#16a34a' : accuracy >= 50 ? '#7c3aed' : '#f59e0b'}
                 strokeWidth="10"
                 strokeDasharray={`${(accuracy / 100) * 351.9} 351.9`}
                 strokeLinecap="round"

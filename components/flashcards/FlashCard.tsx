@@ -46,7 +46,7 @@ export default function FlashCard({ word, familiarity, flipped = false, onFlip }
       >
         {/* ── FRONT ── */}
         <div
-          className="absolute inset-0 bg-white rounded-3xl border border-slate-100 shadow-lg p-8 flex flex-col items-center justify-center gap-5"
+          className="absolute inset-0 bg-white dark:bg-slate-800 rounded-3xl border border-slate-100 dark:border-white/[0.07] shadow-lg p-8 flex flex-col items-center justify-center gap-5"
           style={{ backfaceVisibility: 'hidden', minHeight: '300px' }}
         >
           {/* Familiarity badge */}
