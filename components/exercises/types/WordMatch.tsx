@@ -117,10 +117,10 @@ function WordTile({ item, onTap }: { item: WordItem; onTap: (id: string) => void
       disabled={item.state === 'matched'}
       className={cn(
         'px-3 py-3 rounded-xl border-2 text-sm font-medium transition-all duration-150 text-center',
-        item.state === 'idle' && 'bg-white border-slate-200 text-slate-700 hover:border-primary-300 hover:bg-primary-50',
-        item.state === 'selected' && 'bg-primary-50 border-primary-900 text-primary-900 scale-[1.02]',
-        item.state === 'matched' && 'bg-emerald-50 border-emerald-400 text-emerald-700 opacity-70',
-        item.state === 'wrong' && 'bg-red-50 border-red-400 text-red-600 animate-shake',
+        item.state === 'idle' && 'bg-white dark:bg-white/5 border-slate-200 dark:border-white/[0.1] text-slate-700 dark:text-slate-200 hover:border-violet-400 hover:bg-violet-50 dark:hover:bg-violet-900/20 dark:hover:border-violet-500',
+        item.state === 'selected' && 'bg-violet-50 dark:bg-violet-900/20 border-violet-600 dark:border-violet-500 text-violet-700 dark:text-violet-300 scale-[1.02]',
+        item.state === 'matched' && 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-400 text-emerald-700 dark:text-emerald-400 opacity-70',
+        item.state === 'wrong' && 'bg-red-50 dark:bg-red-900/20 border-red-400 text-red-600 dark:text-red-400 animate-shake',
       )}
     >
       {item.text}

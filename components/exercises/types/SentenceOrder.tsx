@@ -56,10 +56,10 @@ export default function SentenceOrder({ exercise, onAnswer, isChecked, isCorrect
       <div
         className={cn(
           'min-h-[56px] rounded-2xl border-2 border-dashed p-3 flex flex-wrap gap-2 transition-colors',
-          placed.length === 0 && 'border-slate-200',
-          placed.length > 0 && !isChecked && 'border-primary-300',
-          isChecked && isCorrect && 'border-emerald-400 bg-emerald-50',
-          isChecked && isCorrect === false && 'border-red-300 bg-red-50',
+          placed.length === 0 && 'border-slate-200 dark:border-white/[0.1]',
+          placed.length > 0 && !isChecked && 'border-violet-500',
+          isChecked && isCorrect && 'border-emerald-400 bg-emerald-50 dark:bg-emerald-900/20 dark:border-emerald-500',
+          isChecked && isCorrect === false && 'border-red-300 bg-red-50 dark:bg-red-900/20 dark:border-red-400',
         )}
       >
         {placed.length === 0 && (
@@ -83,8 +83,8 @@ export default function SentenceOrder({ exercise, onAnswer, isChecked, isCorrect
       </div>
 
       {isChecked && isCorrect === false && (
-        <p className="text-sm text-slate-600 text-center">
-          Correct: <span className="font-bold text-slate-800">{correctSentence}</span>
+        <p className="text-sm text-slate-600 dark:text-slate-300 text-center">
+          Correct: <span className="font-bold text-slate-800 dark:text-slate-100">{correctSentence}</span>
         </p>
       )}
 
@@ -97,8 +97,8 @@ export default function SentenceOrder({ exercise, onAnswer, isChecked, isCorrect
             disabled={isChecked}
             className={cn(
               'px-4 py-2.5 rounded-xl text-sm font-semibold border-2 transition-all',
-              'bg-white border-slate-200 text-slate-700',
-              !isChecked && 'hover:border-primary-300 hover:bg-primary-50 active:scale-95',
+              'bg-white dark:bg-white/5 border-slate-200 dark:border-white/[0.1] text-slate-700 dark:text-slate-200',
+              !isChecked && 'hover:border-violet-400 hover:bg-violet-50 dark:hover:bg-violet-900/20 dark:hover:border-violet-500 active:scale-95',
               isChecked && 'opacity-40',
             )}
           >

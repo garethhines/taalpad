@@ -24,11 +24,11 @@ export default function MultipleChoice({ exercise, selected, onSelect, isChecked
       <div className="text-center space-y-3">
         {exercise.dutch && (
           <div className="flex items-center justify-center gap-3">
-            <span className="text-3xl font-bold text-primary-900">{exercise.dutch}</span>
+            <span className="text-3xl font-bold text-primary-900 dark:text-white">{exercise.dutch}</span>
             <SpeakerButton text={exercise.dutch} size="md" />
           </div>
         )}
-        <p className="text-lg font-semibold text-slate-700">{exercise.question}</p>
+        <p className="text-lg font-semibold text-slate-700 dark:text-slate-200">{exercise.question}</p>
       </div>
 
       {/* Options */}
@@ -51,10 +51,10 @@ export default function MultipleChoice({ exercise, selected, onSelect, isChecked
               disabled={isChecked}
               className={cn(
                 'w-full text-left px-5 py-4 rounded-2xl border-2 font-medium text-sm transition-all duration-150',
-                state === 'default' && 'bg-white border-slate-200 text-slate-700 hover:border-primary-300 hover:bg-primary-50 active:scale-[0.98]',
-                state === 'selected' && 'bg-primary-50 border-primary-900 text-primary-900',
-                state === 'correct' && 'bg-emerald-50 border-emerald-500 text-emerald-800',
-                state === 'wrong' && 'bg-red-50 border-red-400 text-red-700',
+                state === 'default' && 'bg-white dark:bg-white/5 border-slate-200 dark:border-white/[0.1] text-slate-700 dark:text-slate-200 hover:border-violet-400 hover:bg-violet-50 dark:hover:bg-violet-900/20 dark:hover:border-violet-500 active:scale-[0.98]',
+                state === 'selected' && 'bg-violet-50 dark:bg-violet-900/20 border-violet-600 dark:border-violet-500 text-violet-700 dark:text-violet-300',
+                state === 'correct' && 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-500 text-emerald-800 dark:text-emerald-300',
+                state === 'wrong' && 'bg-red-50 dark:bg-red-900/20 border-red-400 text-red-700 dark:text-red-300',
               )}
             >
               {option}

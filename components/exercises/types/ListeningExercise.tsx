@@ -53,7 +53,7 @@ export default function ListeningExercise({ exercise, selected, onSelect, isChec
         <button
           onClick={() => speak(exercise.dutch)}
           disabled={!isSupported || isSpeaking}
-          className="text-xs text-primary-900 font-medium hover:underline disabled:opacity-40"
+          className="text-xs text-primary-900 dark:text-violet-400 font-medium hover:underline disabled:opacity-40"
         >
           Play again
         </button>
@@ -79,10 +79,10 @@ export default function ListeningExercise({ exercise, selected, onSelect, isChec
               disabled={isChecked}
               className={cn(
                 'w-full text-left px-5 py-4 rounded-2xl border-2 font-medium text-sm transition-all duration-150',
-                state === 'default' && 'bg-white border-slate-200 text-slate-700 hover:border-primary-300 hover:bg-primary-50',
-                state === 'selected' && 'bg-primary-50 border-primary-900 text-primary-900',
-                state === 'correct' && 'bg-emerald-50 border-emerald-500 text-emerald-800',
-                state === 'wrong' && 'bg-red-50 border-red-400 text-red-700',
+                state === 'default' && 'bg-white dark:bg-white/5 border-slate-200 dark:border-white/[0.1] text-slate-700 dark:text-slate-200 hover:border-violet-400 hover:bg-violet-50 dark:hover:bg-violet-900/20 dark:hover:border-violet-500',
+                state === 'selected' && 'bg-violet-50 dark:bg-violet-900/20 border-violet-600 dark:border-violet-500 text-violet-700 dark:text-violet-300',
+                state === 'correct' && 'bg-emerald-50 dark:bg-emerald-900/20 border-emerald-500 text-emerald-800 dark:text-emerald-300',
+                state === 'wrong' && 'bg-red-50 dark:bg-red-900/20 border-red-400 text-red-700 dark:text-red-300',
               )}
             >
               {option}

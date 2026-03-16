@@ -171,10 +171,10 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
       <div className="fixed inset-0 z-[60] flex flex-col bg-white dark:bg-slate-950 items-center justify-center px-6 gap-8 text-center">
         <div className="text-6xl">{scorePercent >= 80 ? '🎉' : scorePercent >= 50 ? '👍' : '💪'}</div>
         <div>
-          <h2 className="text-2xl font-bold text-slate-800">
+          <h2 className="text-2xl font-bold text-slate-800 dark:text-slate-100">
             {scorePercent >= 80 ? 'Great work!' : scorePercent >= 50 ? 'Good effort!' : 'Keep practising!'}
           </h2>
-          <p className="text-slate-500 mt-1">{lesson.title} complete</p>
+          <p className="text-slate-500 mt-1 dark:text-slate-400">{lesson.title} complete</p>
         </div>
 
         <div className="flex gap-8">
@@ -213,11 +213,11 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
       <div className="px-4 pt-12 pb-3 flex items-center gap-3 shrink-0">
         <button
           onClick={() => router.back()}
-          className="p-2 -ml-1 rounded-xl text-slate-400 hover:text-slate-600 hover:bg-slate-100"
+          className="p-2 -ml-1 rounded-xl text-slate-400 hover:text-slate-600 hover:bg-slate-100 dark:hover:bg-white/5 dark:hover:text-slate-300"
         >
           <X size={20} />
         </button>
-        <div className="flex-1 bg-slate-100 rounded-full h-3 overflow-hidden">
+        <div className="flex-1 bg-slate-100 dark:bg-white/[0.1] rounded-full h-3 overflow-hidden">
           <div
             className={cn(
               'h-full rounded-full transition-all duration-500',
@@ -230,7 +230,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
           {settingsMounted && ttsSupported && (
             <button
               onClick={() => updateSetting('optionTts', !settings.optionTts)}
-              className="p-1.5 rounded-xl text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors"
+              className="p-1.5 rounded-xl text-slate-400 hover:text-slate-600 hover:bg-slate-100 dark:hover:bg-white/5 dark:hover:text-slate-300 transition-colors"
               aria-label={settings.optionTts ? 'Mute option audio' : 'Unmute option audio'}
             >
               {settings.optionTts ? <Volume2 size={16} /> : <VolumeX size={16} />}
@@ -243,7 +243,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
 
       {/* Review phase banner */}
       {phase === 'review' && (
-        <div className="mx-4 mb-1 shrink-0 flex items-center gap-2 bg-amber-50 border border-amber-200 rounded-2xl px-4 py-2.5">
+        <div className="mx-4 mb-1 shrink-0 flex items-center gap-2 bg-amber-50 dark:bg-amber-900/[0.15] border border-amber-200 dark:border-amber-500/30 rounded-2xl px-4 py-2.5">
           <AlertCircle size={16} className="text-amber-500 shrink-0" />
           <div className="flex-1 min-w-0">
             <p className="text-xs font-bold text-amber-700">Correct your errors</p>
@@ -350,7 +350,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
               'w-full py-4 rounded-2xl font-bold text-base transition-all',
               canCheck
                 ? 'bg-gradient-to-br from-violet-600 to-violet-800 text-white hover:shadow-accent-glow active:scale-[0.98]'
-                : 'bg-slate-100 text-slate-400 cursor-not-allowed',
+                : 'bg-slate-100 dark:bg-white/[0.07] text-slate-400 dark:text-slate-600 cursor-not-allowed',
             )}
           >
             Check
