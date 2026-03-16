@@ -27,9 +27,7 @@ export default function Sidebar() {
       {/* Wordmark */}
       <div className="px-6 py-6">
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 bg-primary-900 rounded-xl flex items-center justify-center">
-            <span className="text-white text-xs font-bold">NL</span>
-          </div>
+          <img src="/logo.svg" alt="Taalpad" className="w-8 h-8 rounded-xl" />
           <div>
             <span className="text-lg font-bold text-primary-900 dark:text-white">Taalpad</span>
             <p className="text-[10px] text-slate-400 leading-none">Learn Dutch</p>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e3a5f"/>
+      <stop offset="100%" stop-color="#0d1b2e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="78%" cy="22%" r="55%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="violet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <filter id="shadow" x="-8%" y="-8%" width="116%" height="128%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#7c3aed" flood-opacity="0.3"/>
+    </filter>
+    <filter id="node-glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="114" fill="url(#bg)"/>
+  <rect width="512" height="512" rx="114" fill="url(#glow)"/>
+
+  <!-- Speech bubble -->
+  <g filter="url(#shadow)">
+    <rect x="52" y="62" width="408" height="278" rx="58" fill="white"/>
+    <!-- Tail: bottom-left, pointing down -->
+    <path d="M96 336 L64 440 L228 336 Z" fill="white"/>
+  </g>
+
+  <!-- Connector lines (below nodes in z-order) -->
+  <line x1="192" y1="202" x2="228" y2="202" stroke="#e2e8f0" stroke-width="9" stroke-linecap="round"/>
+  <line x1="284" y1="202" x2="320" y2="202" stroke="#e2e8f0" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Node 1: Completed — emerald -->
+  <circle cx="160" cy="202" r="32" fill="#10b981"/>
+  <path d="M147 202 L157 212 L175 194" stroke="white" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Node 2: Active — violet, with outer glow ring -->
+  <circle cx="256" cy="202" r="42" fill="#7c3aed" opacity="0.15"/>
+  <circle cx="256" cy="202" r="32" fill="url(#violet)" filter="url(#node-glow)"/>
+  <!-- Inner star dot -->
+  <circle cx="256" cy="202" r="10" fill="white"/>
+
+  <!-- Node 3: Locked — slate -->
+  <circle cx="352" cy="202" r="32" fill="#94a3b8"/>
+  <!-- Lock shackle (arc above body) — white on grey -->
+  <path d="M340 204 A12 12 0 0 1 364 204" stroke="white" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Lock body -->
+  <rect x="337" y="203" width="30" height="20" rx="5" fill="white"/>
+  <!-- Lock keyhole -->
+  <circle cx="352" cy="212" r="4.5" fill="#94a3b8"/>
+</svg>
