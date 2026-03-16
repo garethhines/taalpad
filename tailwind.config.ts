@@ -6,6 +6,7 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -36,9 +37,30 @@ const config: Config = {
           500: '#f59e0b',
           600: '#d97706',
         },
+        violet: {
+          50: '#f5f3ff',
+          100: '#ede9fe',
+          200: '#ddd6fe',
+          300: '#c4b5fd',
+          400: '#a78bfa',
+          500: '#8b5cf6',
+          // NOTE: The design spec token table labels #7c3aed as "violet-700" but
+          // standard Tailwind places this value at violet-600. Throughout ALL
+          // component code in this plan, use `violet-600` for the primary accent
+          // (CTAs, active states, progress fills). The spec token name is wrong;
+          // the hex value is correct.
+          600: '#7c3aed',
+          700: '#6d28d9',
+          800: '#5b21b6',
+          900: '#4c1d95',
+        },
       },
       fontFamily: {
         sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      boxShadow: {
+        'accent-glow': '0 0 12px rgba(124, 58, 237, 0.35)',
+        'accent-glow-lg': '0 0 24px rgba(124, 58, 237, 0.45)',
       },
       animation: {
         'fade-in': 'fadeIn 0.3s ease-in-out',
