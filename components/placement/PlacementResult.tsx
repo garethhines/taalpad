@@ -48,7 +48,7 @@ export default function PlacementResult({
   }
 
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center px-5 py-10">
+    <div className="min-h-screen bg-white dark:bg-slate-950 flex flex-col items-center justify-center px-5 py-10">
       <div className="w-full max-w-sm text-center space-y-8">
 
         {/* Level badge */}
@@ -64,16 +64,16 @@ export default function PlacementResult({
           </div>
 
           <div>
-            <p className="text-slate-400 text-sm font-medium uppercase tracking-wide">
+            <p className="text-slate-400 dark:text-slate-500 text-sm font-medium uppercase tracking-wide">
               Your Dutch level is
             </p>
-            <h1 className="text-3xl font-extrabold text-slate-900 mt-1">{finalLevel}</h1>
+            <h1 className="text-3xl font-extrabold text-slate-900 dark:text-slate-100 mt-1">{finalLevel}</h1>
             <p className={cn('text-base font-semibold mt-0.5', meta.color)}>{meta.title}</p>
           </div>
         </div>
 
         {/* Description */}
-        <p className="text-slate-600 text-sm leading-relaxed">{meta.description}</p>
+        <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">{meta.description}</p>
 
         {/* Stats row */}
         <div className="flex gap-4 justify-center">
@@ -87,7 +87,7 @@ export default function PlacementResult({
           <button
             onClick={handleStartLearning}
             disabled={saving}
-            className="w-full flex items-center justify-center gap-2 bg-primary-900 text-white font-bold py-4 rounded-2xl text-base hover:bg-primary-800 disabled:opacity-60 transition-colors"
+            className="w-full flex items-center justify-center gap-2 bg-gradient-to-br from-violet-600 to-violet-800 text-white font-bold py-4 rounded-2xl text-base hover:shadow-accent-glow disabled:opacity-60 transition-all"
           >
             {saving ? (
               'Setting up your path…'
@@ -130,9 +130,9 @@ export default function PlacementResult({
 
 function StatChip({ label, value }: { label: string; value: string | number }) {
   return (
-    <div className="bg-slate-50 rounded-xl px-4 py-2.5 text-center">
-      <p className="text-lg font-bold text-slate-800">{value}</p>
-      <p className="text-[11px] text-slate-400 font-medium">{label}</p>
+    <div className="bg-slate-50 dark:bg-white/5 rounded-xl px-4 py-2.5 text-center">
+      <p className="text-lg font-bold text-slate-800 dark:text-slate-100">{value}</p>
+      <p className="text-[11px] text-slate-400 dark:text-slate-500 font-medium">{label}</p>
     </div>
   )
 }
