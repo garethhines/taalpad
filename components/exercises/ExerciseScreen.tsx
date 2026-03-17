@@ -45,6 +45,7 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
 
   // Completion state
   const [saving, setSaving] = useState(false)
+  const [saveError, setSaveError] = useState<string | null>(null)
   const [done, setDone] = useState(false)
   const [earnedXP, setEarnedXP] = useState(0)
 
@@ -148,8 +149,15 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
     setEarnedXP(xp)
     setDone(true)
     setSaving(true)
-    await onComplete(xp, score)
-    setSaving(false)
+    setSaveError(null)
+    try {
+      await onComplete(xp, score)
+    } catch (err) {
+      console.error('[ExerciseScreen] onComplete error:', err)
+      setSaveError('Failed to save progress. Please try again.')
+    } finally {
+      setSaving(false)
+    }
   }
 
   const handleWordMatchComplete = useCallback((_correct: boolean) => {
@@ -195,12 +203,15 @@ export default function ExerciseScreen({ lesson, unitId, onComplete }: Props) {
           </div>
         </div>
 
+        {saveError && (
+          <p className="text-sm text-red-500 text-center max-w-xs">{saveError}</p>
+        )}
         <button
-          onClick={() => router.push('/learn')}
+          onClick={() => saveError ? completeLesson(correctCount) : router.push('/learn')}
           disabled={saving}
           className="w-full max-w-xs bg-gradient-to-br from-violet-600 to-violet-800 text-white font-extrabold py-4 rounded-2xl hover:shadow-accent-glow disabled:opacity-60 transition-all"
         >
-          {saving ? 'Saving…' : 'Continue'}
+          {saving ? 'Saving…' : saveError ? 'Retry Save' : 'Continue'}
         </button>
       </div>
     )

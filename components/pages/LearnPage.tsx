@@ -13,8 +13,8 @@ import type { LevelWithStatus, UnitWithStatus, LessonWithStatus } from '@/lib/ty
 
 export default function LearnPage() {
   const { user, profile } = useProfile()
-  const { progress } = useLearningProgress(user?.id)
-  const levels = buildLearningPath(progress)
+  const { progress, loading: progressLoading } = useLearningProgress(user?.id)
+  const levels = buildLearningPath(progressLoading ? [] : progress)
   const currentRef = useRef<HTMLDivElement>(null)
   const placementLevel = profile?.placement_level ?? null
 
@@ -51,6 +51,7 @@ export default function LearnPage() {
                     key={unit.id}
                     unit={unit}
                     placementLevel={placementLevel}
+                    progressLoading={progressLoading}
                     currentRef={unit.lessons.some((l) => l.isCurrentLesson) ? currentRef : undefined}
                   />
                 ))}
@@ -90,10 +91,12 @@ function UnitCard({
   unit,
   currentRef,
   placementLevel,
+  progressLoading,
 }: {
   unit: UnitWithStatus
   currentRef?: React.RefObject<HTMLDivElement>
   placementLevel?: string | null
+  progressLoading?: boolean
 }) {
   const isCurrentUnit = unit.lessons.some((l) => l.isCurrentLesson)
   const nextLesson = unit.lessons.find((l) => l.isCurrentLesson || (!l.isCompleted && !l.isLocked))
@@ -164,7 +167,7 @@ function UnitCard({
           </div>
         </div>
 
-        {isCurrentUnit && nextLesson && (
+        {isCurrentUnit && !progressLoading && nextLesson && (
           <Link
             href={`/learn/${nextLesson.id}`}
             className="mt-3 w-full flex items-center justify-center gap-2 bg-gradient-to-br from-violet-600 to-violet-800 text-white text-sm font-extrabold py-3 rounded-xl hover:shadow-accent-glow transition-all active:scale-[0.98]"
@@ -172,6 +175,11 @@ function UnitCard({
             {nextLesson.isCurrentLesson ? 'Continue' : 'Start'}
             <ChevronRight size={16} />
           </Link>
+        )}
+        {isCurrentUnit && progressLoading && (
+          <div className="mt-3 w-full flex items-center justify-center py-3 rounded-xl bg-slate-100 dark:bg-white/5">
+            <div className="w-4 h-4 rounded-full border-2 border-violet-600 border-t-transparent animate-spin" />
+          </div>
         )}
       </div>
 

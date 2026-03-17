@@ -102,7 +102,7 @@ export async function upsertLessonProgress(
         unit_id: unitId,
         lesson_id: lessonId,
         ...updates,
-        attempts: 1, // Will be incremented below on conflict
+        attempts: 1,
       },
       {
         onConflict: 'user_id,lesson_id',
@@ -112,7 +112,10 @@ export async function upsertLessonProgress(
     .select()
     .single()
 
-  if (error) return null
+  if (error) {
+    console.error('[upsertLessonProgress] failed:', error)
+    throw new Error(`Failed to save lesson progress: ${error.message}`)
+  }
   return data as LearningProgress
 }
 
@@ -206,7 +209,7 @@ export async function recordLessonCompletion(
   xpReward: number,
   score?: number,
 ): Promise<UserProfile | null> {
-  // 1. Update lesson status
+  // 1. Update lesson status — throws if save fails
   await upsertLessonProgress(supabase, userId, unitId, lessonId, 'completed', score)
 
   // 2. Fetch current profile
